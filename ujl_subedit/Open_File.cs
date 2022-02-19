@@ -63,7 +63,7 @@ namespace ujl_subedit
                         OpenFile.FileName = openFileDialog1.SafeFileName;
                         if (OpenFile.FileName == "COMOD11.SNG")
                         {
-                            editor editor = new editor();
+                            Editor editor = new Editor();
                             editor.Owner = this;
                             editor.ShowDialog();
                             

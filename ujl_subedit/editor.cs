@@ -13,7 +13,7 @@ using System.IO;
 
 namespace ujl_subedit
 {
-    public partial class editor : Form
+    public partial class Editor : Form
     {
         public class COMOD11_SNG_info
         {
@@ -293,7 +293,7 @@ namespace ujl_subedit
             public const int Hex90_length = 35;
 
         }
-        public editor()
+        public Editor()
         {
             InitializeComponent();
             start_file();
@@ -1053,7 +1053,21 @@ namespace ujl_subedit
         private void COMOD11_SNG_Load(object sender, EventArgs e)
         {
 
-        }                                               
+        }
 
+        private void label68_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label66_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

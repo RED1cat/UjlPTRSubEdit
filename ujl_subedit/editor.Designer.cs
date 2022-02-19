@@ -1,7 +1,7 @@
 ﻿
 namespace ujl_subedit
 {
-    partial class editor
+    partial class Editor
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ujl_subedit
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.Hex1 = new System.Windows.Forms.TextBox();
             this.Text1 = new System.Windows.Forms.TextBox();
             this.Hex2 = new System.Windows.Forms.TextBox();
@@ -91,26 +91,26 @@ namespace ujl_subedit
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Length = new System.Windows.Forms.Label();
             this.Left = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Last25 = new System.Windows.Forms.Label();
             this.Text25 = new System.Windows.Forms.TextBox();
             this.Length25 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Hex25 = new System.Windows.Forms.TextBox();
+            this.Last24 = new System.Windows.Forms.Label();
+            this.Last23 = new System.Windows.Forms.Label();
+            this.Last22 = new System.Windows.Forms.Label();
+            this.Text24 = new System.Windows.Forms.TextBox();
             this.Length24 = new System.Windows.Forms.Label();
             this.Length23 = new System.Windows.Forms.Label();
             this.Length22 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Hex24 = new System.Windows.Forms.TextBox();
+            this.Text23 = new System.Windows.Forms.TextBox();
+            this.Hex23 = new System.Windows.Forms.TextBox();
+            this.Text22 = new System.Windows.Forms.TextBox();
+            this.Hex22 = new System.Windows.Forms.TextBox();
             this.Last21 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.Last20 = new System.Windows.Forms.Label();
+            this.Last19 = new System.Windows.Forms.Label();
+            this.Text21 = new System.Windows.Forms.TextBox();
             this.Length21 = new System.Windows.Forms.Label();
             this.Length20 = new System.Windows.Forms.Label();
             this.Length19 = new System.Windows.Forms.Label();
@@ -119,117 +119,117 @@ namespace ujl_subedit
             this.Hex20 = new System.Windows.Forms.TextBox();
             this.Text19 = new System.Windows.Forms.TextBox();
             this.Hex19 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.Last18 = new System.Windows.Forms.Label();
+            this.Text18 = new System.Windows.Forms.TextBox();
             this.Length18 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.Hex18 = new System.Windows.Forms.TextBox();
+            this.Last17 = new System.Windows.Forms.Label();
+            this.Last16 = new System.Windows.Forms.Label();
+            this.Last15 = new System.Windows.Forms.Label();
+            this.Text17 = new System.Windows.Forms.TextBox();
             this.Length17 = new System.Windows.Forms.Label();
             this.Length16 = new System.Windows.Forms.Label();
             this.Length15 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.Hex17 = new System.Windows.Forms.TextBox();
+            this.Text16 = new System.Windows.Forms.TextBox();
+            this.Hex16 = new System.Windows.Forms.TextBox();
+            this.Text15 = new System.Windows.Forms.TextBox();
+            this.Hex15 = new System.Windows.Forms.TextBox();
+            this.Last36 = new System.Windows.Forms.Label();
+            this.Text36 = new System.Windows.Forms.TextBox();
             this.Length36 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.Hex36 = new System.Windows.Forms.TextBox();
+            this.Last35 = new System.Windows.Forms.Label();
+            this.Last34 = new System.Windows.Forms.Label();
+            this.Last33 = new System.Windows.Forms.Label();
+            this.Text35 = new System.Windows.Forms.TextBox();
             this.Length35 = new System.Windows.Forms.Label();
             this.Length34 = new System.Windows.Forms.Label();
             this.Length33 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.Hex35 = new System.Windows.Forms.TextBox();
+            this.Text34 = new System.Windows.Forms.TextBox();
+            this.Hex34 = new System.Windows.Forms.TextBox();
+            this.Text33 = new System.Windows.Forms.TextBox();
+            this.Hex33 = new System.Windows.Forms.TextBox();
+            this.Last32 = new System.Windows.Forms.Label();
+            this.Last31 = new System.Windows.Forms.Label();
+            this.Last30 = new System.Windows.Forms.Label();
+            this.Text32 = new System.Windows.Forms.TextBox();
             this.Length32 = new System.Windows.Forms.Label();
             this.Length31 = new System.Windows.Forms.Label();
             this.Length30 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.Hex32 = new System.Windows.Forms.TextBox();
+            this.Text31 = new System.Windows.Forms.TextBox();
+            this.Hex31 = new System.Windows.Forms.TextBox();
+            this.Text30 = new System.Windows.Forms.TextBox();
+            this.Hex30 = new System.Windows.Forms.TextBox();
+            this.Last29 = new System.Windows.Forms.Label();
+            this.Text29 = new System.Windows.Forms.TextBox();
             this.Length29 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.Hex29 = new System.Windows.Forms.TextBox();
+            this.Last28 = new System.Windows.Forms.Label();
+            this.Last27 = new System.Windows.Forms.Label();
+            this.Last26 = new System.Windows.Forms.Label();
+            this.Text28 = new System.Windows.Forms.TextBox();
             this.Length28 = new System.Windows.Forms.Label();
             this.Length27 = new System.Windows.Forms.Label();
             this.Length26 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
+            this.Hex28 = new System.Windows.Forms.TextBox();
+            this.Text27 = new System.Windows.Forms.TextBox();
+            this.Hex27 = new System.Windows.Forms.TextBox();
+            this.Text26 = new System.Windows.Forms.TextBox();
+            this.Hex26 = new System.Windows.Forms.TextBox();
+            this.Last47 = new System.Windows.Forms.Label();
             this.Text47 = new System.Windows.Forms.TextBox();
             this.Length47 = new System.Windows.Forms.Label();
             this.Hex47 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.Last46 = new System.Windows.Forms.Label();
+            this.Last45 = new System.Windows.Forms.Label();
+            this.Last44 = new System.Windows.Forms.Label();
+            this.Text46 = new System.Windows.Forms.TextBox();
             this.Length46 = new System.Windows.Forms.Label();
             this.Length45 = new System.Windows.Forms.Label();
             this.Length44 = new System.Windows.Forms.Label();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.Hex46 = new System.Windows.Forms.TextBox();
+            this.Text45 = new System.Windows.Forms.TextBox();
+            this.Hex45 = new System.Windows.Forms.TextBox();
+            this.Text44 = new System.Windows.Forms.TextBox();
+            this.Hex44 = new System.Windows.Forms.TextBox();
+            this.Last43 = new System.Windows.Forms.Label();
+            this.Last42 = new System.Windows.Forms.Label();
+            this.Last41 = new System.Windows.Forms.Label();
+            this.Text43 = new System.Windows.Forms.TextBox();
             this.Length43 = new System.Windows.Forms.Label();
             this.Length42 = new System.Windows.Forms.Label();
             this.Length41 = new System.Windows.Forms.Label();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.Hex43 = new System.Windows.Forms.TextBox();
+            this.Text42 = new System.Windows.Forms.TextBox();
+            this.Hex42 = new System.Windows.Forms.TextBox();
+            this.Text41 = new System.Windows.Forms.TextBox();
+            this.Hex41 = new System.Windows.Forms.TextBox();
+            this.Last40 = new System.Windows.Forms.Label();
+            this.Text40 = new System.Windows.Forms.TextBox();
             this.Length40 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.textBox61 = new System.Windows.Forms.TextBox();
+            this.Hex40 = new System.Windows.Forms.TextBox();
+            this.Last39 = new System.Windows.Forms.Label();
+            this.Last38 = new System.Windows.Forms.Label();
+            this.Last37 = new System.Windows.Forms.Label();
+            this.Text39 = new System.Windows.Forms.TextBox();
             this.Length39 = new System.Windows.Forms.Label();
             this.Length38 = new System.Windows.Forms.Label();
             this.Length37 = new System.Windows.Forms.Label();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
+            this.Hex39 = new System.Windows.Forms.TextBox();
+            this.Text38 = new System.Windows.Forms.TextBox();
+            this.Hex38 = new System.Windows.Forms.TextBox();
+            this.Text37 = new System.Windows.Forms.TextBox();
+            this.Hex37 = new System.Windows.Forms.TextBox();
+            this.Last58 = new System.Windows.Forms.Label();
             this.Text58 = new System.Windows.Forms.TextBox();
             this.Length58 = new System.Windows.Forms.Label();
             this.Hex58 = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
+            this.Last57 = new System.Windows.Forms.Label();
+            this.Last56 = new System.Windows.Forms.Label();
+            this.Last55 = new System.Windows.Forms.Label();
             this.Text57 = new System.Windows.Forms.TextBox();
             this.Length57 = new System.Windows.Forms.Label();
             this.Length56 = new System.Windows.Forms.Label();
@@ -239,9 +239,9 @@ namespace ujl_subedit
             this.Hex56 = new System.Windows.Forms.TextBox();
             this.Text55 = new System.Windows.Forms.TextBox();
             this.Hex55 = new System.Windows.Forms.TextBox();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
+            this.Last54 = new System.Windows.Forms.Label();
+            this.Last53 = new System.Windows.Forms.Label();
+            this.Last52 = new System.Windows.Forms.Label();
             this.Text54 = new System.Windows.Forms.TextBox();
             this.Length54 = new System.Windows.Forms.Label();
             this.Length53 = new System.Windows.Forms.Label();
@@ -251,13 +251,13 @@ namespace ujl_subedit
             this.Hex53 = new System.Windows.Forms.TextBox();
             this.Text52 = new System.Windows.Forms.TextBox();
             this.Hex52 = new System.Windows.Forms.TextBox();
-            this.label82 = new System.Windows.Forms.Label();
+            this.Last51 = new System.Windows.Forms.Label();
             this.Text51 = new System.Windows.Forms.TextBox();
             this.Length51 = new System.Windows.Forms.Label();
             this.Hex51 = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
+            this.Last50 = new System.Windows.Forms.Label();
+            this.Last49 = new System.Windows.Forms.Label();
+            this.Last48 = new System.Windows.Forms.Label();
             this.Text50 = new System.Windows.Forms.TextBox();
             this.Length50 = new System.Windows.Forms.Label();
             this.Length49 = new System.Windows.Forms.Label();
@@ -267,9 +267,9 @@ namespace ujl_subedit
             this.Hex49 = new System.Windows.Forms.TextBox();
             this.Text48 = new System.Windows.Forms.TextBox();
             this.Hex48 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Last90 = new System.Windows.Forms.Label();
+            this.Last89 = new System.Windows.Forms.Label();
+            this.Last88 = new System.Windows.Forms.Label();
             this.Text90 = new System.Windows.Forms.TextBox();
             this.Length90 = new System.Windows.Forms.Label();
             this.Length89 = new System.Windows.Forms.Label();
@@ -279,13 +279,13 @@ namespace ujl_subedit
             this.Hex89 = new System.Windows.Forms.TextBox();
             this.Text88 = new System.Windows.Forms.TextBox();
             this.Hex88 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.Last87 = new System.Windows.Forms.Label();
             this.Text87 = new System.Windows.Forms.TextBox();
             this.Length87 = new System.Windows.Forms.Label();
             this.Hex87 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.Last86 = new System.Windows.Forms.Label();
+            this.Last85 = new System.Windows.Forms.Label();
+            this.Last84 = new System.Windows.Forms.Label();
             this.Text86 = new System.Windows.Forms.TextBox();
             this.Length86 = new System.Windows.Forms.Label();
             this.Length85 = new System.Windows.Forms.Label();
@@ -299,9 +299,9 @@ namespace ujl_subedit
             this.Text83 = new System.Windows.Forms.TextBox();
             this.Length83 = new System.Windows.Forms.Label();
             this.Hex83 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
+            this.Last82 = new System.Windows.Forms.Label();
+            this.Last81 = new System.Windows.Forms.Label();
+            this.Last80 = new System.Windows.Forms.Label();
             this.Text82 = new System.Windows.Forms.TextBox();
             this.Length82 = new System.Windows.Forms.Label();
             this.Length81 = new System.Windows.Forms.Label();
@@ -311,9 +311,9 @@ namespace ujl_subedit
             this.Hex81 = new System.Windows.Forms.TextBox();
             this.Text80 = new System.Windows.Forms.TextBox();
             this.Hex80 = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
+            this.Last79 = new System.Windows.Forms.Label();
+            this.Last78 = new System.Windows.Forms.Label();
+            this.Last77 = new System.Windows.Forms.Label();
             this.Text79 = new System.Windows.Forms.TextBox();
             this.Length79 = new System.Windows.Forms.Label();
             this.Length78 = new System.Windows.Forms.Label();
@@ -323,13 +323,13 @@ namespace ujl_subedit
             this.Hex78 = new System.Windows.Forms.TextBox();
             this.Text77 = new System.Windows.Forms.TextBox();
             this.Hex77 = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
+            this.Last76 = new System.Windows.Forms.Label();
             this.Text76 = new System.Windows.Forms.TextBox();
             this.Length76 = new System.Windows.Forms.Label();
             this.Hex76 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.Last75 = new System.Windows.Forms.Label();
+            this.Last74 = new System.Windows.Forms.Label();
+            this.Last73 = new System.Windows.Forms.Label();
             this.Text75 = new System.Windows.Forms.TextBox();
             this.Length75 = new System.Windows.Forms.Label();
             this.Length74 = new System.Windows.Forms.Label();
@@ -339,13 +339,13 @@ namespace ujl_subedit
             this.Hex74 = new System.Windows.Forms.TextBox();
             this.Text73 = new System.Windows.Forms.TextBox();
             this.Hex73 = new System.Windows.Forms.TextBox();
-            this.label79 = new System.Windows.Forms.Label();
+            this.Last72 = new System.Windows.Forms.Label();
             this.Text72 = new System.Windows.Forms.TextBox();
             this.Length72 = new System.Windows.Forms.Label();
             this.Hex72 = new System.Windows.Forms.TextBox();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
+            this.Last71 = new System.Windows.Forms.Label();
+            this.Last70 = new System.Windows.Forms.Label();
+            this.Last69 = new System.Windows.Forms.Label();
             this.Text71 = new System.Windows.Forms.TextBox();
             this.Length71 = new System.Windows.Forms.Label();
             this.Length70 = new System.Windows.Forms.Label();
@@ -355,9 +355,9 @@ namespace ujl_subedit
             this.Hex70 = new System.Windows.Forms.TextBox();
             this.Text69 = new System.Windows.Forms.TextBox();
             this.Hex69 = new System.Windows.Forms.TextBox();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
+            this.Last68 = new System.Windows.Forms.Label();
+            this.Last67 = new System.Windows.Forms.Label();
+            this.Last66 = new System.Windows.Forms.Label();
             this.Text68 = new System.Windows.Forms.TextBox();
             this.Length68 = new System.Windows.Forms.Label();
             this.Length67 = new System.Windows.Forms.Label();
@@ -367,13 +367,13 @@ namespace ujl_subedit
             this.Hex67 = new System.Windows.Forms.TextBox();
             this.Text66 = new System.Windows.Forms.TextBox();
             this.Hex66 = new System.Windows.Forms.TextBox();
-            this.label97 = new System.Windows.Forms.Label();
+            this.Last65 = new System.Windows.Forms.Label();
             this.Text65 = new System.Windows.Forms.TextBox();
             this.Length65 = new System.Windows.Forms.Label();
             this.Hex65 = new System.Windows.Forms.TextBox();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
+            this.Last64 = new System.Windows.Forms.Label();
+            this.Last63 = new System.Windows.Forms.Label();
+            this.Last62 = new System.Windows.Forms.Label();
             this.Text64 = new System.Windows.Forms.TextBox();
             this.Length64 = new System.Windows.Forms.Label();
             this.Length63 = new System.Windows.Forms.Label();
@@ -383,9 +383,9 @@ namespace ujl_subedit
             this.Hex63 = new System.Windows.Forms.TextBox();
             this.Text62 = new System.Windows.Forms.TextBox();
             this.Hex62 = new System.Windows.Forms.TextBox();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
+            this.Last61 = new System.Windows.Forms.Label();
+            this.Last60 = new System.Windows.Forms.Label();
+            this.Last59 = new System.Windows.Forms.Label();
             this.Text61 = new System.Windows.Forms.TextBox();
             this.Length61 = new System.Windows.Forms.Label();
             this.Length60 = new System.Windows.Forms.Label();
@@ -1014,15 +1014,15 @@ namespace ujl_subedit
             this.Left.TabIndex = 59;
             this.Left.Text = "Left";
             // 
-            // label2
+            // Last25
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(848, 1670);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 18);
-            this.label2.TabIndex = 103;
-            this.label2.Text = "14";
+            this.Last25.AutoSize = true;
+            this.Last25.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last25.Location = new System.Drawing.Point(848, 1670);
+            this.Last25.Name = "Last25";
+            this.Last25.Size = new System.Drawing.Size(28, 18);
+            this.Last25.TabIndex = 103;
+            this.Last25.Text = "25";
             // 
             // Text25
             // 
@@ -1043,53 +1043,53 @@ namespace ujl_subedit
             this.Length25.TabIndex = 101;
             this.Length25.Text = "25";
             // 
-            // textBox2
+            // Hex25
             // 
-            this.textBox2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(38, 1670);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(399, 60);
-            this.textBox2.TabIndex = 100;
+            this.Hex25.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex25.Location = new System.Drawing.Point(38, 1670);
+            this.Hex25.Multiline = true;
+            this.Hex25.Name = "Hex25";
+            this.Hex25.Size = new System.Drawing.Size(399, 60);
+            this.Hex25.TabIndex = 100;
             // 
-            // label4
+            // Last24
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(848, 1604);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 18);
-            this.label4.TabIndex = 99;
-            this.label4.Text = "13";
+            this.Last24.AutoSize = true;
+            this.Last24.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last24.Location = new System.Drawing.Point(848, 1604);
+            this.Last24.Name = "Last24";
+            this.Last24.Size = new System.Drawing.Size(28, 18);
+            this.Last24.TabIndex = 99;
+            this.Last24.Text = "24";
             // 
-            // label5
+            // Last23
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(848, 1538);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 18);
-            this.label5.TabIndex = 98;
-            this.label5.Text = "12";
+            this.Last23.AutoSize = true;
+            this.Last23.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last23.Location = new System.Drawing.Point(848, 1538);
+            this.Last23.Name = "Last23";
+            this.Last23.Size = new System.Drawing.Size(28, 18);
+            this.Last23.TabIndex = 98;
+            this.Last23.Text = "23";
             // 
-            // label6
+            // Last22
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(848, 1475);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 18);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "11";
+            this.Last22.AutoSize = true;
+            this.Last22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last22.Location = new System.Drawing.Point(848, 1475);
+            this.Last22.Name = "Last22";
+            this.Last22.Size = new System.Drawing.Size(28, 18);
+            this.Last22.TabIndex = 97;
+            this.Last22.Text = "22";
             // 
-            // textBox3
+            // Text24
             // 
-            this.textBox3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(443, 1604);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(399, 60);
-            this.textBox3.TabIndex = 96;
+            this.Text24.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text24.Location = new System.Drawing.Point(443, 1604);
+            this.Text24.Multiline = true;
+            this.Text24.Name = "Text24";
+            this.Text24.Size = new System.Drawing.Size(399, 60);
+            this.Text24.TabIndex = 96;
             // 
             // Length24
             // 
@@ -1121,52 +1121,52 @@ namespace ujl_subedit
             this.Length22.TabIndex = 93;
             this.Length22.Text = "22";
             // 
-            // textBox4
+            // Hex24
             // 
-            this.textBox4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(38, 1604);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(399, 60);
-            this.textBox4.TabIndex = 92;
+            this.Hex24.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex24.Location = new System.Drawing.Point(38, 1604);
+            this.Hex24.Multiline = true;
+            this.Hex24.Name = "Hex24";
+            this.Hex24.Size = new System.Drawing.Size(399, 60);
+            this.Hex24.TabIndex = 92;
             // 
-            // textBox5
+            // Text23
             // 
-            this.textBox5.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(443, 1538);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(399, 60);
-            this.textBox5.TabIndex = 91;
+            this.Text23.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text23.Location = new System.Drawing.Point(443, 1538);
+            this.Text23.Multiline = true;
+            this.Text23.Name = "Text23";
+            this.Text23.Size = new System.Drawing.Size(399, 60);
+            this.Text23.TabIndex = 91;
             // 
-            // textBox6
+            // Hex23
             // 
-            this.textBox6.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(38, 1538);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(399, 60);
-            this.textBox6.TabIndex = 90;
+            this.Hex23.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex23.Location = new System.Drawing.Point(38, 1538);
+            this.Hex23.Multiline = true;
+            this.Hex23.Name = "Hex23";
+            this.Hex23.Size = new System.Drawing.Size(399, 60);
+            this.Hex23.TabIndex = 90;
             // 
-            // textBox7
+            // Text22
             // 
-            this.textBox7.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(443, 1472);
-            this.textBox7.MaxLength = 35;
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(399, 60);
-            this.textBox7.TabIndex = 89;
+            this.Text22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text22.Location = new System.Drawing.Point(443, 1472);
+            this.Text22.MaxLength = 35;
+            this.Text22.Multiline = true;
+            this.Text22.Name = "Text22";
+            this.Text22.Size = new System.Drawing.Size(399, 60);
+            this.Text22.TabIndex = 89;
             // 
-            // textBox8
+            // Hex22
             // 
-            this.textBox8.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(38, 1472);
-            this.textBox8.MaxLength = 104;
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(399, 60);
-            this.textBox8.TabIndex = 88;
+            this.Hex22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex22.Location = new System.Drawing.Point(38, 1472);
+            this.Hex22.MaxLength = 104;
+            this.Hex22.Multiline = true;
+            this.Hex22.Name = "Hex22";
+            this.Hex22.Size = new System.Drawing.Size(399, 60);
+            this.Hex22.TabIndex = 88;
             // 
             // Last21
             // 
@@ -1178,34 +1178,34 @@ namespace ujl_subedit
             this.Last21.TabIndex = 87;
             this.Last21.Text = "21";
             // 
-            // label11
+            // Last20
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(848, 1340);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(18, 18);
-            this.label11.TabIndex = 86;
-            this.label11.Text = "9";
+            this.Last20.AutoSize = true;
+            this.Last20.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last20.Location = new System.Drawing.Point(848, 1340);
+            this.Last20.Name = "Last20";
+            this.Last20.Size = new System.Drawing.Size(28, 18);
+            this.Last20.TabIndex = 86;
+            this.Last20.Text = "20";
             // 
-            // label12
+            // Last19
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(848, 1277);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 18);
-            this.label12.TabIndex = 85;
-            this.label12.Text = "8";
+            this.Last19.AutoSize = true;
+            this.Last19.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last19.Location = new System.Drawing.Point(848, 1277);
+            this.Last19.Name = "Last19";
+            this.Last19.Size = new System.Drawing.Size(28, 18);
+            this.Last19.TabIndex = 85;
+            this.Last19.Text = "19";
             // 
-            // textBox9
+            // Text21
             // 
-            this.textBox9.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.Location = new System.Drawing.Point(443, 1406);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(399, 60);
-            this.textBox9.TabIndex = 84;
+            this.Text21.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text21.Location = new System.Drawing.Point(443, 1406);
+            this.Text21.Multiline = true;
+            this.Text21.Name = "Text21";
+            this.Text21.Size = new System.Drawing.Size(399, 60);
+            this.Text21.TabIndex = 84;
             // 
             // Length21
             // 
@@ -1284,24 +1284,24 @@ namespace ujl_subedit
             this.Hex19.Size = new System.Drawing.Size(399, 60);
             this.Hex19.TabIndex = 76;
             // 
-            // label16
+            // Last18
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(848, 1208);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(18, 18);
-            this.label16.TabIndex = 75;
-            this.label16.Text = "7";
+            this.Last18.AutoSize = true;
+            this.Last18.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last18.Location = new System.Drawing.Point(848, 1208);
+            this.Last18.Name = "Last18";
+            this.Last18.Size = new System.Drawing.Size(28, 18);
+            this.Last18.TabIndex = 75;
+            this.Last18.Text = "18";
             // 
-            // textBox15
+            // Text18
             // 
-            this.textBox15.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox15.Location = new System.Drawing.Point(443, 1208);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(399, 60);
-            this.textBox15.TabIndex = 74;
+            this.Text18.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text18.Location = new System.Drawing.Point(443, 1208);
+            this.Text18.Multiline = true;
+            this.Text18.Name = "Text18";
+            this.Text18.Size = new System.Drawing.Size(399, 60);
+            this.Text18.TabIndex = 74;
             // 
             // Length18
             // 
@@ -1313,54 +1313,54 @@ namespace ujl_subedit
             this.Length18.TabIndex = 73;
             this.Length18.Text = "18";
             // 
-            // textBox16
+            // Hex18
             // 
-            this.textBox16.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox16.Location = new System.Drawing.Point(38, 1208);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(399, 60);
-            this.textBox16.TabIndex = 72;
+            this.Hex18.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex18.Location = new System.Drawing.Point(38, 1208);
+            this.Hex18.Multiline = true;
+            this.Hex18.Name = "Hex18";
+            this.Hex18.Size = new System.Drawing.Size(399, 60);
+            this.Hex18.TabIndex = 72;
             // 
-            // label18
+            // Last17
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(848, 1142);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 18);
-            this.label18.TabIndex = 71;
-            this.label18.Text = "6";
+            this.Last17.AutoSize = true;
+            this.Last17.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last17.Location = new System.Drawing.Point(848, 1142);
+            this.Last17.Name = "Last17";
+            this.Last17.Size = new System.Drawing.Size(28, 18);
+            this.Last17.TabIndex = 71;
+            this.Last17.Text = "17";
             // 
-            // label19
+            // Last16
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(848, 1076);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(18, 18);
-            this.label19.TabIndex = 70;
-            this.label19.Text = "5";
+            this.Last16.AutoSize = true;
+            this.Last16.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last16.Location = new System.Drawing.Point(848, 1076);
+            this.Last16.Name = "Last16";
+            this.Last16.Size = new System.Drawing.Size(28, 18);
+            this.Last16.TabIndex = 70;
+            this.Last16.Text = "16";
             // 
-            // label20
+            // Last15
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(848, 1013);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(18, 18);
-            this.label20.TabIndex = 69;
-            this.label20.Text = "4";
+            this.Last15.AutoSize = true;
+            this.Last15.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last15.Location = new System.Drawing.Point(848, 1013);
+            this.Last15.Name = "Last15";
+            this.Last15.Size = new System.Drawing.Size(28, 18);
+            this.Last15.TabIndex = 69;
+            this.Last15.Text = "15";
             // 
-            // textBox17
+            // Text17
             // 
-            this.textBox17.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox17.Location = new System.Drawing.Point(443, 1142);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(399, 60);
-            this.textBox17.TabIndex = 68;
-            this.textBox17.Text = " ";
+            this.Text17.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text17.Location = new System.Drawing.Point(443, 1142);
+            this.Text17.Multiline = true;
+            this.Text17.Name = "Text17";
+            this.Text17.Size = new System.Drawing.Size(399, 60);
+            this.Text17.TabIndex = 68;
+            this.Text17.Text = " ";
             // 
             // Length17
             // 
@@ -1392,71 +1392,71 @@ namespace ujl_subedit
             this.Length15.TabIndex = 65;
             this.Length15.Text = "15";
             // 
-            // textBox18
+            // Hex17
             // 
-            this.textBox18.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox18.Location = new System.Drawing.Point(38, 1142);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(399, 60);
-            this.textBox18.TabIndex = 64;
+            this.Hex17.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex17.Location = new System.Drawing.Point(38, 1142);
+            this.Hex17.Multiline = true;
+            this.Hex17.Name = "Hex17";
+            this.Hex17.Size = new System.Drawing.Size(399, 60);
+            this.Hex17.TabIndex = 64;
             // 
-            // textBox19
+            // Text16
             // 
-            this.textBox19.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox19.Location = new System.Drawing.Point(443, 1076);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(399, 60);
-            this.textBox19.TabIndex = 63;
+            this.Text16.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text16.Location = new System.Drawing.Point(443, 1076);
+            this.Text16.Multiline = true;
+            this.Text16.Name = "Text16";
+            this.Text16.Size = new System.Drawing.Size(399, 60);
+            this.Text16.TabIndex = 63;
             // 
-            // textBox20
+            // Hex16
             // 
-            this.textBox20.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox20.Location = new System.Drawing.Point(38, 1076);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(399, 60);
-            this.textBox20.TabIndex = 62;
+            this.Hex16.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex16.Location = new System.Drawing.Point(38, 1076);
+            this.Hex16.Multiline = true;
+            this.Hex16.Name = "Hex16";
+            this.Hex16.Size = new System.Drawing.Size(399, 60);
+            this.Hex16.TabIndex = 62;
             // 
-            // textBox21
+            // Text15
             // 
-            this.textBox21.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox21.Location = new System.Drawing.Point(443, 1010);
-            this.textBox21.MaxLength = 35;
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(399, 60);
-            this.textBox21.TabIndex = 61;
+            this.Text15.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text15.Location = new System.Drawing.Point(443, 1010);
+            this.Text15.MaxLength = 35;
+            this.Text15.Multiline = true;
+            this.Text15.Name = "Text15";
+            this.Text15.Size = new System.Drawing.Size(399, 60);
+            this.Text15.TabIndex = 61;
             // 
-            // textBox22
+            // Hex15
             // 
-            this.textBox22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox22.Location = new System.Drawing.Point(38, 1010);
-            this.textBox22.MaxLength = 104;
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(399, 60);
-            this.textBox22.TabIndex = 60;
+            this.Hex15.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex15.Location = new System.Drawing.Point(38, 1010);
+            this.Hex15.MaxLength = 104;
+            this.Hex15.Multiline = true;
+            this.Hex15.Name = "Hex15";
+            this.Hex15.Size = new System.Drawing.Size(399, 60);
+            this.Hex15.TabIndex = 60;
             // 
-            // label24
+            // Last36
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(848, 2396);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(28, 18);
-            this.label24.TabIndex = 147;
-            this.label24.Text = "14";
+            this.Last36.AutoSize = true;
+            this.Last36.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last36.Location = new System.Drawing.Point(848, 2396);
+            this.Last36.Name = "Last36";
+            this.Last36.Size = new System.Drawing.Size(28, 18);
+            this.Last36.TabIndex = 147;
+            this.Last36.Text = "36";
             // 
-            // textBox23
+            // Text36
             // 
-            this.textBox23.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox23.Location = new System.Drawing.Point(443, 2396);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(399, 60);
-            this.textBox23.TabIndex = 146;
+            this.Text36.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text36.Location = new System.Drawing.Point(443, 2396);
+            this.Text36.Multiline = true;
+            this.Text36.Name = "Text36";
+            this.Text36.Size = new System.Drawing.Size(399, 60);
+            this.Text36.TabIndex = 146;
             // 
             // Length36
             // 
@@ -1468,53 +1468,53 @@ namespace ujl_subedit
             this.Length36.TabIndex = 145;
             this.Length36.Text = "36";
             // 
-            // textBox24
+            // Hex36
             // 
-            this.textBox24.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox24.Location = new System.Drawing.Point(38, 2396);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(399, 60);
-            this.textBox24.TabIndex = 144;
+            this.Hex36.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex36.Location = new System.Drawing.Point(38, 2396);
+            this.Hex36.Multiline = true;
+            this.Hex36.Name = "Hex36";
+            this.Hex36.Size = new System.Drawing.Size(399, 60);
+            this.Hex36.TabIndex = 144;
             // 
-            // label26
+            // Last35
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(848, 2330);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(28, 18);
-            this.label26.TabIndex = 143;
-            this.label26.Text = "13";
+            this.Last35.AutoSize = true;
+            this.Last35.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last35.Location = new System.Drawing.Point(848, 2330);
+            this.Last35.Name = "Last35";
+            this.Last35.Size = new System.Drawing.Size(28, 18);
+            this.Last35.TabIndex = 143;
+            this.Last35.Text = "35";
             // 
-            // label27
+            // Last34
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.Location = new System.Drawing.Point(848, 2264);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(28, 18);
-            this.label27.TabIndex = 142;
-            this.label27.Text = "12";
+            this.Last34.AutoSize = true;
+            this.Last34.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last34.Location = new System.Drawing.Point(848, 2264);
+            this.Last34.Name = "Last34";
+            this.Last34.Size = new System.Drawing.Size(28, 18);
+            this.Last34.TabIndex = 142;
+            this.Last34.Text = "34";
             // 
-            // label28
+            // Last33
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.Location = new System.Drawing.Point(848, 2201);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(28, 18);
-            this.label28.TabIndex = 141;
-            this.label28.Text = "11";
+            this.Last33.AutoSize = true;
+            this.Last33.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last33.Location = new System.Drawing.Point(848, 2201);
+            this.Last33.Name = "Last33";
+            this.Last33.Size = new System.Drawing.Size(28, 18);
+            this.Last33.TabIndex = 141;
+            this.Last33.Text = "33";
             // 
-            // textBox25
+            // Text35
             // 
-            this.textBox25.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox25.Location = new System.Drawing.Point(443, 2330);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(399, 60);
-            this.textBox25.TabIndex = 140;
+            this.Text35.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text35.Location = new System.Drawing.Point(443, 2330);
+            this.Text35.Multiline = true;
+            this.Text35.Name = "Text35";
+            this.Text35.Size = new System.Drawing.Size(399, 60);
+            this.Text35.TabIndex = 140;
             // 
             // Length35
             // 
@@ -1546,91 +1546,91 @@ namespace ujl_subedit
             this.Length33.TabIndex = 137;
             this.Length33.Text = "33";
             // 
-            // textBox26
+            // Hex35
             // 
-            this.textBox26.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox26.Location = new System.Drawing.Point(38, 2330);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(399, 60);
-            this.textBox26.TabIndex = 136;
+            this.Hex35.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex35.Location = new System.Drawing.Point(38, 2330);
+            this.Hex35.Multiline = true;
+            this.Hex35.Name = "Hex35";
+            this.Hex35.Size = new System.Drawing.Size(399, 60);
+            this.Hex35.TabIndex = 136;
             // 
-            // textBox27
+            // Text34
             // 
-            this.textBox27.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox27.Location = new System.Drawing.Point(443, 2264);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(399, 60);
-            this.textBox27.TabIndex = 135;
+            this.Text34.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text34.Location = new System.Drawing.Point(443, 2264);
+            this.Text34.Multiline = true;
+            this.Text34.Name = "Text34";
+            this.Text34.Size = new System.Drawing.Size(399, 60);
+            this.Text34.TabIndex = 135;
             // 
-            // textBox28
+            // Hex34
             // 
-            this.textBox28.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox28.Location = new System.Drawing.Point(38, 2264);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(399, 60);
-            this.textBox28.TabIndex = 134;
+            this.Hex34.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex34.Location = new System.Drawing.Point(38, 2264);
+            this.Hex34.Multiline = true;
+            this.Hex34.Name = "Hex34";
+            this.Hex34.Size = new System.Drawing.Size(399, 60);
+            this.Hex34.TabIndex = 134;
             // 
-            // textBox29
+            // Text33
             // 
-            this.textBox29.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox29.Location = new System.Drawing.Point(443, 2198);
-            this.textBox29.MaxLength = 35;
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(399, 60);
-            this.textBox29.TabIndex = 133;
+            this.Text33.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text33.Location = new System.Drawing.Point(443, 2198);
+            this.Text33.MaxLength = 35;
+            this.Text33.Multiline = true;
+            this.Text33.Name = "Text33";
+            this.Text33.Size = new System.Drawing.Size(399, 60);
+            this.Text33.TabIndex = 133;
             // 
-            // textBox30
+            // Hex33
             // 
-            this.textBox30.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox30.Location = new System.Drawing.Point(38, 2198);
-            this.textBox30.MaxLength = 104;
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(399, 60);
-            this.textBox30.TabIndex = 132;
+            this.Hex33.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex33.Location = new System.Drawing.Point(38, 2198);
+            this.Hex33.MaxLength = 104;
+            this.Hex33.Multiline = true;
+            this.Hex33.Name = "Hex33";
+            this.Hex33.Size = new System.Drawing.Size(399, 60);
+            this.Hex33.TabIndex = 132;
             // 
-            // label32
+            // Last32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label32.Location = new System.Drawing.Point(848, 2132);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(28, 18);
-            this.label32.TabIndex = 131;
-            this.label32.Text = "10";
+            this.Last32.AutoSize = true;
+            this.Last32.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last32.Location = new System.Drawing.Point(848, 2132);
+            this.Last32.Name = "Last32";
+            this.Last32.Size = new System.Drawing.Size(28, 18);
+            this.Last32.TabIndex = 131;
+            this.Last32.Text = "32";
             // 
-            // label33
+            // Last31
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label33.Location = new System.Drawing.Point(848, 2066);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(18, 18);
-            this.label33.TabIndex = 130;
-            this.label33.Text = "9";
+            this.Last31.AutoSize = true;
+            this.Last31.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last31.Location = new System.Drawing.Point(848, 2066);
+            this.Last31.Name = "Last31";
+            this.Last31.Size = new System.Drawing.Size(28, 18);
+            this.Last31.TabIndex = 130;
+            this.Last31.Text = "31";
             // 
-            // label34
+            // Last30
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label34.Location = new System.Drawing.Point(848, 2003);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(18, 18);
-            this.label34.TabIndex = 129;
-            this.label34.Text = "8";
+            this.Last30.AutoSize = true;
+            this.Last30.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last30.Location = new System.Drawing.Point(848, 2003);
+            this.Last30.Name = "Last30";
+            this.Last30.Size = new System.Drawing.Size(28, 18);
+            this.Last30.TabIndex = 129;
+            this.Last30.Text = "30";
             // 
-            // textBox31
+            // Text32
             // 
-            this.textBox31.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox31.Location = new System.Drawing.Point(443, 2132);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(399, 60);
-            this.textBox31.TabIndex = 128;
+            this.Text32.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text32.Location = new System.Drawing.Point(443, 2132);
+            this.Text32.Multiline = true;
+            this.Text32.Name = "Text32";
+            this.Text32.Size = new System.Drawing.Size(399, 60);
+            this.Text32.TabIndex = 128;
             // 
             // Length32
             // 
@@ -1662,71 +1662,71 @@ namespace ujl_subedit
             this.Length30.TabIndex = 125;
             this.Length30.Text = "30";
             // 
-            // textBox32
+            // Hex32
             // 
-            this.textBox32.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox32.Location = new System.Drawing.Point(38, 2132);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(399, 60);
-            this.textBox32.TabIndex = 124;
+            this.Hex32.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex32.Location = new System.Drawing.Point(38, 2132);
+            this.Hex32.Multiline = true;
+            this.Hex32.Name = "Hex32";
+            this.Hex32.Size = new System.Drawing.Size(399, 60);
+            this.Hex32.TabIndex = 124;
             // 
-            // textBox33
+            // Text31
             // 
-            this.textBox33.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox33.Location = new System.Drawing.Point(443, 2066);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(399, 60);
-            this.textBox33.TabIndex = 123;
+            this.Text31.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text31.Location = new System.Drawing.Point(443, 2066);
+            this.Text31.Multiline = true;
+            this.Text31.Name = "Text31";
+            this.Text31.Size = new System.Drawing.Size(399, 60);
+            this.Text31.TabIndex = 123;
             // 
-            // textBox34
+            // Hex31
             // 
-            this.textBox34.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox34.Location = new System.Drawing.Point(38, 2066);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(399, 60);
-            this.textBox34.TabIndex = 122;
+            this.Hex31.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex31.Location = new System.Drawing.Point(38, 2066);
+            this.Hex31.Multiline = true;
+            this.Hex31.Name = "Hex31";
+            this.Hex31.Size = new System.Drawing.Size(399, 60);
+            this.Hex31.TabIndex = 122;
             // 
-            // textBox35
+            // Text30
             // 
-            this.textBox35.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox35.Location = new System.Drawing.Point(443, 2000);
-            this.textBox35.MaxLength = 35;
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(399, 60);
-            this.textBox35.TabIndex = 121;
+            this.Text30.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text30.Location = new System.Drawing.Point(443, 2000);
+            this.Text30.MaxLength = 35;
+            this.Text30.Multiline = true;
+            this.Text30.Name = "Text30";
+            this.Text30.Size = new System.Drawing.Size(399, 60);
+            this.Text30.TabIndex = 121;
             // 
-            // textBox36
+            // Hex30
             // 
-            this.textBox36.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox36.Location = new System.Drawing.Point(38, 2000);
-            this.textBox36.MaxLength = 104;
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(399, 60);
-            this.textBox36.TabIndex = 120;
+            this.Hex30.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex30.Location = new System.Drawing.Point(38, 2000);
+            this.Hex30.MaxLength = 104;
+            this.Hex30.Multiline = true;
+            this.Hex30.Name = "Hex30";
+            this.Hex30.Size = new System.Drawing.Size(399, 60);
+            this.Hex30.TabIndex = 120;
             // 
-            // label38
+            // Last29
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label38.Location = new System.Drawing.Point(848, 1934);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(18, 18);
-            this.label38.TabIndex = 119;
-            this.label38.Text = "7";
+            this.Last29.AutoSize = true;
+            this.Last29.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last29.Location = new System.Drawing.Point(848, 1934);
+            this.Last29.Name = "Last29";
+            this.Last29.Size = new System.Drawing.Size(28, 18);
+            this.Last29.TabIndex = 119;
+            this.Last29.Text = "29";
             // 
-            // textBox37
+            // Text29
             // 
-            this.textBox37.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox37.Location = new System.Drawing.Point(443, 1934);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(399, 60);
-            this.textBox37.TabIndex = 118;
+            this.Text29.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text29.Location = new System.Drawing.Point(443, 1934);
+            this.Text29.Multiline = true;
+            this.Text29.Name = "Text29";
+            this.Text29.Size = new System.Drawing.Size(399, 60);
+            this.Text29.TabIndex = 118;
             // 
             // Length29
             // 
@@ -1738,54 +1738,54 @@ namespace ujl_subedit
             this.Length29.TabIndex = 117;
             this.Length29.Text = "29";
             // 
-            // textBox38
+            // Hex29
             // 
-            this.textBox38.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox38.Location = new System.Drawing.Point(38, 1934);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(399, 60);
-            this.textBox38.TabIndex = 116;
+            this.Hex29.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex29.Location = new System.Drawing.Point(38, 1934);
+            this.Hex29.Multiline = true;
+            this.Hex29.Name = "Hex29";
+            this.Hex29.Size = new System.Drawing.Size(399, 60);
+            this.Hex29.TabIndex = 116;
             // 
-            // label40
+            // Last28
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label40.Location = new System.Drawing.Point(848, 1868);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(18, 18);
-            this.label40.TabIndex = 115;
-            this.label40.Text = "6";
+            this.Last28.AutoSize = true;
+            this.Last28.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last28.Location = new System.Drawing.Point(848, 1868);
+            this.Last28.Name = "Last28";
+            this.Last28.Size = new System.Drawing.Size(28, 18);
+            this.Last28.TabIndex = 115;
+            this.Last28.Text = "28";
             // 
-            // label41
+            // Last27
             // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label41.Location = new System.Drawing.Point(848, 1802);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(18, 18);
-            this.label41.TabIndex = 114;
-            this.label41.Text = "5";
+            this.Last27.AutoSize = true;
+            this.Last27.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last27.Location = new System.Drawing.Point(848, 1802);
+            this.Last27.Name = "Last27";
+            this.Last27.Size = new System.Drawing.Size(28, 18);
+            this.Last27.TabIndex = 114;
+            this.Last27.Text = "27";
             // 
-            // label42
+            // Last26
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label42.Location = new System.Drawing.Point(848, 1739);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(18, 18);
-            this.label42.TabIndex = 113;
-            this.label42.Text = "4";
+            this.Last26.AutoSize = true;
+            this.Last26.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last26.Location = new System.Drawing.Point(848, 1739);
+            this.Last26.Name = "Last26";
+            this.Last26.Size = new System.Drawing.Size(28, 18);
+            this.Last26.TabIndex = 113;
+            this.Last26.Text = "26";
             // 
-            // textBox39
+            // Text28
             // 
-            this.textBox39.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox39.Location = new System.Drawing.Point(443, 1868);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(399, 60);
-            this.textBox39.TabIndex = 112;
-            this.textBox39.Text = " ";
+            this.Text28.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text28.Location = new System.Drawing.Point(443, 1868);
+            this.Text28.Multiline = true;
+            this.Text28.Name = "Text28";
+            this.Text28.Size = new System.Drawing.Size(399, 60);
+            this.Text28.TabIndex = 112;
+            this.Text28.Text = " ";
             // 
             // Length28
             // 
@@ -1817,62 +1817,62 @@ namespace ujl_subedit
             this.Length26.TabIndex = 109;
             this.Length26.Text = "26";
             // 
-            // textBox40
+            // Hex28
             // 
-            this.textBox40.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox40.Location = new System.Drawing.Point(38, 1868);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(399, 60);
-            this.textBox40.TabIndex = 108;
+            this.Hex28.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex28.Location = new System.Drawing.Point(38, 1868);
+            this.Hex28.Multiline = true;
+            this.Hex28.Name = "Hex28";
+            this.Hex28.Size = new System.Drawing.Size(399, 60);
+            this.Hex28.TabIndex = 108;
             // 
-            // textBox41
+            // Text27
             // 
-            this.textBox41.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox41.Location = new System.Drawing.Point(443, 1802);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(399, 60);
-            this.textBox41.TabIndex = 107;
+            this.Text27.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text27.Location = new System.Drawing.Point(443, 1802);
+            this.Text27.Multiline = true;
+            this.Text27.Name = "Text27";
+            this.Text27.Size = new System.Drawing.Size(399, 60);
+            this.Text27.TabIndex = 107;
             // 
-            // textBox42
+            // Hex27
             // 
-            this.textBox42.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox42.Location = new System.Drawing.Point(38, 1802);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(399, 60);
-            this.textBox42.TabIndex = 106;
+            this.Hex27.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex27.Location = new System.Drawing.Point(38, 1802);
+            this.Hex27.Multiline = true;
+            this.Hex27.Name = "Hex27";
+            this.Hex27.Size = new System.Drawing.Size(399, 60);
+            this.Hex27.TabIndex = 106;
             // 
-            // textBox43
+            // Text26
             // 
-            this.textBox43.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox43.Location = new System.Drawing.Point(443, 1736);
-            this.textBox43.MaxLength = 35;
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(399, 60);
-            this.textBox43.TabIndex = 105;
+            this.Text26.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text26.Location = new System.Drawing.Point(443, 1736);
+            this.Text26.MaxLength = 35;
+            this.Text26.Multiline = true;
+            this.Text26.Name = "Text26";
+            this.Text26.Size = new System.Drawing.Size(399, 60);
+            this.Text26.TabIndex = 105;
             // 
-            // textBox44
+            // Hex26
             // 
-            this.textBox44.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox44.Location = new System.Drawing.Point(38, 1736);
-            this.textBox44.MaxLength = 104;
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(399, 60);
-            this.textBox44.TabIndex = 104;
+            this.Hex26.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex26.Location = new System.Drawing.Point(38, 1736);
+            this.Hex26.MaxLength = 104;
+            this.Hex26.Multiline = true;
+            this.Hex26.Name = "Hex26";
+            this.Hex26.Size = new System.Drawing.Size(399, 60);
+            this.Hex26.TabIndex = 104;
             // 
-            // label46
+            // Last47
             // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label46.Location = new System.Drawing.Point(848, 3122);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(28, 18);
-            this.label46.TabIndex = 191;
-            this.label46.Text = "14";
+            this.Last47.AutoSize = true;
+            this.Last47.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last47.Location = new System.Drawing.Point(848, 3122);
+            this.Last47.Name = "Last47";
+            this.Last47.Size = new System.Drawing.Size(28, 18);
+            this.Last47.TabIndex = 191;
+            this.Last47.Text = "47";
             // 
             // Text47
             // 
@@ -1902,44 +1902,44 @@ namespace ujl_subedit
             this.Hex47.Size = new System.Drawing.Size(399, 60);
             this.Hex47.TabIndex = 188;
             // 
-            // label48
+            // Last46
             // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label48.Location = new System.Drawing.Point(848, 3056);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(28, 18);
-            this.label48.TabIndex = 187;
-            this.label48.Text = "13";
+            this.Last46.AutoSize = true;
+            this.Last46.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last46.Location = new System.Drawing.Point(848, 3056);
+            this.Last46.Name = "Last46";
+            this.Last46.Size = new System.Drawing.Size(28, 18);
+            this.Last46.TabIndex = 187;
+            this.Last46.Text = "46";
             // 
-            // label49
+            // Last45
             // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label49.Location = new System.Drawing.Point(848, 2990);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(28, 18);
-            this.label49.TabIndex = 186;
-            this.label49.Text = "12";
+            this.Last45.AutoSize = true;
+            this.Last45.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last45.Location = new System.Drawing.Point(848, 2990);
+            this.Last45.Name = "Last45";
+            this.Last45.Size = new System.Drawing.Size(28, 18);
+            this.Last45.TabIndex = 186;
+            this.Last45.Text = "45";
             // 
-            // label50
+            // Last44
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label50.Location = new System.Drawing.Point(848, 2927);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(28, 18);
-            this.label50.TabIndex = 185;
-            this.label50.Text = "11";
+            this.Last44.AutoSize = true;
+            this.Last44.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last44.Location = new System.Drawing.Point(848, 2927);
+            this.Last44.Name = "Last44";
+            this.Last44.Size = new System.Drawing.Size(28, 18);
+            this.Last44.TabIndex = 185;
+            this.Last44.Text = "44";
             // 
-            // textBox47
+            // Text46
             // 
-            this.textBox47.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox47.Location = new System.Drawing.Point(443, 3056);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(399, 60);
-            this.textBox47.TabIndex = 184;
+            this.Text46.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text46.Location = new System.Drawing.Point(443, 3056);
+            this.Text46.Multiline = true;
+            this.Text46.Name = "Text46";
+            this.Text46.Size = new System.Drawing.Size(399, 60);
+            this.Text46.TabIndex = 184;
             // 
             // Length46
             // 
@@ -1971,91 +1971,91 @@ namespace ujl_subedit
             this.Length44.TabIndex = 181;
             this.Length44.Text = "44";
             // 
-            // textBox48
+            // Hex46
             // 
-            this.textBox48.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox48.Location = new System.Drawing.Point(38, 3056);
-            this.textBox48.Multiline = true;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(399, 60);
-            this.textBox48.TabIndex = 180;
+            this.Hex46.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex46.Location = new System.Drawing.Point(38, 3056);
+            this.Hex46.Multiline = true;
+            this.Hex46.Name = "Hex46";
+            this.Hex46.Size = new System.Drawing.Size(399, 60);
+            this.Hex46.TabIndex = 180;
             // 
-            // textBox49
+            // Text45
             // 
-            this.textBox49.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox49.Location = new System.Drawing.Point(443, 2990);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(399, 60);
-            this.textBox49.TabIndex = 179;
+            this.Text45.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text45.Location = new System.Drawing.Point(443, 2990);
+            this.Text45.Multiline = true;
+            this.Text45.Name = "Text45";
+            this.Text45.Size = new System.Drawing.Size(399, 60);
+            this.Text45.TabIndex = 179;
             // 
-            // textBox50
+            // Hex45
             // 
-            this.textBox50.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox50.Location = new System.Drawing.Point(38, 2990);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(399, 60);
-            this.textBox50.TabIndex = 178;
+            this.Hex45.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex45.Location = new System.Drawing.Point(38, 2990);
+            this.Hex45.Multiline = true;
+            this.Hex45.Name = "Hex45";
+            this.Hex45.Size = new System.Drawing.Size(399, 60);
+            this.Hex45.TabIndex = 178;
             // 
-            // textBox51
+            // Text44
             // 
-            this.textBox51.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox51.Location = new System.Drawing.Point(443, 2924);
-            this.textBox51.MaxLength = 35;
-            this.textBox51.Multiline = true;
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(399, 60);
-            this.textBox51.TabIndex = 177;
+            this.Text44.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text44.Location = new System.Drawing.Point(443, 2924);
+            this.Text44.MaxLength = 35;
+            this.Text44.Multiline = true;
+            this.Text44.Name = "Text44";
+            this.Text44.Size = new System.Drawing.Size(399, 60);
+            this.Text44.TabIndex = 177;
             // 
-            // textBox52
+            // Hex44
             // 
-            this.textBox52.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox52.Location = new System.Drawing.Point(38, 2924);
-            this.textBox52.MaxLength = 104;
-            this.textBox52.Multiline = true;
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(399, 60);
-            this.textBox52.TabIndex = 176;
+            this.Hex44.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex44.Location = new System.Drawing.Point(38, 2924);
+            this.Hex44.MaxLength = 104;
+            this.Hex44.Multiline = true;
+            this.Hex44.Name = "Hex44";
+            this.Hex44.Size = new System.Drawing.Size(399, 60);
+            this.Hex44.TabIndex = 176;
             // 
-            // label54
+            // Last43
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label54.Location = new System.Drawing.Point(848, 2858);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(28, 18);
-            this.label54.TabIndex = 175;
-            this.label54.Text = "10";
+            this.Last43.AutoSize = true;
+            this.Last43.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last43.Location = new System.Drawing.Point(848, 2858);
+            this.Last43.Name = "Last43";
+            this.Last43.Size = new System.Drawing.Size(28, 18);
+            this.Last43.TabIndex = 175;
+            this.Last43.Text = "43";
             // 
-            // label55
+            // Last42
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label55.Location = new System.Drawing.Point(848, 2792);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(18, 18);
-            this.label55.TabIndex = 174;
-            this.label55.Text = "9";
+            this.Last42.AutoSize = true;
+            this.Last42.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last42.Location = new System.Drawing.Point(848, 2792);
+            this.Last42.Name = "Last42";
+            this.Last42.Size = new System.Drawing.Size(28, 18);
+            this.Last42.TabIndex = 174;
+            this.Last42.Text = "42";
             // 
-            // label56
+            // Last41
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label56.Location = new System.Drawing.Point(848, 2729);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(18, 18);
-            this.label56.TabIndex = 173;
-            this.label56.Text = "8";
+            this.Last41.AutoSize = true;
+            this.Last41.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last41.Location = new System.Drawing.Point(848, 2729);
+            this.Last41.Name = "Last41";
+            this.Last41.Size = new System.Drawing.Size(28, 18);
+            this.Last41.TabIndex = 173;
+            this.Last41.Text = "41";
             // 
-            // textBox53
+            // Text43
             // 
-            this.textBox53.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox53.Location = new System.Drawing.Point(443, 2858);
-            this.textBox53.Multiline = true;
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(399, 60);
-            this.textBox53.TabIndex = 172;
+            this.Text43.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text43.Location = new System.Drawing.Point(443, 2858);
+            this.Text43.Multiline = true;
+            this.Text43.Name = "Text43";
+            this.Text43.Size = new System.Drawing.Size(399, 60);
+            this.Text43.TabIndex = 172;
             // 
             // Length43
             // 
@@ -2087,71 +2087,71 @@ namespace ujl_subedit
             this.Length41.TabIndex = 169;
             this.Length41.Text = "41";
             // 
-            // textBox54
+            // Hex43
             // 
-            this.textBox54.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox54.Location = new System.Drawing.Point(38, 2858);
-            this.textBox54.Multiline = true;
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(399, 60);
-            this.textBox54.TabIndex = 168;
+            this.Hex43.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex43.Location = new System.Drawing.Point(38, 2858);
+            this.Hex43.Multiline = true;
+            this.Hex43.Name = "Hex43";
+            this.Hex43.Size = new System.Drawing.Size(399, 60);
+            this.Hex43.TabIndex = 168;
             // 
-            // textBox55
+            // Text42
             // 
-            this.textBox55.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox55.Location = new System.Drawing.Point(443, 2792);
-            this.textBox55.Multiline = true;
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(399, 60);
-            this.textBox55.TabIndex = 167;
+            this.Text42.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text42.Location = new System.Drawing.Point(443, 2792);
+            this.Text42.Multiline = true;
+            this.Text42.Name = "Text42";
+            this.Text42.Size = new System.Drawing.Size(399, 60);
+            this.Text42.TabIndex = 167;
             // 
-            // textBox56
+            // Hex42
             // 
-            this.textBox56.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox56.Location = new System.Drawing.Point(38, 2792);
-            this.textBox56.Multiline = true;
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(399, 60);
-            this.textBox56.TabIndex = 166;
+            this.Hex42.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex42.Location = new System.Drawing.Point(38, 2792);
+            this.Hex42.Multiline = true;
+            this.Hex42.Name = "Hex42";
+            this.Hex42.Size = new System.Drawing.Size(399, 60);
+            this.Hex42.TabIndex = 166;
             // 
-            // textBox57
+            // Text41
             // 
-            this.textBox57.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox57.Location = new System.Drawing.Point(443, 2726);
-            this.textBox57.MaxLength = 35;
-            this.textBox57.Multiline = true;
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(399, 60);
-            this.textBox57.TabIndex = 165;
+            this.Text41.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text41.Location = new System.Drawing.Point(443, 2726);
+            this.Text41.MaxLength = 35;
+            this.Text41.Multiline = true;
+            this.Text41.Name = "Text41";
+            this.Text41.Size = new System.Drawing.Size(399, 60);
+            this.Text41.TabIndex = 165;
             // 
-            // textBox58
+            // Hex41
             // 
-            this.textBox58.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox58.Location = new System.Drawing.Point(38, 2726);
-            this.textBox58.MaxLength = 104;
-            this.textBox58.Multiline = true;
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(399, 60);
-            this.textBox58.TabIndex = 164;
+            this.Hex41.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex41.Location = new System.Drawing.Point(38, 2726);
+            this.Hex41.MaxLength = 104;
+            this.Hex41.Multiline = true;
+            this.Hex41.Name = "Hex41";
+            this.Hex41.Size = new System.Drawing.Size(399, 60);
+            this.Hex41.TabIndex = 164;
             // 
-            // label60
+            // Last40
             // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label60.Location = new System.Drawing.Point(848, 2660);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(18, 18);
-            this.label60.TabIndex = 163;
-            this.label60.Text = "7";
+            this.Last40.AutoSize = true;
+            this.Last40.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last40.Location = new System.Drawing.Point(848, 2660);
+            this.Last40.Name = "Last40";
+            this.Last40.Size = new System.Drawing.Size(28, 18);
+            this.Last40.TabIndex = 163;
+            this.Last40.Text = "40";
             // 
-            // textBox59
+            // Text40
             // 
-            this.textBox59.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox59.Location = new System.Drawing.Point(443, 2660);
-            this.textBox59.Multiline = true;
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(399, 60);
-            this.textBox59.TabIndex = 162;
+            this.Text40.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text40.Location = new System.Drawing.Point(443, 2660);
+            this.Text40.Multiline = true;
+            this.Text40.Name = "Text40";
+            this.Text40.Size = new System.Drawing.Size(399, 60);
+            this.Text40.TabIndex = 162;
             // 
             // Length40
             // 
@@ -2163,54 +2163,54 @@ namespace ujl_subedit
             this.Length40.TabIndex = 161;
             this.Length40.Text = "40";
             // 
-            // textBox60
+            // Hex40
             // 
-            this.textBox60.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox60.Location = new System.Drawing.Point(38, 2660);
-            this.textBox60.Multiline = true;
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(399, 60);
-            this.textBox60.TabIndex = 160;
+            this.Hex40.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex40.Location = new System.Drawing.Point(38, 2660);
+            this.Hex40.Multiline = true;
+            this.Hex40.Name = "Hex40";
+            this.Hex40.Size = new System.Drawing.Size(399, 60);
+            this.Hex40.TabIndex = 160;
             // 
-            // label62
+            // Last39
             // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label62.Location = new System.Drawing.Point(848, 2594);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(18, 18);
-            this.label62.TabIndex = 159;
-            this.label62.Text = "6";
+            this.Last39.AutoSize = true;
+            this.Last39.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last39.Location = new System.Drawing.Point(848, 2594);
+            this.Last39.Name = "Last39";
+            this.Last39.Size = new System.Drawing.Size(28, 18);
+            this.Last39.TabIndex = 159;
+            this.Last39.Text = "39";
             // 
-            // label63
+            // Last38
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label63.Location = new System.Drawing.Point(848, 2528);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(18, 18);
-            this.label63.TabIndex = 158;
-            this.label63.Text = "5";
+            this.Last38.AutoSize = true;
+            this.Last38.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last38.Location = new System.Drawing.Point(848, 2528);
+            this.Last38.Name = "Last38";
+            this.Last38.Size = new System.Drawing.Size(28, 18);
+            this.Last38.TabIndex = 158;
+            this.Last38.Text = "38";
             // 
-            // label64
+            // Last37
             // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label64.Location = new System.Drawing.Point(848, 2465);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(18, 18);
-            this.label64.TabIndex = 157;
-            this.label64.Text = "4";
+            this.Last37.AutoSize = true;
+            this.Last37.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last37.Location = new System.Drawing.Point(848, 2465);
+            this.Last37.Name = "Last37";
+            this.Last37.Size = new System.Drawing.Size(28, 18);
+            this.Last37.TabIndex = 157;
+            this.Last37.Text = "37";
             // 
-            // textBox61
+            // Text39
             // 
-            this.textBox61.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox61.Location = new System.Drawing.Point(443, 2594);
-            this.textBox61.Multiline = true;
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(399, 60);
-            this.textBox61.TabIndex = 156;
-            this.textBox61.Text = " ";
+            this.Text39.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text39.Location = new System.Drawing.Point(443, 2594);
+            this.Text39.Multiline = true;
+            this.Text39.Name = "Text39";
+            this.Text39.Size = new System.Drawing.Size(399, 60);
+            this.Text39.TabIndex = 156;
+            this.Text39.Text = " ";
             // 
             // Length39
             // 
@@ -2242,62 +2242,63 @@ namespace ujl_subedit
             this.Length37.TabIndex = 153;
             this.Length37.Text = "37";
             // 
-            // textBox62
+            // Hex39
             // 
-            this.textBox62.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox62.Location = new System.Drawing.Point(38, 2594);
-            this.textBox62.Multiline = true;
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(399, 60);
-            this.textBox62.TabIndex = 152;
+            this.Hex39.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex39.Location = new System.Drawing.Point(38, 2594);
+            this.Hex39.Multiline = true;
+            this.Hex39.Name = "Hex39";
+            this.Hex39.Size = new System.Drawing.Size(399, 60);
+            this.Hex39.TabIndex = 152;
             // 
-            // textBox63
+            // Text38
             // 
-            this.textBox63.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox63.Location = new System.Drawing.Point(443, 2528);
-            this.textBox63.Multiline = true;
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(399, 60);
-            this.textBox63.TabIndex = 151;
+            this.Text38.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text38.Location = new System.Drawing.Point(443, 2528);
+            this.Text38.Multiline = true;
+            this.Text38.Name = "Text38";
+            this.Text38.Size = new System.Drawing.Size(399, 60);
+            this.Text38.TabIndex = 151;
             // 
-            // textBox64
+            // Hex38
             // 
-            this.textBox64.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox64.Location = new System.Drawing.Point(38, 2528);
-            this.textBox64.Multiline = true;
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(399, 60);
-            this.textBox64.TabIndex = 150;
+            this.Hex38.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex38.Location = new System.Drawing.Point(38, 2528);
+            this.Hex38.Multiline = true;
+            this.Hex38.Name = "Hex38";
+            this.Hex38.Size = new System.Drawing.Size(399, 60);
+            this.Hex38.TabIndex = 150;
             // 
-            // textBox65
+            // Text37
             // 
-            this.textBox65.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox65.Location = new System.Drawing.Point(443, 2462);
-            this.textBox65.MaxLength = 35;
-            this.textBox65.Multiline = true;
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(399, 60);
-            this.textBox65.TabIndex = 149;
+            this.Text37.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text37.Location = new System.Drawing.Point(443, 2462);
+            this.Text37.MaxLength = 35;
+            this.Text37.Multiline = true;
+            this.Text37.Name = "Text37";
+            this.Text37.Size = new System.Drawing.Size(399, 60);
+            this.Text37.TabIndex = 149;
             // 
-            // textBox66
+            // Hex37
             // 
-            this.textBox66.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox66.Location = new System.Drawing.Point(38, 2462);
-            this.textBox66.MaxLength = 104;
-            this.textBox66.Multiline = true;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(399, 60);
-            this.textBox66.TabIndex = 148;
+            this.Hex37.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex37.Location = new System.Drawing.Point(38, 2462);
+            this.Hex37.MaxLength = 104;
+            this.Hex37.Multiline = true;
+            this.Hex37.Name = "Hex37";
+            this.Hex37.Size = new System.Drawing.Size(399, 60);
+            this.Hex37.TabIndex = 148;
             // 
-            // label68
+            // Last58
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label68.Location = new System.Drawing.Point(848, 3848);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(28, 18);
-            this.label68.TabIndex = 235;
-            this.label68.Text = "14";
+            this.Last58.AutoSize = true;
+            this.Last58.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last58.Location = new System.Drawing.Point(848, 3848);
+            this.Last58.Name = "Last58";
+            this.Last58.Size = new System.Drawing.Size(28, 18);
+            this.Last58.TabIndex = 235;
+            this.Last58.Text = "58";
+            this.Last58.Click += new System.EventHandler(this.label68_Click);
             // 
             // Text58
             // 
@@ -2327,35 +2328,35 @@ namespace ujl_subedit
             this.Hex58.Size = new System.Drawing.Size(399, 60);
             this.Hex58.TabIndex = 232;
             // 
-            // label70
+            // Last57
             // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label70.Location = new System.Drawing.Point(848, 3782);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(28, 18);
-            this.label70.TabIndex = 231;
-            this.label70.Text = "13";
+            this.Last57.AutoSize = true;
+            this.Last57.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last57.Location = new System.Drawing.Point(848, 3782);
+            this.Last57.Name = "Last57";
+            this.Last57.Size = new System.Drawing.Size(28, 18);
+            this.Last57.TabIndex = 231;
+            this.Last57.Text = "57";
             // 
-            // label71
+            // Last56
             // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label71.Location = new System.Drawing.Point(848, 3716);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(28, 18);
-            this.label71.TabIndex = 230;
-            this.label71.Text = "12";
+            this.Last56.AutoSize = true;
+            this.Last56.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last56.Location = new System.Drawing.Point(848, 3716);
+            this.Last56.Name = "Last56";
+            this.Last56.Size = new System.Drawing.Size(28, 18);
+            this.Last56.TabIndex = 230;
+            this.Last56.Text = "56";
             // 
-            // label72
+            // Last55
             // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label72.Location = new System.Drawing.Point(848, 3653);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(28, 18);
-            this.label72.TabIndex = 229;
-            this.label72.Text = "11";
+            this.Last55.AutoSize = true;
+            this.Last55.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last55.Location = new System.Drawing.Point(848, 3653);
+            this.Last55.Name = "Last55";
+            this.Last55.Size = new System.Drawing.Size(28, 18);
+            this.Last55.TabIndex = 229;
+            this.Last55.Text = "55";
             // 
             // Text57
             // 
@@ -2443,35 +2444,35 @@ namespace ujl_subedit
             this.Hex55.Size = new System.Drawing.Size(399, 60);
             this.Hex55.TabIndex = 220;
             // 
-            // label76
+            // Last54
             // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label76.Location = new System.Drawing.Point(848, 3584);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(28, 18);
-            this.label76.TabIndex = 219;
-            this.label76.Text = "10";
+            this.Last54.AutoSize = true;
+            this.Last54.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last54.Location = new System.Drawing.Point(848, 3584);
+            this.Last54.Name = "Last54";
+            this.Last54.Size = new System.Drawing.Size(28, 18);
+            this.Last54.TabIndex = 219;
+            this.Last54.Text = "54";
             // 
-            // label77
+            // Last53
             // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label77.Location = new System.Drawing.Point(848, 3518);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(18, 18);
-            this.label77.TabIndex = 218;
-            this.label77.Text = "9";
+            this.Last53.AutoSize = true;
+            this.Last53.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last53.Location = new System.Drawing.Point(848, 3518);
+            this.Last53.Name = "Last53";
+            this.Last53.Size = new System.Drawing.Size(28, 18);
+            this.Last53.TabIndex = 218;
+            this.Last53.Text = "53";
             // 
-            // label78
+            // Last52
             // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label78.Location = new System.Drawing.Point(848, 3455);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(18, 18);
-            this.label78.TabIndex = 217;
-            this.label78.Text = "8";
+            this.Last52.AutoSize = true;
+            this.Last52.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last52.Location = new System.Drawing.Point(848, 3455);
+            this.Last52.Name = "Last52";
+            this.Last52.Size = new System.Drawing.Size(28, 18);
+            this.Last52.TabIndex = 217;
+            this.Last52.Text = "52";
             // 
             // Text54
             // 
@@ -2559,15 +2560,15 @@ namespace ujl_subedit
             this.Hex52.Size = new System.Drawing.Size(399, 60);
             this.Hex52.TabIndex = 208;
             // 
-            // label82
+            // Last51
             // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label82.Location = new System.Drawing.Point(848, 3386);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(18, 18);
-            this.label82.TabIndex = 207;
-            this.label82.Text = "7";
+            this.Last51.AutoSize = true;
+            this.Last51.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last51.Location = new System.Drawing.Point(848, 3386);
+            this.Last51.Name = "Last51";
+            this.Last51.Size = new System.Drawing.Size(28, 18);
+            this.Last51.TabIndex = 207;
+            this.Last51.Text = "51";
             // 
             // Text51
             // 
@@ -2597,35 +2598,35 @@ namespace ujl_subedit
             this.Hex51.Size = new System.Drawing.Size(399, 60);
             this.Hex51.TabIndex = 204;
             // 
-            // label84
+            // Last50
             // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label84.Location = new System.Drawing.Point(848, 3320);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(18, 18);
-            this.label84.TabIndex = 203;
-            this.label84.Text = "6";
+            this.Last50.AutoSize = true;
+            this.Last50.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last50.Location = new System.Drawing.Point(848, 3320);
+            this.Last50.Name = "Last50";
+            this.Last50.Size = new System.Drawing.Size(28, 18);
+            this.Last50.TabIndex = 203;
+            this.Last50.Text = "50";
             // 
-            // label85
+            // Last49
             // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label85.Location = new System.Drawing.Point(848, 3254);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(18, 18);
-            this.label85.TabIndex = 202;
-            this.label85.Text = "5";
+            this.Last49.AutoSize = true;
+            this.Last49.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last49.Location = new System.Drawing.Point(848, 3254);
+            this.Last49.Name = "Last49";
+            this.Last49.Size = new System.Drawing.Size(28, 18);
+            this.Last49.TabIndex = 202;
+            this.Last49.Text = "49";
             // 
-            // label86
+            // Last48
             // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label86.Location = new System.Drawing.Point(848, 3191);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(18, 18);
-            this.label86.TabIndex = 201;
-            this.label86.Text = "4";
+            this.Last48.AutoSize = true;
+            this.Last48.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last48.Location = new System.Drawing.Point(848, 3191);
+            this.Last48.Name = "Last48";
+            this.Last48.Size = new System.Drawing.Size(28, 18);
+            this.Last48.TabIndex = 201;
+            this.Last48.Text = "48";
             // 
             // Text50
             // 
@@ -2714,35 +2715,35 @@ namespace ujl_subedit
             this.Hex48.Size = new System.Drawing.Size(399, 60);
             this.Hex48.TabIndex = 192;
             // 
-            // label7
+            // Last90
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(848, 5960);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 18);
-            this.label7.TabIndex = 363;
-            this.label7.Text = "10";
+            this.Last90.AutoSize = true;
+            this.Last90.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last90.Location = new System.Drawing.Point(848, 5960);
+            this.Last90.Name = "Last90";
+            this.Last90.Size = new System.Drawing.Size(28, 18);
+            this.Last90.TabIndex = 363;
+            this.Last90.Text = "90";
             // 
-            // label8
+            // Last89
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(848, 5894);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 18);
-            this.label8.TabIndex = 362;
-            this.label8.Text = "9";
+            this.Last89.AutoSize = true;
+            this.Last89.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last89.Location = new System.Drawing.Point(848, 5894);
+            this.Last89.Name = "Last89";
+            this.Last89.Size = new System.Drawing.Size(28, 18);
+            this.Last89.TabIndex = 362;
+            this.Last89.Text = "89";
             // 
-            // label9
+            // Last88
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(848, 5831);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 18);
-            this.label9.TabIndex = 361;
-            this.label9.Text = "8";
+            this.Last88.AutoSize = true;
+            this.Last88.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last88.Location = new System.Drawing.Point(848, 5831);
+            this.Last88.Name = "Last88";
+            this.Last88.Size = new System.Drawing.Size(28, 18);
+            this.Last88.TabIndex = 361;
+            this.Last88.Text = "88";
             // 
             // Text90
             // 
@@ -2830,15 +2831,15 @@ namespace ujl_subedit
             this.Hex88.Size = new System.Drawing.Size(399, 60);
             this.Hex88.TabIndex = 352;
             // 
-            // label17
+            // Last87
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(848, 5762);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(18, 18);
-            this.label17.TabIndex = 351;
-            this.label17.Text = "7";
+            this.Last87.AutoSize = true;
+            this.Last87.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last87.Location = new System.Drawing.Point(848, 5762);
+            this.Last87.Name = "Last87";
+            this.Last87.Size = new System.Drawing.Size(28, 18);
+            this.Last87.TabIndex = 351;
+            this.Last87.Text = "87";
             // 
             // Text87
             // 
@@ -2868,35 +2869,35 @@ namespace ujl_subedit
             this.Hex87.Size = new System.Drawing.Size(399, 60);
             this.Hex87.TabIndex = 348;
             // 
-            // label22
+            // Last86
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(848, 5696);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(18, 18);
-            this.label22.TabIndex = 347;
-            this.label22.Text = "6";
+            this.Last86.AutoSize = true;
+            this.Last86.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last86.Location = new System.Drawing.Point(848, 5696);
+            this.Last86.Name = "Last86";
+            this.Last86.Size = new System.Drawing.Size(28, 18);
+            this.Last86.TabIndex = 347;
+            this.Last86.Text = "86";
             // 
-            // label23
+            // Last85
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.Location = new System.Drawing.Point(848, 5630);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(18, 18);
-            this.label23.TabIndex = 346;
-            this.label23.Text = "5";
+            this.Last85.AutoSize = true;
+            this.Last85.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last85.Location = new System.Drawing.Point(848, 5630);
+            this.Last85.Name = "Last85";
+            this.Last85.Size = new System.Drawing.Size(28, 18);
+            this.Last85.TabIndex = 346;
+            this.Last85.Text = "85";
             // 
-            // label25
+            // Last84
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.Location = new System.Drawing.Point(848, 5567);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(18, 18);
-            this.label25.TabIndex = 345;
-            this.label25.Text = "4";
+            this.Last84.AutoSize = true;
+            this.Last84.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last84.Location = new System.Drawing.Point(848, 5567);
+            this.Last84.Name = "Last84";
+            this.Last84.Size = new System.Drawing.Size(28, 18);
+            this.Last84.TabIndex = 345;
+            this.Last84.Text = "84";
             // 
             // Text86
             // 
@@ -3023,35 +3024,36 @@ namespace ujl_subedit
             this.Hex83.Size = new System.Drawing.Size(399, 60);
             this.Hex83.TabIndex = 332;
             // 
-            // label37
+            // Last82
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label37.Location = new System.Drawing.Point(848, 5432);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(28, 18);
-            this.label37.TabIndex = 331;
-            this.label37.Text = "13";
+            this.Last82.AutoSize = true;
+            this.Last82.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last82.Location = new System.Drawing.Point(848, 5432);
+            this.Last82.Name = "Last82";
+            this.Last82.Size = new System.Drawing.Size(28, 18);
+            this.Last82.TabIndex = 331;
+            this.Last82.Text = "82";
             // 
-            // label39
+            // Last81
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label39.Location = new System.Drawing.Point(848, 5366);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(28, 18);
-            this.label39.TabIndex = 330;
-            this.label39.Text = "12";
+            this.Last81.AutoSize = true;
+            this.Last81.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last81.Location = new System.Drawing.Point(848, 5366);
+            this.Last81.Name = "Last81";
+            this.Last81.Size = new System.Drawing.Size(28, 18);
+            this.Last81.TabIndex = 330;
+            this.Last81.Text = "81";
             // 
-            // label43
+            // Last80
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label43.Location = new System.Drawing.Point(848, 5303);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(28, 18);
-            this.label43.TabIndex = 329;
-            this.label43.Text = "11";
+            this.Last80.AutoSize = true;
+            this.Last80.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last80.Location = new System.Drawing.Point(848, 5303);
+            this.Last80.Name = "Last80";
+            this.Last80.Size = new System.Drawing.Size(28, 18);
+            this.Last80.TabIndex = 329;
+            this.Last80.Text = "80";
+            this.Last80.Click += new System.EventHandler(this.label43_Click);
             // 
             // Text82
             // 
@@ -3139,35 +3141,35 @@ namespace ujl_subedit
             this.Hex80.Size = new System.Drawing.Size(399, 60);
             this.Hex80.TabIndex = 320;
             // 
-            // label51
+            // Last79
             // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label51.Location = new System.Drawing.Point(848, 5234);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(28, 18);
-            this.label51.TabIndex = 319;
-            this.label51.Text = "10";
+            this.Last79.AutoSize = true;
+            this.Last79.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last79.Location = new System.Drawing.Point(848, 5234);
+            this.Last79.Name = "Last79";
+            this.Last79.Size = new System.Drawing.Size(28, 18);
+            this.Last79.TabIndex = 319;
+            this.Last79.Text = "79";
             // 
-            // label52
+            // Last78
             // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label52.Location = new System.Drawing.Point(848, 5168);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(18, 18);
-            this.label52.TabIndex = 318;
-            this.label52.Text = "9";
+            this.Last78.AutoSize = true;
+            this.Last78.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last78.Location = new System.Drawing.Point(848, 5168);
+            this.Last78.Name = "Last78";
+            this.Last78.Size = new System.Drawing.Size(28, 18);
+            this.Last78.TabIndex = 318;
+            this.Last78.Text = "78";
             // 
-            // label53
+            // Last77
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label53.Location = new System.Drawing.Point(848, 5105);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(18, 18);
-            this.label53.TabIndex = 317;
-            this.label53.Text = "8";
+            this.Last77.AutoSize = true;
+            this.Last77.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last77.Location = new System.Drawing.Point(848, 5105);
+            this.Last77.Name = "Last77";
+            this.Last77.Size = new System.Drawing.Size(28, 18);
+            this.Last77.TabIndex = 317;
+            this.Last77.Text = "77";
             // 
             // Text79
             // 
@@ -3255,15 +3257,15 @@ namespace ujl_subedit
             this.Hex77.Size = new System.Drawing.Size(399, 60);
             this.Hex77.TabIndex = 308;
             // 
-            // label61
+            // Last76
             // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label61.Location = new System.Drawing.Point(848, 5036);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(18, 18);
-            this.label61.TabIndex = 307;
-            this.label61.Text = "7";
+            this.Last76.AutoSize = true;
+            this.Last76.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last76.Location = new System.Drawing.Point(848, 5036);
+            this.Last76.Name = "Last76";
+            this.Last76.Size = new System.Drawing.Size(28, 18);
+            this.Last76.TabIndex = 307;
+            this.Last76.Text = "76";
             // 
             // Text76
             // 
@@ -3293,35 +3295,36 @@ namespace ujl_subedit
             this.Hex76.Size = new System.Drawing.Size(399, 60);
             this.Hex76.TabIndex = 304;
             // 
-            // label66
+            // Last75
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label66.Location = new System.Drawing.Point(848, 4970);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(18, 18);
-            this.label66.TabIndex = 303;
-            this.label66.Text = "6";
+            this.Last75.AutoSize = true;
+            this.Last75.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last75.Location = new System.Drawing.Point(848, 4970);
+            this.Last75.Name = "Last75";
+            this.Last75.Size = new System.Drawing.Size(28, 18);
+            this.Last75.TabIndex = 303;
+            this.Last75.Text = "75";
+            this.Last75.Click += new System.EventHandler(this.label66_Click);
             // 
-            // label67
+            // Last74
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label67.Location = new System.Drawing.Point(848, 4904);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(18, 18);
-            this.label67.TabIndex = 302;
-            this.label67.Text = "5";
+            this.Last74.AutoSize = true;
+            this.Last74.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last74.Location = new System.Drawing.Point(848, 4904);
+            this.Last74.Name = "Last74";
+            this.Last74.Size = new System.Drawing.Size(28, 18);
+            this.Last74.TabIndex = 302;
+            this.Last74.Text = "74";
             // 
-            // label69
+            // Last73
             // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label69.Location = new System.Drawing.Point(848, 4841);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(18, 18);
-            this.label69.TabIndex = 301;
-            this.label69.Text = "4";
+            this.Last73.AutoSize = true;
+            this.Last73.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last73.Location = new System.Drawing.Point(848, 4841);
+            this.Last73.Name = "Last73";
+            this.Last73.Size = new System.Drawing.Size(28, 18);
+            this.Last73.TabIndex = 301;
+            this.Last73.Text = "73";
             // 
             // Text75
             // 
@@ -3410,15 +3413,15 @@ namespace ujl_subedit
             this.Hex73.Size = new System.Drawing.Size(399, 60);
             this.Hex73.TabIndex = 292;
             // 
-            // label79
+            // Last72
             // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label79.Location = new System.Drawing.Point(848, 4772);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(28, 18);
-            this.label79.TabIndex = 291;
-            this.label79.Text = "14";
+            this.Last72.AutoSize = true;
+            this.Last72.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last72.Location = new System.Drawing.Point(848, 4772);
+            this.Last72.Name = "Last72";
+            this.Last72.Size = new System.Drawing.Size(28, 18);
+            this.Last72.TabIndex = 291;
+            this.Last72.Text = "72";
             // 
             // Text72
             // 
@@ -3448,35 +3451,35 @@ namespace ujl_subedit
             this.Hex72.Size = new System.Drawing.Size(399, 60);
             this.Hex72.TabIndex = 288;
             // 
-            // label81
+            // Last71
             // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label81.Location = new System.Drawing.Point(848, 4706);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(28, 18);
-            this.label81.TabIndex = 287;
-            this.label81.Text = "13";
+            this.Last71.AutoSize = true;
+            this.Last71.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last71.Location = new System.Drawing.Point(848, 4706);
+            this.Last71.Name = "Last71";
+            this.Last71.Size = new System.Drawing.Size(28, 18);
+            this.Last71.TabIndex = 287;
+            this.Last71.Text = "71";
             // 
-            // label83
+            // Last70
             // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label83.Location = new System.Drawing.Point(848, 4640);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(28, 18);
-            this.label83.TabIndex = 286;
-            this.label83.Text = "12";
+            this.Last70.AutoSize = true;
+            this.Last70.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last70.Location = new System.Drawing.Point(848, 4640);
+            this.Last70.Name = "Last70";
+            this.Last70.Size = new System.Drawing.Size(28, 18);
+            this.Last70.TabIndex = 286;
+            this.Last70.Text = "70";
             // 
-            // label87
+            // Last69
             // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label87.Location = new System.Drawing.Point(848, 4577);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(28, 18);
-            this.label87.TabIndex = 285;
-            this.label87.Text = "11";
+            this.Last69.AutoSize = true;
+            this.Last69.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last69.Location = new System.Drawing.Point(848, 4577);
+            this.Last69.Name = "Last69";
+            this.Last69.Size = new System.Drawing.Size(28, 18);
+            this.Last69.TabIndex = 285;
+            this.Last69.Text = "69";
             // 
             // Text71
             // 
@@ -3564,35 +3567,35 @@ namespace ujl_subedit
             this.Hex69.Size = new System.Drawing.Size(399, 60);
             this.Hex69.TabIndex = 276;
             // 
-            // label91
+            // Last68
             // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label91.Location = new System.Drawing.Point(848, 4508);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(28, 18);
-            this.label91.TabIndex = 275;
-            this.label91.Text = "10";
+            this.Last68.AutoSize = true;
+            this.Last68.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last68.Location = new System.Drawing.Point(848, 4508);
+            this.Last68.Name = "Last68";
+            this.Last68.Size = new System.Drawing.Size(28, 18);
+            this.Last68.TabIndex = 275;
+            this.Last68.Text = "68";
             // 
-            // label92
+            // Last67
             // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label92.Location = new System.Drawing.Point(848, 4442);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(18, 18);
-            this.label92.TabIndex = 274;
-            this.label92.Text = "9";
+            this.Last67.AutoSize = true;
+            this.Last67.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last67.Location = new System.Drawing.Point(848, 4442);
+            this.Last67.Name = "Last67";
+            this.Last67.Size = new System.Drawing.Size(28, 18);
+            this.Last67.TabIndex = 274;
+            this.Last67.Text = "67";
             // 
-            // label93
+            // Last66
             // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label93.Location = new System.Drawing.Point(848, 4379);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(18, 18);
-            this.label93.TabIndex = 273;
-            this.label93.Text = "8";
+            this.Last66.AutoSize = true;
+            this.Last66.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last66.Location = new System.Drawing.Point(848, 4379);
+            this.Last66.Name = "Last66";
+            this.Last66.Size = new System.Drawing.Size(28, 18);
+            this.Last66.TabIndex = 273;
+            this.Last66.Text = "66";
             // 
             // Text68
             // 
@@ -3680,15 +3683,15 @@ namespace ujl_subedit
             this.Hex66.Size = new System.Drawing.Size(399, 60);
             this.Hex66.TabIndex = 264;
             // 
-            // label97
+            // Last65
             // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label97.Location = new System.Drawing.Point(848, 4310);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(18, 18);
-            this.label97.TabIndex = 263;
-            this.label97.Text = "7";
+            this.Last65.AutoSize = true;
+            this.Last65.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last65.Location = new System.Drawing.Point(848, 4310);
+            this.Last65.Name = "Last65";
+            this.Last65.Size = new System.Drawing.Size(28, 18);
+            this.Last65.TabIndex = 263;
+            this.Last65.Text = "65";
             // 
             // Text65
             // 
@@ -3718,35 +3721,35 @@ namespace ujl_subedit
             this.Hex65.Size = new System.Drawing.Size(399, 60);
             this.Hex65.TabIndex = 260;
             // 
-            // label99
+            // Last64
             // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label99.Location = new System.Drawing.Point(848, 4244);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(18, 18);
-            this.label99.TabIndex = 259;
-            this.label99.Text = "6";
+            this.Last64.AutoSize = true;
+            this.Last64.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last64.Location = new System.Drawing.Point(848, 4244);
+            this.Last64.Name = "Last64";
+            this.Last64.Size = new System.Drawing.Size(28, 18);
+            this.Last64.TabIndex = 259;
+            this.Last64.Text = "64";
             // 
-            // label100
+            // Last63
             // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label100.Location = new System.Drawing.Point(848, 4178);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(18, 18);
-            this.label100.TabIndex = 258;
-            this.label100.Text = "5";
+            this.Last63.AutoSize = true;
+            this.Last63.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last63.Location = new System.Drawing.Point(848, 4178);
+            this.Last63.Name = "Last63";
+            this.Last63.Size = new System.Drawing.Size(28, 18);
+            this.Last63.TabIndex = 258;
+            this.Last63.Text = "63";
             // 
-            // label101
+            // Last62
             // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label101.Location = new System.Drawing.Point(848, 4115);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(18, 18);
-            this.label101.TabIndex = 257;
-            this.label101.Text = "4";
+            this.Last62.AutoSize = true;
+            this.Last62.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last62.Location = new System.Drawing.Point(848, 4115);
+            this.Last62.Name = "Last62";
+            this.Last62.Size = new System.Drawing.Size(28, 18);
+            this.Last62.TabIndex = 257;
+            this.Last62.Text = "62";
             // 
             // Text64
             // 
@@ -3835,37 +3838,37 @@ namespace ujl_subedit
             this.Hex62.Size = new System.Drawing.Size(399, 60);
             this.Hex62.TabIndex = 248;
             // 
-            // label105
+            // Last61
             // 
-            this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label105.Location = new System.Drawing.Point(848, 4046);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(18, 18);
-            this.label105.TabIndex = 247;
-            this.label105.Text = "3";
+            this.Last61.AutoSize = true;
+            this.Last61.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last61.Location = new System.Drawing.Point(848, 4046);
+            this.Last61.Name = "Last61";
+            this.Last61.Size = new System.Drawing.Size(28, 18);
+            this.Last61.TabIndex = 247;
+            this.Last61.Text = "61";
             // 
-            // label106
+            // Last60
             // 
-            this.label106.AutoSize = true;
-            this.label106.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.label106.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label106.Location = new System.Drawing.Point(848, 3980);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(18, 18);
-            this.label106.TabIndex = 246;
-            this.label106.Text = "2";
+            this.Last60.AutoSize = true;
+            this.Last60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.Last60.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last60.Location = new System.Drawing.Point(848, 3980);
+            this.Last60.Name = "Last60";
+            this.Last60.Size = new System.Drawing.Size(28, 18);
+            this.Last60.TabIndex = 246;
+            this.Last60.Text = "60";
             // 
-            // label107
+            // Last59
             // 
-            this.label107.AutoSize = true;
-            this.label107.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.label107.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label107.Location = new System.Drawing.Point(848, 3917);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(18, 18);
-            this.label107.TabIndex = 245;
-            this.label107.Text = "1";
+            this.Last59.AutoSize = true;
+            this.Last59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.Last59.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last59.Location = new System.Drawing.Point(848, 3917);
+            this.Last59.Name = "Last59";
+            this.Last59.Size = new System.Drawing.Size(28, 18);
+            this.Last59.TabIndex = 245;
+            this.Last59.Text = "59";
             // 
             // Text61
             // 
@@ -3955,16 +3958,16 @@ namespace ujl_subedit
             this.Hex59.Size = new System.Drawing.Size(399, 60);
             this.Hex59.TabIndex = 236;
             // 
-            // editor
+            // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.ClientSize = new System.Drawing.Size(911, 703);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(894, 703);
+            this.Controls.Add(this.Last90);
+            this.Controls.Add(this.Last89);
+            this.Controls.Add(this.Last88);
             this.Controls.Add(this.Text90);
             this.Controls.Add(this.Length90);
             this.Controls.Add(this.Length89);
@@ -3974,13 +3977,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex89);
             this.Controls.Add(this.Text88);
             this.Controls.Add(this.Hex88);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.Last87);
             this.Controls.Add(this.Text87);
             this.Controls.Add(this.Length87);
             this.Controls.Add(this.Hex87);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label25);
+            this.Controls.Add(this.Last86);
+            this.Controls.Add(this.Last85);
+            this.Controls.Add(this.Last84);
             this.Controls.Add(this.Text86);
             this.Controls.Add(this.Length86);
             this.Controls.Add(this.Length85);
@@ -3994,9 +3997,9 @@ namespace ujl_subedit
             this.Controls.Add(this.Text83);
             this.Controls.Add(this.Length83);
             this.Controls.Add(this.Hex83);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label43);
+            this.Controls.Add(this.Last82);
+            this.Controls.Add(this.Last81);
+            this.Controls.Add(this.Last80);
             this.Controls.Add(this.Text82);
             this.Controls.Add(this.Length82);
             this.Controls.Add(this.Length81);
@@ -4006,9 +4009,9 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex81);
             this.Controls.Add(this.Text80);
             this.Controls.Add(this.Hex80);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.label53);
+            this.Controls.Add(this.Last79);
+            this.Controls.Add(this.Last78);
+            this.Controls.Add(this.Last77);
             this.Controls.Add(this.Text79);
             this.Controls.Add(this.Length79);
             this.Controls.Add(this.Length78);
@@ -4018,13 +4021,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex78);
             this.Controls.Add(this.Text77);
             this.Controls.Add(this.Hex77);
-            this.Controls.Add(this.label61);
+            this.Controls.Add(this.Last76);
             this.Controls.Add(this.Text76);
             this.Controls.Add(this.Length76);
             this.Controls.Add(this.Hex76);
-            this.Controls.Add(this.label66);
-            this.Controls.Add(this.label67);
-            this.Controls.Add(this.label69);
+            this.Controls.Add(this.Last75);
+            this.Controls.Add(this.Last74);
+            this.Controls.Add(this.Last73);
             this.Controls.Add(this.Text75);
             this.Controls.Add(this.Length75);
             this.Controls.Add(this.Length74);
@@ -4034,13 +4037,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex74);
             this.Controls.Add(this.Text73);
             this.Controls.Add(this.Hex73);
-            this.Controls.Add(this.label79);
+            this.Controls.Add(this.Last72);
             this.Controls.Add(this.Text72);
             this.Controls.Add(this.Length72);
             this.Controls.Add(this.Hex72);
-            this.Controls.Add(this.label81);
-            this.Controls.Add(this.label83);
-            this.Controls.Add(this.label87);
+            this.Controls.Add(this.Last71);
+            this.Controls.Add(this.Last70);
+            this.Controls.Add(this.Last69);
             this.Controls.Add(this.Text71);
             this.Controls.Add(this.Length71);
             this.Controls.Add(this.Length70);
@@ -4050,9 +4053,9 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex70);
             this.Controls.Add(this.Text69);
             this.Controls.Add(this.Hex69);
-            this.Controls.Add(this.label91);
-            this.Controls.Add(this.label92);
-            this.Controls.Add(this.label93);
+            this.Controls.Add(this.Last68);
+            this.Controls.Add(this.Last67);
+            this.Controls.Add(this.Last66);
             this.Controls.Add(this.Text68);
             this.Controls.Add(this.Length68);
             this.Controls.Add(this.Length67);
@@ -4062,13 +4065,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex67);
             this.Controls.Add(this.Text66);
             this.Controls.Add(this.Hex66);
-            this.Controls.Add(this.label97);
+            this.Controls.Add(this.Last65);
             this.Controls.Add(this.Text65);
             this.Controls.Add(this.Length65);
             this.Controls.Add(this.Hex65);
-            this.Controls.Add(this.label99);
-            this.Controls.Add(this.label100);
-            this.Controls.Add(this.label101);
+            this.Controls.Add(this.Last64);
+            this.Controls.Add(this.Last63);
+            this.Controls.Add(this.Last62);
             this.Controls.Add(this.Text64);
             this.Controls.Add(this.Length64);
             this.Controls.Add(this.Length63);
@@ -4078,9 +4081,9 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex63);
             this.Controls.Add(this.Text62);
             this.Controls.Add(this.Hex62);
-            this.Controls.Add(this.label105);
-            this.Controls.Add(this.label106);
-            this.Controls.Add(this.label107);
+            this.Controls.Add(this.Last61);
+            this.Controls.Add(this.Last60);
+            this.Controls.Add(this.Last59);
             this.Controls.Add(this.Text61);
             this.Controls.Add(this.Length61);
             this.Controls.Add(this.Length60);
@@ -4090,13 +4093,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex60);
             this.Controls.Add(this.Text59);
             this.Controls.Add(this.Hex59);
-            this.Controls.Add(this.label68);
+            this.Controls.Add(this.Last58);
             this.Controls.Add(this.Text58);
             this.Controls.Add(this.Length58);
             this.Controls.Add(this.Hex58);
-            this.Controls.Add(this.label70);
-            this.Controls.Add(this.label71);
-            this.Controls.Add(this.label72);
+            this.Controls.Add(this.Last57);
+            this.Controls.Add(this.Last56);
+            this.Controls.Add(this.Last55);
             this.Controls.Add(this.Text57);
             this.Controls.Add(this.Length57);
             this.Controls.Add(this.Length56);
@@ -4106,9 +4109,9 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex56);
             this.Controls.Add(this.Text55);
             this.Controls.Add(this.Hex55);
-            this.Controls.Add(this.label76);
-            this.Controls.Add(this.label77);
-            this.Controls.Add(this.label78);
+            this.Controls.Add(this.Last54);
+            this.Controls.Add(this.Last53);
+            this.Controls.Add(this.Last52);
             this.Controls.Add(this.Text54);
             this.Controls.Add(this.Length54);
             this.Controls.Add(this.Length53);
@@ -4118,13 +4121,13 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex53);
             this.Controls.Add(this.Text52);
             this.Controls.Add(this.Hex52);
-            this.Controls.Add(this.label82);
+            this.Controls.Add(this.Last51);
             this.Controls.Add(this.Text51);
             this.Controls.Add(this.Length51);
             this.Controls.Add(this.Hex51);
-            this.Controls.Add(this.label84);
-            this.Controls.Add(this.label85);
-            this.Controls.Add(this.label86);
+            this.Controls.Add(this.Last50);
+            this.Controls.Add(this.Last49);
+            this.Controls.Add(this.Last48);
             this.Controls.Add(this.Text50);
             this.Controls.Add(this.Length50);
             this.Controls.Add(this.Length49);
@@ -4134,114 +4137,114 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex49);
             this.Controls.Add(this.Text48);
             this.Controls.Add(this.Hex48);
-            this.Controls.Add(this.label46);
+            this.Controls.Add(this.Last47);
             this.Controls.Add(this.Text47);
             this.Controls.Add(this.Length47);
             this.Controls.Add(this.Hex47);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.textBox47);
+            this.Controls.Add(this.Last46);
+            this.Controls.Add(this.Last45);
+            this.Controls.Add(this.Last44);
+            this.Controls.Add(this.Text46);
             this.Controls.Add(this.Length46);
             this.Controls.Add(this.Length45);
             this.Controls.Add(this.Length44);
-            this.Controls.Add(this.textBox48);
-            this.Controls.Add(this.textBox49);
-            this.Controls.Add(this.textBox50);
-            this.Controls.Add(this.textBox51);
-            this.Controls.Add(this.textBox52);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.label55);
-            this.Controls.Add(this.label56);
-            this.Controls.Add(this.textBox53);
+            this.Controls.Add(this.Hex46);
+            this.Controls.Add(this.Text45);
+            this.Controls.Add(this.Hex45);
+            this.Controls.Add(this.Text44);
+            this.Controls.Add(this.Hex44);
+            this.Controls.Add(this.Last43);
+            this.Controls.Add(this.Last42);
+            this.Controls.Add(this.Last41);
+            this.Controls.Add(this.Text43);
             this.Controls.Add(this.Length43);
             this.Controls.Add(this.Length42);
             this.Controls.Add(this.Length41);
-            this.Controls.Add(this.textBox54);
-            this.Controls.Add(this.textBox55);
-            this.Controls.Add(this.textBox56);
-            this.Controls.Add(this.textBox57);
-            this.Controls.Add(this.textBox58);
-            this.Controls.Add(this.label60);
-            this.Controls.Add(this.textBox59);
+            this.Controls.Add(this.Hex43);
+            this.Controls.Add(this.Text42);
+            this.Controls.Add(this.Hex42);
+            this.Controls.Add(this.Text41);
+            this.Controls.Add(this.Hex41);
+            this.Controls.Add(this.Last40);
+            this.Controls.Add(this.Text40);
             this.Controls.Add(this.Length40);
-            this.Controls.Add(this.textBox60);
-            this.Controls.Add(this.label62);
-            this.Controls.Add(this.label63);
-            this.Controls.Add(this.label64);
-            this.Controls.Add(this.textBox61);
+            this.Controls.Add(this.Hex40);
+            this.Controls.Add(this.Last39);
+            this.Controls.Add(this.Last38);
+            this.Controls.Add(this.Last37);
+            this.Controls.Add(this.Text39);
             this.Controls.Add(this.Length39);
             this.Controls.Add(this.Length38);
             this.Controls.Add(this.Length37);
-            this.Controls.Add(this.textBox62);
-            this.Controls.Add(this.textBox63);
-            this.Controls.Add(this.textBox64);
-            this.Controls.Add(this.textBox65);
-            this.Controls.Add(this.textBox66);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.Hex39);
+            this.Controls.Add(this.Text38);
+            this.Controls.Add(this.Hex38);
+            this.Controls.Add(this.Text37);
+            this.Controls.Add(this.Hex37);
+            this.Controls.Add(this.Last36);
+            this.Controls.Add(this.Text36);
             this.Controls.Add(this.Length36);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.Hex36);
+            this.Controls.Add(this.Last35);
+            this.Controls.Add(this.Last34);
+            this.Controls.Add(this.Last33);
+            this.Controls.Add(this.Text35);
             this.Controls.Add(this.Length35);
             this.Controls.Add(this.Length34);
             this.Controls.Add(this.Length33);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.textBox31);
+            this.Controls.Add(this.Hex35);
+            this.Controls.Add(this.Text34);
+            this.Controls.Add(this.Hex34);
+            this.Controls.Add(this.Text33);
+            this.Controls.Add(this.Hex33);
+            this.Controls.Add(this.Last32);
+            this.Controls.Add(this.Last31);
+            this.Controls.Add(this.Last30);
+            this.Controls.Add(this.Text32);
             this.Controls.Add(this.Length32);
             this.Controls.Add(this.Length31);
             this.Controls.Add(this.Length30);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.textBox37);
+            this.Controls.Add(this.Hex32);
+            this.Controls.Add(this.Text31);
+            this.Controls.Add(this.Hex31);
+            this.Controls.Add(this.Text30);
+            this.Controls.Add(this.Hex30);
+            this.Controls.Add(this.Last29);
+            this.Controls.Add(this.Text29);
             this.Controls.Add(this.Length29);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.textBox39);
+            this.Controls.Add(this.Hex29);
+            this.Controls.Add(this.Last28);
+            this.Controls.Add(this.Last27);
+            this.Controls.Add(this.Last26);
+            this.Controls.Add(this.Text28);
             this.Controls.Add(this.Length28);
             this.Controls.Add(this.Length27);
             this.Controls.Add(this.Length26);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Hex28);
+            this.Controls.Add(this.Text27);
+            this.Controls.Add(this.Hex27);
+            this.Controls.Add(this.Text26);
+            this.Controls.Add(this.Hex26);
+            this.Controls.Add(this.Last25);
             this.Controls.Add(this.Text25);
             this.Controls.Add(this.Length25);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Hex25);
+            this.Controls.Add(this.Last24);
+            this.Controls.Add(this.Last23);
+            this.Controls.Add(this.Last22);
+            this.Controls.Add(this.Text24);
             this.Controls.Add(this.Length24);
             this.Controls.Add(this.Length23);
             this.Controls.Add(this.Length22);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.Hex24);
+            this.Controls.Add(this.Text23);
+            this.Controls.Add(this.Hex23);
+            this.Controls.Add(this.Text22);
+            this.Controls.Add(this.Hex22);
             this.Controls.Add(this.Last21);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.Last20);
+            this.Controls.Add(this.Last19);
+            this.Controls.Add(this.Text21);
             this.Controls.Add(this.Length21);
             this.Controls.Add(this.Length20);
             this.Controls.Add(this.Length19);
@@ -4250,22 +4253,22 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex20);
             this.Controls.Add(this.Text19);
             this.Controls.Add(this.Hex19);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.Last18);
+            this.Controls.Add(this.Text18);
             this.Controls.Add(this.Length18);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.Hex18);
+            this.Controls.Add(this.Last17);
+            this.Controls.Add(this.Last16);
+            this.Controls.Add(this.Last15);
+            this.Controls.Add(this.Text17);
             this.Controls.Add(this.Length17);
             this.Controls.Add(this.Length16);
             this.Controls.Add(this.Length15);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.Hex17);
+            this.Controls.Add(this.Text16);
+            this.Controls.Add(this.Hex16);
+            this.Controls.Add(this.Text15);
+            this.Controls.Add(this.Hex15);
             this.Controls.Add(this.Left);
             this.Controls.Add(this.Length);
             this.Controls.Add(this.Save_as);
@@ -4328,7 +4331,7 @@ namespace ujl_subedit
             this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(910, 100000);
             this.MinimumSize = new System.Drawing.Size(910, 225);
-            this.Name = "editor";
+            this.Name = "Editor";
             this.Text = "COMOD11_SNG";
             this.Load += new System.EventHandler(this.COMOD11_SNG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -4400,26 +4403,26 @@ namespace ujl_subedit
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Length;
         private System.Windows.Forms.Label Left;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Last25;
         private System.Windows.Forms.TextBox Text25;
         private System.Windows.Forms.Label Length25;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Hex25;
+        private System.Windows.Forms.Label Last24;
+        private System.Windows.Forms.Label Last23;
+        private System.Windows.Forms.Label Last22;
+        private System.Windows.Forms.TextBox Text24;
         private System.Windows.Forms.Label Length24;
         private System.Windows.Forms.Label Length23;
         private System.Windows.Forms.Label Length22;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Hex24;
+        private System.Windows.Forms.TextBox Text23;
+        private System.Windows.Forms.TextBox Hex23;
+        private System.Windows.Forms.TextBox Text22;
+        private System.Windows.Forms.TextBox Hex22;
         private System.Windows.Forms.Label Last21;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label Last20;
+        private System.Windows.Forms.Label Last19;
+        private System.Windows.Forms.TextBox Text21;
         private System.Windows.Forms.Label Length21;
         private System.Windows.Forms.Label Length20;
         private System.Windows.Forms.Label Length19;
@@ -4428,117 +4431,117 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex20;
         private System.Windows.Forms.TextBox Text19;
         private System.Windows.Forms.TextBox Hex19;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label Last18;
+        private System.Windows.Forms.TextBox Text18;
         private System.Windows.Forms.Label Length18;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox Hex18;
+        private System.Windows.Forms.Label Last17;
+        private System.Windows.Forms.Label Last16;
+        private System.Windows.Forms.Label Last15;
+        private System.Windows.Forms.TextBox Text17;
         private System.Windows.Forms.Label Length17;
         private System.Windows.Forms.Label Length16;
         private System.Windows.Forms.Label Length15;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox Hex17;
+        private System.Windows.Forms.TextBox Text16;
+        private System.Windows.Forms.TextBox Hex16;
+        private System.Windows.Forms.TextBox Text15;
+        private System.Windows.Forms.TextBox Hex15;
+        private System.Windows.Forms.Label Last36;
+        private System.Windows.Forms.TextBox Text36;
         private System.Windows.Forms.Label Length36;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox Hex36;
+        private System.Windows.Forms.Label Last35;
+        private System.Windows.Forms.Label Last34;
+        private System.Windows.Forms.Label Last33;
+        private System.Windows.Forms.TextBox Text35;
         private System.Windows.Forms.Label Length35;
         private System.Windows.Forms.Label Length34;
         private System.Windows.Forms.Label Length33;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox Hex35;
+        private System.Windows.Forms.TextBox Text34;
+        private System.Windows.Forms.TextBox Hex34;
+        private System.Windows.Forms.TextBox Text33;
+        private System.Windows.Forms.TextBox Hex33;
+        private System.Windows.Forms.Label Last32;
+        private System.Windows.Forms.Label Last31;
+        private System.Windows.Forms.Label Last30;
+        private System.Windows.Forms.TextBox Text32;
         private System.Windows.Forms.Label Length32;
         private System.Windows.Forms.Label Length31;
         private System.Windows.Forms.Label Length30;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox Hex32;
+        private System.Windows.Forms.TextBox Text31;
+        private System.Windows.Forms.TextBox Hex31;
+        private System.Windows.Forms.TextBox Text30;
+        private System.Windows.Forms.TextBox Hex30;
+        private System.Windows.Forms.Label Last29;
+        private System.Windows.Forms.TextBox Text29;
         private System.Windows.Forms.Label Length29;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox Hex29;
+        private System.Windows.Forms.Label Last28;
+        private System.Windows.Forms.Label Last27;
+        private System.Windows.Forms.Label Last26;
+        private System.Windows.Forms.TextBox Text28;
         private System.Windows.Forms.Label Length28;
         private System.Windows.Forms.Label Length27;
         private System.Windows.Forms.Label Length26;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox Hex28;
+        private System.Windows.Forms.TextBox Text27;
+        private System.Windows.Forms.TextBox Hex27;
+        private System.Windows.Forms.TextBox Text26;
+        private System.Windows.Forms.TextBox Hex26;
+        private System.Windows.Forms.Label Last47;
         private System.Windows.Forms.TextBox Text47;
         private System.Windows.Forms.Label Length47;
         private System.Windows.Forms.TextBox Hex47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.Label Last46;
+        private System.Windows.Forms.Label Last45;
+        private System.Windows.Forms.Label Last44;
+        private System.Windows.Forms.TextBox Text46;
         private System.Windows.Forms.Label Length46;
         private System.Windows.Forms.Label Length45;
         private System.Windows.Forms.Label Length44;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.TextBox Hex46;
+        private System.Windows.Forms.TextBox Text45;
+        private System.Windows.Forms.TextBox Hex45;
+        private System.Windows.Forms.TextBox Text44;
+        private System.Windows.Forms.TextBox Hex44;
+        private System.Windows.Forms.Label Last43;
+        private System.Windows.Forms.Label Last42;
+        private System.Windows.Forms.Label Last41;
+        private System.Windows.Forms.TextBox Text43;
         private System.Windows.Forms.Label Length43;
         private System.Windows.Forms.Label Length42;
         private System.Windows.Forms.Label Length41;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.TextBox Hex43;
+        private System.Windows.Forms.TextBox Text42;
+        private System.Windows.Forms.TextBox Hex42;
+        private System.Windows.Forms.TextBox Text41;
+        private System.Windows.Forms.TextBox Hex41;
+        private System.Windows.Forms.Label Last40;
+        private System.Windows.Forms.TextBox Text40;
         private System.Windows.Forms.Label Length40;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox61;
+        private System.Windows.Forms.TextBox Hex40;
+        private System.Windows.Forms.Label Last39;
+        private System.Windows.Forms.Label Last38;
+        private System.Windows.Forms.Label Last37;
+        private System.Windows.Forms.TextBox Text39;
         private System.Windows.Forms.Label Length39;
         private System.Windows.Forms.Label Length38;
         private System.Windows.Forms.Label Length37;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox Hex39;
+        private System.Windows.Forms.TextBox Text38;
+        private System.Windows.Forms.TextBox Hex38;
+        private System.Windows.Forms.TextBox Text37;
+        private System.Windows.Forms.TextBox Hex37;
+        private System.Windows.Forms.Label Last58;
         private System.Windows.Forms.TextBox Text58;
         private System.Windows.Forms.Label Length58;
         private System.Windows.Forms.TextBox Hex58;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label Last57;
+        private System.Windows.Forms.Label Last56;
+        private System.Windows.Forms.Label Last55;
         private System.Windows.Forms.TextBox Text57;
         private System.Windows.Forms.Label Length57;
         private System.Windows.Forms.Label Length56;
@@ -4548,9 +4551,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex56;
         private System.Windows.Forms.TextBox Text55;
         private System.Windows.Forms.TextBox Hex55;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label Last54;
+        private System.Windows.Forms.Label Last53;
+        private System.Windows.Forms.Label Last52;
         private System.Windows.Forms.TextBox Text54;
         private System.Windows.Forms.Label Length54;
         private System.Windows.Forms.Label Length53;
@@ -4560,13 +4563,13 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex53;
         private System.Windows.Forms.TextBox Text52;
         private System.Windows.Forms.TextBox Hex52;
-        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label Last51;
         private System.Windows.Forms.TextBox Text51;
         private System.Windows.Forms.Label Length51;
         private System.Windows.Forms.TextBox Hex51;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label Last50;
+        private System.Windows.Forms.Label Last49;
+        private System.Windows.Forms.Label Last48;
         private System.Windows.Forms.TextBox Text50;
         private System.Windows.Forms.Label Length50;
         private System.Windows.Forms.Label Length49;
@@ -4576,9 +4579,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex49;
         private System.Windows.Forms.TextBox Text48;
         private System.Windows.Forms.TextBox Hex48;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Last90;
+        private System.Windows.Forms.Label Last89;
+        private System.Windows.Forms.Label Last88;
         private System.Windows.Forms.TextBox Text90;
         private System.Windows.Forms.Label Length90;
         private System.Windows.Forms.Label Length89;
@@ -4588,13 +4591,13 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex89;
         private System.Windows.Forms.TextBox Text88;
         private System.Windows.Forms.TextBox Hex88;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Last87;
         private System.Windows.Forms.TextBox Text87;
         private System.Windows.Forms.Label Length87;
         private System.Windows.Forms.TextBox Hex87;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label Last86;
+        private System.Windows.Forms.Label Last85;
+        private System.Windows.Forms.Label Last84;
         private System.Windows.Forms.TextBox Text86;
         private System.Windows.Forms.Label Length86;
         private System.Windows.Forms.Label Length85;
@@ -4608,9 +4611,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Text83;
         private System.Windows.Forms.Label Length83;
         private System.Windows.Forms.TextBox Hex83;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label Last82;
+        private System.Windows.Forms.Label Last81;
+        private System.Windows.Forms.Label Last80;
         private System.Windows.Forms.TextBox Text82;
         private System.Windows.Forms.Label Length82;
         private System.Windows.Forms.Label Length81;
@@ -4620,9 +4623,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex81;
         private System.Windows.Forms.TextBox Text80;
         private System.Windows.Forms.TextBox Hex80;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label Last79;
+        private System.Windows.Forms.Label Last78;
+        private System.Windows.Forms.Label Last77;
         private System.Windows.Forms.TextBox Text79;
         private System.Windows.Forms.Label Length79;
         private System.Windows.Forms.Label Length78;
@@ -4632,13 +4635,13 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex78;
         private System.Windows.Forms.TextBox Text77;
         private System.Windows.Forms.TextBox Hex77;
-        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label Last76;
         private System.Windows.Forms.TextBox Text76;
         private System.Windows.Forms.Label Length76;
         private System.Windows.Forms.TextBox Hex76;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label Last75;
+        private System.Windows.Forms.Label Last74;
+        private System.Windows.Forms.Label Last73;
         private System.Windows.Forms.TextBox Text75;
         private System.Windows.Forms.Label Length75;
         private System.Windows.Forms.Label Length74;
@@ -4648,13 +4651,13 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex74;
         private System.Windows.Forms.TextBox Text73;
         private System.Windows.Forms.TextBox Hex73;
-        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label Last72;
         private System.Windows.Forms.TextBox Text72;
         private System.Windows.Forms.Label Length72;
         private System.Windows.Forms.TextBox Hex72;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label Last71;
+        private System.Windows.Forms.Label Last70;
+        private System.Windows.Forms.Label Last69;
         private System.Windows.Forms.TextBox Text71;
         private System.Windows.Forms.Label Length71;
         private System.Windows.Forms.Label Length70;
@@ -4664,9 +4667,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex70;
         private System.Windows.Forms.TextBox Text69;
         private System.Windows.Forms.TextBox Hex69;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label Last68;
+        private System.Windows.Forms.Label Last67;
+        private System.Windows.Forms.Label Last66;
         private System.Windows.Forms.TextBox Text68;
         private System.Windows.Forms.Label Length68;
         private System.Windows.Forms.Label Length67;
@@ -4676,13 +4679,13 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex67;
         private System.Windows.Forms.TextBox Text66;
         private System.Windows.Forms.TextBox Hex66;
-        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label Last65;
         private System.Windows.Forms.TextBox Text65;
         private System.Windows.Forms.Label Length65;
         private System.Windows.Forms.TextBox Hex65;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label Last64;
+        private System.Windows.Forms.Label Last63;
+        private System.Windows.Forms.Label Last62;
         private System.Windows.Forms.TextBox Text64;
         private System.Windows.Forms.Label Length64;
         private System.Windows.Forms.Label Length63;
@@ -4692,9 +4695,9 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex63;
         private System.Windows.Forms.TextBox Text62;
         private System.Windows.Forms.TextBox Hex62;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label Last61;
+        private System.Windows.Forms.Label Last60;
+        private System.Windows.Forms.Label Last59;
         private System.Windows.Forms.TextBox Text61;
         private System.Windows.Forms.Label Length61;
         private System.Windows.Forms.Label Length60;

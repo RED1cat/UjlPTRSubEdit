@@ -50,11 +50,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="editor.cs">
+    <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="editor.Designer.cs">
-      <DependentUpon>editor.cs</DependentUpon>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
     <Compile Include="Open_File.cs">
       <SubType>Form</SubType>
@@ -64,8 +64,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="editor.resx">
-      <DependentUpon>editor.cs</DependentUpon>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Open_File.resx">
       <DependentUpon>Open_File.cs</DependentUpon>
