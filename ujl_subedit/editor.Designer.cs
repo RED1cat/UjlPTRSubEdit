@@ -89,8 +89,8 @@ namespace ujl_subedit
             this.Save_as = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Length = new System.Windows.Forms.Label();
-            this.Left = new System.Windows.Forms.Label();
+            this.Length0 = new System.Windows.Forms.Label();
+            this.Left0 = new System.Windows.Forms.Label();
             this.Last25 = new System.Windows.Forms.Label();
             this.Text25 = new System.Windows.Forms.TextBox();
             this.Length25 = new System.Windows.Forms.Label();
@@ -395,6 +395,116 @@ namespace ujl_subedit
             this.Hex60 = new System.Windows.Forms.TextBox();
             this.Text59 = new System.Windows.Forms.TextBox();
             this.Hex59 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.Last91 = new System.Windows.Forms.Label();
+            this.Text91 = new System.Windows.Forms.TextBox();
+            this.Length91 = new System.Windows.Forms.Label();
+            this.Hex91 = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.Last94 = new System.Windows.Forms.Label();
+            this.Text94 = new System.Windows.Forms.TextBox();
+            this.Length94 = new System.Windows.Forms.Label();
+            this.Hex94 = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.Last93 = new System.Windows.Forms.Label();
+            this.Last92 = new System.Windows.Forms.Label();
+            this.Text93 = new System.Windows.Forms.TextBox();
+            this.Length93 = new System.Windows.Forms.Label();
+            this.Length92 = new System.Windows.Forms.Label();
+            this.Hex93 = new System.Windows.Forms.TextBox();
+            this.Text92 = new System.Windows.Forms.TextBox();
+            this.Hex92 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -408,7 +518,7 @@ namespace ujl_subedit
             this.Hex1.Size = new System.Drawing.Size(399, 60);
             this.Hex1.TabIndex = 0;
             this.Hex1.Text = "00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00\r\n";
-            this.Hex1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Hex1.TextChanged += new System.EventHandler(this.Hex1_TextChanged);
             // 
             // Text1
             // 
@@ -419,7 +529,7 @@ namespace ujl_subedit
             this.Text1.Name = "Text1";
             this.Text1.Size = new System.Drawing.Size(399, 60);
             this.Text1.TabIndex = 1;
-            this.Text1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.Text1.TextChanged += new System.EventHandler(this.Text1_TextChanged);
             // 
             // Hex2
             // 
@@ -429,7 +539,7 @@ namespace ujl_subedit
             this.Hex2.Name = "Hex2";
             this.Hex2.Size = new System.Drawing.Size(399, 60);
             this.Hex2.TabIndex = 2;
-            this.Hex2.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.Hex2.TextChanged += new System.EventHandler(this.Hex2_TextChanged);
             // 
             // Text2
             // 
@@ -439,7 +549,7 @@ namespace ujl_subedit
             this.Text2.Name = "Text2";
             this.Text2.Size = new System.Drawing.Size(399, 60);
             this.Text2.TabIndex = 3;
-            this.Text2.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.Text2.TextChanged += new System.EventHandler(this.Text2_TextChanged);
             // 
             // Hex3
             // 
@@ -564,7 +674,7 @@ namespace ujl_subedit
             this.Text6.Size = new System.Drawing.Size(399, 60);
             this.Text6.TabIndex = 20;
             this.Text6.Text = " ";
-            this.Text6.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.Text6.TextChanged += new System.EventHandler(this.Text6_TextChanged_1);
             // 
             // Length6
             // 
@@ -604,7 +714,7 @@ namespace ujl_subedit
             this.Hex6.Name = "Hex6";
             this.Hex6.Size = new System.Drawing.Size(399, 60);
             this.Hex6.TabIndex = 16;
-            this.Hex6.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            this.Hex6.TextChanged += new System.EventHandler(this.Hex6_TextChanged_1);
             // 
             // Text5
             // 
@@ -614,7 +724,7 @@ namespace ujl_subedit
             this.Text5.Name = "Text5";
             this.Text5.Size = new System.Drawing.Size(399, 60);
             this.Text5.TabIndex = 15;
-            this.Text5.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
+            this.Text5.TextChanged += new System.EventHandler(this.Text5_TextChanged_1);
             // 
             // Hex5
             // 
@@ -624,7 +734,7 @@ namespace ujl_subedit
             this.Hex5.Name = "Hex5";
             this.Hex5.Size = new System.Drawing.Size(399, 60);
             this.Hex5.TabIndex = 14;
-            this.Hex5.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
+            this.Hex5.TextChanged += new System.EventHandler(this.Hex5_TextChanged_1);
             // 
             // Text4
             // 
@@ -635,7 +745,7 @@ namespace ujl_subedit
             this.Text4.Name = "Text4";
             this.Text4.Size = new System.Drawing.Size(399, 60);
             this.Text4.TabIndex = 13;
-            this.Text4.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.Text4.TextChanged += new System.EventHandler(this.Text4_TextChanged);
             // 
             // Hex4
             // 
@@ -646,7 +756,7 @@ namespace ujl_subedit
             this.Hex4.Name = "Hex4";
             this.Hex4.Size = new System.Drawing.Size(399, 60);
             this.Hex4.TabIndex = 12;
-            this.Hex4.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.Hex4.TextChanged += new System.EventHandler(this.Hex4_TextChanged);
             // 
             // Last7
             // 
@@ -666,7 +776,7 @@ namespace ujl_subedit
             this.Text7.Name = "Text7";
             this.Text7.Size = new System.Drawing.Size(399, 60);
             this.Text7.TabIndex = 26;
-            this.Text7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.Text7.TextChanged += new System.EventHandler(this.Text7_TextChanged);
             // 
             // Length7
             // 
@@ -686,7 +796,7 @@ namespace ujl_subedit
             this.Hex7.Name = "Hex7";
             this.Hex7.Size = new System.Drawing.Size(399, 60);
             this.Hex7.TabIndex = 24;
-            this.Hex7.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.Hex7.TextChanged += new System.EventHandler(this.Hex7_TextChanged);
             // 
             // Last14
             // 
@@ -992,27 +1102,27 @@ namespace ujl_subedit
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // Length
+            // Length0
             // 
-            this.Length.AutoSize = true;
-            this.Length.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.Length.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Length.Location = new System.Drawing.Point(3, 63);
-            this.Length.Name = "Length";
-            this.Length.Size = new System.Drawing.Size(42, 20);
-            this.Length.TabIndex = 58;
-            this.Length.Text = "Length";
+            this.Length0.AutoSize = true;
+            this.Length0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.Length0.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length0.Location = new System.Drawing.Point(3, 63);
+            this.Length0.Name = "Length0";
+            this.Length0.Size = new System.Drawing.Size(83, 20);
+            this.Length0.TabIndex = 58;
+            this.Length0.Text = "Length  and №";
             // 
-            // Left
+            // Left0
             // 
-            this.Left.AutoSize = true;
-            this.Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.Left.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Left.Location = new System.Drawing.Point(837, 63);
-            this.Left.Name = "Left";
-            this.Left.Size = new System.Drawing.Size(28, 20);
-            this.Left.TabIndex = 59;
-            this.Left.Text = "Left";
+            this.Left0.AutoSize = true;
+            this.Left0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.Left0.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Left0.Location = new System.Drawing.Point(837, 63);
+            this.Left0.Name = "Left0";
+            this.Left0.Size = new System.Drawing.Size(28, 20);
+            this.Left0.TabIndex = 59;
+            this.Left0.Text = "Left";
             // 
             // Last25
             // 
@@ -1032,6 +1142,7 @@ namespace ujl_subedit
             this.Text25.Name = "Text25";
             this.Text25.Size = new System.Drawing.Size(399, 60);
             this.Text25.TabIndex = 102;
+            this.Text25.TextChanged += new System.EventHandler(this.Text25_TextChanged);
             // 
             // Length25
             // 
@@ -1051,6 +1162,7 @@ namespace ujl_subedit
             this.Hex25.Name = "Hex25";
             this.Hex25.Size = new System.Drawing.Size(399, 60);
             this.Hex25.TabIndex = 100;
+            this.Hex25.TextChanged += new System.EventHandler(this.Hex25_TextChanged);
             // 
             // Last24
             // 
@@ -1090,6 +1202,7 @@ namespace ujl_subedit
             this.Text24.Name = "Text24";
             this.Text24.Size = new System.Drawing.Size(399, 60);
             this.Text24.TabIndex = 96;
+            this.Text24.TextChanged += new System.EventHandler(this.Text24_TextChanged);
             // 
             // Length24
             // 
@@ -1129,6 +1242,7 @@ namespace ujl_subedit
             this.Hex24.Name = "Hex24";
             this.Hex24.Size = new System.Drawing.Size(399, 60);
             this.Hex24.TabIndex = 92;
+            this.Hex24.TextChanged += new System.EventHandler(this.Hex24_TextChanged);
             // 
             // Text23
             // 
@@ -1138,6 +1252,7 @@ namespace ujl_subedit
             this.Text23.Name = "Text23";
             this.Text23.Size = new System.Drawing.Size(399, 60);
             this.Text23.TabIndex = 91;
+            this.Text23.TextChanged += new System.EventHandler(this.Text23_TextChanged);
             // 
             // Hex23
             // 
@@ -1147,6 +1262,7 @@ namespace ujl_subedit
             this.Hex23.Name = "Hex23";
             this.Hex23.Size = new System.Drawing.Size(399, 60);
             this.Hex23.TabIndex = 90;
+            this.Hex23.TextChanged += new System.EventHandler(this.Hex23_TextChanged);
             // 
             // Text22
             // 
@@ -1157,6 +1273,7 @@ namespace ujl_subedit
             this.Text22.Name = "Text22";
             this.Text22.Size = new System.Drawing.Size(399, 60);
             this.Text22.TabIndex = 89;
+            this.Text22.TextChanged += new System.EventHandler(this.Text22_TextChanged);
             // 
             // Hex22
             // 
@@ -1167,6 +1284,7 @@ namespace ujl_subedit
             this.Hex22.Name = "Hex22";
             this.Hex22.Size = new System.Drawing.Size(399, 60);
             this.Hex22.TabIndex = 88;
+            this.Hex22.TextChanged += new System.EventHandler(this.Hex22_TextChanged);
             // 
             // Last21
             // 
@@ -1206,6 +1324,7 @@ namespace ujl_subedit
             this.Text21.Name = "Text21";
             this.Text21.Size = new System.Drawing.Size(399, 60);
             this.Text21.TabIndex = 84;
+            this.Text21.TextChanged += new System.EventHandler(this.Text21_TextChanged);
             // 
             // Length21
             // 
@@ -1245,6 +1364,7 @@ namespace ujl_subedit
             this.Hex21.Name = "Hex21";
             this.Hex21.Size = new System.Drawing.Size(399, 60);
             this.Hex21.TabIndex = 80;
+            this.Hex21.TextChanged += new System.EventHandler(this.Hex21_TextChanged);
             // 
             // Text20
             // 
@@ -1254,6 +1374,7 @@ namespace ujl_subedit
             this.Text20.Name = "Text20";
             this.Text20.Size = new System.Drawing.Size(399, 60);
             this.Text20.TabIndex = 79;
+            this.Text20.TextChanged += new System.EventHandler(this.Text20_TextChanged);
             // 
             // Hex20
             // 
@@ -1263,6 +1384,7 @@ namespace ujl_subedit
             this.Hex20.Name = "Hex20";
             this.Hex20.Size = new System.Drawing.Size(399, 60);
             this.Hex20.TabIndex = 78;
+            this.Hex20.TextChanged += new System.EventHandler(this.Hex20_TextChanged);
             // 
             // Text19
             // 
@@ -1273,6 +1395,7 @@ namespace ujl_subedit
             this.Text19.Name = "Text19";
             this.Text19.Size = new System.Drawing.Size(399, 60);
             this.Text19.TabIndex = 77;
+            this.Text19.TextChanged += new System.EventHandler(this.Text19_TextChanged);
             // 
             // Hex19
             // 
@@ -1283,6 +1406,7 @@ namespace ujl_subedit
             this.Hex19.Name = "Hex19";
             this.Hex19.Size = new System.Drawing.Size(399, 60);
             this.Hex19.TabIndex = 76;
+            this.Hex19.TextChanged += new System.EventHandler(this.Hex19_TextChanged);
             // 
             // Last18
             // 
@@ -1302,6 +1426,7 @@ namespace ujl_subedit
             this.Text18.Name = "Text18";
             this.Text18.Size = new System.Drawing.Size(399, 60);
             this.Text18.TabIndex = 74;
+            this.Text18.TextChanged += new System.EventHandler(this.Text18_TextChanged);
             // 
             // Length18
             // 
@@ -1321,6 +1446,7 @@ namespace ujl_subedit
             this.Hex18.Name = "Hex18";
             this.Hex18.Size = new System.Drawing.Size(399, 60);
             this.Hex18.TabIndex = 72;
+            this.Hex18.TextChanged += new System.EventHandler(this.Hex18_TextChanged);
             // 
             // Last17
             // 
@@ -1361,6 +1487,7 @@ namespace ujl_subedit
             this.Text17.Size = new System.Drawing.Size(399, 60);
             this.Text17.TabIndex = 68;
             this.Text17.Text = " ";
+            this.Text17.TextChanged += new System.EventHandler(this.Text17_TextChanged);
             // 
             // Length17
             // 
@@ -1400,6 +1527,7 @@ namespace ujl_subedit
             this.Hex17.Name = "Hex17";
             this.Hex17.Size = new System.Drawing.Size(399, 60);
             this.Hex17.TabIndex = 64;
+            this.Hex17.TextChanged += new System.EventHandler(this.Hex17_TextChanged);
             // 
             // Text16
             // 
@@ -1409,6 +1537,7 @@ namespace ujl_subedit
             this.Text16.Name = "Text16";
             this.Text16.Size = new System.Drawing.Size(399, 60);
             this.Text16.TabIndex = 63;
+            this.Text16.TextChanged += new System.EventHandler(this.Text16_TextChanged);
             // 
             // Hex16
             // 
@@ -1418,6 +1547,7 @@ namespace ujl_subedit
             this.Hex16.Name = "Hex16";
             this.Hex16.Size = new System.Drawing.Size(399, 60);
             this.Hex16.TabIndex = 62;
+            this.Hex16.TextChanged += new System.EventHandler(this.Hex16_TextChanged);
             // 
             // Text15
             // 
@@ -1428,6 +1558,7 @@ namespace ujl_subedit
             this.Text15.Name = "Text15";
             this.Text15.Size = new System.Drawing.Size(399, 60);
             this.Text15.TabIndex = 61;
+            this.Text15.TextChanged += new System.EventHandler(this.Text15_TextChanged);
             // 
             // Hex15
             // 
@@ -1438,6 +1569,7 @@ namespace ujl_subedit
             this.Hex15.Name = "Hex15";
             this.Hex15.Size = new System.Drawing.Size(399, 60);
             this.Hex15.TabIndex = 60;
+            this.Hex15.TextChanged += new System.EventHandler(this.Hex15_TextChanged);
             // 
             // Last36
             // 
@@ -1457,6 +1589,7 @@ namespace ujl_subedit
             this.Text36.Name = "Text36";
             this.Text36.Size = new System.Drawing.Size(399, 60);
             this.Text36.TabIndex = 146;
+            this.Text36.TextChanged += new System.EventHandler(this.Text36_TextChanged);
             // 
             // Length36
             // 
@@ -1476,6 +1609,7 @@ namespace ujl_subedit
             this.Hex36.Name = "Hex36";
             this.Hex36.Size = new System.Drawing.Size(399, 60);
             this.Hex36.TabIndex = 144;
+            this.Hex36.TextChanged += new System.EventHandler(this.Hex36_TextChanged);
             // 
             // Last35
             // 
@@ -1515,6 +1649,7 @@ namespace ujl_subedit
             this.Text35.Name = "Text35";
             this.Text35.Size = new System.Drawing.Size(399, 60);
             this.Text35.TabIndex = 140;
+            this.Text35.TextChanged += new System.EventHandler(this.Text35_TextChanged);
             // 
             // Length35
             // 
@@ -1554,6 +1689,7 @@ namespace ujl_subedit
             this.Hex35.Name = "Hex35";
             this.Hex35.Size = new System.Drawing.Size(399, 60);
             this.Hex35.TabIndex = 136;
+            this.Hex35.TextChanged += new System.EventHandler(this.Hex35_TextChanged);
             // 
             // Text34
             // 
@@ -1563,6 +1699,7 @@ namespace ujl_subedit
             this.Text34.Name = "Text34";
             this.Text34.Size = new System.Drawing.Size(399, 60);
             this.Text34.TabIndex = 135;
+            this.Text34.TextChanged += new System.EventHandler(this.Text34_TextChanged);
             // 
             // Hex34
             // 
@@ -1572,6 +1709,7 @@ namespace ujl_subedit
             this.Hex34.Name = "Hex34";
             this.Hex34.Size = new System.Drawing.Size(399, 60);
             this.Hex34.TabIndex = 134;
+            this.Hex34.TextChanged += new System.EventHandler(this.Hex34_TextChanged);
             // 
             // Text33
             // 
@@ -1582,6 +1720,7 @@ namespace ujl_subedit
             this.Text33.Name = "Text33";
             this.Text33.Size = new System.Drawing.Size(399, 60);
             this.Text33.TabIndex = 133;
+            this.Text33.TextChanged += new System.EventHandler(this.Text33_TextChanged);
             // 
             // Hex33
             // 
@@ -1592,6 +1731,7 @@ namespace ujl_subedit
             this.Hex33.Name = "Hex33";
             this.Hex33.Size = new System.Drawing.Size(399, 60);
             this.Hex33.TabIndex = 132;
+            this.Hex33.TextChanged += new System.EventHandler(this.Hex33_TextChanged);
             // 
             // Last32
             // 
@@ -1631,6 +1771,7 @@ namespace ujl_subedit
             this.Text32.Name = "Text32";
             this.Text32.Size = new System.Drawing.Size(399, 60);
             this.Text32.TabIndex = 128;
+            this.Text32.TextChanged += new System.EventHandler(this.Text32_TextChanged);
             // 
             // Length32
             // 
@@ -1670,6 +1811,7 @@ namespace ujl_subedit
             this.Hex32.Name = "Hex32";
             this.Hex32.Size = new System.Drawing.Size(399, 60);
             this.Hex32.TabIndex = 124;
+            this.Hex32.TextChanged += new System.EventHandler(this.Hex32_TextChanged);
             // 
             // Text31
             // 
@@ -1679,6 +1821,7 @@ namespace ujl_subedit
             this.Text31.Name = "Text31";
             this.Text31.Size = new System.Drawing.Size(399, 60);
             this.Text31.TabIndex = 123;
+            this.Text31.TextChanged += new System.EventHandler(this.Text31_TextChanged);
             // 
             // Hex31
             // 
@@ -1688,6 +1831,7 @@ namespace ujl_subedit
             this.Hex31.Name = "Hex31";
             this.Hex31.Size = new System.Drawing.Size(399, 60);
             this.Hex31.TabIndex = 122;
+            this.Hex31.TextChanged += new System.EventHandler(this.Hex31_TextChanged);
             // 
             // Text30
             // 
@@ -1698,6 +1842,7 @@ namespace ujl_subedit
             this.Text30.Name = "Text30";
             this.Text30.Size = new System.Drawing.Size(399, 60);
             this.Text30.TabIndex = 121;
+            this.Text30.TextChanged += new System.EventHandler(this.Text30_TextChanged);
             // 
             // Hex30
             // 
@@ -1708,6 +1853,7 @@ namespace ujl_subedit
             this.Hex30.Name = "Hex30";
             this.Hex30.Size = new System.Drawing.Size(399, 60);
             this.Hex30.TabIndex = 120;
+            this.Hex30.TextChanged += new System.EventHandler(this.Hex30_TextChanged);
             // 
             // Last29
             // 
@@ -1727,6 +1873,7 @@ namespace ujl_subedit
             this.Text29.Name = "Text29";
             this.Text29.Size = new System.Drawing.Size(399, 60);
             this.Text29.TabIndex = 118;
+            this.Text29.TextChanged += new System.EventHandler(this.Text29_TextChanged);
             // 
             // Length29
             // 
@@ -1746,6 +1893,7 @@ namespace ujl_subedit
             this.Hex29.Name = "Hex29";
             this.Hex29.Size = new System.Drawing.Size(399, 60);
             this.Hex29.TabIndex = 116;
+            this.Hex29.TextChanged += new System.EventHandler(this.Hex29_TextChanged);
             // 
             // Last28
             // 
@@ -1786,6 +1934,7 @@ namespace ujl_subedit
             this.Text28.Size = new System.Drawing.Size(399, 60);
             this.Text28.TabIndex = 112;
             this.Text28.Text = " ";
+            this.Text28.TextChanged += new System.EventHandler(this.Text28_TextChanged);
             // 
             // Length28
             // 
@@ -1825,6 +1974,7 @@ namespace ujl_subedit
             this.Hex28.Name = "Hex28";
             this.Hex28.Size = new System.Drawing.Size(399, 60);
             this.Hex28.TabIndex = 108;
+            this.Hex28.TextChanged += new System.EventHandler(this.Hex28_TextChanged);
             // 
             // Text27
             // 
@@ -1834,6 +1984,7 @@ namespace ujl_subedit
             this.Text27.Name = "Text27";
             this.Text27.Size = new System.Drawing.Size(399, 60);
             this.Text27.TabIndex = 107;
+            this.Text27.TextChanged += new System.EventHandler(this.Text27_TextChanged);
             // 
             // Hex27
             // 
@@ -1843,6 +1994,7 @@ namespace ujl_subedit
             this.Hex27.Name = "Hex27";
             this.Hex27.Size = new System.Drawing.Size(399, 60);
             this.Hex27.TabIndex = 106;
+            this.Hex27.TextChanged += new System.EventHandler(this.Hex27_TextChanged);
             // 
             // Text26
             // 
@@ -1853,6 +2005,7 @@ namespace ujl_subedit
             this.Text26.Name = "Text26";
             this.Text26.Size = new System.Drawing.Size(399, 60);
             this.Text26.TabIndex = 105;
+            this.Text26.TextChanged += new System.EventHandler(this.Text26_TextChanged);
             // 
             // Hex26
             // 
@@ -1863,6 +2016,7 @@ namespace ujl_subedit
             this.Hex26.Name = "Hex26";
             this.Hex26.Size = new System.Drawing.Size(399, 60);
             this.Hex26.TabIndex = 104;
+            this.Hex26.TextChanged += new System.EventHandler(this.Hex26_TextChanged);
             // 
             // Last47
             // 
@@ -1882,6 +2036,7 @@ namespace ujl_subedit
             this.Text47.Name = "Text47";
             this.Text47.Size = new System.Drawing.Size(399, 60);
             this.Text47.TabIndex = 190;
+            this.Text47.TextChanged += new System.EventHandler(this.Text47_TextChanged);
             // 
             // Length47
             // 
@@ -1901,6 +2056,7 @@ namespace ujl_subedit
             this.Hex47.Name = "Hex47";
             this.Hex47.Size = new System.Drawing.Size(399, 60);
             this.Hex47.TabIndex = 188;
+            this.Hex47.TextChanged += new System.EventHandler(this.Hex47_TextChanged);
             // 
             // Last46
             // 
@@ -1940,6 +2096,7 @@ namespace ujl_subedit
             this.Text46.Name = "Text46";
             this.Text46.Size = new System.Drawing.Size(399, 60);
             this.Text46.TabIndex = 184;
+            this.Text46.TextChanged += new System.EventHandler(this.Text46_TextChanged);
             // 
             // Length46
             // 
@@ -1979,6 +2136,7 @@ namespace ujl_subedit
             this.Hex46.Name = "Hex46";
             this.Hex46.Size = new System.Drawing.Size(399, 60);
             this.Hex46.TabIndex = 180;
+            this.Hex46.TextChanged += new System.EventHandler(this.Hex46_TextChanged);
             // 
             // Text45
             // 
@@ -1988,6 +2146,7 @@ namespace ujl_subedit
             this.Text45.Name = "Text45";
             this.Text45.Size = new System.Drawing.Size(399, 60);
             this.Text45.TabIndex = 179;
+            this.Text45.TextChanged += new System.EventHandler(this.Text45_TextChanged);
             // 
             // Hex45
             // 
@@ -1997,6 +2156,7 @@ namespace ujl_subedit
             this.Hex45.Name = "Hex45";
             this.Hex45.Size = new System.Drawing.Size(399, 60);
             this.Hex45.TabIndex = 178;
+            this.Hex45.TextChanged += new System.EventHandler(this.Hex45_TextChanged);
             // 
             // Text44
             // 
@@ -2007,6 +2167,7 @@ namespace ujl_subedit
             this.Text44.Name = "Text44";
             this.Text44.Size = new System.Drawing.Size(399, 60);
             this.Text44.TabIndex = 177;
+            this.Text44.TextChanged += new System.EventHandler(this.Text44_TextChanged);
             // 
             // Hex44
             // 
@@ -2017,6 +2178,7 @@ namespace ujl_subedit
             this.Hex44.Name = "Hex44";
             this.Hex44.Size = new System.Drawing.Size(399, 60);
             this.Hex44.TabIndex = 176;
+            this.Hex44.TextChanged += new System.EventHandler(this.Hex44_TextChanged);
             // 
             // Last43
             // 
@@ -2056,6 +2218,7 @@ namespace ujl_subedit
             this.Text43.Name = "Text43";
             this.Text43.Size = new System.Drawing.Size(399, 60);
             this.Text43.TabIndex = 172;
+            this.Text43.TextChanged += new System.EventHandler(this.Text43_TextChanged);
             // 
             // Length43
             // 
@@ -2095,6 +2258,7 @@ namespace ujl_subedit
             this.Hex43.Name = "Hex43";
             this.Hex43.Size = new System.Drawing.Size(399, 60);
             this.Hex43.TabIndex = 168;
+            this.Hex43.TextChanged += new System.EventHandler(this.Hex43_TextChanged);
             // 
             // Text42
             // 
@@ -2104,6 +2268,7 @@ namespace ujl_subedit
             this.Text42.Name = "Text42";
             this.Text42.Size = new System.Drawing.Size(399, 60);
             this.Text42.TabIndex = 167;
+            this.Text42.TextChanged += new System.EventHandler(this.Text42_TextChanged);
             // 
             // Hex42
             // 
@@ -2113,6 +2278,7 @@ namespace ujl_subedit
             this.Hex42.Name = "Hex42";
             this.Hex42.Size = new System.Drawing.Size(399, 60);
             this.Hex42.TabIndex = 166;
+            this.Hex42.TextChanged += new System.EventHandler(this.Hex42_TextChanged);
             // 
             // Text41
             // 
@@ -2123,6 +2289,7 @@ namespace ujl_subedit
             this.Text41.Name = "Text41";
             this.Text41.Size = new System.Drawing.Size(399, 60);
             this.Text41.TabIndex = 165;
+            this.Text41.TextChanged += new System.EventHandler(this.Text41_TextChanged);
             // 
             // Hex41
             // 
@@ -2133,6 +2300,7 @@ namespace ujl_subedit
             this.Hex41.Name = "Hex41";
             this.Hex41.Size = new System.Drawing.Size(399, 60);
             this.Hex41.TabIndex = 164;
+            this.Hex41.TextChanged += new System.EventHandler(this.Hex41_TextChanged);
             // 
             // Last40
             // 
@@ -2152,6 +2320,7 @@ namespace ujl_subedit
             this.Text40.Name = "Text40";
             this.Text40.Size = new System.Drawing.Size(399, 60);
             this.Text40.TabIndex = 162;
+            this.Text40.TextChanged += new System.EventHandler(this.Text40_TextChanged);
             // 
             // Length40
             // 
@@ -2171,6 +2340,7 @@ namespace ujl_subedit
             this.Hex40.Name = "Hex40";
             this.Hex40.Size = new System.Drawing.Size(399, 60);
             this.Hex40.TabIndex = 160;
+            this.Hex40.TextChanged += new System.EventHandler(this.Hex40_TextChanged);
             // 
             // Last39
             // 
@@ -2211,6 +2381,7 @@ namespace ujl_subedit
             this.Text39.Size = new System.Drawing.Size(399, 60);
             this.Text39.TabIndex = 156;
             this.Text39.Text = " ";
+            this.Text39.TextChanged += new System.EventHandler(this.Text39_TextChanged);
             // 
             // Length39
             // 
@@ -2250,6 +2421,7 @@ namespace ujl_subedit
             this.Hex39.Name = "Hex39";
             this.Hex39.Size = new System.Drawing.Size(399, 60);
             this.Hex39.TabIndex = 152;
+            this.Hex39.TextChanged += new System.EventHandler(this.Hex39_TextChanged);
             // 
             // Text38
             // 
@@ -2259,6 +2431,7 @@ namespace ujl_subedit
             this.Text38.Name = "Text38";
             this.Text38.Size = new System.Drawing.Size(399, 60);
             this.Text38.TabIndex = 151;
+            this.Text38.TextChanged += new System.EventHandler(this.Text38_TextChanged);
             // 
             // Hex38
             // 
@@ -2268,6 +2441,7 @@ namespace ujl_subedit
             this.Hex38.Name = "Hex38";
             this.Hex38.Size = new System.Drawing.Size(399, 60);
             this.Hex38.TabIndex = 150;
+            this.Hex38.TextChanged += new System.EventHandler(this.Hex38_TextChanged);
             // 
             // Text37
             // 
@@ -2278,6 +2452,7 @@ namespace ujl_subedit
             this.Text37.Name = "Text37";
             this.Text37.Size = new System.Drawing.Size(399, 60);
             this.Text37.TabIndex = 149;
+            this.Text37.TextChanged += new System.EventHandler(this.Text37_TextChanged);
             // 
             // Hex37
             // 
@@ -2288,6 +2463,7 @@ namespace ujl_subedit
             this.Hex37.Name = "Hex37";
             this.Hex37.Size = new System.Drawing.Size(399, 60);
             this.Hex37.TabIndex = 148;
+            this.Hex37.TextChanged += new System.EventHandler(this.Hex37_TextChanged);
             // 
             // Last58
             // 
@@ -2298,7 +2474,6 @@ namespace ujl_subedit
             this.Last58.Size = new System.Drawing.Size(28, 18);
             this.Last58.TabIndex = 235;
             this.Last58.Text = "58";
-            this.Last58.Click += new System.EventHandler(this.label68_Click);
             // 
             // Text58
             // 
@@ -2308,6 +2483,7 @@ namespace ujl_subedit
             this.Text58.Name = "Text58";
             this.Text58.Size = new System.Drawing.Size(399, 60);
             this.Text58.TabIndex = 234;
+            this.Text58.TextChanged += new System.EventHandler(this.Text58_TextChanged);
             // 
             // Length58
             // 
@@ -2327,6 +2503,7 @@ namespace ujl_subedit
             this.Hex58.Name = "Hex58";
             this.Hex58.Size = new System.Drawing.Size(399, 60);
             this.Hex58.TabIndex = 232;
+            this.Hex58.TextChanged += new System.EventHandler(this.Hex58_TextChanged);
             // 
             // Last57
             // 
@@ -2366,6 +2543,7 @@ namespace ujl_subedit
             this.Text57.Name = "Text57";
             this.Text57.Size = new System.Drawing.Size(399, 60);
             this.Text57.TabIndex = 228;
+            this.Text57.TextChanged += new System.EventHandler(this.Text57_TextChanged);
             // 
             // Length57
             // 
@@ -2405,6 +2583,7 @@ namespace ujl_subedit
             this.Hex57.Name = "Hex57";
             this.Hex57.Size = new System.Drawing.Size(399, 60);
             this.Hex57.TabIndex = 224;
+            this.Hex57.TextChanged += new System.EventHandler(this.Hex57_TextChanged);
             // 
             // Text56
             // 
@@ -2414,6 +2593,7 @@ namespace ujl_subedit
             this.Text56.Name = "Text56";
             this.Text56.Size = new System.Drawing.Size(399, 60);
             this.Text56.TabIndex = 223;
+            this.Text56.TextChanged += new System.EventHandler(this.Text56_TextChanged);
             // 
             // Hex56
             // 
@@ -2423,6 +2603,7 @@ namespace ujl_subedit
             this.Hex56.Name = "Hex56";
             this.Hex56.Size = new System.Drawing.Size(399, 60);
             this.Hex56.TabIndex = 222;
+            this.Hex56.TextChanged += new System.EventHandler(this.Hex56_TextChanged);
             // 
             // Text55
             // 
@@ -2433,6 +2614,7 @@ namespace ujl_subedit
             this.Text55.Name = "Text55";
             this.Text55.Size = new System.Drawing.Size(399, 60);
             this.Text55.TabIndex = 221;
+            this.Text55.TextChanged += new System.EventHandler(this.Text55_TextChanged);
             // 
             // Hex55
             // 
@@ -2443,6 +2625,7 @@ namespace ujl_subedit
             this.Hex55.Name = "Hex55";
             this.Hex55.Size = new System.Drawing.Size(399, 60);
             this.Hex55.TabIndex = 220;
+            this.Hex55.TextChanged += new System.EventHandler(this.Hex55_TextChanged);
             // 
             // Last54
             // 
@@ -2482,6 +2665,7 @@ namespace ujl_subedit
             this.Text54.Name = "Text54";
             this.Text54.Size = new System.Drawing.Size(399, 60);
             this.Text54.TabIndex = 216;
+            this.Text54.TextChanged += new System.EventHandler(this.Text54_TextChanged);
             // 
             // Length54
             // 
@@ -2521,6 +2705,7 @@ namespace ujl_subedit
             this.Hex54.Name = "Hex54";
             this.Hex54.Size = new System.Drawing.Size(399, 60);
             this.Hex54.TabIndex = 212;
+            this.Hex54.TextChanged += new System.EventHandler(this.Hex54_TextChanged);
             // 
             // Text53
             // 
@@ -2530,6 +2715,7 @@ namespace ujl_subedit
             this.Text53.Name = "Text53";
             this.Text53.Size = new System.Drawing.Size(399, 60);
             this.Text53.TabIndex = 211;
+            this.Text53.TextChanged += new System.EventHandler(this.Text53_TextChanged);
             // 
             // Hex53
             // 
@@ -2539,6 +2725,7 @@ namespace ujl_subedit
             this.Hex53.Name = "Hex53";
             this.Hex53.Size = new System.Drawing.Size(399, 60);
             this.Hex53.TabIndex = 210;
+            this.Hex53.TextChanged += new System.EventHandler(this.Hex53_TextChanged);
             // 
             // Text52
             // 
@@ -2549,6 +2736,7 @@ namespace ujl_subedit
             this.Text52.Name = "Text52";
             this.Text52.Size = new System.Drawing.Size(399, 60);
             this.Text52.TabIndex = 209;
+            this.Text52.TextChanged += new System.EventHandler(this.Text52_TextChanged);
             // 
             // Hex52
             // 
@@ -2559,6 +2747,7 @@ namespace ujl_subedit
             this.Hex52.Name = "Hex52";
             this.Hex52.Size = new System.Drawing.Size(399, 60);
             this.Hex52.TabIndex = 208;
+            this.Hex52.TextChanged += new System.EventHandler(this.Hex52_TextChanged);
             // 
             // Last51
             // 
@@ -2578,6 +2767,7 @@ namespace ujl_subedit
             this.Text51.Name = "Text51";
             this.Text51.Size = new System.Drawing.Size(399, 60);
             this.Text51.TabIndex = 206;
+            this.Text51.TextChanged += new System.EventHandler(this.Text51_TextChanged);
             // 
             // Length51
             // 
@@ -2597,6 +2787,7 @@ namespace ujl_subedit
             this.Hex51.Name = "Hex51";
             this.Hex51.Size = new System.Drawing.Size(399, 60);
             this.Hex51.TabIndex = 204;
+            this.Hex51.TextChanged += new System.EventHandler(this.Hex51_TextChanged);
             // 
             // Last50
             // 
@@ -2637,6 +2828,7 @@ namespace ujl_subedit
             this.Text50.Size = new System.Drawing.Size(399, 60);
             this.Text50.TabIndex = 200;
             this.Text50.Text = " ";
+            this.Text50.TextChanged += new System.EventHandler(this.Text50_TextChanged);
             // 
             // Length50
             // 
@@ -2676,6 +2868,7 @@ namespace ujl_subedit
             this.Hex50.Name = "Hex50";
             this.Hex50.Size = new System.Drawing.Size(399, 60);
             this.Hex50.TabIndex = 196;
+            this.Hex50.TextChanged += new System.EventHandler(this.Hex50_TextChanged);
             // 
             // Text49
             // 
@@ -2685,6 +2878,7 @@ namespace ujl_subedit
             this.Text49.Name = "Text49";
             this.Text49.Size = new System.Drawing.Size(399, 60);
             this.Text49.TabIndex = 195;
+            this.Text49.TextChanged += new System.EventHandler(this.Text49_TextChanged);
             // 
             // Hex49
             // 
@@ -2694,6 +2888,7 @@ namespace ujl_subedit
             this.Hex49.Name = "Hex49";
             this.Hex49.Size = new System.Drawing.Size(399, 60);
             this.Hex49.TabIndex = 194;
+            this.Hex49.TextChanged += new System.EventHandler(this.Hex49_TextChanged);
             // 
             // Text48
             // 
@@ -2704,6 +2899,7 @@ namespace ujl_subedit
             this.Text48.Name = "Text48";
             this.Text48.Size = new System.Drawing.Size(399, 60);
             this.Text48.TabIndex = 193;
+            this.Text48.TextChanged += new System.EventHandler(this.Text48_TextChanged);
             // 
             // Hex48
             // 
@@ -2714,6 +2910,7 @@ namespace ujl_subedit
             this.Hex48.Name = "Hex48";
             this.Hex48.Size = new System.Drawing.Size(399, 60);
             this.Hex48.TabIndex = 192;
+            this.Hex48.TextChanged += new System.EventHandler(this.Hex48_TextChanged);
             // 
             // Last90
             // 
@@ -2753,6 +2950,7 @@ namespace ujl_subedit
             this.Text90.Name = "Text90";
             this.Text90.Size = new System.Drawing.Size(399, 60);
             this.Text90.TabIndex = 360;
+            this.Text90.TextChanged += new System.EventHandler(this.Text90_TextChanged);
             // 
             // Length90
             // 
@@ -2792,6 +2990,7 @@ namespace ujl_subedit
             this.Hex90.Name = "Hex90";
             this.Hex90.Size = new System.Drawing.Size(399, 60);
             this.Hex90.TabIndex = 356;
+            this.Hex90.TextChanged += new System.EventHandler(this.Hex90_TextChanged);
             // 
             // Text89
             // 
@@ -2801,6 +3000,7 @@ namespace ujl_subedit
             this.Text89.Name = "Text89";
             this.Text89.Size = new System.Drawing.Size(399, 60);
             this.Text89.TabIndex = 355;
+            this.Text89.TextChanged += new System.EventHandler(this.Text89_TextChanged);
             // 
             // Hex89
             // 
@@ -2810,6 +3010,7 @@ namespace ujl_subedit
             this.Hex89.Name = "Hex89";
             this.Hex89.Size = new System.Drawing.Size(399, 60);
             this.Hex89.TabIndex = 354;
+            this.Hex89.TextChanged += new System.EventHandler(this.Hex89_TextChanged);
             // 
             // Text88
             // 
@@ -2820,6 +3021,7 @@ namespace ujl_subedit
             this.Text88.Name = "Text88";
             this.Text88.Size = new System.Drawing.Size(399, 60);
             this.Text88.TabIndex = 353;
+            this.Text88.TextChanged += new System.EventHandler(this.Text88_TextChanged);
             // 
             // Hex88
             // 
@@ -2830,6 +3032,7 @@ namespace ujl_subedit
             this.Hex88.Name = "Hex88";
             this.Hex88.Size = new System.Drawing.Size(399, 60);
             this.Hex88.TabIndex = 352;
+            this.Hex88.TextChanged += new System.EventHandler(this.Hex88_TextChanged);
             // 
             // Last87
             // 
@@ -2849,6 +3052,7 @@ namespace ujl_subedit
             this.Text87.Name = "Text87";
             this.Text87.Size = new System.Drawing.Size(399, 60);
             this.Text87.TabIndex = 350;
+            this.Text87.TextChanged += new System.EventHandler(this.Text87_TextChanged);
             // 
             // Length87
             // 
@@ -2868,6 +3072,7 @@ namespace ujl_subedit
             this.Hex87.Name = "Hex87";
             this.Hex87.Size = new System.Drawing.Size(399, 60);
             this.Hex87.TabIndex = 348;
+            this.Hex87.TextChanged += new System.EventHandler(this.Hex87_TextChanged);
             // 
             // Last86
             // 
@@ -2908,6 +3113,7 @@ namespace ujl_subedit
             this.Text86.Size = new System.Drawing.Size(399, 60);
             this.Text86.TabIndex = 344;
             this.Text86.Text = " ";
+            this.Text86.TextChanged += new System.EventHandler(this.Text86_TextChanged);
             // 
             // Length86
             // 
@@ -2947,6 +3153,7 @@ namespace ujl_subedit
             this.Hex86.Name = "Hex86";
             this.Hex86.Size = new System.Drawing.Size(399, 60);
             this.Hex86.TabIndex = 340;
+            this.Hex86.TextChanged += new System.EventHandler(this.Hex86_TextChanged);
             // 
             // Text85
             // 
@@ -2956,6 +3163,7 @@ namespace ujl_subedit
             this.Text85.Name = "Text85";
             this.Text85.Size = new System.Drawing.Size(399, 60);
             this.Text85.TabIndex = 339;
+            this.Text85.TextChanged += new System.EventHandler(this.Text85_TextChanged);
             // 
             // Hex85
             // 
@@ -2965,6 +3173,7 @@ namespace ujl_subedit
             this.Hex85.Name = "Hex85";
             this.Hex85.Size = new System.Drawing.Size(399, 60);
             this.Hex85.TabIndex = 338;
+            this.Hex85.TextChanged += new System.EventHandler(this.Hex85_TextChanged);
             // 
             // Text84
             // 
@@ -2975,6 +3184,7 @@ namespace ujl_subedit
             this.Text84.Name = "Text84";
             this.Text84.Size = new System.Drawing.Size(399, 60);
             this.Text84.TabIndex = 337;
+            this.Text84.TextChanged += new System.EventHandler(this.Text84_TextChanged);
             // 
             // Hex84
             // 
@@ -2985,6 +3195,7 @@ namespace ujl_subedit
             this.Hex84.Name = "Hex84";
             this.Hex84.Size = new System.Drawing.Size(399, 60);
             this.Hex84.TabIndex = 336;
+            this.Hex84.TextChanged += new System.EventHandler(this.Hex84_TextChanged);
             // 
             // Last83
             // 
@@ -3004,6 +3215,7 @@ namespace ujl_subedit
             this.Text83.Name = "Text83";
             this.Text83.Size = new System.Drawing.Size(399, 60);
             this.Text83.TabIndex = 334;
+            this.Text83.TextChanged += new System.EventHandler(this.Text83_TextChanged);
             // 
             // Length83
             // 
@@ -3023,6 +3235,7 @@ namespace ujl_subedit
             this.Hex83.Name = "Hex83";
             this.Hex83.Size = new System.Drawing.Size(399, 60);
             this.Hex83.TabIndex = 332;
+            this.Hex83.TextChanged += new System.EventHandler(this.Hex83_TextChanged);
             // 
             // Last82
             // 
@@ -3053,7 +3266,6 @@ namespace ujl_subedit
             this.Last80.Size = new System.Drawing.Size(28, 18);
             this.Last80.TabIndex = 329;
             this.Last80.Text = "80";
-            this.Last80.Click += new System.EventHandler(this.label43_Click);
             // 
             // Text82
             // 
@@ -3063,6 +3275,7 @@ namespace ujl_subedit
             this.Text82.Name = "Text82";
             this.Text82.Size = new System.Drawing.Size(399, 60);
             this.Text82.TabIndex = 328;
+            this.Text82.TextChanged += new System.EventHandler(this.Text82_TextChanged);
             // 
             // Length82
             // 
@@ -3102,6 +3315,7 @@ namespace ujl_subedit
             this.Hex82.Name = "Hex82";
             this.Hex82.Size = new System.Drawing.Size(399, 60);
             this.Hex82.TabIndex = 324;
+            this.Hex82.TextChanged += new System.EventHandler(this.Hex82_TextChanged);
             // 
             // Text81
             // 
@@ -3111,6 +3325,7 @@ namespace ujl_subedit
             this.Text81.Name = "Text81";
             this.Text81.Size = new System.Drawing.Size(399, 60);
             this.Text81.TabIndex = 323;
+            this.Text81.TextChanged += new System.EventHandler(this.Text81_TextChanged);
             // 
             // Hex81
             // 
@@ -3120,6 +3335,7 @@ namespace ujl_subedit
             this.Hex81.Name = "Hex81";
             this.Hex81.Size = new System.Drawing.Size(399, 60);
             this.Hex81.TabIndex = 322;
+            this.Hex81.TextChanged += new System.EventHandler(this.Hex81_TextChanged);
             // 
             // Text80
             // 
@@ -3130,6 +3346,7 @@ namespace ujl_subedit
             this.Text80.Name = "Text80";
             this.Text80.Size = new System.Drawing.Size(399, 60);
             this.Text80.TabIndex = 321;
+            this.Text80.TextChanged += new System.EventHandler(this.Text80_TextChanged);
             // 
             // Hex80
             // 
@@ -3140,6 +3357,7 @@ namespace ujl_subedit
             this.Hex80.Name = "Hex80";
             this.Hex80.Size = new System.Drawing.Size(399, 60);
             this.Hex80.TabIndex = 320;
+            this.Hex80.TextChanged += new System.EventHandler(this.Hex80_TextChanged);
             // 
             // Last79
             // 
@@ -3179,6 +3397,7 @@ namespace ujl_subedit
             this.Text79.Name = "Text79";
             this.Text79.Size = new System.Drawing.Size(399, 60);
             this.Text79.TabIndex = 316;
+            this.Text79.TextChanged += new System.EventHandler(this.Text79_TextChanged);
             // 
             // Length79
             // 
@@ -3218,6 +3437,7 @@ namespace ujl_subedit
             this.Hex79.Name = "Hex79";
             this.Hex79.Size = new System.Drawing.Size(399, 60);
             this.Hex79.TabIndex = 312;
+            this.Hex79.TextChanged += new System.EventHandler(this.Hex79_TextChanged);
             // 
             // Text78
             // 
@@ -3227,6 +3447,7 @@ namespace ujl_subedit
             this.Text78.Name = "Text78";
             this.Text78.Size = new System.Drawing.Size(399, 60);
             this.Text78.TabIndex = 311;
+            this.Text78.TextChanged += new System.EventHandler(this.Text78_TextChanged);
             // 
             // Hex78
             // 
@@ -3236,6 +3457,7 @@ namespace ujl_subedit
             this.Hex78.Name = "Hex78";
             this.Hex78.Size = new System.Drawing.Size(399, 60);
             this.Hex78.TabIndex = 310;
+            this.Hex78.TextChanged += new System.EventHandler(this.Hex78_TextChanged);
             // 
             // Text77
             // 
@@ -3246,6 +3468,7 @@ namespace ujl_subedit
             this.Text77.Name = "Text77";
             this.Text77.Size = new System.Drawing.Size(399, 60);
             this.Text77.TabIndex = 309;
+            this.Text77.TextChanged += new System.EventHandler(this.Text77_TextChanged);
             // 
             // Hex77
             // 
@@ -3256,6 +3479,7 @@ namespace ujl_subedit
             this.Hex77.Name = "Hex77";
             this.Hex77.Size = new System.Drawing.Size(399, 60);
             this.Hex77.TabIndex = 308;
+            this.Hex77.TextChanged += new System.EventHandler(this.Hex77_TextChanged);
             // 
             // Last76
             // 
@@ -3275,6 +3499,7 @@ namespace ujl_subedit
             this.Text76.Name = "Text76";
             this.Text76.Size = new System.Drawing.Size(399, 60);
             this.Text76.TabIndex = 306;
+            this.Text76.TextChanged += new System.EventHandler(this.Text76_TextChanged);
             // 
             // Length76
             // 
@@ -3294,6 +3519,7 @@ namespace ujl_subedit
             this.Hex76.Name = "Hex76";
             this.Hex76.Size = new System.Drawing.Size(399, 60);
             this.Hex76.TabIndex = 304;
+            this.Hex76.TextChanged += new System.EventHandler(this.Hex76_TextChanged);
             // 
             // Last75
             // 
@@ -3304,7 +3530,6 @@ namespace ujl_subedit
             this.Last75.Size = new System.Drawing.Size(28, 18);
             this.Last75.TabIndex = 303;
             this.Last75.Text = "75";
-            this.Last75.Click += new System.EventHandler(this.label66_Click);
             // 
             // Last74
             // 
@@ -3335,6 +3560,7 @@ namespace ujl_subedit
             this.Text75.Size = new System.Drawing.Size(399, 60);
             this.Text75.TabIndex = 300;
             this.Text75.Text = " ";
+            this.Text75.TextChanged += new System.EventHandler(this.Text75_TextChanged);
             // 
             // Length75
             // 
@@ -3374,6 +3600,7 @@ namespace ujl_subedit
             this.Hex75.Name = "Hex75";
             this.Hex75.Size = new System.Drawing.Size(399, 60);
             this.Hex75.TabIndex = 296;
+            this.Hex75.TextChanged += new System.EventHandler(this.Hex75_TextChanged);
             // 
             // Text74
             // 
@@ -3383,6 +3610,7 @@ namespace ujl_subedit
             this.Text74.Name = "Text74";
             this.Text74.Size = new System.Drawing.Size(399, 60);
             this.Text74.TabIndex = 295;
+            this.Text74.TextChanged += new System.EventHandler(this.Text74_TextChanged);
             // 
             // Hex74
             // 
@@ -3392,6 +3620,7 @@ namespace ujl_subedit
             this.Hex74.Name = "Hex74";
             this.Hex74.Size = new System.Drawing.Size(399, 60);
             this.Hex74.TabIndex = 294;
+            this.Hex74.TextChanged += new System.EventHandler(this.Hex74_TextChanged);
             // 
             // Text73
             // 
@@ -3402,6 +3631,7 @@ namespace ujl_subedit
             this.Text73.Name = "Text73";
             this.Text73.Size = new System.Drawing.Size(399, 60);
             this.Text73.TabIndex = 293;
+            this.Text73.TextChanged += new System.EventHandler(this.Text73_TextChanged);
             // 
             // Hex73
             // 
@@ -3412,6 +3642,7 @@ namespace ujl_subedit
             this.Hex73.Name = "Hex73";
             this.Hex73.Size = new System.Drawing.Size(399, 60);
             this.Hex73.TabIndex = 292;
+            this.Hex73.TextChanged += new System.EventHandler(this.Hex73_TextChanged);
             // 
             // Last72
             // 
@@ -3431,6 +3662,7 @@ namespace ujl_subedit
             this.Text72.Name = "Text72";
             this.Text72.Size = new System.Drawing.Size(399, 60);
             this.Text72.TabIndex = 290;
+            this.Text72.TextChanged += new System.EventHandler(this.Text72_TextChanged);
             // 
             // Length72
             // 
@@ -3450,6 +3682,7 @@ namespace ujl_subedit
             this.Hex72.Name = "Hex72";
             this.Hex72.Size = new System.Drawing.Size(399, 60);
             this.Hex72.TabIndex = 288;
+            this.Hex72.TextChanged += new System.EventHandler(this.Hex72_TextChanged);
             // 
             // Last71
             // 
@@ -3489,6 +3722,7 @@ namespace ujl_subedit
             this.Text71.Name = "Text71";
             this.Text71.Size = new System.Drawing.Size(399, 60);
             this.Text71.TabIndex = 284;
+            this.Text71.TextChanged += new System.EventHandler(this.Text71_TextChanged);
             // 
             // Length71
             // 
@@ -3528,6 +3762,7 @@ namespace ujl_subedit
             this.Hex71.Name = "Hex71";
             this.Hex71.Size = new System.Drawing.Size(399, 60);
             this.Hex71.TabIndex = 280;
+            this.Hex71.TextChanged += new System.EventHandler(this.Hex71_TextChanged);
             // 
             // Text70
             // 
@@ -3537,6 +3772,7 @@ namespace ujl_subedit
             this.Text70.Name = "Text70";
             this.Text70.Size = new System.Drawing.Size(399, 60);
             this.Text70.TabIndex = 279;
+            this.Text70.TextChanged += new System.EventHandler(this.Text70_TextChanged);
             // 
             // Hex70
             // 
@@ -3546,6 +3782,7 @@ namespace ujl_subedit
             this.Hex70.Name = "Hex70";
             this.Hex70.Size = new System.Drawing.Size(399, 60);
             this.Hex70.TabIndex = 278;
+            this.Hex70.TextChanged += new System.EventHandler(this.Hex70_TextChanged);
             // 
             // Text69
             // 
@@ -3556,6 +3793,7 @@ namespace ujl_subedit
             this.Text69.Name = "Text69";
             this.Text69.Size = new System.Drawing.Size(399, 60);
             this.Text69.TabIndex = 277;
+            this.Text69.TextChanged += new System.EventHandler(this.Text69_TextChanged);
             // 
             // Hex69
             // 
@@ -3566,6 +3804,7 @@ namespace ujl_subedit
             this.Hex69.Name = "Hex69";
             this.Hex69.Size = new System.Drawing.Size(399, 60);
             this.Hex69.TabIndex = 276;
+            this.Hex69.TextChanged += new System.EventHandler(this.Hex69_TextChanged);
             // 
             // Last68
             // 
@@ -3605,6 +3844,7 @@ namespace ujl_subedit
             this.Text68.Name = "Text68";
             this.Text68.Size = new System.Drawing.Size(399, 60);
             this.Text68.TabIndex = 272;
+            this.Text68.TextChanged += new System.EventHandler(this.Text68_TextChanged);
             // 
             // Length68
             // 
@@ -3644,6 +3884,7 @@ namespace ujl_subedit
             this.Hex68.Name = "Hex68";
             this.Hex68.Size = new System.Drawing.Size(399, 60);
             this.Hex68.TabIndex = 268;
+            this.Hex68.TextChanged += new System.EventHandler(this.Hex68_TextChanged);
             // 
             // Text67
             // 
@@ -3653,6 +3894,7 @@ namespace ujl_subedit
             this.Text67.Name = "Text67";
             this.Text67.Size = new System.Drawing.Size(399, 60);
             this.Text67.TabIndex = 267;
+            this.Text67.TextChanged += new System.EventHandler(this.Text67_TextChanged);
             // 
             // Hex67
             // 
@@ -3662,6 +3904,7 @@ namespace ujl_subedit
             this.Hex67.Name = "Hex67";
             this.Hex67.Size = new System.Drawing.Size(399, 60);
             this.Hex67.TabIndex = 266;
+            this.Hex67.TextChanged += new System.EventHandler(this.Hex67_TextChanged);
             // 
             // Text66
             // 
@@ -3672,6 +3915,7 @@ namespace ujl_subedit
             this.Text66.Name = "Text66";
             this.Text66.Size = new System.Drawing.Size(399, 60);
             this.Text66.TabIndex = 265;
+            this.Text66.TextChanged += new System.EventHandler(this.Text66_TextChanged);
             // 
             // Hex66
             // 
@@ -3682,6 +3926,7 @@ namespace ujl_subedit
             this.Hex66.Name = "Hex66";
             this.Hex66.Size = new System.Drawing.Size(399, 60);
             this.Hex66.TabIndex = 264;
+            this.Hex66.TextChanged += new System.EventHandler(this.Hex66_TextChanged);
             // 
             // Last65
             // 
@@ -3701,6 +3946,7 @@ namespace ujl_subedit
             this.Text65.Name = "Text65";
             this.Text65.Size = new System.Drawing.Size(399, 60);
             this.Text65.TabIndex = 262;
+            this.Text65.TextChanged += new System.EventHandler(this.Text65_TextChanged);
             // 
             // Length65
             // 
@@ -3720,6 +3966,7 @@ namespace ujl_subedit
             this.Hex65.Name = "Hex65";
             this.Hex65.Size = new System.Drawing.Size(399, 60);
             this.Hex65.TabIndex = 260;
+            this.Hex65.TextChanged += new System.EventHandler(this.Hex65_TextChanged);
             // 
             // Last64
             // 
@@ -3760,6 +4007,7 @@ namespace ujl_subedit
             this.Text64.Size = new System.Drawing.Size(399, 60);
             this.Text64.TabIndex = 256;
             this.Text64.Text = " ";
+            this.Text64.TextChanged += new System.EventHandler(this.Text64_TextChanged);
             // 
             // Length64
             // 
@@ -3799,6 +4047,7 @@ namespace ujl_subedit
             this.Hex64.Name = "Hex64";
             this.Hex64.Size = new System.Drawing.Size(399, 60);
             this.Hex64.TabIndex = 252;
+            this.Hex64.TextChanged += new System.EventHandler(this.Hex64_TextChanged);
             // 
             // Text63
             // 
@@ -3808,6 +4057,7 @@ namespace ujl_subedit
             this.Text63.Name = "Text63";
             this.Text63.Size = new System.Drawing.Size(399, 60);
             this.Text63.TabIndex = 251;
+            this.Text63.TextChanged += new System.EventHandler(this.Text63_TextChanged);
             // 
             // Hex63
             // 
@@ -3817,6 +4067,7 @@ namespace ujl_subedit
             this.Hex63.Name = "Hex63";
             this.Hex63.Size = new System.Drawing.Size(399, 60);
             this.Hex63.TabIndex = 250;
+            this.Hex63.TextChanged += new System.EventHandler(this.Hex63_TextChanged);
             // 
             // Text62
             // 
@@ -3827,6 +4078,7 @@ namespace ujl_subedit
             this.Text62.Name = "Text62";
             this.Text62.Size = new System.Drawing.Size(399, 60);
             this.Text62.TabIndex = 249;
+            this.Text62.TextChanged += new System.EventHandler(this.Text62_TextChanged);
             // 
             // Hex62
             // 
@@ -3837,6 +4089,7 @@ namespace ujl_subedit
             this.Hex62.Name = "Hex62";
             this.Hex62.Size = new System.Drawing.Size(399, 60);
             this.Hex62.TabIndex = 248;
+            this.Hex62.TextChanged += new System.EventHandler(this.Hex62_TextChanged);
             // 
             // Last61
             // 
@@ -3878,6 +4131,7 @@ namespace ujl_subedit
             this.Text61.Name = "Text61";
             this.Text61.Size = new System.Drawing.Size(399, 60);
             this.Text61.TabIndex = 244;
+            this.Text61.TextChanged += new System.EventHandler(this.Text61_TextChanged);
             // 
             // Length61
             // 
@@ -3919,6 +4173,7 @@ namespace ujl_subedit
             this.Hex61.Name = "Hex61";
             this.Hex61.Size = new System.Drawing.Size(399, 60);
             this.Hex61.TabIndex = 240;
+            this.Hex61.TextChanged += new System.EventHandler(this.Hex61_TextChanged);
             // 
             // Text60
             // 
@@ -3928,6 +4183,7 @@ namespace ujl_subedit
             this.Text60.Name = "Text60";
             this.Text60.Size = new System.Drawing.Size(399, 60);
             this.Text60.TabIndex = 239;
+            this.Text60.TextChanged += new System.EventHandler(this.Text60_TextChanged);
             // 
             // Hex60
             // 
@@ -3937,6 +4193,7 @@ namespace ujl_subedit
             this.Hex60.Name = "Hex60";
             this.Hex60.Size = new System.Drawing.Size(399, 60);
             this.Hex60.TabIndex = 238;
+            this.Hex60.TextChanged += new System.EventHandler(this.Hex60_TextChanged);
             // 
             // Text59
             // 
@@ -3947,6 +4204,7 @@ namespace ujl_subedit
             this.Text59.Name = "Text59";
             this.Text59.Size = new System.Drawing.Size(399, 60);
             this.Text59.TabIndex = 237;
+            this.Text59.TextChanged += new System.EventHandler(this.Text59_TextChanged);
             // 
             // Hex59
             // 
@@ -3957,6 +4215,1111 @@ namespace ujl_subedit
             this.Hex59.Name = "Hex59";
             this.Hex59.Size = new System.Drawing.Size(399, 60);
             this.Hex59.TabIndex = 236;
+            this.Hex59.TextChanged += new System.EventHandler(this.Hex59_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 5978);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(25, 20);
+            this.label1.TabIndex = 453;
+            this.label1.Text = "90";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(12, 5912);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 20);
+            this.label2.TabIndex = 452;
+            this.label2.Text = "89";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(12, 5849);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 20);
+            this.label3.TabIndex = 451;
+            this.label3.Text = "88";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(12, 5780);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 20);
+            this.label4.TabIndex = 450;
+            this.label4.Text = "87";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(12, 5714);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(24, 20);
+            this.label5.TabIndex = 449;
+            this.label5.Text = "86";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(12, 5648);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(23, 20);
+            this.label6.TabIndex = 448;
+            this.label6.Text = "85";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(12, 5585);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 20);
+            this.label7.TabIndex = 447;
+            this.label7.Text = "84";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(12, 5516);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 20);
+            this.label8.TabIndex = 446;
+            this.label8.Text = "83";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(12, 5450);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 20);
+            this.label9.TabIndex = 445;
+            this.label9.Text = "82";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(12, 5384);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(20, 20);
+            this.label10.TabIndex = 444;
+            this.label10.Text = "81";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(12, 5321);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 20);
+            this.label11.TabIndex = 443;
+            this.label11.Text = "80";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(12, 5252);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 20);
+            this.label12.TabIndex = 442;
+            this.label12.Text = "79";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(12, 5186);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 20);
+            this.label13.TabIndex = 441;
+            this.label13.Text = "78";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(12, 5123);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(21, 20);
+            this.label14.TabIndex = 440;
+            this.label14.Text = "77";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(12, 5054);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(23, 20);
+            this.label15.TabIndex = 439;
+            this.label15.Text = "76";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(12, 4988);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(22, 20);
+            this.label16.TabIndex = 438;
+            this.label16.Text = "75";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(12, 4922);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(23, 20);
+            this.label17.TabIndex = 437;
+            this.label17.Text = "74";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Location = new System.Drawing.Point(12, 4859);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(22, 20);
+            this.label18.TabIndex = 436;
+            this.label18.Text = "73";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(12, 4790);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(22, 20);
+            this.label19.TabIndex = 435;
+            this.label19.Text = "72";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(12, 4724);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(19, 20);
+            this.label20.TabIndex = 434;
+            this.label20.Text = "71";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(12, 4658);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(23, 20);
+            this.label21.TabIndex = 433;
+            this.label21.Text = "70";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(12, 4595);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(25, 20);
+            this.label22.TabIndex = 432;
+            this.label22.Text = "69";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Location = new System.Drawing.Point(12, 4526);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(24, 20);
+            this.label23.TabIndex = 431;
+            this.label23.Text = "68";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.Location = new System.Drawing.Point(12, 4460);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(22, 20);
+            this.label24.TabIndex = 430;
+            this.label24.Text = "67";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Location = new System.Drawing.Point(12, 4397);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(25, 20);
+            this.label25.TabIndex = 429;
+            this.label25.Text = "66";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.Location = new System.Drawing.Point(12, 4328);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(24, 20);
+            this.label26.TabIndex = 428;
+            this.label26.Text = "65";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.Location = new System.Drawing.Point(12, 4262);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(25, 20);
+            this.label27.TabIndex = 427;
+            this.label27.Text = "64";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.Location = new System.Drawing.Point(12, 4196);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(24, 20);
+            this.label28.TabIndex = 426;
+            this.label28.Text = "63";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.Location = new System.Drawing.Point(12, 4133);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(24, 20);
+            this.label29.TabIndex = 425;
+            this.label29.Text = "62";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.Location = new System.Drawing.Point(12, 4064);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(21, 20);
+            this.label30.TabIndex = 424;
+            this.label30.Text = "61";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.label31.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label31.Location = new System.Drawing.Point(12, 3998);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(25, 20);
+            this.label31.TabIndex = 423;
+            this.label31.Text = "60";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.label32.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.Location = new System.Drawing.Point(12, 3935);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(24, 20);
+            this.label32.TabIndex = 422;
+            this.label32.Text = "59";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label33.Location = new System.Drawing.Point(12, 3866);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(23, 20);
+            this.label33.TabIndex = 421;
+            this.label33.Text = "58";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label34.Location = new System.Drawing.Point(12, 3800);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(22, 20);
+            this.label34.TabIndex = 420;
+            this.label34.Text = "57";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label35.Location = new System.Drawing.Point(12, 3734);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(24, 20);
+            this.label35.TabIndex = 419;
+            this.label35.Text = "56";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label36.Location = new System.Drawing.Point(12, 3671);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(23, 20);
+            this.label36.TabIndex = 418;
+            this.label36.Text = "55";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label37.Location = new System.Drawing.Point(12, 3602);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(24, 20);
+            this.label37.TabIndex = 417;
+            this.label37.Text = "54";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label38.Location = new System.Drawing.Point(12, 3536);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(23, 20);
+            this.label38.TabIndex = 416;
+            this.label38.Text = "53";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label39.Location = new System.Drawing.Point(12, 3473);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(23, 20);
+            this.label39.TabIndex = 415;
+            this.label39.Text = "52";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label40.Location = new System.Drawing.Point(12, 3404);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(20, 20);
+            this.label40.TabIndex = 414;
+            this.label40.Text = "51";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label41.Location = new System.Drawing.Point(12, 3338);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(24, 20);
+            this.label41.TabIndex = 413;
+            this.label41.Text = "50";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label42.Location = new System.Drawing.Point(12, 3272);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(25, 20);
+            this.label42.TabIndex = 412;
+            this.label42.Text = "49";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label43.Location = new System.Drawing.Point(12, 3209);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(24, 20);
+            this.label43.TabIndex = 411;
+            this.label43.Text = "48";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label44.Location = new System.Drawing.Point(12, 3140);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(23, 20);
+            this.label44.TabIndex = 410;
+            this.label44.Text = "47";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label45.Location = new System.Drawing.Point(12, 3074);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(25, 20);
+            this.label45.TabIndex = 409;
+            this.label45.Text = "46";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label46.Location = new System.Drawing.Point(12, 3008);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(24, 20);
+            this.label46.TabIndex = 408;
+            this.label46.Text = "45";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label47.Location = new System.Drawing.Point(12, 2945);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(25, 20);
+            this.label47.TabIndex = 407;
+            this.label47.Text = "44";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label48.Location = new System.Drawing.Point(12, 2876);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(24, 20);
+            this.label48.TabIndex = 406;
+            this.label48.Text = "43";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label49.Location = new System.Drawing.Point(12, 2810);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(24, 20);
+            this.label49.TabIndex = 405;
+            this.label49.Text = "42";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label50.Location = new System.Drawing.Point(12, 2747);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(21, 20);
+            this.label50.TabIndex = 404;
+            this.label50.Text = "41";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label51.Location = new System.Drawing.Point(12, 2678);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(25, 20);
+            this.label51.TabIndex = 403;
+            this.label51.Text = "40";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label52.Location = new System.Drawing.Point(12, 2612);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(24, 20);
+            this.label52.TabIndex = 402;
+            this.label52.Text = "39";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label53.Location = new System.Drawing.Point(12, 2546);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(23, 20);
+            this.label53.TabIndex = 401;
+            this.label53.Text = "38";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label54.Location = new System.Drawing.Point(12, 2483);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(22, 20);
+            this.label54.TabIndex = 400;
+            this.label54.Text = "37";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label55.Location = new System.Drawing.Point(12, 2414);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(24, 20);
+            this.label55.TabIndex = 399;
+            this.label55.Text = "36";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label56.Location = new System.Drawing.Point(12, 2348);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(23, 20);
+            this.label56.TabIndex = 398;
+            this.label56.Text = "35";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label57.Location = new System.Drawing.Point(12, 2282);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(24, 20);
+            this.label57.TabIndex = 397;
+            this.label57.Text = "34";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label58.Location = new System.Drawing.Point(12, 2219);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(23, 20);
+            this.label58.TabIndex = 396;
+            this.label58.Text = "33";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label59.Location = new System.Drawing.Point(12, 2150);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(23, 20);
+            this.label59.TabIndex = 395;
+            this.label59.Text = "32";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label60.Location = new System.Drawing.Point(12, 2084);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(20, 20);
+            this.label60.TabIndex = 394;
+            this.label60.Text = "31";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label61.Location = new System.Drawing.Point(12, 2021);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(24, 20);
+            this.label61.TabIndex = 393;
+            this.label61.Text = "30";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label62.Location = new System.Drawing.Point(12, 1952);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(24, 20);
+            this.label62.TabIndex = 392;
+            this.label62.Text = "29";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label63.Location = new System.Drawing.Point(12, 1886);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(23, 20);
+            this.label63.TabIndex = 391;
+            this.label63.Text = "28";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label64.Location = new System.Drawing.Point(12, 1820);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(22, 20);
+            this.label64.TabIndex = 390;
+            this.label64.Text = "27";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label65.Location = new System.Drawing.Point(12, 1757);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(24, 20);
+            this.label65.TabIndex = 389;
+            this.label65.Text = "26";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label66.Location = new System.Drawing.Point(12, 1688);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(23, 20);
+            this.label66.TabIndex = 388;
+            this.label66.Text = "25";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label67.Location = new System.Drawing.Point(12, 1622);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(24, 20);
+            this.label67.TabIndex = 387;
+            this.label67.Text = "24";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label68.Location = new System.Drawing.Point(12, 1556);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(23, 20);
+            this.label68.TabIndex = 386;
+            this.label68.Text = "23";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label69.Location = new System.Drawing.Point(12, 1493);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(23, 20);
+            this.label69.TabIndex = 385;
+            this.label69.Text = "22";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label70.Location = new System.Drawing.Point(12, 1424);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(20, 20);
+            this.label70.TabIndex = 384;
+            this.label70.Text = "21";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label71.Location = new System.Drawing.Point(12, 1358);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(24, 20);
+            this.label71.TabIndex = 383;
+            this.label71.Text = "20";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label72.Location = new System.Drawing.Point(12, 1295);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(21, 20);
+            this.label72.TabIndex = 382;
+            this.label72.Text = "19";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label73.Location = new System.Drawing.Point(12, 1226);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(20, 20);
+            this.label73.TabIndex = 381;
+            this.label73.Text = "18";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label74.Location = new System.Drawing.Point(12, 1160);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(19, 20);
+            this.label74.TabIndex = 380;
+            this.label74.Text = "17";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label75.Location = new System.Drawing.Point(12, 1094);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(21, 20);
+            this.label75.TabIndex = 379;
+            this.label75.Text = "16";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label76.Location = new System.Drawing.Point(12, 1031);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(20, 20);
+            this.label76.TabIndex = 378;
+            this.label76.Text = "15";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label77.Location = new System.Drawing.Point(12, 962);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(21, 20);
+            this.label77.TabIndex = 377;
+            this.label77.Text = "14";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label78.Location = new System.Drawing.Point(12, 896);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(20, 20);
+            this.label78.TabIndex = 376;
+            this.label78.Text = "13";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label79.Location = new System.Drawing.Point(12, 830);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(20, 20);
+            this.label79.TabIndex = 375;
+            this.label79.Text = "12";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label80.Location = new System.Drawing.Point(12, 767);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(17, 20);
+            this.label80.TabIndex = 374;
+            this.label80.Text = "11";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label81.Location = new System.Drawing.Point(12, 698);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(21, 20);
+            this.label81.TabIndex = 373;
+            this.label81.Text = "10";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label82.Location = new System.Drawing.Point(12, 632);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(17, 20);
+            this.label82.TabIndex = 372;
+            this.label82.Text = "9";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label83.Location = new System.Drawing.Point(12, 569);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(16, 20);
+            this.label83.TabIndex = 371;
+            this.label83.Text = "8";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label84.Location = new System.Drawing.Point(12, 500);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(15, 20);
+            this.label84.TabIndex = 370;
+            this.label84.Text = "7";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label85.Location = new System.Drawing.Point(12, 434);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(17, 20);
+            this.label85.TabIndex = 369;
+            this.label85.Text = "6";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label86.Location = new System.Drawing.Point(12, 368);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(16, 20);
+            this.label86.TabIndex = 368;
+            this.label86.Text = "5";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label87.Location = new System.Drawing.Point(12, 305);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(17, 20);
+            this.label87.TabIndex = 367;
+            this.label87.Text = "4";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label88.Location = new System.Drawing.Point(12, 236);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(16, 20);
+            this.label88.TabIndex = 366;
+            this.label88.Text = "3";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.label89.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label89.Location = new System.Drawing.Point(12, 170);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(16, 20);
+            this.label89.TabIndex = 365;
+            this.label89.Text = "2";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
+            this.label90.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label90.Location = new System.Drawing.Point(12, 107);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(13, 20);
+            this.label90.TabIndex = 364;
+            this.label90.Text = "1";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label91.Location = new System.Drawing.Point(12, 6044);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(21, 20);
+            this.label91.TabIndex = 458;
+            this.label91.Text = "91";
+            // 
+            // Last91
+            // 
+            this.Last91.AutoSize = true;
+            this.Last91.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last91.Location = new System.Drawing.Point(848, 6026);
+            this.Last91.Name = "Last91";
+            this.Last91.Size = new System.Drawing.Size(28, 18);
+            this.Last91.TabIndex = 457;
+            this.Last91.Text = "91";
+            // 
+            // Text91
+            // 
+            this.Text91.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text91.Location = new System.Drawing.Point(443, 6026);
+            this.Text91.Multiline = true;
+            this.Text91.Name = "Text91";
+            this.Text91.Size = new System.Drawing.Size(399, 60);
+            this.Text91.TabIndex = 456;
+            this.Text91.TextChanged += new System.EventHandler(this.Text91_TextChanged);
+            // 
+            // Length91
+            // 
+            this.Length91.AutoSize = true;
+            this.Length91.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length91.Location = new System.Drawing.Point(4, 6026);
+            this.Length91.Name = "Length91";
+            this.Length91.Size = new System.Drawing.Size(28, 18);
+            this.Length91.TabIndex = 455;
+            this.Length91.Text = "91";
+            // 
+            // Hex91
+            // 
+            this.Hex91.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex91.Location = new System.Drawing.Point(38, 6026);
+            this.Hex91.Multiline = true;
+            this.Hex91.Name = "Hex91";
+            this.Hex91.Size = new System.Drawing.Size(399, 60);
+            this.Hex91.TabIndex = 454;
+            this.Hex91.TextChanged += new System.EventHandler(this.Hex91_TextChanged);
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label92.Location = new System.Drawing.Point(12, 6242);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(25, 20);
+            this.label92.TabIndex = 473;
+            this.label92.Text = "94";
+            // 
+            // Last94
+            // 
+            this.Last94.AutoSize = true;
+            this.Last94.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last94.Location = new System.Drawing.Point(848, 6224);
+            this.Last94.Name = "Last94";
+            this.Last94.Size = new System.Drawing.Size(28, 18);
+            this.Last94.TabIndex = 472;
+            this.Last94.Text = "94";
+            // 
+            // Text94
+            // 
+            this.Text94.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text94.Location = new System.Drawing.Point(443, 6224);
+            this.Text94.Multiline = true;
+            this.Text94.Name = "Text94";
+            this.Text94.Size = new System.Drawing.Size(399, 60);
+            this.Text94.TabIndex = 471;
+            this.Text94.TextChanged += new System.EventHandler(this.Text94_TextChanged);
+            // 
+            // Length94
+            // 
+            this.Length94.AutoSize = true;
+            this.Length94.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length94.Location = new System.Drawing.Point(4, 6224);
+            this.Length94.Name = "Length94";
+            this.Length94.Size = new System.Drawing.Size(28, 18);
+            this.Length94.TabIndex = 470;
+            this.Length94.Text = "94";
+            // 
+            // Hex94
+            // 
+            this.Hex94.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex94.Location = new System.Drawing.Point(38, 6224);
+            this.Hex94.Multiline = true;
+            this.Hex94.Name = "Hex94";
+            this.Hex94.Size = new System.Drawing.Size(399, 60);
+            this.Hex94.TabIndex = 469;
+            this.Hex94.TextChanged += new System.EventHandler(this.Hex94_TextChanged);
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label95.Location = new System.Drawing.Point(12, 6176);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(24, 20);
+            this.label95.TabIndex = 468;
+            this.label95.Text = "93";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label96.Location = new System.Drawing.Point(12, 6110);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(24, 20);
+            this.label96.TabIndex = 467;
+            this.label96.Text = "92";
+            // 
+            // Last93
+            // 
+            this.Last93.AutoSize = true;
+            this.Last93.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last93.Location = new System.Drawing.Point(848, 6158);
+            this.Last93.Name = "Last93";
+            this.Last93.Size = new System.Drawing.Size(28, 18);
+            this.Last93.TabIndex = 466;
+            this.Last93.Text = "93";
+            // 
+            // Last92
+            // 
+            this.Last92.AutoSize = true;
+            this.Last92.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last92.Location = new System.Drawing.Point(848, 6092);
+            this.Last92.Name = "Last92";
+            this.Last92.Size = new System.Drawing.Size(28, 18);
+            this.Last92.TabIndex = 465;
+            this.Last92.Text = "92";
+            // 
+            // Text93
+            // 
+            this.Text93.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text93.Location = new System.Drawing.Point(443, 6158);
+            this.Text93.Multiline = true;
+            this.Text93.Name = "Text93";
+            this.Text93.Size = new System.Drawing.Size(399, 60);
+            this.Text93.TabIndex = 464;
+            this.Text93.TextChanged += new System.EventHandler(this.Text93_TextChanged);
+            // 
+            // Length93
+            // 
+            this.Length93.AutoSize = true;
+            this.Length93.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length93.Location = new System.Drawing.Point(4, 6158);
+            this.Length93.Name = "Length93";
+            this.Length93.Size = new System.Drawing.Size(28, 18);
+            this.Length93.TabIndex = 463;
+            this.Length93.Text = "93";
+            // 
+            // Length92
+            // 
+            this.Length92.AutoSize = true;
+            this.Length92.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length92.Location = new System.Drawing.Point(4, 6092);
+            this.Length92.Name = "Length92";
+            this.Length92.Size = new System.Drawing.Size(28, 18);
+            this.Length92.TabIndex = 462;
+            this.Length92.Text = "92";
+            // 
+            // Hex93
+            // 
+            this.Hex93.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex93.Location = new System.Drawing.Point(38, 6158);
+            this.Hex93.Multiline = true;
+            this.Hex93.Name = "Hex93";
+            this.Hex93.Size = new System.Drawing.Size(399, 60);
+            this.Hex93.TabIndex = 461;
+            this.Hex93.TextChanged += new System.EventHandler(this.Hex93_TextChanged);
+            // 
+            // Text92
+            // 
+            this.Text92.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text92.Location = new System.Drawing.Point(443, 6092);
+            this.Text92.Multiline = true;
+            this.Text92.Name = "Text92";
+            this.Text92.Size = new System.Drawing.Size(399, 60);
+            this.Text92.TabIndex = 460;
+            this.Text92.TextChanged += new System.EventHandler(this.Text92_TextChanged);
+            // 
+            // Hex92
+            // 
+            this.Hex92.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex92.Location = new System.Drawing.Point(38, 6092);
+            this.Hex92.Multiline = true;
+            this.Hex92.Name = "Hex92";
+            this.Hex92.Size = new System.Drawing.Size(399, 60);
+            this.Hex92.TabIndex = 459;
+            this.Hex92.TextChanged += new System.EventHandler(this.Hex92_TextChanged);
             // 
             // Editor
             // 
@@ -3965,6 +5328,116 @@ namespace ujl_subedit
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(894, 703);
+            this.Controls.Add(this.label92);
+            this.Controls.Add(this.Last94);
+            this.Controls.Add(this.Text94);
+            this.Controls.Add(this.Length94);
+            this.Controls.Add(this.Hex94);
+            this.Controls.Add(this.label95);
+            this.Controls.Add(this.label96);
+            this.Controls.Add(this.Last93);
+            this.Controls.Add(this.Last92);
+            this.Controls.Add(this.Text93);
+            this.Controls.Add(this.Length93);
+            this.Controls.Add(this.Length92);
+            this.Controls.Add(this.Hex93);
+            this.Controls.Add(this.Text92);
+            this.Controls.Add(this.Hex92);
+            this.Controls.Add(this.label91);
+            this.Controls.Add(this.Last91);
+            this.Controls.Add(this.Text91);
+            this.Controls.Add(this.Length91);
+            this.Controls.Add(this.Hex91);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label51);
+            this.Controls.Add(this.label52);
+            this.Controls.Add(this.label53);
+            this.Controls.Add(this.label54);
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.label56);
+            this.Controls.Add(this.label57);
+            this.Controls.Add(this.label58);
+            this.Controls.Add(this.label59);
+            this.Controls.Add(this.label60);
+            this.Controls.Add(this.label61);
+            this.Controls.Add(this.label62);
+            this.Controls.Add(this.label63);
+            this.Controls.Add(this.label64);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.label66);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.label69);
+            this.Controls.Add(this.label70);
+            this.Controls.Add(this.label71);
+            this.Controls.Add(this.label72);
+            this.Controls.Add(this.label73);
+            this.Controls.Add(this.label74);
+            this.Controls.Add(this.label75);
+            this.Controls.Add(this.label76);
+            this.Controls.Add(this.label77);
+            this.Controls.Add(this.label78);
+            this.Controls.Add(this.label79);
+            this.Controls.Add(this.label80);
+            this.Controls.Add(this.label81);
+            this.Controls.Add(this.label82);
+            this.Controls.Add(this.label83);
+            this.Controls.Add(this.label84);
+            this.Controls.Add(this.label85);
+            this.Controls.Add(this.label86);
+            this.Controls.Add(this.label87);
+            this.Controls.Add(this.label88);
+            this.Controls.Add(this.label89);
+            this.Controls.Add(this.label90);
             this.Controls.Add(this.Last90);
             this.Controls.Add(this.Last89);
             this.Controls.Add(this.Last88);
@@ -4269,8 +5742,8 @@ namespace ujl_subedit
             this.Controls.Add(this.Hex16);
             this.Controls.Add(this.Text15);
             this.Controls.Add(this.Hex15);
-            this.Controls.Add(this.Left);
-            this.Controls.Add(this.Length);
+            this.Controls.Add(this.Left0);
+            this.Controls.Add(this.Length0);
             this.Controls.Add(this.Save_as);
             this.Controls.Add(this.Last14);
             this.Controls.Add(this.Text14);
@@ -4333,7 +5806,6 @@ namespace ujl_subedit
             this.MinimumSize = new System.Drawing.Size(910, 225);
             this.Name = "Editor";
             this.Text = "COMOD11_SNG";
-            this.Load += new System.EventHandler(this.COMOD11_SNG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4401,8 +5873,8 @@ namespace ujl_subedit
         private System.Windows.Forms.Button Save_as;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Length;
-        private System.Windows.Forms.Label Left;
+        private System.Windows.Forms.Label Length0;
+        private System.Windows.Forms.Label Left0;
         private System.Windows.Forms.Label Last25;
         private System.Windows.Forms.TextBox Text25;
         private System.Windows.Forms.Label Length25;
@@ -4707,5 +6179,115 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex60;
         private System.Windows.Forms.TextBox Text59;
         private System.Windows.Forms.TextBox Hex59;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label Last91;
+        private System.Windows.Forms.TextBox Text91;
+        private System.Windows.Forms.Label Length91;
+        private System.Windows.Forms.TextBox Hex91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label Last94;
+        private System.Windows.Forms.TextBox Text94;
+        private System.Windows.Forms.Label Length94;
+        private System.Windows.Forms.TextBox Hex94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label Last93;
+        private System.Windows.Forms.Label Last92;
+        private System.Windows.Forms.TextBox Text93;
+        private System.Windows.Forms.Label Length93;
+        private System.Windows.Forms.Label Length92;
+        private System.Windows.Forms.TextBox Hex93;
+        private System.Windows.Forms.TextBox Text92;
+        private System.Windows.Forms.TextBox Hex92;
     }
 }

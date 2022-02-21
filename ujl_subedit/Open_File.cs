@@ -51,8 +51,8 @@ namespace ujl_subedit
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|All files (*.*)|*.*";
-            openFileDialog1.FilterIndex = 4;
+            openFileDialog1.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 1;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -61,7 +61,7 @@ namespace ujl_subedit
                     using (Stream str = openFileDialog1.OpenFile())
                     {
                         OpenFile.FileName = openFileDialog1.SafeFileName;
-                        if (OpenFile.FileName == "COMOD11.SNG")
+                        if (OpenFile.FileName == "COMOD11.SNG" || OpenFile.FileName == "COMOD0.MEN" || OpenFile.FileName == "COMOD6.SNG")
                         {
                             Editor editor = new Editor();
                             editor.Owner = this;
