@@ -61,7 +61,7 @@ namespace ujl_subedit
                     using (Stream str = openFileDialog1.OpenFile())
                     {
                         OpenFile.FileName = openFileDialog1.SafeFileName;
-                        if (OpenFile.FileName == "COMOD11.SNG" || OpenFile.FileName == "COMOD0.MEN" || OpenFile.FileName == "COMOD6.SNG")
+                        if (OpenFile.FileName == "COMOD11.SNG" || OpenFile.FileName == "COMOD0.MEN" || OpenFile.FileName == "COMOD6.SNG" || OpenFile.FileName == "COMOD16.SNG")
                         {
                             Editor editor = new Editor();
                             editor.Owner = this;

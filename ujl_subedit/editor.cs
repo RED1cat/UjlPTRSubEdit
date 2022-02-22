@@ -746,6 +746,232 @@ namespace ujl_subedit
             public const int Hex94_address = 91500;
             public const int Hex94_length = 47;
         }
+        public class COMOD16_SNG_info // lines 73
+        {
+            public const int length = 192564;
+
+            //катсцена
+            public const int Hex1_address = 88488;
+            public const int Hex1_length = 11;
+
+            public const int Hex2_address = 88500;
+            public const int Hex2_length = 31;
+
+            public const int Hex3_address = 88532;
+            public const int Hex3_length = 11;
+
+            public const int Hex4_address = 88544;
+            public const int Hex4_length = 7;
+
+            public const int Hex5_address = 88552;
+            public const int Hex5_length = 31;
+
+            public const int Hex6_address = 88584;
+            public const int Hex6_length = 11;
+
+            public const int Hex7_address = 88596;
+            public const int Hex7_length = 11;
+
+            public const int Hex8_address = 88608;
+            public const int Hex8_length = 11;
+
+            public const int Hex9_address = 88620;
+            public const int Hex9_length = 7;
+
+            public const int Hex10_address = 88628;
+            public const int Hex10_length = 47;
+
+            public const int Hex11_address = 88676;
+            public const int Hex11_length = 23;
+
+            public const int Hex12_address = 88700;
+            public const int Hex12_length = 7;
+
+            public const int Hex13_address = 88708;
+            public const int Hex13_length = 47;
+
+            public const int Hex14_address = 88756;
+            public const int Hex14_length = 47;
+
+            public const int Hex15_address = 88804;
+            public const int Hex15_length = 27;
+
+            public const int Hex16_address = 88832;
+            public const int Hex16_length = 55;
+
+            public const int Hex17_address = 88888;
+            public const int Hex17_length = 23;
+
+            public const int Hex18_address = 88912;
+            public const int Hex18_length = 23;
+
+            public const int Hex19_address = 88936;
+            public const int Hex19_length = 51;
+
+            public const int Hex20_address = 88988;
+            public const int Hex20_length = 31;
+
+            public const int Hex21_address = 89020;
+            public const int Hex21_length = 39;
+
+            public const int Hex22_address = 89060;
+            public const int Hex22_length = 47;
+
+            public const int Hex23_address = 89108;
+            public const int Hex23_length = 19;
+
+            public const int Hex24_address = 89128;
+            public const int Hex24_length = 23;
+
+            public const int Hex25_address = 89152;
+            public const int Hex25_length = 31;
+
+            //геймплей
+            public const int Hex26_address = 93796;
+            public const int Hex26_length = 23;
+
+            public const int Hex27_address = 93820;
+            public const int Hex27_length = 19;
+
+            public const int Hex28_address = 93840;
+            public const int Hex28_length = 31;
+
+            public const int Hex29_address = 93872;
+            public const int Hex29_length = 39;
+
+            public const int Hex30_address = 93912;
+            public const int Hex30_length = 39;
+
+            public const int Hex31_address = 93952;
+            public const int Hex31_length = 51;
+
+            public const int Hex32_address = 94004;
+            public const int Hex32_length = 47;
+
+            public const int Hex33_address = 94052;
+            public const int Hex33_length = 43;
+
+            public const int Hex34_address = 94096;
+            public const int Hex34_length = 31;
+
+            public const int Hex35_address = 94128;
+            public const int Hex35_length = 51;
+
+            public const int Hex36_address = 94180;
+            public const int Hex36_length = 27;
+
+            public const int Hex37_address = 94208;
+            public const int Hex37_length = 51;
+
+            public const int Hex38_address = 94260;
+            public const int Hex38_length = 39;
+
+            public const int Hex39_address = 94300;
+            public const int Hex39_length = 51;
+
+            public const int Hex40_address = 94352;
+            public const int Hex40_length = 39;
+
+            public const int Hex41_address = 94392;
+            public const int Hex41_length = 47;
+
+            public const int Hex42_address = 94440;
+            public const int Hex42_length = 43;
+
+            public const int Hex43_address = 94484;
+            public const int Hex43_length = 43;
+
+            public const int Hex44_address = 94528;
+            public const int Hex44_length = 43;
+
+            public const int Hex45_address = 94572;
+            public const int Hex45_length = 39;
+
+            public const int Hex46_address = 94612;
+            public const int Hex46_length = 31;
+
+            public const int Hex47_address = 94644;
+            public const int Hex47_length = 51;
+
+            public const int Hex48_address = 94696;
+            public const int Hex48_length = 27;
+
+            public const int Hex49_address = 94724;
+            public const int Hex49_length = 51;
+
+            public const int Hex50_address = 94776;
+            public const int Hex50_length = 39;
+
+            public const int Hex51_address = 94816;
+            public const int Hex51_length = 51;
+
+            public const int Hex52_address = 94868;
+            public const int Hex52_length = 39;
+
+            public const int Hex53_address = 94908;
+            public const int Hex53_length = 47;
+
+            public const int Hex54_address = 94956;
+            public const int Hex54_length = 43;
+
+            public const int Hex55_address = 95000;
+            public const int Hex55_length = 43;
+
+            public const int Hex56_address = 95044;
+            public const int Hex56_length = 31;
+
+            public const int Hex57_address = 95076;
+            public const int Hex57_length = 35;
+
+            public const int Hex58_address = 95112;
+            public const int Hex58_length = 19;
+
+            public const int Hex59_address = 95132;
+            public const int Hex59_length = 23;
+
+            //катсцена
+            public const int Hex60_address = 95576;
+            public const int Hex60_length = 19;
+
+            public const int Hex61_address = 95596;
+            public const int Hex61_length = 39;
+
+            public const int Hex62_address = 95636;
+            public const int Hex62_length = 19;
+
+            public const int Hex63_address = 95656;
+            public const int Hex63_length = 23;
+
+            public const int Hex64_address = 95740;
+            public const int Hex64_length = 31;
+
+            public const int Hex65_address = 95772;
+            public const int Hex65_length = 15;
+
+            public const int Hex66_address = 95788;
+            public const int Hex66_length = 35;
+
+            public const int Hex67_address = 95872;
+            public const int Hex67_length = 43;
+
+            public const int Hex68_address = 95916;
+            public const int Hex68_length = 19;
+
+            public const int Hex69_address = 95936;
+            public const int Hex69_length = 35;
+
+            public const int Hex70_address = 96020;
+            public const int Hex70_length = 23;
+
+            public const int Hex71_address = 96044;
+            public const int Hex71_length = 39;
+
+            public const int Hex72_address = 96116;
+            public const int Hex72_length = 39;
+
+            public const int Hex73_address = 96156;
+            public const int Hex73_length = 47;
+        }
 
         public Editor()
         {
@@ -3596,6 +3822,334 @@ namespace ujl_subedit
 
                 file.hex94_address = COMOD6_SNG_info.Hex94_address;
                 file.hex94_length = COMOD6_SNG_info.Hex94_length;
+            }
+
+            if(Open_File.OpenFile.FileName == "COMOD16.SNG")
+            {
+                this.Text = "COMOD16.SNG - Level 6 Single Lammy - 73 lines";
+                file.hex1_address = COMOD16_SNG_info.Hex1_address;
+                file.hex1_length = COMOD16_SNG_info.Hex1_length;
+
+                file.hex2_address = COMOD16_SNG_info.Hex2_address;
+                file.hex2_length = COMOD16_SNG_info.Hex2_length;
+
+                file.hex3_address = COMOD16_SNG_info.Hex3_address;
+                file.hex3_length = COMOD16_SNG_info.Hex3_length;
+
+                file.hex4_address = COMOD16_SNG_info.Hex4_address;
+                file.hex4_length = COMOD16_SNG_info.Hex4_length;
+
+                file.hex5_address = COMOD16_SNG_info.Hex5_address;
+                file.hex5_length = COMOD16_SNG_info.Hex5_length;
+
+                file.hex6_address = COMOD16_SNG_info.Hex6_address;
+                file.hex6_length = COMOD16_SNG_info.Hex6_length;
+
+                file.hex7_address = COMOD16_SNG_info.Hex7_address;
+                file.hex7_length = COMOD16_SNG_info.Hex7_length;
+
+                file.hex8_address = COMOD16_SNG_info.Hex8_address;
+                file.hex8_length = COMOD16_SNG_info.Hex8_length;
+
+                file.hex9_address = COMOD16_SNG_info.Hex9_address;
+                file.hex9_length = COMOD16_SNG_info.Hex9_length;
+
+                file.hex10_address = COMOD16_SNG_info.Hex10_address;
+                file.hex10_length = COMOD16_SNG_info.Hex10_length;
+
+                file.hex11_address = COMOD16_SNG_info.Hex11_address;
+                file.hex11_length = COMOD16_SNG_info.Hex11_length;
+
+                file.hex12_address = COMOD16_SNG_info.Hex12_address;
+                file.hex12_length = COMOD16_SNG_info.Hex12_length;
+
+                file.hex13_address = COMOD16_SNG_info.Hex13_address;
+                file.hex13_length = COMOD16_SNG_info.Hex13_length;
+
+                file.hex14_address = COMOD16_SNG_info.Hex14_address;
+                file.hex14_length = COMOD16_SNG_info.Hex14_length;
+
+                file.hex15_address = COMOD16_SNG_info.Hex15_address;
+                file.hex15_length = COMOD16_SNG_info.Hex15_length;
+
+                file.hex16_address = COMOD16_SNG_info.Hex16_address;
+                file.hex16_length = COMOD16_SNG_info.Hex16_length;
+
+                file.hex17_address = COMOD16_SNG_info.Hex17_address;
+                file.hex17_length = COMOD16_SNG_info.Hex17_length;
+
+                file.hex18_address = COMOD16_SNG_info.Hex18_address;
+                file.hex18_length = COMOD16_SNG_info.Hex18_length;
+
+                file.hex19_address = COMOD16_SNG_info.Hex19_address;
+                file.hex19_length = COMOD16_SNG_info.Hex19_length;
+
+                file.hex20_address = COMOD16_SNG_info.Hex20_address;
+                file.hex20_length = COMOD16_SNG_info.Hex20_length;
+
+                file.hex21_address = COMOD16_SNG_info.Hex21_address;
+                file.hex21_length = COMOD16_SNG_info.Hex21_length;
+
+                file.hex22_address = COMOD16_SNG_info.Hex22_address;
+                file.hex22_length = COMOD16_SNG_info.Hex22_length;
+
+                file.hex23_address = COMOD16_SNG_info.Hex23_address;
+                file.hex23_length = COMOD16_SNG_info.Hex23_length;
+
+                file.hex24_address = COMOD16_SNG_info.Hex24_address;
+                file.hex24_length = COMOD16_SNG_info.Hex24_length;
+
+                file.hex25_address = COMOD16_SNG_info.Hex25_address;
+                file.hex25_length = COMOD16_SNG_info.Hex25_length;
+
+                file.hex26_address = COMOD16_SNG_info.Hex26_address;
+                file.hex26_length = COMOD16_SNG_info.Hex26_length;
+
+                file.hex27_address = COMOD16_SNG_info.Hex27_address;
+                file.hex27_length = COMOD16_SNG_info.Hex27_length;
+
+                file.hex28_address = COMOD16_SNG_info.Hex28_address;
+                file.hex28_length = COMOD16_SNG_info.Hex28_length;
+
+                file.hex29_address = COMOD16_SNG_info.Hex29_address;
+                file.hex29_length = COMOD16_SNG_info.Hex29_length;
+
+                file.hex30_address = COMOD16_SNG_info.Hex30_address;
+                file.hex30_length = COMOD16_SNG_info.Hex30_length;
+
+                file.hex31_address = COMOD16_SNG_info.Hex31_address;
+                file.hex31_length = COMOD16_SNG_info.Hex31_length;
+
+                file.hex32_address = COMOD16_SNG_info.Hex32_address;
+                file.hex32_length = COMOD16_SNG_info.Hex32_length;
+
+                file.hex33_address = COMOD16_SNG_info.Hex33_address;
+                file.hex33_length = COMOD16_SNG_info.Hex33_length;
+
+                file.hex34_address = COMOD16_SNG_info.Hex34_address;
+                file.hex34_length = COMOD16_SNG_info.Hex34_length;
+
+                file.hex35_address = COMOD16_SNG_info.Hex35_address;
+                file.hex35_length = COMOD16_SNG_info.Hex35_length;
+
+                file.hex36_address = COMOD16_SNG_info.Hex36_address;
+                file.hex36_length = COMOD16_SNG_info.Hex36_length;
+
+                file.hex37_address = COMOD16_SNG_info.Hex37_address;
+                file.hex37_length = COMOD16_SNG_info.Hex37_length;
+
+                file.hex38_address = COMOD16_SNG_info.Hex38_address;
+                file.hex38_length = COMOD16_SNG_info.Hex38_length;
+
+                file.hex39_address = COMOD16_SNG_info.Hex39_address;
+                file.hex39_length = COMOD16_SNG_info.Hex39_length;
+
+                file.hex40_address = COMOD16_SNG_info.Hex40_address;
+                file.hex40_length = COMOD16_SNG_info.Hex40_length;
+
+                file.hex41_address = COMOD16_SNG_info.Hex41_address;
+                file.hex41_length = COMOD16_SNG_info.Hex41_length;
+
+                file.hex42_address = COMOD16_SNG_info.Hex42_address;
+                file.hex42_length = COMOD16_SNG_info.Hex42_length;
+
+                file.hex43_address = COMOD16_SNG_info.Hex43_address;
+                file.hex43_length = COMOD16_SNG_info.Hex43_length;
+
+                file.hex44_address = COMOD16_SNG_info.Hex44_address;
+                file.hex44_length = COMOD16_SNG_info.Hex44_length;
+
+                file.hex45_address = COMOD16_SNG_info.Hex45_address;
+                file.hex45_length = COMOD16_SNG_info.Hex45_length;
+
+                file.hex46_address = COMOD16_SNG_info.Hex46_address;
+                file.hex46_length = COMOD16_SNG_info.Hex46_length;
+
+                file.hex47_address = COMOD16_SNG_info.Hex47_address;
+                file.hex47_length = COMOD16_SNG_info.Hex47_length;
+
+                file.hex48_address = COMOD16_SNG_info.Hex48_address;
+                file.hex48_length = COMOD16_SNG_info.Hex48_length;
+
+                file.hex49_address = COMOD16_SNG_info.Hex49_address;
+                file.hex49_length = COMOD16_SNG_info.Hex49_length;
+
+                file.hex50_address = COMOD16_SNG_info.Hex50_address;
+                file.hex50_length = COMOD16_SNG_info.Hex50_length;
+
+                file.hex51_address = COMOD16_SNG_info.Hex51_address;
+                file.hex51_length = COMOD16_SNG_info.Hex51_length;
+
+                file.hex52_address = COMOD16_SNG_info.Hex52_address;
+                file.hex52_length = COMOD16_SNG_info.Hex52_length;
+
+                file.hex53_address = COMOD16_SNG_info.Hex53_address;
+                file.hex53_length = COMOD16_SNG_info.Hex53_length;
+
+                file.hex54_address = COMOD16_SNG_info.Hex54_address;
+                file.hex54_length = COMOD16_SNG_info.Hex54_length;
+
+                file.hex55_address = COMOD16_SNG_info.Hex55_address;
+                file.hex55_length = COMOD16_SNG_info.Hex55_length;
+
+                file.hex56_address = COMOD16_SNG_info.Hex56_address;
+                file.hex56_length = COMOD16_SNG_info.Hex56_length;
+
+                file.hex57_address = COMOD16_SNG_info.Hex57_address;
+                file.hex57_length = COMOD16_SNG_info.Hex57_length;
+
+                file.hex58_address = COMOD16_SNG_info.Hex58_address;
+                file.hex58_length = COMOD16_SNG_info.Hex58_length;
+
+                file.hex59_address = COMOD16_SNG_info.Hex59_address;
+                file.hex59_length = COMOD16_SNG_info.Hex59_length;
+
+                file.hex60_address = COMOD16_SNG_info.Hex60_address;
+                file.hex60_length = COMOD16_SNG_info.Hex60_length;
+
+                file.hex61_address = COMOD16_SNG_info.Hex61_address;
+                file.hex61_length = COMOD16_SNG_info.Hex61_length;
+
+                file.hex62_address = COMOD16_SNG_info.Hex62_address;
+                file.hex62_length = COMOD16_SNG_info.Hex62_length;
+
+                file.hex63_address = COMOD16_SNG_info.Hex63_address;
+                file.hex63_length = COMOD16_SNG_info.Hex63_length;
+
+                file.hex64_address = COMOD16_SNG_info.Hex64_address;
+                file.hex64_length = COMOD16_SNG_info.Hex64_length;
+
+                file.hex65_address = COMOD16_SNG_info.Hex65_address;
+                file.hex65_length = COMOD16_SNG_info.Hex65_length;
+
+                file.hex66_address = COMOD16_SNG_info.Hex66_address;
+                file.hex66_length = COMOD16_SNG_info.Hex66_length;
+
+                file.hex67_address = COMOD16_SNG_info.Hex67_address;
+                file.hex67_length = COMOD16_SNG_info.Hex67_length;
+
+                file.hex68_address = COMOD16_SNG_info.Hex68_address;
+                file.hex68_length = COMOD16_SNG_info.Hex68_length;
+
+                file.hex69_address = COMOD16_SNG_info.Hex69_address;
+                file.hex69_length = COMOD16_SNG_info.Hex69_length;
+
+                file.hex70_address = COMOD16_SNG_info.Hex70_address;
+                file.hex70_length = COMOD16_SNG_info.Hex70_length;
+
+                file.hex71_address = COMOD16_SNG_info.Hex71_address;
+                file.hex71_length = COMOD16_SNG_info.Hex71_length;
+
+                file.hex72_address = COMOD16_SNG_info.Hex72_address;
+                file.hex72_length = COMOD16_SNG_info.Hex72_length;
+
+                file.hex73_address = COMOD16_SNG_info.Hex73_address;
+                file.hex73_length = COMOD16_SNG_info.Hex73_length;
+
+                file.hex74_address = 0;
+                file.hex74_length = 1;
+                Hex74.Enabled = false;
+                Text74.Enabled = false;
+
+                file.hex75_address = 0;
+                file.hex75_length = 1;
+                Hex75.Enabled = false;
+                Text75.Enabled = false;
+
+                file.hex76_address = 0;
+                file.hex76_length = 1;
+                Hex76.Enabled = false;
+                Text76.Enabled = false;
+
+                file.hex77_address = 0;
+                file.hex77_length = 1;
+                Hex77.Enabled = false;
+                Text77.Enabled = false;
+
+                file.hex78_address = 0;
+                file.hex78_length = 1;
+                Hex78.Enabled = false;
+                Text78.Enabled = false;
+
+                file.hex79_address = 0;
+                file.hex79_length = 1;
+                Hex79.Enabled = false;
+                Text79.Enabled = false;
+
+                file.hex80_address = 0;
+                file.hex80_length = 1;
+                Hex80.Enabled = false;
+                Text80.Enabled = false;
+
+                file.hex81_address = 0;
+                file.hex81_length = 1;
+                Hex81.Enabled = false;
+                Text81.Enabled = false;
+
+                file.hex82_address = 0;
+                file.hex82_length = 1;
+                Hex82.Enabled = false;
+                Text82.Enabled = false;
+
+                file.hex83_address = 0;
+                file.hex83_length = 1;
+                Hex83.Enabled = false;
+                Text83.Enabled = false;
+
+                file.hex84_address = 0;
+                file.hex84_length = 1;
+                Hex84.Enabled = false;
+                Text84.Enabled = false;
+
+                file.hex85_address = 0;
+                file.hex85_length = 1;
+                Hex85.Enabled = false;
+                Text85.Enabled = false;
+
+                file.hex86_address = 0;
+                file.hex86_length = 1;
+                Hex86.Enabled = false;
+                Text86.Enabled = false;
+
+                file.hex87_address = 0;
+                file.hex87_length = 1;
+                Hex87.Enabled = false;
+                Text87.Enabled = false;
+
+                file.hex88_address = 0;
+                file.hex88_length = 1;
+                Hex88.Enabled = false;
+                Text88.Enabled = false;
+
+                file.hex89_address = 0;
+                file.hex89_length = 1;
+                Hex89.Enabled = false;
+                Text89.Enabled = false;
+
+                file.hex90_address = 0;
+                file.hex90_length = 1;
+                Hex90.Enabled = false;
+                Text90.Enabled = false;
+
+                file.hex91_address = 0;
+                file.hex91_length = 1;
+                Hex91.Enabled = false;
+                Text91.Enabled = false;
+
+                file.hex92_address = 0;
+                file.hex92_length = 1;
+                Hex92.Enabled = false;
+                Text92.Enabled = false;
+
+                file.hex93_address = 0;
+                file.hex93_length = 1;
+                Hex93.Enabled = false;
+                Text93.Enabled = false;
+
+                file.hex94_address = 0;
+                file.hex94_length = 1;
+                Hex94.Enabled = false;
+                Text94.Enabled = false;
             }
         }
 
