@@ -120,7 +120,7 @@ namespace ujl_subedit
             public const int Hex33_address = 115068;
             public const int Hex33_length = 35;
 
-            public const int Hex34_address = 115104;
+            public const int Hex34_address = 115115;
             public const int Hex34_length = 47;
 
             public const int Hex35_address = 115152;
@@ -1768,6 +1768,688 @@ namespace ujl_subedit
             public const int Hex97_address = 106548;
             public const int Hex97_length = 43;
         }
+        public class COMOD16_COP_info // lines 104
+        {
+            public const int length = 216836;
+
+            //катсцена
+            public const int Hex1_address = 100388;
+            public const int Hex1_length = 11;
+
+            public const int Hex2_address = 100400;
+            public const int Hex2_length = 27;
+
+            public const int Hex3_address = 100428;
+            public const int Hex3_length = 19;
+
+            public const int Hex4_address = 100448;
+            public const int Hex4_length = 43;
+
+            public const int Hex5_address = 100492;
+            public const int Hex5_length = 15;
+
+            public const int Hex6_address = 100508;
+            public const int Hex6_length = 15;
+
+            public const int Hex7_address = 100524;
+            public const int Hex7_length = 7;
+
+            public const int Hex8_address = 100532;
+            public const int Hex8_length = 7;
+
+            public const int Hex9_address = 100540;
+            public const int Hex9_length = 7;
+
+            public const int Hex10_address = 100548;
+            public const int Hex10_length = 23;
+
+            public const int Hex11_address = 100572;
+            public const int Hex11_length = 39;
+
+            public const int Hex12_address = 100612;
+            public const int Hex12_length = 27;
+
+            public const int Hex13_address = 100640;
+            public const int Hex13_length = 27;
+
+            //геймплей
+            public const int Hex14_address = 102904;
+            public const int Hex14_length = 23;
+
+            public const int Hex15_address = 102928;
+            public const int Hex15_length = 19;
+
+            public const int Hex16_address = 102948;
+            public const int Hex16_length = 39;
+
+            public const int Hex17_address = 102988;
+            public const int Hex17_length = 43;
+
+            public const int Hex18_address = 103032;
+            public const int Hex18_length = 39;
+
+            public const int Hex19_address = 103072;
+            public const int Hex19_length = 43;
+
+            public const int Hex20_address = 103116;
+            public const int Hex20_length = 39;
+
+            public const int Hex21_address = 103156;
+            public const int Hex21_length = 51;
+
+            public const int Hex22_address = 103208;
+            public const int Hex22_length = 39;
+
+            public const int Hex23_address = 103248;
+            public const int Hex23_length = 47;
+
+            public const int Hex24_address = 103296;
+            public const int Hex24_length = 39;
+
+            public const int Hex25_address = 103336;
+            public const int Hex25_length = 47;
+
+            public const int Hex26_address = 103384;
+            public const int Hex26_length = 31;
+
+            public const int Hex27_address = 103416;
+            public const int Hex27_length = 51;
+
+            public const int Hex28_address = 103468;
+            public const int Hex28_length = 35;
+
+            public const int Hex29_address = 103504;
+            public const int Hex29_length = 43;
+
+            public const int Hex30_address = 103548;
+            public const int Hex30_length = 35;
+
+            public const int Hex31_address = 103584;
+            public const int Hex31_length = 43;
+
+            public const int Hex32_address = 103628;
+            public const int Hex32_length = 39;
+
+            public const int Hex33_address = 103668;
+            public const int Hex33_length = 51;
+
+            public const int Hex34_address = 103720;
+            public const int Hex34_length = 35;
+
+            public const int Hex35_address = 103756;
+            public const int Hex35_length = 39;
+
+            public const int Hex36_address = 103796;
+            public const int Hex36_length = 35;
+
+            public const int Hex37_address = 103832;
+            public const int Hex37_length = 39;
+
+            public const int Hex38_address = 103872;
+            public const int Hex38_length = 43;
+
+            public const int Hex39_address = 103916;
+            public const int Hex39_length = 43;
+
+            public const int Hex40_address = 103960;
+            public const int Hex40_length = 39;
+
+            public const int Hex41_address = 104000;
+            public const int Hex41_length = 47;
+
+            public const int Hex42_address = 104048;
+            public const int Hex42_length = 39;
+
+            public const int Hex43_address = 104088;
+            public const int Hex43_length = 47;
+
+            public const int Hex44_address = 104136;
+            public const int Hex44_length = 31;
+
+            public const int Hex45_address = 104168;
+            public const int Hex45_length = 51;
+
+            public const int Hex46_address = 104220;
+            public const int Hex46_length = 35;
+
+            public const int Hex47_address = 104256;
+            public const int Hex47_length = 43;
+
+            public const int Hex48_address = 104300;
+            public const int Hex48_length = 35;
+
+            public const int Hex49_address = 104336;
+            public const int Hex49_length = 43;
+
+            public const int Hex50_address = 104380;
+            public const int Hex50_length = 39;
+
+            public const int Hex51_address = 104420;
+            public const int Hex51_length = 51;
+
+            public const int Hex52_address = 104472;
+            public const int Hex52_length = 35;
+
+            public const int Hex53_address = 104508;
+            public const int Hex53_length = 39;
+
+            public const int Hex54_address = 104548;
+            public const int Hex54_length = 35;
+
+            public const int Hex55_address = 104584;
+            public const int Hex55_length = 39;
+
+            public const int Hex56_address = 104624;
+            public const int Hex56_length = 43;
+
+            public const int Hex57_address = 104668;
+            public const int Hex57_length = 35;
+
+            public const int Hex58_address = 104704;
+            public const int Hex58_length = 35;
+
+            public const int Hex59_address = 104740;
+            public const int Hex59_length = 31;
+
+            public const int Hex60_address = 104772;
+            public const int Hex60_length = 31;
+
+            public const int Hex61_address = 104804;
+            public const int Hex61_length = 31;
+
+            public const int Hex62_address = 104836;
+            public const int Hex62_length = 19;
+
+            public const int Hex63_address = 104856;
+            public const int Hex63_length = 27;
+
+            public const int Hex64_address = 104884;
+            public const int Hex64_length = 31;
+
+            //катсцена
+            public const int Hex65_address = 105540;
+            public const int Hex65_length = 19;
+
+            public const int Hex66_address = 105560;
+            public const int Hex66_length = 39;
+
+            public const int Hex67_address = 105600;
+            public const int Hex67_length = 39;
+
+            public const int Hex68_address = 105640;
+            public const int Hex68_length = 35;
+
+            public const int Hex69_address = 105736;
+            public const int Hex69_length = 31;
+
+            public const int Hex70_address = 105768;
+            public const int Hex70_length = 15;
+
+            public const int Hex71_address = 105784;
+            public const int Hex71_length = 7;
+
+            public const int Hex72_address = 105792;
+            public const int Hex72_length = 23;
+
+            public const int Hex73_address = 105876;
+            public const int Hex73_length = 43;
+
+            public const int Hex74_address = 105920;
+            public const int Hex74_length = 19;
+
+            public const int Hex75_address = 105940;
+            public const int Hex75_length = 19;
+
+            public const int Hex76_address = 105960;
+            public const int Hex76_length = 19;
+
+            public const int Hex77_address = 106040;
+            public const int Hex77_length = 23;
+
+            public const int Hex78_address = 106064;
+            public const int Hex78_length = 39;
+
+            public const int Hex79_address = 106136;
+            public const int Hex79_length = 39;
+
+            public const int Hex80_address = 106176;
+            public const int Hex80_length = 47;
+
+            public const int Hex81_address = 106272;
+            public const int Hex81_length = 19;
+
+            public const int Hex82_address = 106292;
+            public const int Hex82_length = 27;
+
+            public const int Hex83_address = 106320;
+            public const int Hex83_length = 43;
+
+            public const int Hex84_address = 106364;
+            public const int Hex84_length = 43;
+
+            public const int Hex85_address = 106408;
+            public const int Hex85_length = 19;
+
+            public const int Hex86_address = 106500;
+            public const int Hex86_length = 19;
+
+            public const int Hex87_address = 106520;
+            public const int Hex87_length = 27;
+
+            public const int Hex88_address = 106548;
+            public const int Hex88_length = 39;
+
+            public const int Hex89_address = 106588;
+            public const int Hex89_length = 15;
+
+            public const int Hex90_address = 106604;
+            public const int Hex90_length = 15;
+
+            public const int Hex91_address = 106692;
+            public const int Hex91_length = 19;
+
+            public const int Hex92_address = 106712;
+            public const int Hex92_length = 27;
+
+            public const int Hex93_address = 106740;
+            public const int Hex93_length = 43;
+
+            public const int Hex94_address = 106784;
+            public const int Hex94_length = 43;
+
+            public const int Hex95_address = 106828;
+            public const int Hex95_length = 19;
+
+            public const int Hex96_address = 106920;
+            public const int Hex96_length = 19;
+
+            public const int Hex97_address = 106940;
+            public const int Hex97_length = 27;
+
+            public const int Hex98_address = 106968;
+            public const int Hex98_length = 39;
+
+            public const int Hex99_address = 107008;
+            public const int Hex99_length = 15;
+
+            public const int Hex100_address = 107024;
+            public const int Hex100_length = 15;
+
+            public const int Hex101_address = 107112;
+            public const int Hex101_length = 19;
+
+            public const int Hex102_address = 107132;
+            public const int Hex102_length = 43;
+
+            public const int Hex103_address = 107212;
+            public const int Hex103_length = 19;
+
+            public const int Hex104_address = 107232;
+            public const int Hex104_length = 43;
+        }
+        public class COMOD17_SNG_info // lines 119
+        {
+            public const int length = 211908;
+
+            //катсцена
+            public const int Hex1_address = 101408;
+            public const int Hex1_length = 19;
+
+            public const int Hex2_address = 101428;
+            public const int Hex2_length = 11;
+
+            public const int Hex3_address = 101440;
+            public const int Hex3_length = 47;
+
+            public const int Hex4_address = 101488;
+            public const int Hex4_length = 51;
+
+            public const int Hex5_address = 101540;
+            public const int Hex5_length = 15;
+
+            public const int Hex6_address = 101556;
+            public const int Hex6_length = 23;
+
+            public const int Hex7_address = 101580;
+            public const int Hex7_length = 35;
+
+            public const int Hex8_address = 101616;
+            public const int Hex8_length = 19;
+
+            public const int Hex9_address = 101636;
+            public const int Hex9_length = 51;
+
+            public const int Hex10_address = 101688;
+            public const int Hex10_length = 43;
+
+            public const int Hex11_address = 101732;
+            public const int Hex11_length = 19;
+
+            public const int Hex12_address = 101752;
+            public const int Hex12_length = 11;
+
+            public const int Hex13_address = 101764;
+            public const int Hex13_length = 39;
+
+            public const int Hex14_address = 101804;
+            public const int Hex14_length = 51;
+
+            public const int Hex15_address = 101856;
+            public const int Hex15_length = 27;
+
+            public const int Hex16_address = 101884;
+            public const int Hex16_length = 7;
+
+            public const int Hex17_address = 101892;
+            public const int Hex17_length = 51;
+
+            public const int Hex18_address = 101944;
+            public const int Hex18_length = 11;
+
+            public const int Hex19_address = 101956;
+            public const int Hex19_length = 19;
+
+            public const int Hex20_address = 101976;
+            public const int Hex20_length = 47;
+
+            public const int Hex21_address = 102024;
+            public const int Hex21_length = 51;
+
+            public const int Hex22_address = 102076;
+            public const int Hex22_length = 19;
+
+            public const int Hex23_address = 102096;
+            public const int Hex23_length = 15;
+
+            public const int Hex24_address = 102112;
+            public const int Hex24_length = 39;
+
+            public const int Hex25_address = 102152;
+            public const int Hex25_length = 15;
+
+            public const int Hex26_address = 102168;
+            public const int Hex26_length = 39;
+
+            public const int Hex27_address = 102208;
+            public const int Hex27_length = 31;
+
+            public const int Hex28_address = 102240;
+            public const int Hex28_length = 15;
+
+            public const int Hex29_address = 102256;
+            public const int Hex29_length = 19;
+
+            public const int Hex30_address = 102276;
+            public const int Hex30_length = 35;
+
+            public const int Hex31_address = 102312;
+            public const int Hex31_length = 39;
+
+            public const int Hex32_address = 102352;
+            public const int Hex32_length = 47;
+
+            public const int Hex33_address = 102400;
+            public const int Hex33_length = 15;
+
+            public const int Hex34_address = 102416;
+            public const int Hex34_length = 43;
+
+            public const int Hex35_address = 102460;
+            public const int Hex35_length = 31;
+
+            public const int Hex36_address = 102492;
+            public const int Hex36_length = 59;
+
+            public const int Hex37_address = 102552;
+            public const int Hex37_length = 27;
+
+            public const int Hex38_address = 102580;
+            public const int Hex38_length = 39;
+
+            public const int Hex39_address = 102620;
+            public const int Hex39_length = 31;
+
+            //геймплей
+            public const int Hex40_address = 109436;
+            public const int Hex40_length = 19;
+
+            public const int Hex41_address = 109456;
+            public const int Hex41_length = 23;
+
+            public const int Hex42_address = 109480;
+            public const int Hex42_length = 19;
+
+            public const int Hex43_address = 109500;
+            public const int Hex43_length = 19;
+
+            public const int Hex44_address = 109520;
+            public const int Hex44_length = 19;
+
+            public const int Hex45_address = 109540;
+            public const int Hex45_length = 11;
+
+            public const int Hex46_address = 109552;
+            public const int Hex46_length = 31;
+
+            public const int Hex47_address = 109584;
+            public const int Hex47_length = 23;
+
+            public const int Hex48_address = 109608;
+            public const int Hex48_length = 39;
+
+            public const int Hex49_address = 109648;
+            public const int Hex49_length = 39;
+
+            public const int Hex50_address = 109688;
+            public const int Hex50_length = 31;
+
+            public const int Hex51_address = 109720;
+            public const int Hex51_length = 27;
+
+            public const int Hex52_address = 109748;
+            public const int Hex52_length = 23;
+
+            public const int Hex53_address = 109772;
+            public const int Hex53_length = 23;
+
+            public const int Hex54_address = 109796;
+            public const int Hex54_length = 27;
+
+            public const int Hex55_address = 109824;
+            public const int Hex55_length = 31;
+
+            public const int Hex56_address = 109856;
+            public const int Hex56_length = 19;
+
+            public const int Hex57_address = 109876;
+            public const int Hex57_length = 19;
+
+            public const int Hex58_address = 109896;
+            public const int Hex58_length = 23;
+
+            public const int Hex59_address = 109920;
+            public const int Hex59_length = 19;
+
+            public const int Hex60_address = 109940;
+            public const int Hex60_length = 19;
+
+            public const int Hex61_address = 109960;
+            public const int Hex61_length = 19;
+
+            public const int Hex62_address = 109980;
+            public const int Hex62_length = 19;
+
+            public const int Hex63_address = 110000;
+            public const int Hex63_length = 19;
+
+            public const int Hex64_address = 110020;
+            public const int Hex64_length = 11;
+
+            public const int Hex65_address = 110032;
+            public const int Hex65_length = 15;
+
+            public const int Hex66_address = 110048;
+            public const int Hex66_length = 15;
+
+            public const int Hex67_address = 110064;
+            public const int Hex67_length = 19;
+
+            public const int Hex68_address = 110084;
+            public const int Hex68_length = 15;
+
+            public const int Hex69_address = 110100;
+            public const int Hex69_length = 19;
+
+            public const int Hex70_address = 110120;
+            public const int Hex70_length = 23;
+
+            public const int Hex71_address = 110144;
+            public const int Hex71_length = 43;
+
+            public const int Hex72_address = 110188;
+            public const int Hex72_length = 47;
+
+            public const int Hex73_address = 110236;
+            public const int Hex73_length = 31;
+
+            public const int Hex74_address = 110268;
+            public const int Hex74_length = 27;
+
+            public const int Hex75_address = 110296;
+            public const int Hex75_length = 31;
+
+            public const int Hex76_address = 110328;
+            public const int Hex76_length = 27;
+
+            public const int Hex77_address = 110356;
+            public const int Hex77_length = 27;
+
+            public const int Hex78_address = 110384;
+            public const int Hex78_length = 31;
+
+            public const int Hex79_address = 110416;
+            public const int Hex79_length = 19;
+
+            public const int Hex80_address = 110436;
+            public const int Hex80_length = 19;
+
+            public const int Hex81_address = 110456;
+            public const int Hex81_length = 23;
+
+            public const int Hex82_address = 110480;
+            public const int Hex82_length = 19;
+
+            public const int Hex83_address = 110500;
+            public const int Hex83_length = 19;
+
+            public const int Hex84_address = 110520;
+            public const int Hex84_length = 19;
+
+            public const int Hex85_address = 110540;
+            public const int Hex85_length = 19;
+
+            public const int Hex86_address = 110560;
+            public const int Hex86_length = 19;
+
+            public const int Hex87_address = 110580;
+            public const int Hex87_length = 11;
+
+            public const int Hex88_address = 110592;
+            public const int Hex88_length = 15;
+
+            public const int Hex89_address = 110608;
+            public const int Hex89_length = 15;
+
+            public const int Hex90_address = 110624;
+            public const int Hex90_length = 19;
+
+            public const int Hex91_address = 110644;
+            public const int Hex91_length = 15;
+
+            public const int Hex92_address = 110660;
+            public const int Hex92_length = 19;
+
+            public const int Hex93_address = 110680;
+            public const int Hex93_length = 19;
+
+            public const int Hex94_address = 110700;
+            public const int Hex94_length = 23;
+
+            public const int Hex95_address = 110724;
+            public const int Hex95_length = 11;
+
+            public const int Hex96_address = 110736;
+            public const int Hex96_length = 23;
+
+            public const int Hex97_address = 110760;
+            public const int Hex97_length = 19;
+
+            public const int Hex98_address = 110780;
+            public const int Hex98_length = 35;
+
+            public const int Hex99_address = 111536;
+            public const int Hex99_length = 43;
+
+            public const int Hex100_address = 111580;
+            public const int Hex100_length = 43;
+
+            public const int Hex101_address = 111624;
+            public const int Hex101_length = 23;
+
+            public const int Hex102_address = 111696;
+            public const int Hex102_length = 19;
+
+            public const int Hex103_address = 111716;
+            public const int Hex103_length = 19;
+
+            public const int Hex104_address = 111736;
+            public const int Hex104_length = 23;
+
+            public const int Hex105_address = 111760;
+            public const int Hex105_length = 11;
+
+            public const int Hex106_address = 111772;
+            public const int Hex106_length = 23;
+
+            public const int Hex107_address = 111796;
+            public const int Hex107_length = 19;
+
+            public const int Hex108_address = 111816;
+            public const int Hex108_length = 35;
+
+            public const int Hex109_address = 111948;
+            public const int Hex109_length = 19;
+
+            public const int Hex110_address = 111968;
+            public const int Hex110_length = 19;
+
+            public const int Hex111_address = 111988;
+            public const int Hex111_length = 23;
+
+            public const int Hex112_address = 112012;
+            public const int Hex112_length = 31;
+
+            public const int Hex113_address = 112044;
+            public const int Hex113_length = 35;
+
+            public const int Hex114_address = 112080;
+            public const int Hex114_length = 27;
+
+            public const int Hex115_address = 112108;
+            public const int Hex115_length = 7;
+
+            public const int Hex116_address = 112116;
+            public const int Hex116_length = 39;
+
+            public const int Hex117_address = 112264;
+            public const int Hex117_length = 43;
+
+            public const int Hex118_address = 112328;
+            public const int Hex118_length = 31;
+
+            public const int Hex119_address = 112360;
+            public const int Hex119_length = 27;
+        }
 
         public Editor()
         {
@@ -1779,7 +2461,7 @@ namespace ujl_subedit
                 byte[] bitarray = new byte[fstream.Length];
                 fstream.Read(bitarray, 0, bitarray.Length);
                 file.save = bitarray;
-
+                fstream.Close();
                 //hex1
                 Hex1.MaxLength = file.hex1_length*2+(file.hex1_length - 1);
                 Text1.MaxLength = file.hex1_length;
@@ -3040,6 +3722,772 @@ namespace ujl_subedit
                 file.L97Last = file.hex97_length - file.L97Length;
                 Last97.Text = file.L97Last.ToString();
                 file.hex97 = Hex97.Text;
+
+                //hex98
+                Hex98.MaxLength = file.hex98_length * 2 + (file.hex98_length - 1);
+                Text98.MaxLength = file.hex98_length;
+
+                Hex98.Text = BitConverter.ToString(bitarray, file.hex98_address, file.hex98_length);
+                Text98.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex98.Text));
+
+                file.L98Length = Text98.Text.Length;
+                Length98.Text = file.L98Length.ToString();
+                file.L98Last = file.hex98_length - file.L98Length;
+                Last98.Text = file.L98Last.ToString();
+                file.hex98 = Hex98.Text;
+
+                //hex99
+                Hex99.MaxLength = file.hex99_length * 2 + (file.hex99_length - 1);
+                Text99.MaxLength = file.hex99_length;
+
+                Hex99.Text = BitConverter.ToString(bitarray, file.hex99_address, file.hex99_length);
+                Text99.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex99.Text));
+
+                file.L99Length = Text99.Text.Length;
+                Length99.Text = file.L99Length.ToString();
+                file.L99Last = file.hex99_length - file.L99Length;
+                Last99.Text = file.L99Last.ToString();
+                file.hex99 = Hex99.Text;
+
+                //hex100
+                Hex100.MaxLength = file.hex100_length * 2 + (file.hex100_length - 1);
+                Text100.MaxLength = file.hex100_length;
+
+                Hex100.Text = BitConverter.ToString(bitarray, file.hex100_address, file.hex100_length);
+                Text100.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex100.Text));
+
+                file.L100Length = Text100.Text.Length;
+                Length100.Text = file.L100Length.ToString();
+                file.L100Last = file.hex100_length - file.L100Length;
+                Last100.Text = file.L100Last.ToString();
+                file.hex100 = Hex100.Text;
+
+                //hex101
+                Hex101.MaxLength = file.hex101_length * 2 + (file.hex101_length - 1);
+                Text101.MaxLength = file.hex101_length;
+
+                Hex101.Text = BitConverter.ToString(bitarray, file.hex101_address, file.hex101_length);
+                Text101.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex101.Text));
+
+                file.L101Length = Text101.Text.Length;
+                Length101.Text = file.L101Length.ToString();
+                file.L101Last = file.hex101_length - file.L101Length;
+                Last101.Text = file.L101Last.ToString();
+                file.hex101 = Hex101.Text;
+
+                //hex102
+                Hex102.MaxLength = file.hex102_length * 2 + (file.hex102_length - 1);
+                Text102.MaxLength = file.hex102_length;
+
+                Hex102.Text = BitConverter.ToString(bitarray, file.hex102_address, file.hex102_length);
+                Text102.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex102.Text));
+
+                file.L102Length = Text102.Text.Length;
+                Length102.Text = file.L102Length.ToString();
+                file.L102Last = file.hex102_length - file.L102Length;
+                Last102.Text = file.L102Last.ToString();
+                file.hex102 = Hex102.Text;
+
+                //hex103
+                Hex103.MaxLength = file.hex103_length * 2 + (file.hex103_length - 1);
+                Text103.MaxLength = file.hex103_length;
+
+                Hex103.Text = BitConverter.ToString(bitarray, file.hex103_address, file.hex103_length);
+                Text103.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex103.Text));
+
+                file.L103Length = Text103.Text.Length;
+                Length103.Text = file.L103Length.ToString();
+                file.L103Last = file.hex103_length - file.L103Length;
+                Last103.Text = file.L103Last.ToString();
+                file.hex103 = Hex103.Text;
+
+                //hex104
+                Hex104.MaxLength = file.hex104_length * 2 + (file.hex104_length - 1);
+                Text104.MaxLength = file.hex104_length;
+
+                Hex104.Text = BitConverter.ToString(bitarray, file.hex104_address, file.hex104_length);
+                Text104.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex104.Text));
+
+                file.L104Length = Text104.Text.Length;
+                Length104.Text = file.L104Length.ToString();
+                file.L104Last = file.hex104_length - file.L104Length;
+                Last104.Text = file.L104Last.ToString();
+                file.hex104 = Hex104.Text;
+
+                //hex105
+                Hex105.MaxLength = file.hex105_length * 2 + (file.hex105_length - 1);
+                Text105.MaxLength = file.hex105_length;
+
+                Hex105.Text = BitConverter.ToString(bitarray, file.hex105_address, file.hex105_length);
+                Text105.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex105.Text));
+
+                file.L105Length = Text105.Text.Length;
+                Length105.Text = file.L105Length.ToString();
+                file.L105Last = file.hex105_length - file.L105Length;
+                Last105.Text = file.L105Last.ToString();
+                file.hex105 = Hex105.Text;
+
+                //hex106
+                Hex106.MaxLength = file.hex106_length * 2 + (file.hex106_length - 1);
+                Text106.MaxLength = file.hex106_length;
+
+                Hex106.Text = BitConverter.ToString(bitarray, file.hex106_address, file.hex106_length);
+                Text106.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex106.Text));
+
+                file.L106Length = Text106.Text.Length;
+                Length106.Text = file.L106Length.ToString();
+                file.L106Last = file.hex106_length - file.L106Length;
+                Last106.Text = file.L106Last.ToString();
+                file.hex106 = Hex106.Text;
+
+                //hex107
+                Hex107.MaxLength = file.hex107_length * 2 + (file.hex107_length - 1);
+                Text107.MaxLength = file.hex107_length;
+
+                Hex107.Text = BitConverter.ToString(bitarray, file.hex107_address, file.hex107_length);
+                Text107.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex107.Text));
+
+                file.L107Length = Text107.Text.Length;
+                Length107.Text = file.L107Length.ToString();
+                file.L107Last = file.hex107_length - file.L107Length;
+                Last107.Text = file.L107Last.ToString();
+                file.hex107 = Hex107.Text;
+
+                //hex108
+                Hex108.MaxLength = file.hex108_length * 2 + (file.hex108_length - 1);
+                Text108.MaxLength = file.hex108_length;
+
+                Hex108.Text = BitConverter.ToString(bitarray, file.hex108_address, file.hex108_length);
+                Text108.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex108.Text));
+
+                file.L108Length = Text108.Text.Length;
+                Length108.Text = file.L108Length.ToString();
+                file.L108Last = file.hex108_length - file.L108Length;
+                Last108.Text = file.L108Last.ToString();
+                file.hex108 = Hex108.Text;
+
+                //hex109
+                Hex109.MaxLength = file.hex109_length * 2 + (file.hex109_length - 1);
+                Text109.MaxLength = file.hex109_length;
+
+                Hex109.Text = BitConverter.ToString(bitarray, file.hex109_address, file.hex109_length);
+                Text109.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex109.Text));
+
+                file.L109Length = Text109.Text.Length;
+                Length109.Text = file.L109Length.ToString();
+                file.L109Last = file.hex109_length - file.L109Length;
+                Last109.Text = file.L109Last.ToString();
+                file.hex109 = Hex109.Text;
+
+                //hex110
+                Hex110.MaxLength = file.hex110_length * 2 + (file.hex110_length - 1);
+                Text110.MaxLength = file.hex110_length;
+
+                Hex110.Text = BitConverter.ToString(bitarray, file.hex110_address, file.hex110_length);
+                Text110.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex110.Text));
+
+                file.L110Length = Text110.Text.Length;
+                Length110.Text = file.L110Length.ToString();
+                file.L110Last = file.hex110_length - file.L110Length;
+                Last110.Text = file.L110Last.ToString();
+                file.hex110 = Hex110.Text;
+
+                //hex111
+                Hex111.MaxLength = file.hex111_length * 2 + (file.hex111_length - 1);
+                Text111.MaxLength = file.hex111_length;
+
+                Hex111.Text = BitConverter.ToString(bitarray, file.hex111_address, file.hex111_length);
+                Text111.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex111.Text));
+
+                file.L111Length = Text111.Text.Length;
+                Length111.Text = file.L111Length.ToString();
+                file.L111Last = file.hex111_length - file.L111Length;
+                Last111.Text = file.L111Last.ToString();
+                file.hex111 = Hex111.Text;
+
+                //hex112
+                Hex112.MaxLength = file.hex112_length * 2 + (file.hex112_length - 1);
+                Text112.MaxLength = file.hex112_length;
+
+                Hex112.Text = BitConverter.ToString(bitarray, file.hex112_address, file.hex112_length);
+                Text112.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex112.Text));
+
+                file.L112Length = Text112.Text.Length;
+                Length112.Text = file.L112Length.ToString();
+                file.L112Last = file.hex112_length - file.L112Length;
+                Last112.Text = file.L112Last.ToString();
+                file.hex112 = Hex112.Text;
+
+                //hex113
+                Hex113.MaxLength = file.hex113_length * 2 + (file.hex113_length - 1);
+                Text113.MaxLength = file.hex113_length;
+
+                Hex113.Text = BitConverter.ToString(bitarray, file.hex113_address, file.hex113_length);
+                Text113.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex113.Text));
+
+                file.L113Length = Text113.Text.Length;
+                Length113.Text = file.L113Length.ToString();
+                file.L113Last = file.hex113_length - file.L113Length;
+                Last113.Text = file.L113Last.ToString();
+                file.hex113 = Hex113.Text;
+
+                //hex114
+                Hex114.MaxLength = file.hex114_length * 2 + (file.hex114_length - 1);
+                Text114.MaxLength = file.hex114_length;
+
+                Hex114.Text = BitConverter.ToString(bitarray, file.hex114_address, file.hex114_length);
+                Text114.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex114.Text));
+
+                file.L114Length = Text114.Text.Length;
+                Length114.Text = file.L114Length.ToString();
+                file.L114Last = file.hex114_length - file.L114Length;
+                Last114.Text = file.L114Last.ToString();
+                file.hex114 = Hex114.Text;
+
+                //hex115
+                Hex115.MaxLength = file.hex115_length * 2 + (file.hex115_length - 1);
+                Text115.MaxLength = file.hex115_length;
+
+                Hex115.Text = BitConverter.ToString(bitarray, file.hex115_address, file.hex115_length);
+                Text115.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex115.Text));
+
+                file.L115Length = Text115.Text.Length;
+                Length115.Text = file.L115Length.ToString();
+                file.L115Last = file.hex115_length - file.L115Length;
+                Last115.Text = file.L115Last.ToString();
+                file.hex115 = Hex115.Text;
+
+                //hex116
+                Hex116.MaxLength = file.hex116_length * 2 + (file.hex116_length - 1);
+                Text116.MaxLength = file.hex116_length;
+
+                Hex116.Text = BitConverter.ToString(bitarray, file.hex116_address, file.hex116_length);
+                Text116.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex116.Text));
+
+                file.L116Length = Text116.Text.Length;
+                Length116.Text = file.L116Length.ToString();
+                file.L116Last = file.hex116_length - file.L116Length;
+                Last116.Text = file.L116Last.ToString();
+                file.hex116 = Hex116.Text;
+
+                //hex117
+                Hex117.MaxLength = file.hex117_length * 2 + (file.hex117_length - 1);
+                Text117.MaxLength = file.hex117_length;
+
+                Hex117.Text = BitConverter.ToString(bitarray, file.hex117_address, file.hex117_length);
+                Text117.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex117.Text));
+
+                file.L117Length = Text117.Text.Length;
+                Length117.Text = file.L117Length.ToString();
+                file.L117Last = file.hex117_length - file.L117Length;
+                Last117.Text = file.L117Last.ToString();
+                file.hex117 = Hex117.Text;
+
+                //hex118
+                Hex118.MaxLength = file.hex118_length * 2 + (file.hex118_length - 1);
+                Text118.MaxLength = file.hex118_length;
+
+                Hex118.Text = BitConverter.ToString(bitarray, file.hex118_address, file.hex118_length);
+                Text118.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex118.Text));
+
+                file.L118Length = Text118.Text.Length;
+                Length118.Text = file.L118Length.ToString();
+                file.L118Last = file.hex118_length - file.L118Length;
+                Last118.Text = file.L118Last.ToString();
+                file.hex118 = Hex118.Text;
+
+                //hex119
+                Hex119.MaxLength = file.hex119_length * 2 + (file.hex119_length - 1);
+                Text119.MaxLength = file.hex119_length;
+
+                Hex119.Text = BitConverter.ToString(bitarray, file.hex119_address, file.hex119_length);
+                Text119.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex119.Text));
+
+                file.L119Length = Text119.Text.Length;
+                Length119.Text = file.L119Length.ToString();
+                file.L119Last = file.hex119_length - file.L119Length;
+                Last119.Text = file.L119Last.ToString();
+                file.hex119 = Hex119.Text;
+
+                if (Open_File.OpenFile.Decryptrus == true)
+                {
+                    Hex1.Text = Open_File.OpenFile.Decrypt(Hex1.Text);
+                    Text1.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex1.Text));
+
+                    Hex2.Text = Open_File.OpenFile.Decrypt(Hex2.Text);
+                    Text2.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex2.Text));
+
+                    Hex3.Text = Open_File.OpenFile.Decrypt(Hex3.Text);
+                    Text3.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex3.Text));
+
+                    Hex4.Text = Open_File.OpenFile.Decrypt(Hex4.Text);
+                    Text4.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex4.Text));
+
+                    Hex5.Text = Open_File.OpenFile.Decrypt(Hex5.Text);
+                    Text5.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex5.Text));
+
+                    Hex6.Text = Open_File.OpenFile.Decrypt(Hex6.Text);
+                    Text6.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex6.Text));
+
+                    Hex7.Text = Open_File.OpenFile.Decrypt(Hex7.Text);
+                    Text7.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex7.Text));
+
+                    Hex8.Text = Open_File.OpenFile.Decrypt(Hex8.Text);
+                    Text8.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex8.Text));
+
+                    Hex9.Text = Open_File.OpenFile.Decrypt(Hex9.Text);
+                    Text9.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex9.Text));
+
+                    Hex10.Text = Open_File.OpenFile.Decrypt(Hex10.Text);
+                    Text10.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex10.Text));
+
+                    Hex11.Text = Open_File.OpenFile.Decrypt(Hex11.Text);
+                    Text11.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex11.Text));
+
+                    Hex12.Text = Open_File.OpenFile.Decrypt(Hex12.Text);
+                    Text12.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex12.Text));
+
+                    Hex13.Text = Open_File.OpenFile.Decrypt(Hex13.Text);
+                    Text13.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex13.Text));
+
+                    Hex14.Text = Open_File.OpenFile.Decrypt(Hex14.Text);
+                    Text14.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex14.Text));
+
+                    Hex15.Text = Open_File.OpenFile.Decrypt(Hex15.Text);
+                    Text15.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex15.Text));
+
+                    Hex16.Text = Open_File.OpenFile.Decrypt(Hex16.Text);
+                    Text16.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex16.Text));
+
+                    Hex17.Text = Open_File.OpenFile.Decrypt(Hex17.Text);
+                    Text17.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex17.Text));
+
+                    Hex18.Text = Open_File.OpenFile.Decrypt(Hex18.Text);
+                    Text18.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex18.Text));
+
+                    Hex19.Text = Open_File.OpenFile.Decrypt(Hex19.Text);
+                    Text19.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex19.Text));
+
+                    Hex20.Text = Open_File.OpenFile.Decrypt(Hex20.Text);
+                    Text20.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex20.Text));
+
+                    Hex21.Text = Open_File.OpenFile.Decrypt(Hex21.Text);
+                    Text21.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex21.Text));
+
+                    Hex22.Text = Open_File.OpenFile.Decrypt(Hex22.Text);
+                    Text22.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex22.Text));
+
+                    Hex23.Text = Open_File.OpenFile.Decrypt(Hex23.Text);
+                    Text23.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex23.Text));
+
+                    Hex24.Text = Open_File.OpenFile.Decrypt(Hex24.Text);
+                    Text24.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex24.Text));
+
+                    Hex25.Text = Open_File.OpenFile.Decrypt(Hex25.Text);
+                    Text25.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex25.Text));
+
+                    Hex26.Text = Open_File.OpenFile.Decrypt(Hex26.Text);
+                    Text26.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex26.Text));
+
+                    Hex27.Text = Open_File.OpenFile.Decrypt(Hex27.Text);
+                    Text27.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex27.Text));
+
+                    Hex28.Text = Open_File.OpenFile.Decrypt(Hex28.Text);
+                    Text28.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex28.Text));
+
+                    Hex29.Text = Open_File.OpenFile.Decrypt(Hex29.Text);
+                    Text29.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex29.Text));
+
+                    Hex30.Text = Open_File.OpenFile.Decrypt(Hex30.Text);
+                    Text30.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex30.Text));
+
+                    Hex31.Text = Open_File.OpenFile.Decrypt(Hex31.Text);
+                    Text31.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex31.Text));
+
+                    Hex32.Text = Open_File.OpenFile.Decrypt(Hex32.Text);
+                    Text32.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex32.Text));
+
+                    Hex33.Text = Open_File.OpenFile.Decrypt(Hex33.Text);
+                    Text33.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex33.Text));
+
+                    Hex34.Text = Open_File.OpenFile.Decrypt(Hex34.Text);
+                    Text34.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex34.Text));
+
+                    Hex35.Text = Open_File.OpenFile.Decrypt(Hex35.Text);
+                    Text35.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex35.Text));
+
+                    Hex36.Text = Open_File.OpenFile.Decrypt(Hex36.Text);
+                    Text36.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex36.Text));
+
+                    Hex37.Text = Open_File.OpenFile.Decrypt(Hex37.Text);
+                    Text37.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex37.Text));
+
+                    Hex38.Text = Open_File.OpenFile.Decrypt(Hex38.Text);
+                    Text38.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex38.Text));
+
+                    Hex39.Text = Open_File.OpenFile.Decrypt(Hex39.Text);
+                    Text39.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex39.Text));
+
+                    Hex40.Text = Open_File.OpenFile.Decrypt(Hex40.Text);
+                    Text40.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex40.Text));
+
+                    Hex41.Text = Open_File.OpenFile.Decrypt(Hex41.Text);
+                    Text41.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex41.Text));
+
+                    Hex42.Text = Open_File.OpenFile.Decrypt(Hex42.Text);
+                    Text42.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex42.Text));
+
+                    Hex43.Text = Open_File.OpenFile.Decrypt(Hex43.Text);
+                    Text43.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex43.Text));
+
+                    Hex44.Text = Open_File.OpenFile.Decrypt(Hex44.Text);
+                    Text44.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex44.Text));
+
+                    Hex45.Text = Open_File.OpenFile.Decrypt(Hex45.Text);
+                    Text45.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex45.Text));
+
+                    Hex46.Text = Open_File.OpenFile.Decrypt(Hex46.Text);
+                    Text46.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex46.Text));
+
+                    Hex47.Text = Open_File.OpenFile.Decrypt(Hex47.Text);
+                    Text47.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex47.Text));
+
+                    Hex48.Text = Open_File.OpenFile.Decrypt(Hex48.Text);
+                    Text48.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex48.Text));
+
+                    Hex49.Text = Open_File.OpenFile.Decrypt(Hex49.Text);
+                    Text49.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex49.Text));
+
+                    Hex50.Text = Open_File.OpenFile.Decrypt(Hex50.Text);
+                    Text50.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex50.Text));
+
+                    Hex51.Text = Open_File.OpenFile.Decrypt(Hex51.Text);
+                    Text51.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex51.Text));
+
+                    Hex52.Text = Open_File.OpenFile.Decrypt(Hex52.Text);
+                    Text52.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex52.Text));
+
+                    Hex53.Text = Open_File.OpenFile.Decrypt(Hex53.Text);
+                    Text53.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex53.Text));
+
+                    Hex54.Text = Open_File.OpenFile.Decrypt(Hex54.Text);
+                    Text54.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex54.Text));
+
+                    Hex55.Text = Open_File.OpenFile.Decrypt(Hex55.Text);
+                    Text55.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex55.Text));
+
+                    Hex56.Text = Open_File.OpenFile.Decrypt(Hex56.Text);
+                    Text56.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex56.Text));
+
+                    Hex57.Text = Open_File.OpenFile.Decrypt(Hex57.Text);
+                    Text57.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex57.Text));
+
+                    Hex58.Text = Open_File.OpenFile.Decrypt(Hex58.Text);
+                    Text58.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex58.Text));
+
+                    Hex59.Text = Open_File.OpenFile.Decrypt(Hex59.Text);
+                    Text59.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex59.Text));
+
+                    Hex60.Text = Open_File.OpenFile.Decrypt(Hex60.Text);
+                    Text60.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex60.Text));
+
+                    Hex61.Text = Open_File.OpenFile.Decrypt(Hex61.Text);
+                    Text61.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex61.Text));
+
+                    Hex62.Text = Open_File.OpenFile.Decrypt(Hex62.Text);
+                    Text62.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex62.Text));
+
+                    Hex63.Text = Open_File.OpenFile.Decrypt(Hex63.Text);
+                    Text63.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex63.Text));
+
+                    Hex64.Text = Open_File.OpenFile.Decrypt(Hex64.Text);
+                    Text64.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex64.Text));
+
+                    Hex65.Text = Open_File.OpenFile.Decrypt(Hex65.Text);
+                    Text65.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex65.Text));
+
+                    Hex66.Text = Open_File.OpenFile.Decrypt(Hex66.Text);
+                    Text66.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex66.Text));
+
+                    Hex67.Text = Open_File.OpenFile.Decrypt(Hex67.Text);
+                    Text67.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex67.Text));
+
+                    Hex68.Text = Open_File.OpenFile.Decrypt(Hex68.Text);
+                    Text68.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex68.Text));
+
+                    Hex69.Text = Open_File.OpenFile.Decrypt(Hex69.Text);
+                    Text69.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex69.Text));
+
+                    Hex70.Text = Open_File.OpenFile.Decrypt(Hex70.Text);
+                    Text70.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex70.Text));
+
+                    Hex71.Text = Open_File.OpenFile.Decrypt(Hex71.Text);
+                    Text71.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex71.Text));
+
+                    Hex72.Text = Open_File.OpenFile.Decrypt(Hex72.Text);
+                    Text72.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex72.Text));
+
+                    Hex73.Text = Open_File.OpenFile.Decrypt(Hex73.Text);
+                    Text73.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex73.Text));
+
+                    Hex74.Text = Open_File.OpenFile.Decrypt(Hex74.Text);
+                    Text74.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex74.Text));
+
+                    Hex75.Text = Open_File.OpenFile.Decrypt(Hex75.Text);
+                    Text75.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex75.Text));
+
+                    Hex76.Text = Open_File.OpenFile.Decrypt(Hex76.Text);
+                    Text76.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex76.Text));
+
+                    Hex77.Text = Open_File.OpenFile.Decrypt(Hex77.Text);
+                    Text77.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex77.Text));
+
+                    Hex78.Text = Open_File.OpenFile.Decrypt(Hex78.Text);
+                    Text78.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex78.Text));
+
+                    Hex79.Text = Open_File.OpenFile.Decrypt(Hex79.Text);
+                    Text79.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex79.Text));
+
+                    Hex80.Text = Open_File.OpenFile.Decrypt(Hex80.Text);
+                    Text80.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex80.Text));
+
+                    Hex81.Text = Open_File.OpenFile.Decrypt(Hex81.Text);
+                    Text81.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex81.Text));
+
+                    Hex82.Text = Open_File.OpenFile.Decrypt(Hex82.Text);
+                    Text82.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex82.Text));
+
+                    Hex83.Text = Open_File.OpenFile.Decrypt(Hex83.Text);
+                    Text83.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex83.Text));
+
+                    Hex84.Text = Open_File.OpenFile.Decrypt(Hex84.Text);
+                    Text84.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex84.Text));
+
+                    Hex85.Text = Open_File.OpenFile.Decrypt(Hex85.Text);
+                    Text85.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex85.Text));
+
+                    Hex86.Text = Open_File.OpenFile.Decrypt(Hex86.Text);
+                    Text86.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex86.Text));
+
+                    Hex87.Text = Open_File.OpenFile.Decrypt(Hex87.Text);
+                    Text87.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex87.Text));
+
+                    Hex88.Text = Open_File.OpenFile.Decrypt(Hex88.Text);
+                    Text88.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex88.Text));
+
+                    Hex89.Text = Open_File.OpenFile.Decrypt(Hex89.Text);
+                    Text89.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex89.Text));
+
+                    Hex90.Text = Open_File.OpenFile.Decrypt(Hex90.Text);
+                    Text90.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex90.Text));
+
+                    Hex91.Text = Open_File.OpenFile.Decrypt(Hex91.Text);
+                    Text91.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex91.Text));
+
+                    Hex92.Text = Open_File.OpenFile.Decrypt(Hex92.Text);
+                    Text92.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex92.Text));
+
+                    Hex93.Text = Open_File.OpenFile.Decrypt(Hex93.Text);
+                    Text93.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex93.Text));
+
+                    Hex94.Text = Open_File.OpenFile.Decrypt(Hex94.Text);
+                    Text94.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex94.Text));
+
+                    Hex95.Text = Open_File.OpenFile.Decrypt(Hex95.Text);
+                    Text95.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex95.Text));
+
+                    Hex96.Text = Open_File.OpenFile.Decrypt(Hex96.Text);
+                    Text96.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex96.Text));
+
+                    Hex97.Text = Open_File.OpenFile.Decrypt(Hex97.Text);
+                    Text97.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex97.Text));
+
+                    Hex98.Text = Open_File.OpenFile.Decrypt(Hex98.Text);
+                    Text98.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex98.Text));
+
+                    Hex99.Text = Open_File.OpenFile.Decrypt(Hex99.Text);
+                    Text99.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex99.Text));
+
+                    Hex100.Text = Open_File.OpenFile.Decrypt(Hex100.Text);
+                    Text100.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex100.Text));
+
+                    Hex101.Text = Open_File.OpenFile.Decrypt(Hex101.Text);
+                    Text101.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex101.Text));
+
+                    Hex102.Text = Open_File.OpenFile.Decrypt(Hex102.Text);
+                    Text102.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex102.Text));
+
+                    Hex103.Text = Open_File.OpenFile.Decrypt(Hex103.Text);
+                    Text103.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex103.Text));
+
+                    Hex104.Text = Open_File.OpenFile.Decrypt(Hex104.Text);
+                    Text104.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex104.Text));
+
+                    Hex105.Text = Open_File.OpenFile.Decrypt(Hex105.Text);
+                    Text105.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex105.Text));
+
+                    Hex106.Text = Open_File.OpenFile.Decrypt(Hex106.Text);
+                    Text106.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex106.Text));
+
+                    Hex107.Text = Open_File.OpenFile.Decrypt(Hex107.Text);
+                    Text107.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex107.Text));
+
+                    Hex108.Text = Open_File.OpenFile.Decrypt(Hex108.Text);
+                    Text108.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex108.Text));
+
+                    Hex109.Text = Open_File.OpenFile.Decrypt(Hex109.Text);
+                    Text109.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex109.Text));
+
+                    Hex110.Text = Open_File.OpenFile.Decrypt(Hex110.Text);
+                    Text110.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex110.Text));
+
+                    Hex111.Text = Open_File.OpenFile.Decrypt(Hex111.Text);
+                    Text111.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex111.Text));
+
+                    Hex112.Text = Open_File.OpenFile.Decrypt(Hex112.Text);
+                    Text112.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex112.Text));
+
+                    Hex113.Text = Open_File.OpenFile.Decrypt(Hex113.Text);
+                    Text113.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex113.Text));
+
+                    Hex114.Text = Open_File.OpenFile.Decrypt(Hex114.Text);
+                    Text114.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex114.Text));
+
+                    Hex115.Text = Open_File.OpenFile.Decrypt(Hex115.Text);
+                    Text115.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex115.Text));
+
+                    Hex116.Text = Open_File.OpenFile.Decrypt(Hex116.Text);
+                    Text116.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex116.Text));
+
+                    Hex117.Text = Open_File.OpenFile.Decrypt(Hex117.Text);
+                    Text117.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex117.Text));
+
+                    Hex118.Text = Open_File.OpenFile.Decrypt(Hex118.Text);
+                    Text118.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex118.Text));
+
+                    Hex119.Text = Open_File.OpenFile.Decrypt(Hex119.Text);
+                    Text119.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex119.Text));
+
+                    file.hex1 = Hex1.Text;
+                    file.hex2 = Hex2.Text;
+                    file.hex3 = Hex3.Text;
+                    file.hex4 = Hex4.Text;
+                    file.hex5 = Hex5.Text;
+                    file.hex6 = Hex6.Text;
+                    file.hex7 = Hex7.Text;
+                    file.hex8 = Hex8.Text;
+                    file.hex9 = Hex9.Text;
+                    file.hex10 = Hex10.Text;
+                    file.hex11 = Hex11.Text;
+                    file.hex12 = Hex12.Text;
+                    file.hex13 = Hex13.Text;
+                    file.hex14 = Hex14.Text;
+                    file.hex15 = Hex15.Text;
+                    file.hex16 = Hex16.Text;
+                    file.hex17 = Hex17.Text;
+                    file.hex18 = Hex18.Text;
+                    file.hex19 = Hex19.Text;
+                    file.hex20 = Hex20.Text;
+                    file.hex21 = Hex21.Text;
+                    file.hex22 = Hex22.Text;
+                    file.hex23 = Hex23.Text;
+                    file.hex24 = Hex24.Text;
+                    file.hex25 = Hex25.Text;
+                    file.hex26 = Hex26.Text;
+                    file.hex27 = Hex27.Text;
+                    file.hex28 = Hex28.Text;
+                    file.hex29 = Hex29.Text;
+                    file.hex30 = Hex30.Text;
+                    file.hex31 = Hex31.Text;
+                    file.hex32 = Hex32.Text;
+                    file.hex33 = Hex33.Text;
+                    file.hex34 = Hex34.Text;
+                    file.hex35 = Hex35.Text;
+                    file.hex36 = Hex36.Text;
+                    file.hex37 = Hex37.Text;
+                    file.hex38 = Hex38.Text;
+                    file.hex39 = Hex39.Text;
+                    file.hex40 = Hex40.Text;
+                    file.hex41 = Hex41.Text;
+                    file.hex42 = Hex42.Text;
+                    file.hex43 = Hex43.Text;
+                    file.hex44 = Hex44.Text;
+                    file.hex45 = Hex45.Text;
+                    file.hex46 = Hex46.Text;
+                    file.hex47 = Hex47.Text;
+                    file.hex48 = Hex48.Text;
+                    file.hex49 = Hex49.Text;
+                    file.hex50 = Hex50.Text;
+                    file.hex51 = Hex51.Text;
+                    file.hex52 = Hex52.Text;
+                    file.hex53 = Hex53.Text;
+                    file.hex54 = Hex54.Text;
+                    file.hex55 = Hex55.Text;
+                    file.hex56 = Hex56.Text;
+                    file.hex57 = Hex57.Text;
+                    file.hex58 = Hex58.Text;
+                    file.hex59 = Hex59.Text;
+                    file.hex60 = Hex60.Text;
+                    file.hex61 = Hex61.Text;
+                    file.hex62 = Hex62.Text;
+                    file.hex63 = Hex63.Text;
+                    file.hex64 = Hex64.Text;
+                    file.hex65 = Hex65.Text;
+                    file.hex66 = Hex66.Text;
+                    file.hex67 = Hex67.Text;
+                    file.hex68 = Hex68.Text;
+                    file.hex69 = Hex69.Text;
+                    file.hex70 = Hex70.Text;
+                    file.hex71 = Hex71.Text;
+                    file.hex72 = Hex72.Text;
+                    file.hex73 = Hex73.Text;
+                    file.hex74 = Hex74.Text;
+                    file.hex75 = Hex75.Text;
+                    file.hex76 = Hex76.Text;
+                    file.hex77 = Hex77.Text;
+                    file.hex78 = Hex78.Text;
+                    file.hex79 = Hex79.Text;
+                    file.hex80 = Hex80.Text;
+                    file.hex81 = Hex81.Text;
+                    file.hex82 = Hex82.Text;
+                    file.hex83 = Hex83.Text;
+                    file.hex84 = Hex84.Text;
+                    file.hex85 = Hex85.Text;
+                    file.hex86 = Hex86.Text;
+                    file.hex87 = Hex87.Text;
+                    file.hex88 = Hex88.Text;
+                    file.hex89 = Hex89.Text;
+                    file.hex90 = Hex90.Text;
+                    file.hex91 = Hex91.Text;
+                    file.hex92 = Hex92.Text;
+                    file.hex93 = Hex93.Text;
+                    file.hex94 = Hex94.Text;
+                    file.hex95 = Hex95.Text;
+                    file.hex96 = Hex96.Text;
+                    file.hex97 = Hex97.Text;
+                    file.hex98 = Hex98.Text;
+                    file.hex99 = Hex99.Text;
+                    file.hex100 = Hex100.Text;
+                    file.hex101 = Hex101.Text;
+                    file.hex102 = Hex102.Text;
+                    file.hex103 = Hex103.Text;
+                    file.hex104 = Hex104.Text;
+                    file.hex105 = Hex105.Text;
+                    file.hex106 = Hex106.Text;
+                    file.hex107 = Hex107.Text;
+                    file.hex108 = Hex108.Text;
+                    file.hex109 = Hex109.Text;
+                    file.hex110 = Hex110.Text;
+                    file.hex111 = Hex111.Text;
+                    file.hex112 = Hex112.Text;
+                    file.hex113 = Hex113.Text;
+                    file.hex114 = Hex114.Text;
+                    file.hex115 = Hex115.Text;
+                    file.hex116 = Hex116.Text;
+                    file.hex117 = Hex117.Text;
+                    file.hex118 = Hex118.Text;
+                    file.hex119 = Hex119.Text;
+                }
             }
         }
 
@@ -3726,6 +5174,160 @@ namespace ujl_subedit
             public static int L97Last;
             public static int hex97_address;
             public static int hex97_length;
+
+            //text98
+            public static string hex98;
+            public static int L98Length;
+            public static int L98Last;
+            public static int hex98_address;
+            public static int hex98_length;
+
+            //text99
+            public static string hex99;
+            public static int L99Length;
+            public static int L99Last;
+            public static int hex99_address;
+            public static int hex99_length;
+
+            //text100
+            public static string hex100;
+            public static int L100Length;
+            public static int L100Last;
+            public static int hex100_address;
+            public static int hex100_length;
+
+            //text101
+            public static string hex101;
+            public static int L101Length;
+            public static int L101Last;
+            public static int hex101_address;
+            public static int hex101_length;
+
+            //text102
+            public static string hex102;
+            public static int L102Length;
+            public static int L102Last;
+            public static int hex102_address;
+            public static int hex102_length;
+
+            //text103
+            public static string hex103;
+            public static int L103Length;
+            public static int L103Last;
+            public static int hex103_address;
+            public static int hex103_length;
+
+            //text104
+            public static string hex104;
+            public static int L104Length;
+            public static int L104Last;
+            public static int hex104_address;
+            public static int hex104_length;
+
+            //text105
+            public static string hex105;
+            public static int L105Length;
+            public static int L105Last;
+            public static int hex105_address;
+            public static int hex105_length;
+
+            //text106
+            public static string hex106;
+            public static int L106Length;
+            public static int L106Last;
+            public static int hex106_address;
+            public static int hex106_length;
+
+            //text107
+            public static string hex107;
+            public static int L107Length;
+            public static int L107Last;
+            public static int hex107_address;
+            public static int hex107_length;
+
+            //text108
+            public static string hex108;
+            public static int L108Length;
+            public static int L108Last;
+            public static int hex108_address;
+            public static int hex108_length;
+
+            //text109
+            public static string hex109;
+            public static int L109Length;
+            public static int L109Last;
+            public static int hex109_address;
+            public static int hex109_length;
+
+            //text110
+            public static string hex110;
+            public static int L110Length;
+            public static int L110Last;
+            public static int hex110_address;
+            public static int hex110_length;
+
+            //text111
+            public static string hex111;
+            public static int L111Length;
+            public static int L111Last;
+            public static int hex111_address;
+            public static int hex111_length;
+
+            //text112
+            public static string hex112;
+            public static int L112Length;
+            public static int L112Last;
+            public static int hex112_address;
+            public static int hex112_length;
+
+            //text113
+            public static string hex113;
+            public static int L113Length;
+            public static int L113Last;
+            public static int hex113_address;
+            public static int hex113_length;
+
+            //text114
+            public static string hex114;
+            public static int L114Length;
+            public static int L114Last;
+            public static int hex114_address;
+            public static int hex114_length;
+
+            //text115
+            public static string hex115;
+            public static int L115Length;
+            public static int L115Last;
+            public static int hex115_address;
+            public static int hex115_length;
+
+            //text116
+            public static string hex116;
+            public static int L116Length;
+            public static int L116Last;
+            public static int hex116_address;
+            public static int hex116_length;
+
+            //text117
+            public static string hex117;
+            public static int L117Length;
+            public static int L117Last;
+            public static int hex117_address;
+            public static int hex117_length;
+
+            //text118
+            public static string hex118;
+            public static int L118Length;
+            public static int L118Last;
+            public static int hex118_address;
+            public static int hex118_length;
+
+            //text119
+            public static string hex119;
+            public static int L119Length;
+            public static int L119Last;
+            public static int hex119_address;
+            public static int hex119_length;
         }
         
 
@@ -4036,6 +5638,116 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
             if(Open_File.OpenFile.FileName == "COMOD0.MEN")
@@ -4422,6 +6134,116 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
             if(Open_File.OpenFile.FileName == "COMOD6.SNG")
@@ -4723,6 +6545,116 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
             if(Open_File.OpenFile.FileName == "COMOD16.SNG")
@@ -5066,6 +6998,116 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
             if(Open_File.OpenFile.FileName == "COMOD16.CMP")
@@ -5411,6 +7453,116 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
             if(Open_File.OpenFile.FileName == "COMOD6.CMP")
@@ -5720,9 +7872,119 @@ namespace ujl_subedit
                 file.hex97_length = 1;
                 Hex97.Enabled = false;
                 Text97.Enabled = false;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
 
-            if (Open_File.OpenFile.FileName == "COMOD6.COP")
+            if(Open_File.OpenFile.FileName == "COMOD6.COP")
             {
                 this.Text = "COMOD6.COP - Level 6 Co-op Lammy - 97 lines";
                 file.hex1_address = COMOD6_COP_info.Hex1_address;
@@ -6015,14 +8277,887 @@ namespace ujl_subedit
 
                 file.hex97_address = COMOD6_COP_info.Hex97_address;
                 file.hex97_length = COMOD6_COP_info.Hex97_length;
+
+                file.hex98_address = 0;
+                file.hex98_length = 1;
+                Hex98.Enabled = false;
+                Text98.Enabled = false;
+
+                file.hex99_address = 0;
+                file.hex99_length = 1;
+                Hex99.Enabled = false;
+                Text99.Enabled = false;
+
+                file.hex100_address = 0;
+                file.hex100_length = 1;
+                Hex100.Enabled = false;
+                Text100.Enabled = false;
+
+                file.hex101_address = 0;
+                file.hex101_length = 1;
+                Hex101.Enabled = false;
+                Text101.Enabled = false;
+
+                file.hex102_address = 0;
+                file.hex102_length = 1;
+                Hex102.Enabled = false;
+                Text102.Enabled = false;
+
+                file.hex103_address = 0;
+                file.hex103_length = 1;
+                Hex103.Enabled = false;
+                Text103.Enabled = false;
+
+                file.hex104_address = 0;
+                file.hex104_length = 1;
+                Hex104.Enabled = false;
+                Text104.Enabled = false;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
+
+            if(Open_File.OpenFile.FileName == "COMOD16.COP")
+            {
+                this.Text = "COMOD16.COP - Level 6 Co-op Parappa - 104 lines";
+                file.hex1_address = COMOD16_COP_info.Hex1_address;
+                file.hex1_length = COMOD16_COP_info.Hex1_length;
+
+                file.hex2_address = COMOD16_COP_info.Hex2_address;
+                file.hex2_length = COMOD16_COP_info.Hex2_length;
+
+                file.hex3_address = COMOD16_COP_info.Hex3_address;
+                file.hex3_length = COMOD16_COP_info.Hex3_length;
+
+                file.hex4_address = COMOD16_COP_info.Hex4_address;
+                file.hex4_length = COMOD16_COP_info.Hex4_length;
+
+                file.hex5_address = COMOD16_COP_info.Hex5_address;
+                file.hex5_length = COMOD16_COP_info.Hex5_length;
+
+                file.hex6_address = COMOD16_COP_info.Hex6_address;
+                file.hex6_length = COMOD16_COP_info.Hex6_length;
+
+                file.hex7_address = COMOD16_COP_info.Hex7_address;
+                file.hex7_length = COMOD16_COP_info.Hex7_length;
+
+                file.hex8_address = COMOD16_COP_info.Hex8_address;
+                file.hex8_length = COMOD16_COP_info.Hex8_length;
+
+                file.hex9_address = COMOD16_COP_info.Hex9_address;
+                file.hex9_length = COMOD16_COP_info.Hex9_length;
+
+                file.hex10_address = COMOD16_COP_info.Hex10_address;
+                file.hex10_length = COMOD16_COP_info.Hex10_length;
+
+                file.hex11_address = COMOD16_COP_info.Hex11_address;
+                file.hex11_length = COMOD16_COP_info.Hex11_length;
+
+                file.hex12_address = COMOD16_COP_info.Hex12_address;
+                file.hex12_length = COMOD16_COP_info.Hex12_length;
+
+                file.hex13_address = COMOD16_COP_info.Hex13_address;
+                file.hex13_length = COMOD16_COP_info.Hex13_length;
+
+                file.hex14_address = COMOD16_COP_info.Hex14_address;
+                file.hex14_length = COMOD16_COP_info.Hex14_length;
+
+                file.hex15_address = COMOD16_COP_info.Hex15_address;
+                file.hex15_length = COMOD16_COP_info.Hex15_length;
+
+                file.hex16_address = COMOD16_COP_info.Hex16_address;
+                file.hex16_length = COMOD16_COP_info.Hex16_length;
+
+                file.hex17_address = COMOD16_COP_info.Hex17_address;
+                file.hex17_length = COMOD16_COP_info.Hex17_length;
+
+                file.hex18_address = COMOD16_COP_info.Hex18_address;
+                file.hex18_length = COMOD16_COP_info.Hex18_length;
+
+                file.hex19_address = COMOD16_COP_info.Hex19_address;
+                file.hex19_length = COMOD16_COP_info.Hex19_length;
+
+                file.hex20_address = COMOD16_COP_info.Hex20_address;
+                file.hex20_length = COMOD16_COP_info.Hex20_length;
+
+                file.hex21_address = COMOD16_COP_info.Hex21_address;
+                file.hex21_length = COMOD16_COP_info.Hex21_length;
+
+                file.hex22_address = COMOD16_COP_info.Hex22_address;
+                file.hex22_length = COMOD16_COP_info.Hex22_length;
+
+                file.hex23_address = COMOD16_COP_info.Hex23_address;
+                file.hex23_length = COMOD16_COP_info.Hex23_length;
+
+                file.hex24_address = COMOD16_COP_info.Hex24_address;
+                file.hex24_length = COMOD16_COP_info.Hex24_length;
+
+                file.hex25_address = COMOD16_COP_info.Hex25_address;
+                file.hex25_length = COMOD16_COP_info.Hex25_length;
+
+                file.hex26_address = COMOD16_COP_info.Hex26_address;
+                file.hex26_length = COMOD16_COP_info.Hex26_length;
+
+                file.hex27_address = COMOD16_COP_info.Hex27_address;
+                file.hex27_length = COMOD16_COP_info.Hex27_length;
+
+                file.hex28_address = COMOD16_COP_info.Hex28_address;
+                file.hex28_length = COMOD16_COP_info.Hex28_length;
+
+                file.hex29_address = COMOD16_COP_info.Hex29_address;
+                file.hex29_length = COMOD16_COP_info.Hex29_length;
+
+                file.hex30_address = COMOD16_COP_info.Hex30_address;
+                file.hex30_length = COMOD16_COP_info.Hex30_length;
+
+                file.hex31_address = COMOD16_COP_info.Hex31_address;
+                file.hex31_length = COMOD16_COP_info.Hex31_length;
+
+                file.hex32_address = COMOD16_COP_info.Hex32_address;
+                file.hex32_length = COMOD16_COP_info.Hex32_length;
+
+                file.hex33_address = COMOD16_COP_info.Hex33_address;
+                file.hex33_length = COMOD16_COP_info.Hex33_length;
+
+                file.hex34_address = COMOD16_COP_info.Hex34_address;
+                file.hex34_length = COMOD16_COP_info.Hex34_length;
+
+                file.hex35_address = COMOD16_COP_info.Hex35_address;
+                file.hex35_length = COMOD16_COP_info.Hex35_length;
+
+                file.hex36_address = COMOD16_COP_info.Hex36_address;
+                file.hex36_length = COMOD16_COP_info.Hex36_length;
+
+                file.hex37_address = COMOD16_COP_info.Hex37_address;
+                file.hex37_length = COMOD16_COP_info.Hex37_length;
+
+                file.hex38_address = COMOD16_COP_info.Hex38_address;
+                file.hex38_length = COMOD16_COP_info.Hex38_length;
+
+                file.hex39_address = COMOD16_COP_info.Hex39_address;
+                file.hex39_length = COMOD16_COP_info.Hex39_length;
+
+                file.hex40_address = COMOD16_COP_info.Hex40_address;
+                file.hex40_length = COMOD16_COP_info.Hex40_length;
+
+                file.hex41_address = COMOD16_COP_info.Hex41_address;
+                file.hex41_length = COMOD16_COP_info.Hex41_length;
+
+                file.hex42_address = COMOD16_COP_info.Hex42_address;
+                file.hex42_length = COMOD16_COP_info.Hex42_length;
+
+                file.hex43_address = COMOD16_COP_info.Hex43_address;
+                file.hex43_length = COMOD16_COP_info.Hex43_length;
+
+                file.hex44_address = COMOD16_COP_info.Hex44_address;
+                file.hex44_length = COMOD16_COP_info.Hex44_length;
+
+                file.hex45_address = COMOD16_COP_info.Hex45_address;
+                file.hex45_length = COMOD16_COP_info.Hex45_length;
+
+                file.hex46_address = COMOD16_COP_info.Hex46_address;
+                file.hex46_length = COMOD16_COP_info.Hex46_length;
+
+                file.hex47_address = COMOD16_COP_info.Hex47_address;
+                file.hex47_length = COMOD16_COP_info.Hex47_length;
+
+                file.hex48_address = COMOD16_COP_info.Hex48_address;
+                file.hex48_length = COMOD16_COP_info.Hex48_length;
+
+                file.hex49_address = COMOD16_COP_info.Hex49_address;
+                file.hex49_length = COMOD16_COP_info.Hex49_length;
+
+                file.hex50_address = COMOD16_COP_info.Hex50_address;
+                file.hex50_length = COMOD16_COP_info.Hex50_length;
+
+                file.hex51_address = COMOD16_COP_info.Hex51_address;
+                file.hex51_length = COMOD16_COP_info.Hex51_length;
+
+                file.hex52_address = COMOD16_COP_info.Hex52_address;
+                file.hex52_length = COMOD16_COP_info.Hex52_length;
+
+                file.hex53_address = COMOD16_COP_info.Hex53_address;
+                file.hex53_length = COMOD16_COP_info.Hex53_length;
+
+                file.hex54_address = COMOD16_COP_info.Hex54_address;
+                file.hex54_length = COMOD16_COP_info.Hex54_length;
+
+                file.hex55_address = COMOD16_COP_info.Hex55_address;
+                file.hex55_length = COMOD16_COP_info.Hex55_length;
+
+                file.hex56_address = COMOD16_COP_info.Hex56_address;
+                file.hex56_length = COMOD16_COP_info.Hex56_length;
+
+                file.hex57_address = COMOD16_COP_info.Hex57_address;
+                file.hex57_length = COMOD16_COP_info.Hex57_length;
+
+                file.hex58_address = COMOD16_COP_info.Hex58_address;
+                file.hex58_length = COMOD16_COP_info.Hex58_length;
+
+                file.hex59_address = COMOD16_COP_info.Hex59_address;
+                file.hex59_length = COMOD16_COP_info.Hex59_length;
+
+                file.hex60_address = COMOD16_COP_info.Hex60_address;
+                file.hex60_length = COMOD16_COP_info.Hex60_length;
+
+                file.hex61_address = COMOD16_COP_info.Hex61_address;
+                file.hex61_length = COMOD16_COP_info.Hex61_length;
+
+                file.hex62_address = COMOD16_COP_info.Hex62_address;
+                file.hex62_length = COMOD16_COP_info.Hex62_length;
+
+                file.hex63_address = COMOD16_COP_info.Hex63_address;
+                file.hex63_length = COMOD16_COP_info.Hex63_length;
+
+                file.hex64_address = COMOD16_COP_info.Hex64_address;
+                file.hex64_length = COMOD16_COP_info.Hex64_length;
+
+                file.hex65_address = COMOD16_COP_info.Hex65_address;
+                file.hex65_length = COMOD16_COP_info.Hex65_length;
+
+                file.hex66_address = COMOD16_COP_info.Hex66_address;
+                file.hex66_length = COMOD16_COP_info.Hex66_length;
+
+                file.hex67_address = COMOD16_COP_info.Hex67_address;
+                file.hex67_length = COMOD16_COP_info.Hex67_length;
+
+                file.hex68_address = COMOD16_COP_info.Hex68_address;
+                file.hex68_length = COMOD16_COP_info.Hex68_length;
+
+                file.hex69_address = COMOD16_COP_info.Hex69_address;
+                file.hex69_length = COMOD16_COP_info.Hex69_length;
+
+                file.hex70_address = COMOD16_COP_info.Hex70_address;
+                file.hex70_length = COMOD16_COP_info.Hex70_length;
+
+                file.hex71_address = COMOD16_COP_info.Hex71_address;
+                file.hex71_length = COMOD16_COP_info.Hex71_length;
+
+                file.hex72_address = COMOD16_COP_info.Hex72_address;
+                file.hex72_length = COMOD16_COP_info.Hex72_length;
+
+                file.hex73_address = COMOD16_COP_info.Hex73_address;
+                file.hex73_length = COMOD16_COP_info.Hex73_length;
+
+                file.hex74_address = COMOD16_COP_info.Hex74_address;
+                file.hex74_length = COMOD16_COP_info.Hex74_length;
+
+                file.hex75_address = COMOD16_COP_info.Hex75_address;
+                file.hex75_length = COMOD16_COP_info.Hex75_length;
+
+                file.hex76_address = COMOD16_COP_info.Hex76_address;
+                file.hex76_length = COMOD16_COP_info.Hex76_length;
+
+                file.hex77_address = COMOD16_COP_info.Hex77_address;
+                file.hex77_length = COMOD16_COP_info.Hex77_length;
+
+                file.hex78_address = COMOD16_COP_info.Hex78_address;
+                file.hex78_length = COMOD16_COP_info.Hex78_length;
+
+                file.hex79_address = COMOD16_COP_info.Hex79_address;
+                file.hex79_length = COMOD16_COP_info.Hex79_length;
+
+                file.hex80_address = COMOD16_COP_info.Hex80_address;
+                file.hex80_length = COMOD16_COP_info.Hex80_length;
+
+                file.hex81_address = COMOD16_COP_info.Hex81_address;
+                file.hex81_length = COMOD16_COP_info.Hex81_length;
+
+                file.hex82_address = COMOD16_COP_info.Hex82_address;
+                file.hex82_length = COMOD16_COP_info.Hex82_length;
+
+                file.hex83_address = COMOD16_COP_info.Hex83_address;
+                file.hex83_length = COMOD16_COP_info.Hex83_length;
+
+                file.hex84_address = COMOD16_COP_info.Hex84_address;
+                file.hex84_length = COMOD16_COP_info.Hex84_length;
+
+                file.hex85_address = COMOD16_COP_info.Hex85_address;
+                file.hex85_length = COMOD16_COP_info.Hex85_length;
+
+                file.hex86_address = COMOD16_COP_info.Hex86_address;
+                file.hex86_length = COMOD16_COP_info.Hex86_length;
+
+                file.hex87_address = COMOD16_COP_info.Hex87_address;
+                file.hex87_length = COMOD16_COP_info.Hex87_length;
+
+                file.hex88_address = COMOD16_COP_info.Hex88_address;
+                file.hex88_length = COMOD16_COP_info.Hex88_length;
+
+                file.hex89_address = COMOD16_COP_info.Hex89_address;
+                file.hex89_length = COMOD16_COP_info.Hex89_length;
+
+                file.hex90_address = COMOD16_COP_info.Hex90_address;
+                file.hex90_length = COMOD16_COP_info.Hex90_length;
+
+                file.hex91_address = COMOD16_COP_info.Hex91_address;
+                file.hex91_length = COMOD16_COP_info.Hex91_length;
+
+                file.hex92_address = COMOD16_COP_info.Hex92_address;
+                file.hex92_length = COMOD16_COP_info.Hex92_length;
+
+                file.hex93_address = COMOD16_COP_info.Hex93_address;
+                file.hex93_length = COMOD16_COP_info.Hex93_length;
+
+                file.hex94_address = COMOD16_COP_info.Hex94_address;
+                file.hex94_length = COMOD16_COP_info.Hex94_length;
+
+                file.hex95_address = COMOD16_COP_info.Hex95_address;
+                file.hex95_length = COMOD16_COP_info.Hex95_length;
+
+                file.hex96_address = COMOD16_COP_info.Hex96_address;
+                file.hex96_length = COMOD16_COP_info.Hex96_length;
+
+                file.hex97_address = COMOD16_COP_info.Hex97_address;
+                file.hex97_length = COMOD16_COP_info.Hex97_length;
+
+                file.hex98_address = COMOD16_COP_info.Hex98_address;
+                file.hex98_length = COMOD16_COP_info.Hex98_length;
+
+                file.hex99_address = COMOD16_COP_info.Hex99_address;
+                file.hex99_length = COMOD16_COP_info.Hex99_length;
+
+                file.hex100_address = COMOD16_COP_info.Hex100_address;
+                file.hex100_length = COMOD16_COP_info.Hex100_length;
+
+                file.hex101_address = COMOD16_COP_info.Hex101_address;
+                file.hex101_length = COMOD16_COP_info.Hex101_length;
+
+                file.hex102_address = COMOD16_COP_info.Hex102_address;
+                file.hex102_length = COMOD16_COP_info.Hex102_length;
+
+                file.hex103_address = COMOD16_COP_info.Hex103_address;
+                file.hex103_length = COMOD16_COP_info.Hex103_length;
+
+                file.hex104_address = COMOD16_COP_info.Hex104_address;
+                file.hex104_length = COMOD16_COP_info.Hex104_length;
+
+                file.hex105_address = 0;
+                file.hex105_length = 1;
+                Hex105.Enabled = false;
+                Text105.Enabled = false;
+
+                file.hex106_address = 0;
+                file.hex106_length = 1;
+                Hex106.Enabled = false;
+                Text106.Enabled = false;
+
+                file.hex107_address = 0;
+                file.hex107_length = 1;
+                Hex107.Enabled = false;
+                Text107.Enabled = false;
+
+                file.hex108_address = 0;
+                file.hex108_length = 1;
+                Hex108.Enabled = false;
+                Text108.Enabled = false;
+
+                file.hex109_address = 0;
+                file.hex109_length = 1;
+                Hex109.Enabled = false;
+                Text109.Enabled = false;
+
+                file.hex110_address = 0;
+                file.hex110_length = 1;
+                Hex110.Enabled = false;
+                Text110.Enabled = false;
+
+                file.hex111_address = 0;
+                file.hex111_length = 1;
+                Hex111.Enabled = false;
+                Text111.Enabled = false;
+
+                file.hex112_address = 0;
+                file.hex112_length = 1;
+                Hex112.Enabled = false;
+                Text112.Enabled = false;
+
+                file.hex113_address = 0;
+                file.hex113_length = 1;
+                Hex113.Enabled = false;
+                Text113.Enabled = false;
+
+                file.hex114_address = 0;
+                file.hex114_length = 1;
+                Hex114.Enabled = false;
+                Text114.Enabled = false;
+
+                file.hex115_address = 0;
+                file.hex115_length = 1;
+                Hex115.Enabled = false;
+                Text115.Enabled = false;
+
+                file.hex116_address = 0;
+                file.hex116_length = 1;
+                Hex116.Enabled = false;
+                Text116.Enabled = false;
+
+                file.hex117_address = 0;
+                file.hex117_length = 1;
+                Hex117.Enabled = false;
+                Text117.Enabled = false;
+
+                file.hex118_address = 0;
+                file.hex118_length = 1;
+                Hex118.Enabled = false;
+                Text118.Enabled = false;
+
+                file.hex119_address = 0;
+                file.hex119_length = 1;
+                Hex119.Enabled = false;
+                Text119.Enabled = false;
             }
+
+            if (Open_File.OpenFile.FileName == "COMOD17.SNG")
+            {
+                this.Text = "COMOD17.SNG - Level 7 Single Lammy - 119 lines";
+                file.hex1_address = COMOD17_SNG_info.Hex1_address;
+                file.hex1_length = COMOD17_SNG_info.Hex1_length;
+
+                file.hex2_address = COMOD17_SNG_info.Hex2_address;
+                file.hex2_length = COMOD17_SNG_info.Hex2_length;
+
+                file.hex3_address = COMOD17_SNG_info.Hex3_address;
+                file.hex3_length = COMOD17_SNG_info.Hex3_length;
+
+                file.hex4_address = COMOD17_SNG_info.Hex4_address;
+                file.hex4_length = COMOD17_SNG_info.Hex4_length;
+
+                file.hex5_address = COMOD17_SNG_info.Hex5_address;
+                file.hex5_length = COMOD17_SNG_info.Hex5_length;
+
+                file.hex6_address = COMOD17_SNG_info.Hex6_address;
+                file.hex6_length = COMOD17_SNG_info.Hex6_length;
+
+                file.hex7_address = COMOD17_SNG_info.Hex7_address;
+                file.hex7_length = COMOD17_SNG_info.Hex7_length;
+
+                file.hex8_address = COMOD17_SNG_info.Hex8_address;
+                file.hex8_length = COMOD17_SNG_info.Hex8_length;
+
+                file.hex9_address = COMOD17_SNG_info.Hex9_address;
+                file.hex9_length = COMOD17_SNG_info.Hex9_length;
+
+                file.hex10_address = COMOD17_SNG_info.Hex10_address;
+                file.hex10_length = COMOD17_SNG_info.Hex10_length;
+
+                file.hex11_address = COMOD17_SNG_info.Hex11_address;
+                file.hex11_length = COMOD17_SNG_info.Hex11_length;
+
+                file.hex12_address = COMOD17_SNG_info.Hex12_address;
+                file.hex12_length = COMOD17_SNG_info.Hex12_length;
+
+                file.hex13_address = COMOD17_SNG_info.Hex13_address;
+                file.hex13_length = COMOD17_SNG_info.Hex13_length;
+
+                file.hex14_address = COMOD17_SNG_info.Hex14_address;
+                file.hex14_length = COMOD17_SNG_info.Hex14_length;
+
+                file.hex15_address = COMOD17_SNG_info.Hex15_address;
+                file.hex15_length = COMOD17_SNG_info.Hex15_length;
+
+                file.hex16_address = COMOD17_SNG_info.Hex16_address;
+                file.hex16_length = COMOD17_SNG_info.Hex16_length;
+
+                file.hex17_address = COMOD17_SNG_info.Hex17_address;
+                file.hex17_length = COMOD17_SNG_info.Hex17_length;
+
+                file.hex18_address = COMOD17_SNG_info.Hex18_address;
+                file.hex18_length = COMOD17_SNG_info.Hex18_length;
+
+                file.hex19_address = COMOD17_SNG_info.Hex19_address;
+                file.hex19_length = COMOD17_SNG_info.Hex19_length;
+
+                file.hex20_address = COMOD17_SNG_info.Hex20_address;
+                file.hex20_length = COMOD17_SNG_info.Hex20_length;
+
+                file.hex21_address = COMOD17_SNG_info.Hex21_address;
+                file.hex21_length = COMOD17_SNG_info.Hex21_length;
+
+                file.hex22_address = COMOD17_SNG_info.Hex22_address;
+                file.hex22_length = COMOD17_SNG_info.Hex22_length;
+
+                file.hex23_address = COMOD17_SNG_info.Hex23_address;
+                file.hex23_length = COMOD17_SNG_info.Hex23_length;
+
+                file.hex24_address = COMOD17_SNG_info.Hex24_address;
+                file.hex24_length = COMOD17_SNG_info.Hex24_length;
+
+                file.hex25_address = COMOD17_SNG_info.Hex25_address;
+                file.hex25_length = COMOD17_SNG_info.Hex25_length;
+
+                file.hex26_address = COMOD17_SNG_info.Hex26_address;
+                file.hex26_length = COMOD17_SNG_info.Hex26_length;
+
+                file.hex27_address = COMOD17_SNG_info.Hex27_address;
+                file.hex27_length = COMOD17_SNG_info.Hex27_length;
+
+                file.hex28_address = COMOD17_SNG_info.Hex28_address;
+                file.hex28_length = COMOD17_SNG_info.Hex28_length;
+
+                file.hex29_address = COMOD17_SNG_info.Hex29_address;
+                file.hex29_length = COMOD17_SNG_info.Hex29_length;
+
+                file.hex30_address = COMOD17_SNG_info.Hex30_address;
+                file.hex30_length = COMOD17_SNG_info.Hex30_length;
+
+                file.hex31_address = COMOD17_SNG_info.Hex31_address;
+                file.hex31_length = COMOD17_SNG_info.Hex31_length;
+
+                file.hex32_address = COMOD17_SNG_info.Hex32_address;
+                file.hex32_length = COMOD17_SNG_info.Hex32_length;
+
+                file.hex33_address = COMOD17_SNG_info.Hex33_address;
+                file.hex33_length = COMOD17_SNG_info.Hex33_length;
+
+                file.hex34_address = COMOD17_SNG_info.Hex34_address;
+                file.hex34_length = COMOD17_SNG_info.Hex34_length;
+
+                file.hex35_address = COMOD17_SNG_info.Hex35_address;
+                file.hex35_length = COMOD17_SNG_info.Hex35_length;
+
+                file.hex36_address = COMOD17_SNG_info.Hex36_address;
+                file.hex36_length = COMOD17_SNG_info.Hex36_length;
+
+                file.hex37_address = COMOD17_SNG_info.Hex37_address;
+                file.hex37_length = COMOD17_SNG_info.Hex37_length;
+
+                file.hex38_address = COMOD17_SNG_info.Hex38_address;
+                file.hex38_length = COMOD17_SNG_info.Hex38_length;
+
+                file.hex39_address = COMOD17_SNG_info.Hex39_address;
+                file.hex39_length = COMOD17_SNG_info.Hex39_length;
+
+                file.hex40_address = COMOD17_SNG_info.Hex40_address;
+                file.hex40_length = COMOD17_SNG_info.Hex40_length;
+
+                file.hex41_address = COMOD17_SNG_info.Hex41_address;
+                file.hex41_length = COMOD17_SNG_info.Hex41_length;
+
+                file.hex42_address = COMOD17_SNG_info.Hex42_address;
+                file.hex42_length = COMOD17_SNG_info.Hex42_length;
+
+                file.hex43_address = COMOD17_SNG_info.Hex43_address;
+                file.hex43_length = COMOD17_SNG_info.Hex43_length;
+
+                file.hex44_address = COMOD17_SNG_info.Hex44_address;
+                file.hex44_length = COMOD17_SNG_info.Hex44_length;
+
+                file.hex45_address = COMOD17_SNG_info.Hex45_address;
+                file.hex45_length = COMOD17_SNG_info.Hex45_length;
+
+                file.hex46_address = COMOD17_SNG_info.Hex46_address;
+                file.hex46_length = COMOD17_SNG_info.Hex46_length;
+
+                file.hex47_address = COMOD17_SNG_info.Hex47_address;
+                file.hex47_length = COMOD17_SNG_info.Hex47_length;
+
+                file.hex48_address = COMOD17_SNG_info.Hex48_address;
+                file.hex48_length = COMOD17_SNG_info.Hex48_length;
+
+                file.hex49_address = COMOD17_SNG_info.Hex49_address;
+                file.hex49_length = COMOD17_SNG_info.Hex49_length;
+
+                file.hex50_address = COMOD17_SNG_info.Hex50_address;
+                file.hex50_length = COMOD17_SNG_info.Hex50_length;
+
+                file.hex51_address = COMOD17_SNG_info.Hex51_address;
+                file.hex51_length = COMOD17_SNG_info.Hex51_length;
+
+                file.hex52_address = COMOD17_SNG_info.Hex52_address;
+                file.hex52_length = COMOD17_SNG_info.Hex52_length;
+
+                file.hex53_address = COMOD17_SNG_info.Hex53_address;
+                file.hex53_length = COMOD17_SNG_info.Hex53_length;
+
+                file.hex54_address = COMOD17_SNG_info.Hex54_address;
+                file.hex54_length = COMOD17_SNG_info.Hex54_length;
+
+                file.hex55_address = COMOD17_SNG_info.Hex55_address;
+                file.hex55_length = COMOD17_SNG_info.Hex55_length;
+
+                file.hex56_address = COMOD17_SNG_info.Hex56_address;
+                file.hex56_length = COMOD17_SNG_info.Hex56_length;
+
+                file.hex57_address = COMOD17_SNG_info.Hex57_address;
+                file.hex57_length = COMOD17_SNG_info.Hex57_length;
+
+                file.hex58_address = COMOD17_SNG_info.Hex58_address;
+                file.hex58_length = COMOD17_SNG_info.Hex58_length;
+
+                file.hex59_address = COMOD17_SNG_info.Hex59_address;
+                file.hex59_length = COMOD17_SNG_info.Hex59_length;
+
+                file.hex60_address = COMOD17_SNG_info.Hex60_address;
+                file.hex60_length = COMOD17_SNG_info.Hex60_length;
+
+                file.hex61_address = COMOD17_SNG_info.Hex61_address;
+                file.hex61_length = COMOD17_SNG_info.Hex61_length;
+
+                file.hex62_address = COMOD17_SNG_info.Hex62_address;
+                file.hex62_length = COMOD17_SNG_info.Hex62_length;
+
+                file.hex63_address = COMOD17_SNG_info.Hex63_address;
+                file.hex63_length = COMOD17_SNG_info.Hex63_length;
+
+                file.hex64_address = COMOD17_SNG_info.Hex64_address;
+                file.hex64_length = COMOD17_SNG_info.Hex64_length;
+
+                file.hex65_address = COMOD17_SNG_info.Hex65_address;
+                file.hex65_length = COMOD17_SNG_info.Hex65_length;
+
+                file.hex66_address = COMOD17_SNG_info.Hex66_address;
+                file.hex66_length = COMOD17_SNG_info.Hex66_length;
+
+                file.hex67_address = COMOD17_SNG_info.Hex67_address;
+                file.hex67_length = COMOD17_SNG_info.Hex67_length;
+
+                file.hex68_address = COMOD17_SNG_info.Hex68_address;
+                file.hex68_length = COMOD17_SNG_info.Hex68_length;
+
+                file.hex69_address = COMOD17_SNG_info.Hex69_address;
+                file.hex69_length = COMOD17_SNG_info.Hex69_length;
+
+                file.hex70_address = COMOD17_SNG_info.Hex70_address;
+                file.hex70_length = COMOD17_SNG_info.Hex70_length;
+
+                file.hex71_address = COMOD17_SNG_info.Hex71_address;
+                file.hex71_length = COMOD17_SNG_info.Hex71_length;
+
+                file.hex72_address = COMOD17_SNG_info.Hex72_address;
+                file.hex72_length = COMOD17_SNG_info.Hex72_length;
+
+                file.hex73_address = COMOD17_SNG_info.Hex73_address;
+                file.hex73_length = COMOD17_SNG_info.Hex73_length;
+
+                file.hex74_address = COMOD17_SNG_info.Hex74_address;
+                file.hex74_length = COMOD17_SNG_info.Hex74_length;
+
+                file.hex75_address = COMOD17_SNG_info.Hex75_address;
+                file.hex75_length = COMOD17_SNG_info.Hex75_length;
+
+                file.hex76_address = COMOD17_SNG_info.Hex76_address;
+                file.hex76_length = COMOD17_SNG_info.Hex76_length;
+
+                file.hex77_address = COMOD17_SNG_info.Hex77_address;
+                file.hex77_length = COMOD17_SNG_info.Hex77_length;
+
+                file.hex78_address = COMOD17_SNG_info.Hex78_address;
+                file.hex78_length = COMOD17_SNG_info.Hex78_length;
+
+                file.hex79_address = COMOD17_SNG_info.Hex79_address;
+                file.hex79_length = COMOD17_SNG_info.Hex79_length;
+
+                file.hex80_address = COMOD17_SNG_info.Hex80_address;
+                file.hex80_length = COMOD17_SNG_info.Hex80_length;
+
+                file.hex81_address = COMOD17_SNG_info.Hex81_address;
+                file.hex81_length = COMOD17_SNG_info.Hex81_length;
+
+                file.hex82_address = COMOD17_SNG_info.Hex82_address;
+                file.hex82_length = COMOD17_SNG_info.Hex82_length;
+
+                file.hex83_address = COMOD17_SNG_info.Hex83_address;
+                file.hex83_length = COMOD17_SNG_info.Hex83_length;
+
+                file.hex84_address = COMOD17_SNG_info.Hex84_address;
+                file.hex84_length = COMOD17_SNG_info.Hex84_length;
+
+                file.hex85_address = COMOD17_SNG_info.Hex85_address;
+                file.hex85_length = COMOD17_SNG_info.Hex85_length;
+
+                file.hex86_address = COMOD17_SNG_info.Hex86_address;
+                file.hex86_length = COMOD17_SNG_info.Hex86_length;
+
+                file.hex87_address = COMOD17_SNG_info.Hex87_address;
+                file.hex87_length = COMOD17_SNG_info.Hex87_length;
+
+                file.hex88_address = COMOD17_SNG_info.Hex88_address;
+                file.hex88_length = COMOD17_SNG_info.Hex88_length;
+
+                file.hex89_address = COMOD17_SNG_info.Hex89_address;
+                file.hex89_length = COMOD17_SNG_info.Hex89_length;
+
+                file.hex90_address = COMOD17_SNG_info.Hex90_address;
+                file.hex90_length = COMOD17_SNG_info.Hex90_length;
+
+                file.hex91_address = COMOD17_SNG_info.Hex91_address;
+                file.hex91_length = COMOD17_SNG_info.Hex91_length;
+
+                file.hex92_address = COMOD17_SNG_info.Hex92_address;
+                file.hex92_length = COMOD17_SNG_info.Hex92_length;
+
+                file.hex93_address = COMOD17_SNG_info.Hex93_address;
+                file.hex93_length = COMOD17_SNG_info.Hex93_length;
+
+                file.hex94_address = COMOD17_SNG_info.Hex94_address;
+                file.hex94_length = COMOD17_SNG_info.Hex94_length;
+
+                file.hex95_address = COMOD17_SNG_info.Hex95_address;
+                file.hex95_length = COMOD17_SNG_info.Hex95_length;
+
+                file.hex96_address = COMOD17_SNG_info.Hex96_address;
+                file.hex96_length = COMOD17_SNG_info.Hex96_length;
+
+                file.hex97_address = COMOD17_SNG_info.Hex97_address;
+                file.hex97_length = COMOD17_SNG_info.Hex97_length;
+
+                file.hex98_address = COMOD17_SNG_info.Hex98_address;
+                file.hex98_length = COMOD17_SNG_info.Hex98_length;
+
+                file.hex99_address = COMOD17_SNG_info.Hex99_address;
+                file.hex99_length = COMOD17_SNG_info.Hex99_length;
+
+                file.hex100_address = COMOD17_SNG_info.Hex100_address;
+                file.hex100_length = COMOD17_SNG_info.Hex100_length;
+
+                file.hex101_address = COMOD17_SNG_info.Hex101_address;
+                file.hex101_length = COMOD17_SNG_info.Hex101_length;
+
+                file.hex102_address = COMOD17_SNG_info.Hex102_address;
+                file.hex102_length = COMOD17_SNG_info.Hex102_length;
+
+                file.hex103_address = COMOD17_SNG_info.Hex103_address;
+                file.hex103_length = COMOD17_SNG_info.Hex103_length;
+
+                file.hex104_address = COMOD17_SNG_info.Hex104_address;
+                file.hex104_length = COMOD17_SNG_info.Hex104_length;
+
+                file.hex105_address = COMOD17_SNG_info.Hex105_address;
+                file.hex105_length = COMOD17_SNG_info.Hex105_length;
+
+                file.hex106_address = COMOD17_SNG_info.Hex106_address;
+                file.hex106_length = COMOD17_SNG_info.Hex106_length;
+
+                file.hex107_address = COMOD17_SNG_info.Hex107_address;
+                file.hex107_length = COMOD17_SNG_info.Hex107_length;
+
+                file.hex108_address = COMOD17_SNG_info.Hex108_address;
+                file.hex108_length = COMOD17_SNG_info.Hex108_length;
+
+                file.hex109_address = COMOD17_SNG_info.Hex109_address;
+                file.hex109_length = COMOD17_SNG_info.Hex109_length;
+
+                file.hex110_address = COMOD17_SNG_info.Hex110_address;
+                file.hex110_length = COMOD17_SNG_info.Hex110_length;
+
+                file.hex111_address = COMOD17_SNG_info.Hex111_address;
+                file.hex111_length = COMOD17_SNG_info.Hex111_length;
+
+                file.hex112_address = COMOD17_SNG_info.Hex112_address;
+                file.hex112_length = COMOD17_SNG_info.Hex112_length;
+
+                file.hex113_address = COMOD17_SNG_info.Hex113_address;
+                file.hex113_length = COMOD17_SNG_info.Hex113_length;
+
+                file.hex114_address = COMOD17_SNG_info.Hex114_address;
+                file.hex114_length = COMOD17_SNG_info.Hex114_length;
+
+                file.hex115_address = COMOD17_SNG_info.Hex115_address;
+                file.hex115_length = COMOD17_SNG_info.Hex115_length;
+
+                file.hex116_address = COMOD17_SNG_info.Hex116_address;
+                file.hex116_length = COMOD17_SNG_info.Hex116_length;
+
+                file.hex117_address = COMOD17_SNG_info.Hex117_address;
+                file.hex117_length = COMOD17_SNG_info.Hex117_length;
+
+                file.hex118_address = COMOD17_SNG_info.Hex118_address;
+                file.hex118_length = COMOD17_SNG_info.Hex118_length;
+
+                file.hex119_address = COMOD17_SNG_info.Hex119_address;
+                file.hex119_length = COMOD17_SNG_info.Hex119_length;
+            }
+        }
 
 
         private void Save_as_Click(object sender, EventArgs e)
         {
+            if(To_rus.Checked == true)
+            {
+                Open_File.OpenFile.Torus = true;
+            }
+            else
+            {
+                Open_File.OpenFile.Torus = false;
+            }
+            
             Stream myStream;
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.FileName = Open_File.OpenFile.FileName;
+            saveFileDialog1.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|All files (*.*)|*.*";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 if ((myStream = saveFileDialog1.OpenFile()) != null)
@@ -6124,6 +9259,13 @@ namespace ujl_subedit
                     Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex95, file.hex95_length), 0, file.save, file.hex95_address, file.hex95_length); //hex95
                     Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex96, file.hex96_length), 0, file.save, file.hex96_address, file.hex96_length); //hex96
                     Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex97, file.hex97_length), 0, file.save, file.hex97_address, file.hex97_length); //hex97
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex98, file.hex98_length), 0, file.save, file.hex98_address, file.hex98_length); //hex98
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex99, file.hex99_length), 0, file.save, file.hex99_address, file.hex99_length); //hex99
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex100, file.hex100_length), 0, file.save, file.hex100_address, file.hex100_length); //hex100
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex101, file.hex101_length), 0, file.save, file.hex101_address, file.hex101_length); //hex101
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex102, file.hex102_length), 0, file.save, file.hex102_address, file.hex102_length); //hex102
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex103, file.hex103_length), 0, file.save, file.hex103_address, file.hex103_length); //hex103
+                    Array.Copy(Open_File.OpenFile.hex2byte2save(file.hex104, file.hex104_length), 0, file.save, file.hex104_address, file.hex104_length); //hex104
 
                     myStream.Write(file.save, 0, file.save.Length);
                     myStream.Close();
@@ -8749,6 +11891,593 @@ namespace ujl_subedit
                 file.L97Last = file.hex97_length - file.L97Length;
                 Last97.Text = file.L97Last.ToString();
                 file.hex97 = Hex97.Text;
+            }
+        }
+        private void Hex98_TextChanged(object sender, EventArgs e) //hex98
+        {
+            if (Hex98.ContainsFocus == true)
+            {
+                Text98.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex98.Text));
+
+                file.L98Length = Text98.Text.Length;
+                Length98.Text = file.L98Length.ToString();
+                file.L98Last = file.hex98_length - file.L98Length;
+                Last98.Text = file.L98Last.ToString();
+                file.hex98 = Hex98.Text;
+            }
+        }
+        private void Text98_TextChanged(object sender, EventArgs e) //encode98
+        {
+            if (Text98.ContainsFocus == true)
+            {
+                Hex98.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text98.Text));
+
+                file.L98Length = Text98.Text.Length;
+                Length98.Text = file.L98Length.ToString();
+                file.L98Last = file.hex98_length - file.L98Length;
+                Last98.Text = file.L98Last.ToString();
+                file.hex98 = Hex98.Text;
+            }
+        }
+        private void Hex99_TextChanged(object sender, EventArgs e) //hex99
+        {
+            if (Hex99.ContainsFocus == true)
+            {
+                Text99.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex99.Text));
+
+                file.L99Length = Text99.Text.Length;
+                Length99.Text = file.L99Length.ToString();
+                file.L99Last = file.hex99_length - file.L99Length;
+                Last99.Text = file.L99Last.ToString();
+                file.hex99 = Hex99.Text;
+            }
+        }
+        private void Text99_TextChanged(object sender, EventArgs e) //encode99
+        {
+            if (Text99.ContainsFocus == true)
+            {
+                Hex99.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text99.Text));
+
+                file.L99Length = Text99.Text.Length;
+                Length99.Text = file.L99Length.ToString();
+                file.L99Last = file.hex99_length - file.L99Length;
+                Last99.Text = file.L99Last.ToString();
+                file.hex99 = Hex99.Text;
+            }
+        }
+        private void Hex100_TextChanged(object sender, EventArgs e) //hex100
+        {
+            if (Hex100.ContainsFocus == true)
+            {
+                Text100.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex100.Text));
+
+                file.L100Length = Text100.Text.Length;
+                Length100.Text = file.L100Length.ToString();
+                file.L100Last = file.hex100_length - file.L100Length;
+                Last100.Text = file.L100Last.ToString();
+                file.hex100 = Hex100.Text;
+            }
+        }
+        private void Text100_TextChanged(object sender, EventArgs e) //encode100
+        {
+            if (Text100.ContainsFocus == true)
+            {
+                Hex100.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text100.Text));
+
+                file.L100Length = Text100.Text.Length;
+                Length100.Text = file.L100Length.ToString();
+                file.L100Last = file.hex100_length - file.L100Length;
+                Last100.Text = file.L100Last.ToString();
+                file.hex100 = Hex100.Text;
+            }
+        }
+        private void Hex101_TextChanged(object sender, EventArgs e) //hex101
+        {
+            if (Hex101.ContainsFocus == true)
+            {
+                Text101.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex101.Text));
+
+                file.L101Length = Text101.Text.Length;
+                Length101.Text = file.L101Length.ToString();
+                file.L101Last = file.hex101_length - file.L101Length;
+                Last101.Text = file.L101Last.ToString();
+                file.hex101 = Hex101.Text;
+            }
+        }
+        private void Text101_TextChanged(object sender, EventArgs e) //encode101
+        {
+            if (Text101.ContainsFocus == true)
+            {
+                Hex101.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text101.Text));
+
+                file.L101Length = Text101.Text.Length;
+                Length101.Text = file.L101Length.ToString();
+                file.L101Last = file.hex101_length - file.L101Length;
+                Last101.Text = file.L101Last.ToString();
+                file.hex101 = Hex101.Text;
+            }
+        }
+        private void Hex102_TextChanged(object sender, EventArgs e) //hex102
+        {
+            if (Hex102.ContainsFocus == true)
+            {
+                Text102.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex102.Text));
+
+                file.L102Length = Text102.Text.Length;
+                Length102.Text = file.L102Length.ToString();
+                file.L102Last = file.hex102_length - file.L102Length;
+                Last102.Text = file.L102Last.ToString();
+                file.hex102 = Hex102.Text;
+            }
+        }
+        private void Text102_TextChanged(object sender, EventArgs e) //encode102
+        {
+            if (Text102.ContainsFocus == true)
+            {
+                Hex102.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text102.Text));
+
+                file.L102Length = Text102.Text.Length;
+                Length102.Text = file.L102Length.ToString();
+                file.L102Last = file.hex102_length - file.L102Length;
+                Last102.Text = file.L102Last.ToString();
+                file.hex102 = Hex102.Text;
+            }
+        }
+        private void Hex103_TextChanged(object sender, EventArgs e) //hex103
+        {
+            if (Hex103.ContainsFocus == true)
+            {
+                Text103.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex103.Text));
+
+                file.L103Length = Text103.Text.Length;
+                Length103.Text = file.L103Length.ToString();
+                file.L103Last = file.hex103_length - file.L103Length;
+                Last103.Text = file.L103Last.ToString();
+                file.hex103 = Hex103.Text;
+            }
+        }
+        private void Text103_TextChanged(object sender, EventArgs e) //encode103
+        {
+            if (Text103.ContainsFocus == true)
+            {
+                Hex103.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text103.Text));
+
+                file.L103Length = Text103.Text.Length;
+                Length103.Text = file.L103Length.ToString();
+                file.L103Last = file.hex103_length - file.L103Length;
+                Last103.Text = file.L103Last.ToString();
+                file.hex103 = Hex103.Text;
+            }
+        }
+        private void Hex104_TextChanged(object sender, EventArgs e) //hex104
+        {
+            if (Hex104.ContainsFocus == true)
+            {
+                Text104.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex104.Text));
+
+                file.L104Length = Text104.Text.Length;
+                Length104.Text = file.L104Length.ToString();
+                file.L104Last = file.hex104_length - file.L104Length;
+                Last104.Text = file.L104Last.ToString();
+                file.hex104 = Hex104.Text;
+            }
+        }
+        private void Text104_TextChanged(object sender, EventArgs e) //encode104
+        {
+            if (Text104.ContainsFocus == true)
+            {
+                Hex104.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text104.Text));
+
+                file.L104Length = Text104.Text.Length;
+                Length104.Text = file.L104Length.ToString();
+                file.L104Last = file.hex104_length - file.L104Length;
+                Last104.Text = file.L104Last.ToString();
+                file.hex104 = Hex104.Text;
+            }
+        }
+
+        private void Hex105_TextChanged(object sender, EventArgs e) //hex105
+        {
+            if (Hex105.ContainsFocus == true)
+            {
+                Text105.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex105.Text));
+
+                file.L105Length = Text105.Text.Length;
+                Length105.Text = file.L105Length.ToString();
+                file.L105Last = file.hex105_length - file.L105Length;
+                Last105.Text = file.L105Last.ToString();
+                file.hex105 = Hex105.Text;
+            }
+        }
+        private void Text105_TextChanged(object sender, EventArgs e) //encode105
+        {
+            if (Text105.ContainsFocus == true)
+            {
+                Hex105.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text105.Text));
+
+                file.L105Length = Text105.Text.Length;
+                Length105.Text = file.L105Length.ToString();
+                file.L105Last = file.hex105_length - file.L105Length;
+                Last105.Text = file.L105Last.ToString();
+                file.hex105 = Hex105.Text;
+            }
+        }
+
+        private void Hex106_TextChanged(object sender, EventArgs e) //hex106
+        {
+            if (Hex106.ContainsFocus == true)
+            {
+                Text106.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex106.Text));
+
+                file.L106Length = Text106.Text.Length;
+                Length106.Text = file.L106Length.ToString();
+                file.L106Last = file.hex106_length - file.L106Length;
+                Last106.Text = file.L106Last.ToString();
+                file.hex106 = Hex106.Text;
+            }
+        }
+        private void Text106_TextChanged(object sender, EventArgs e) //encode106
+        {
+            if (Text106.ContainsFocus == true)
+            {
+                Hex106.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text106.Text));
+
+                file.L106Length = Text106.Text.Length;
+                Length106.Text = file.L106Length.ToString();
+                file.L106Last = file.hex106_length - file.L106Length;
+                Last106.Text = file.L106Last.ToString();
+                file.hex106 = Hex106.Text;
+            }
+        }
+
+        private void Hex107_TextChanged(object sender, EventArgs e) //hex107
+        {
+            if (Hex107.ContainsFocus == true)
+            {
+                Text107.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex107.Text));
+
+                file.L107Length = Text107.Text.Length;
+                Length107.Text = file.L107Length.ToString();
+                file.L107Last = file.hex107_length - file.L107Length;
+                Last107.Text = file.L107Last.ToString();
+                file.hex107 = Hex107.Text;
+            }
+        }
+        private void Text107_TextChanged(object sender, EventArgs e) //encode107
+        {
+            if (Text107.ContainsFocus == true)
+            {
+                Hex107.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text107.Text));
+
+                file.L107Length = Text107.Text.Length;
+                Length107.Text = file.L107Length.ToString();
+                file.L107Last = file.hex107_length - file.L107Length;
+                Last107.Text = file.L107Last.ToString();
+                file.hex107 = Hex107.Text;
+            }
+        }
+
+        private void Hex108_TextChanged(object sender, EventArgs e) //hex108
+        {
+            if (Hex108.ContainsFocus == true)
+            {
+                Text108.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex108.Text));
+
+                file.L108Length = Text108.Text.Length;
+                Length108.Text = file.L108Length.ToString();
+                file.L108Last = file.hex108_length - file.L108Length;
+                Last108.Text = file.L108Last.ToString();
+                file.hex108 = Hex108.Text;
+            }
+        }
+        private void Text108_TextChanged(object sender, EventArgs e) //encode108
+        {
+            if (Text108.ContainsFocus == true)
+            {
+                Hex108.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text108.Text));
+
+                file.L108Length = Text108.Text.Length;
+                Length108.Text = file.L108Length.ToString();
+                file.L108Last = file.hex108_length - file.L108Length;
+                Last108.Text = file.L108Last.ToString();
+                file.hex108 = Hex108.Text;
+            }
+        }
+
+        private void Hex109_TextChanged(object sender, EventArgs e) //hex109
+        {
+            if (Hex109.ContainsFocus == true)
+            {
+                Text109.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex109.Text));
+
+                file.L109Length = Text109.Text.Length;
+                Length109.Text = file.L109Length.ToString();
+                file.L109Last = file.hex109_length - file.L109Length;
+                Last109.Text = file.L109Last.ToString();
+                file.hex109 = Hex109.Text;
+            }
+        }
+        private void Text109_TextChanged(object sender, EventArgs e) //encode109
+        {
+            if (Text109.ContainsFocus == true)
+            {
+                Hex109.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text109.Text));
+
+                file.L109Length = Text109.Text.Length;
+                Length109.Text = file.L109Length.ToString();
+                file.L109Last = file.hex109_length - file.L109Length;
+                Last109.Text = file.L109Last.ToString();
+                file.hex109 = Hex109.Text;
+            }
+        }
+
+        private void Hex110_TextChanged(object sender, EventArgs e) //hex110
+        {
+            if (Hex110.ContainsFocus == true)
+            {
+                Text110.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex110.Text));
+
+                file.L110Length = Text110.Text.Length;
+                Length110.Text = file.L110Length.ToString();
+                file.L110Last = file.hex110_length - file.L110Length;
+                Last110.Text = file.L110Last.ToString();
+                file.hex110 = Hex110.Text;
+            }
+        }
+        private void Text110_TextChanged(object sender, EventArgs e) //encode110
+        {
+            if (Text110.ContainsFocus == true)
+            {
+                Hex110.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text110.Text));
+
+                file.L110Length = Text110.Text.Length;
+                Length110.Text = file.L110Length.ToString();
+                file.L110Last = file.hex110_length - file.L110Length;
+                Last110.Text = file.L110Last.ToString();
+                file.hex110 = Hex110.Text;
+            }
+        }
+
+        private void Hex111_TextChanged(object sender, EventArgs e) //hex111
+        {
+            if (Hex111.ContainsFocus == true)
+            {
+                Text111.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex111.Text));
+
+                file.L111Length = Text111.Text.Length;
+                Length111.Text = file.L111Length.ToString();
+                file.L111Last = file.hex111_length - file.L111Length;
+                Last111.Text = file.L111Last.ToString();
+                file.hex111 = Hex111.Text;
+            }
+        }
+        private void Text111_TextChanged(object sender, EventArgs e) //encode111
+        {
+            if (Text111.ContainsFocus == true)
+            {
+                Hex111.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text111.Text));
+
+                file.L111Length = Text111.Text.Length;
+                Length111.Text = file.L111Length.ToString();
+                file.L111Last = file.hex111_length - file.L111Length;
+                Last111.Text = file.L111Last.ToString();
+                file.hex111 = Hex111.Text;
+            }
+        }
+
+        private void Hex112_TextChanged(object sender, EventArgs e) //hex112
+        {
+            if (Hex112.ContainsFocus == true)
+            {
+                Text112.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex112.Text));
+
+                file.L112Length = Text112.Text.Length;
+                Length112.Text = file.L112Length.ToString();
+                file.L112Last = file.hex112_length - file.L112Length;
+                Last112.Text = file.L112Last.ToString();
+                file.hex112 = Hex112.Text;
+            }
+        }
+        private void Text112_TextChanged(object sender, EventArgs e) //encode112
+        {
+            if (Text112.ContainsFocus == true)
+            {
+                Hex112.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text112.Text));
+
+                file.L112Length = Text112.Text.Length;
+                Length112.Text = file.L112Length.ToString();
+                file.L112Last = file.hex112_length - file.L112Length;
+                Last112.Text = file.L112Last.ToString();
+                file.hex112 = Hex112.Text;
+            }
+        }
+
+        private void Hex113_TextChanged(object sender, EventArgs e) //hex113
+        {
+            if (Hex113.ContainsFocus == true)
+            {
+                Text113.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex113.Text));
+
+                file.L113Length = Text113.Text.Length;
+                Length113.Text = file.L113Length.ToString();
+                file.L113Last = file.hex113_length - file.L113Length;
+                Last113.Text = file.L113Last.ToString();
+                file.hex113 = Hex113.Text;
+            }
+        }
+        private void Text113_TextChanged(object sender, EventArgs e) //encode113
+        {
+            if (Text113.ContainsFocus == true)
+            {
+                Hex113.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text113.Text));
+
+                file.L113Length = Text113.Text.Length;
+                Length113.Text = file.L113Length.ToString();
+                file.L113Last = file.hex113_length - file.L113Length;
+                Last113.Text = file.L113Last.ToString();
+                file.hex113 = Hex113.Text;
+            }
+        }
+
+        private void Hex114_TextChanged(object sender, EventArgs e) //hex114
+        {
+            if (Hex114.ContainsFocus == true)
+            {
+                Text114.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex114.Text));
+
+                file.L114Length = Text114.Text.Length;
+                Length114.Text = file.L114Length.ToString();
+                file.L114Last = file.hex114_length - file.L114Length;
+                Last114.Text = file.L114Last.ToString();
+                file.hex114 = Hex114.Text;
+            }
+        }
+        private void Text114_TextChanged(object sender, EventArgs e) //encode114
+        {
+            if (Text114.ContainsFocus == true)
+            {
+                Hex114.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text114.Text));
+
+                file.L114Length = Text114.Text.Length;
+                Length114.Text = file.L114Length.ToString();
+                file.L114Last = file.hex114_length - file.L114Length;
+                Last114.Text = file.L114Last.ToString();
+                file.hex114 = Hex114.Text;
+            }
+        }
+
+        private void Hex115_TextChanged(object sender, EventArgs e) //hex115
+        {
+            if (Hex115.ContainsFocus == true)
+            {
+                Text115.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex115.Text));
+
+                file.L115Length = Text115.Text.Length;
+                Length115.Text = file.L115Length.ToString();
+                file.L115Last = file.hex115_length - file.L115Length;
+                Last115.Text = file.L115Last.ToString();
+                file.hex115 = Hex115.Text;
+            }
+        }
+        private void Text115_TextChanged(object sender, EventArgs e) //encode115
+        {
+            if (Text115.ContainsFocus == true)
+            {
+                Hex115.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text115.Text));
+
+                file.L115Length = Text115.Text.Length;
+                Length115.Text = file.L115Length.ToString();
+                file.L115Last = file.hex115_length - file.L115Length;
+                Last115.Text = file.L115Last.ToString();
+                file.hex115 = Hex115.Text;
+            }
+        }
+
+        private void Hex116_TextChanged(object sender, EventArgs e) //hex116
+        {
+            if (Hex116.ContainsFocus == true)
+            {
+                Text116.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex116.Text));
+
+                file.L116Length = Text116.Text.Length;
+                Length116.Text = file.L116Length.ToString();
+                file.L116Last = file.hex116_length - file.L116Length;
+                Last116.Text = file.L116Last.ToString();
+                file.hex116 = Hex116.Text;
+            }
+        }
+        private void Text116_TextChanged(object sender, EventArgs e) //encode116
+        {
+            if (Text116.ContainsFocus == true)
+            {
+                Hex116.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text116.Text));
+
+                file.L116Length = Text116.Text.Length;
+                Length116.Text = file.L116Length.ToString();
+                file.L116Last = file.hex116_length - file.L116Length;
+                Last116.Text = file.L116Last.ToString();
+                file.hex116 = Hex116.Text;
+            }
+        }
+
+        private void Hex117_TextChanged(object sender, EventArgs e) //hex117
+        {
+            if (Hex117.ContainsFocus == true)
+            {
+                Text117.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex117.Text));
+
+                file.L117Length = Text117.Text.Length;
+                Length117.Text = file.L117Length.ToString();
+                file.L117Last = file.hex117_length - file.L117Length;
+                Last117.Text = file.L117Last.ToString();
+                file.hex117 = Hex117.Text;
+            }
+        }
+        private void Text117_TextChanged(object sender, EventArgs e) //encode117
+        {
+            if (Text117.ContainsFocus == true)
+            {
+                Hex117.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text117.Text));
+
+                file.L117Length = Text117.Text.Length;
+                Length117.Text = file.L117Length.ToString();
+                file.L117Last = file.hex117_length - file.L117Length;
+                Last117.Text = file.L117Last.ToString();
+                file.hex117 = Hex117.Text;
+            }
+        }
+
+        private void Hex118_TextChanged(object sender, EventArgs e) //hex118
+        {
+            if (Hex118.ContainsFocus == true)
+            {
+                Text118.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex118.Text));
+
+                file.L118Length = Text118.Text.Length;
+                Length118.Text = file.L118Length.ToString();
+                file.L118Last = file.hex118_length - file.L118Length;
+                Last118.Text = file.L118Last.ToString();
+                file.hex118 = Hex118.Text;
+            }
+        }
+        private void Text118_TextChanged(object sender, EventArgs e) //encode118
+        {
+            if (Text118.ContainsFocus == true)
+            {
+                Hex118.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text118.Text));
+
+                file.L118Length = Text118.Text.Length;
+                Length118.Text = file.L118Length.ToString();
+                file.L118Last = file.hex118_length - file.L118Length;
+                Last118.Text = file.L118Last.ToString();
+                file.hex118 = Hex118.Text;
+            }
+        }
+
+        private void Hex119_TextChanged(object sender, EventArgs e) //hex119
+        {
+            if (Hex119.ContainsFocus == true)
+            {
+                Text119.Text = System.Text.Encoding.Default.GetString(Open_File.OpenFile.hex2byte(Hex119.Text));
+
+                file.L119Length = Text119.Text.Length;
+                Length119.Text = file.L119Length.ToString();
+                file.L119Last = file.hex119_length - file.L119Length;
+                Last119.Text = file.L119Last.ToString();
+                file.hex119 = Hex119.Text;
+            }
+        }
+        private void Text119_TextChanged(object sender, EventArgs e) //encode119
+        {
+            if (Text119.ContainsFocus == true)
+            {
+                Hex119.Text = BitConverter.ToString(System.Text.Encoding.Default.GetBytes(Text119.Text));
+
+                file.L119Length = Text119.Text.Length;
+                Length119.Text = file.L119Length.ToString();
+                file.L119Last = file.hex119_length - file.L119Length;
+                Last119.Text = file.L119Last.ToString();
+                file.hex119 = Hex119.Text;
             }
         }
     }

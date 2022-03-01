@@ -520,6 +520,117 @@ namespace ujl_subedit
             this.Hex96 = new System.Windows.Forms.TextBox();
             this.Text95 = new System.Windows.Forms.TextBox();
             this.Hex95 = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.Last104 = new System.Windows.Forms.Label();
+            this.Text104 = new System.Windows.Forms.TextBox();
+            this.Length104 = new System.Windows.Forms.Label();
+            this.Hex104 = new System.Windows.Forms.TextBox();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.Last103 = new System.Windows.Forms.Label();
+            this.Last102 = new System.Windows.Forms.Label();
+            this.Text103 = new System.Windows.Forms.TextBox();
+            this.Length103 = new System.Windows.Forms.Label();
+            this.Length102 = new System.Windows.Forms.Label();
+            this.Hex103 = new System.Windows.Forms.TextBox();
+            this.Text102 = new System.Windows.Forms.TextBox();
+            this.Hex102 = new System.Windows.Forms.TextBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.Last101 = new System.Windows.Forms.Label();
+            this.Text101 = new System.Windows.Forms.TextBox();
+            this.Length101 = new System.Windows.Forms.Label();
+            this.Hex101 = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.Last100 = new System.Windows.Forms.Label();
+            this.Last99 = new System.Windows.Forms.Label();
+            this.Text100 = new System.Windows.Forms.TextBox();
+            this.Length100 = new System.Windows.Forms.Label();
+            this.Length99 = new System.Windows.Forms.Label();
+            this.Hex100 = new System.Windows.Forms.TextBox();
+            this.Text99 = new System.Windows.Forms.TextBox();
+            this.Hex99 = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.Last98 = new System.Windows.Forms.Label();
+            this.Text98 = new System.Windows.Forms.TextBox();
+            this.Length98 = new System.Windows.Forms.Label();
+            this.Hex98 = new System.Windows.Forms.TextBox();
+            this.To_rus = new System.Windows.Forms.CheckBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.Last111 = new System.Windows.Forms.Label();
+            this.Text111 = new System.Windows.Forms.TextBox();
+            this.Length111 = new System.Windows.Forms.Label();
+            this.Hex111 = new System.Windows.Forms.TextBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.Last110 = new System.Windows.Forms.Label();
+            this.Last109 = new System.Windows.Forms.Label();
+            this.Text110 = new System.Windows.Forms.TextBox();
+            this.Length110 = new System.Windows.Forms.Label();
+            this.Length109 = new System.Windows.Forms.Label();
+            this.Hex110 = new System.Windows.Forms.TextBox();
+            this.Text109 = new System.Windows.Forms.TextBox();
+            this.Hex109 = new System.Windows.Forms.TextBox();
+            this.label113 = new System.Windows.Forms.Label();
+            this.Last108 = new System.Windows.Forms.Label();
+            this.Text108 = new System.Windows.Forms.TextBox();
+            this.Length108 = new System.Windows.Forms.Label();
+            this.Hex108 = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.Last107 = new System.Windows.Forms.Label();
+            this.Last106 = new System.Windows.Forms.Label();
+            this.Text107 = new System.Windows.Forms.TextBox();
+            this.Length107 = new System.Windows.Forms.Label();
+            this.Length106 = new System.Windows.Forms.Label();
+            this.Hex107 = new System.Windows.Forms.TextBox();
+            this.Text106 = new System.Windows.Forms.TextBox();
+            this.Hex106 = new System.Windows.Forms.TextBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.Last105 = new System.Windows.Forms.Label();
+            this.Text105 = new System.Windows.Forms.TextBox();
+            this.Length105 = new System.Windows.Forms.Label();
+            this.Hex105 = new System.Windows.Forms.TextBox();
+            this.label126 = new System.Windows.Forms.Label();
+            this.Last117 = new System.Windows.Forms.Label();
+            this.Text117 = new System.Windows.Forms.TextBox();
+            this.Length117 = new System.Windows.Forms.Label();
+            this.Hex117 = new System.Windows.Forms.TextBox();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.Last116 = new System.Windows.Forms.Label();
+            this.Last115 = new System.Windows.Forms.Label();
+            this.Text116 = new System.Windows.Forms.TextBox();
+            this.Length116 = new System.Windows.Forms.Label();
+            this.Length115 = new System.Windows.Forms.Label();
+            this.Hex116 = new System.Windows.Forms.TextBox();
+            this.Text115 = new System.Windows.Forms.TextBox();
+            this.Hex115 = new System.Windows.Forms.TextBox();
+            this.label135 = new System.Windows.Forms.Label();
+            this.Last114 = new System.Windows.Forms.Label();
+            this.Text114 = new System.Windows.Forms.TextBox();
+            this.Length114 = new System.Windows.Forms.Label();
+            this.Hex114 = new System.Windows.Forms.TextBox();
+            this.label138 = new System.Windows.Forms.Label();
+            this.label139 = new System.Windows.Forms.Label();
+            this.Last113 = new System.Windows.Forms.Label();
+            this.Last112 = new System.Windows.Forms.Label();
+            this.Text113 = new System.Windows.Forms.TextBox();
+            this.Length113 = new System.Windows.Forms.Label();
+            this.Length112 = new System.Windows.Forms.Label();
+            this.Hex113 = new System.Windows.Forms.TextBox();
+            this.Text112 = new System.Windows.Forms.TextBox();
+            this.Hex112 = new System.Windows.Forms.TextBox();
+            this.label144 = new System.Windows.Forms.Label();
+            this.Last119 = new System.Windows.Forms.Label();
+            this.Text119 = new System.Windows.Forms.TextBox();
+            this.Length119 = new System.Windows.Forms.Label();
+            this.Hex119 = new System.Windows.Forms.TextBox();
+            this.label147 = new System.Windows.Forms.Label();
+            this.Last118 = new System.Windows.Forms.Label();
+            this.Text118 = new System.Windows.Forms.TextBox();
+            this.Length118 = new System.Windows.Forms.Label();
+            this.Hex118 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -5486,6 +5597,1117 @@ namespace ujl_subedit
             this.Hex95.TabIndex = 474;
             this.Hex95.TextChanged += new System.EventHandler(this.Hex95_TextChanged);
             // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label94.Location = new System.Drawing.Point(12, 6902);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(29, 20);
+            this.label94.TabIndex = 523;
+            this.label94.Text = "104";
+            // 
+            // Last104
+            // 
+            this.Last104.AutoSize = true;
+            this.Last104.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last104.Location = new System.Drawing.Point(848, 6884);
+            this.Last104.Name = "Last104";
+            this.Last104.Size = new System.Drawing.Size(38, 18);
+            this.Last104.TabIndex = 522;
+            this.Last104.Text = "104";
+            // 
+            // Text104
+            // 
+            this.Text104.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text104.Location = new System.Drawing.Point(443, 6884);
+            this.Text104.Multiline = true;
+            this.Text104.Name = "Text104";
+            this.Text104.Size = new System.Drawing.Size(399, 60);
+            this.Text104.TabIndex = 521;
+            this.Text104.TextChanged += new System.EventHandler(this.Text104_TextChanged);
+            // 
+            // Length104
+            // 
+            this.Length104.AutoSize = true;
+            this.Length104.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length104.Location = new System.Drawing.Point(4, 6884);
+            this.Length104.Name = "Length104";
+            this.Length104.Size = new System.Drawing.Size(38, 18);
+            this.Length104.TabIndex = 520;
+            this.Length104.Text = "104";
+            // 
+            // Hex104
+            // 
+            this.Hex104.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex104.Location = new System.Drawing.Point(38, 6884);
+            this.Hex104.Multiline = true;
+            this.Hex104.Name = "Hex104";
+            this.Hex104.Size = new System.Drawing.Size(399, 60);
+            this.Hex104.TabIndex = 519;
+            this.Hex104.TextChanged += new System.EventHandler(this.Hex104_TextChanged);
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label101.Location = new System.Drawing.Point(12, 6836);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(28, 20);
+            this.label101.TabIndex = 518;
+            this.label101.Text = "103";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label102.Location = new System.Drawing.Point(12, 6770);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(28, 20);
+            this.label102.TabIndex = 517;
+            this.label102.Text = "102";
+            // 
+            // Last103
+            // 
+            this.Last103.AutoSize = true;
+            this.Last103.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last103.Location = new System.Drawing.Point(848, 6818);
+            this.Last103.Name = "Last103";
+            this.Last103.Size = new System.Drawing.Size(38, 18);
+            this.Last103.TabIndex = 516;
+            this.Last103.Text = "103";
+            // 
+            // Last102
+            // 
+            this.Last102.AutoSize = true;
+            this.Last102.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last102.Location = new System.Drawing.Point(848, 6752);
+            this.Last102.Name = "Last102";
+            this.Last102.Size = new System.Drawing.Size(38, 18);
+            this.Last102.TabIndex = 515;
+            this.Last102.Text = "102";
+            // 
+            // Text103
+            // 
+            this.Text103.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text103.Location = new System.Drawing.Point(443, 6818);
+            this.Text103.Multiline = true;
+            this.Text103.Name = "Text103";
+            this.Text103.Size = new System.Drawing.Size(399, 60);
+            this.Text103.TabIndex = 514;
+            this.Text103.TextChanged += new System.EventHandler(this.Text103_TextChanged);
+            // 
+            // Length103
+            // 
+            this.Length103.AutoSize = true;
+            this.Length103.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length103.Location = new System.Drawing.Point(4, 6818);
+            this.Length103.Name = "Length103";
+            this.Length103.Size = new System.Drawing.Size(38, 18);
+            this.Length103.TabIndex = 513;
+            this.Length103.Text = "103";
+            // 
+            // Length102
+            // 
+            this.Length102.AutoSize = true;
+            this.Length102.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length102.Location = new System.Drawing.Point(4, 6752);
+            this.Length102.Name = "Length102";
+            this.Length102.Size = new System.Drawing.Size(38, 18);
+            this.Length102.TabIndex = 512;
+            this.Length102.Text = "102";
+            // 
+            // Hex103
+            // 
+            this.Hex103.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex103.Location = new System.Drawing.Point(38, 6818);
+            this.Hex103.Multiline = true;
+            this.Hex103.Name = "Hex103";
+            this.Hex103.Size = new System.Drawing.Size(399, 60);
+            this.Hex103.TabIndex = 511;
+            this.Hex103.TextChanged += new System.EventHandler(this.Hex103_TextChanged);
+            // 
+            // Text102
+            // 
+            this.Text102.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text102.Location = new System.Drawing.Point(443, 6752);
+            this.Text102.Multiline = true;
+            this.Text102.Name = "Text102";
+            this.Text102.Size = new System.Drawing.Size(399, 60);
+            this.Text102.TabIndex = 510;
+            this.Text102.TextChanged += new System.EventHandler(this.Text102_TextChanged);
+            // 
+            // Hex102
+            // 
+            this.Hex102.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex102.Location = new System.Drawing.Point(38, 6752);
+            this.Hex102.Multiline = true;
+            this.Hex102.Name = "Hex102";
+            this.Hex102.Size = new System.Drawing.Size(399, 60);
+            this.Hex102.TabIndex = 509;
+            this.Hex102.TextChanged += new System.EventHandler(this.Hex102_TextChanged);
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label107.Location = new System.Drawing.Point(12, 6704);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(25, 20);
+            this.label107.TabIndex = 508;
+            this.label107.Text = "101";
+            // 
+            // Last101
+            // 
+            this.Last101.AutoSize = true;
+            this.Last101.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last101.Location = new System.Drawing.Point(848, 6686);
+            this.Last101.Name = "Last101";
+            this.Last101.Size = new System.Drawing.Size(38, 18);
+            this.Last101.TabIndex = 507;
+            this.Last101.Text = "101";
+            // 
+            // Text101
+            // 
+            this.Text101.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text101.Location = new System.Drawing.Point(443, 6686);
+            this.Text101.Multiline = true;
+            this.Text101.Name = "Text101";
+            this.Text101.Size = new System.Drawing.Size(399, 60);
+            this.Text101.TabIndex = 506;
+            this.Text101.TextChanged += new System.EventHandler(this.Text101_TextChanged);
+            // 
+            // Length101
+            // 
+            this.Length101.AutoSize = true;
+            this.Length101.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length101.Location = new System.Drawing.Point(4, 6686);
+            this.Length101.Name = "Length101";
+            this.Length101.Size = new System.Drawing.Size(38, 18);
+            this.Length101.TabIndex = 505;
+            this.Length101.Text = "101";
+            // 
+            // Hex101
+            // 
+            this.Hex101.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex101.Location = new System.Drawing.Point(38, 6686);
+            this.Hex101.Multiline = true;
+            this.Hex101.Name = "Hex101";
+            this.Hex101.Size = new System.Drawing.Size(399, 60);
+            this.Hex101.TabIndex = 504;
+            this.Hex101.TextChanged += new System.EventHandler(this.Hex101_TextChanged);
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label110.Location = new System.Drawing.Point(12, 6638);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(29, 20);
+            this.label110.TabIndex = 503;
+            this.label110.Text = "100";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label111.Location = new System.Drawing.Point(12, 6572);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(25, 20);
+            this.label111.TabIndex = 502;
+            this.label111.Text = "99";
+            // 
+            // Last100
+            // 
+            this.Last100.AutoSize = true;
+            this.Last100.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last100.Location = new System.Drawing.Point(848, 6620);
+            this.Last100.Name = "Last100";
+            this.Last100.Size = new System.Drawing.Size(38, 18);
+            this.Last100.TabIndex = 501;
+            this.Last100.Text = "100";
+            // 
+            // Last99
+            // 
+            this.Last99.AutoSize = true;
+            this.Last99.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last99.Location = new System.Drawing.Point(848, 6554);
+            this.Last99.Name = "Last99";
+            this.Last99.Size = new System.Drawing.Size(28, 18);
+            this.Last99.TabIndex = 500;
+            this.Last99.Text = "99";
+            // 
+            // Text100
+            // 
+            this.Text100.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text100.Location = new System.Drawing.Point(443, 6620);
+            this.Text100.Multiline = true;
+            this.Text100.Name = "Text100";
+            this.Text100.Size = new System.Drawing.Size(399, 60);
+            this.Text100.TabIndex = 499;
+            this.Text100.TextChanged += new System.EventHandler(this.Text100_TextChanged);
+            // 
+            // Length100
+            // 
+            this.Length100.AutoSize = true;
+            this.Length100.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length100.Location = new System.Drawing.Point(4, 6620);
+            this.Length100.Name = "Length100";
+            this.Length100.Size = new System.Drawing.Size(38, 18);
+            this.Length100.TabIndex = 498;
+            this.Length100.Text = "100";
+            // 
+            // Length99
+            // 
+            this.Length99.AutoSize = true;
+            this.Length99.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length99.Location = new System.Drawing.Point(4, 6554);
+            this.Length99.Name = "Length99";
+            this.Length99.Size = new System.Drawing.Size(28, 18);
+            this.Length99.TabIndex = 497;
+            this.Length99.Text = "99";
+            // 
+            // Hex100
+            // 
+            this.Hex100.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex100.Location = new System.Drawing.Point(38, 6620);
+            this.Hex100.Multiline = true;
+            this.Hex100.Name = "Hex100";
+            this.Hex100.Size = new System.Drawing.Size(399, 60);
+            this.Hex100.TabIndex = 496;
+            this.Hex100.TextChanged += new System.EventHandler(this.Hex100_TextChanged);
+            // 
+            // Text99
+            // 
+            this.Text99.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text99.Location = new System.Drawing.Point(443, 6554);
+            this.Text99.Multiline = true;
+            this.Text99.Name = "Text99";
+            this.Text99.Size = new System.Drawing.Size(399, 60);
+            this.Text99.TabIndex = 495;
+            this.Text99.TextChanged += new System.EventHandler(this.Text99_TextChanged);
+            // 
+            // Hex99
+            // 
+            this.Hex99.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex99.Location = new System.Drawing.Point(38, 6554);
+            this.Hex99.Multiline = true;
+            this.Hex99.Name = "Hex99";
+            this.Hex99.Size = new System.Drawing.Size(399, 60);
+            this.Hex99.TabIndex = 494;
+            this.Hex99.TextChanged += new System.EventHandler(this.Hex99_TextChanged);
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label116.Location = new System.Drawing.Point(12, 6506);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(24, 20);
+            this.label116.TabIndex = 493;
+            this.label116.Text = "98";
+            // 
+            // Last98
+            // 
+            this.Last98.AutoSize = true;
+            this.Last98.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last98.Location = new System.Drawing.Point(848, 6488);
+            this.Last98.Name = "Last98";
+            this.Last98.Size = new System.Drawing.Size(28, 18);
+            this.Last98.TabIndex = 492;
+            this.Last98.Text = "98";
+            // 
+            // Text98
+            // 
+            this.Text98.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text98.Location = new System.Drawing.Point(443, 6488);
+            this.Text98.Multiline = true;
+            this.Text98.Name = "Text98";
+            this.Text98.Size = new System.Drawing.Size(399, 60);
+            this.Text98.TabIndex = 491;
+            this.Text98.TextChanged += new System.EventHandler(this.Text98_TextChanged);
+            // 
+            // Length98
+            // 
+            this.Length98.AutoSize = true;
+            this.Length98.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length98.Location = new System.Drawing.Point(4, 6488);
+            this.Length98.Name = "Length98";
+            this.Length98.Size = new System.Drawing.Size(28, 18);
+            this.Length98.TabIndex = 490;
+            this.Length98.Text = "98";
+            // 
+            // Hex98
+            // 
+            this.Hex98.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex98.Location = new System.Drawing.Point(38, 6488);
+            this.Hex98.Multiline = true;
+            this.Hex98.Name = "Hex98";
+            this.Hex98.Size = new System.Drawing.Size(399, 60);
+            this.Hex98.TabIndex = 489;
+            this.Hex98.TextChanged += new System.EventHandler(this.Hex98_TextChanged);
+            // 
+            // To_rus
+            // 
+            this.To_rus.AutoSize = true;
+            this.To_rus.Font = new System.Drawing.Font("Dom Diagonal BoldC BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.To_rus.Location = new System.Drawing.Point(118, 18);
+            this.To_rus.Name = "To_rus";
+            this.To_rus.Size = new System.Drawing.Size(61, 22);
+            this.To_rus.TabIndex = 524;
+            this.To_rus.Text = "To rus";
+            this.To_rus.UseVisualStyleBackColor = true;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label97.Location = new System.Drawing.Point(12, 7364);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(21, 20);
+            this.label97.TabIndex = 559;
+            this.label97.Text = "111";
+            // 
+            // Last111
+            // 
+            this.Last111.AutoSize = true;
+            this.Last111.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last111.Location = new System.Drawing.Point(848, 7346);
+            this.Last111.Name = "Last111";
+            this.Last111.Size = new System.Drawing.Size(38, 18);
+            this.Last111.TabIndex = 558;
+            this.Last111.Text = "111";
+            // 
+            // Text111
+            // 
+            this.Text111.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text111.Location = new System.Drawing.Point(443, 7346);
+            this.Text111.Multiline = true;
+            this.Text111.Name = "Text111";
+            this.Text111.Size = new System.Drawing.Size(399, 60);
+            this.Text111.TabIndex = 557;
+            this.Text111.TextChanged += new System.EventHandler(this.Text111_TextChanged);
+            // 
+            // Length111
+            // 
+            this.Length111.AutoSize = true;
+            this.Length111.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length111.Location = new System.Drawing.Point(4, 7346);
+            this.Length111.Name = "Length111";
+            this.Length111.Size = new System.Drawing.Size(38, 18);
+            this.Length111.TabIndex = 556;
+            this.Length111.Text = "111";
+            // 
+            // Hex111
+            // 
+            this.Hex111.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex111.Location = new System.Drawing.Point(38, 7346);
+            this.Hex111.Multiline = true;
+            this.Hex111.Name = "Hex111";
+            this.Hex111.Size = new System.Drawing.Size(399, 60);
+            this.Hex111.TabIndex = 555;
+            this.Hex111.TextChanged += new System.EventHandler(this.Hex111_TextChanged);
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label104.Location = new System.Drawing.Point(12, 7298);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(25, 20);
+            this.label104.TabIndex = 554;
+            this.label104.Text = "110";
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label105.Location = new System.Drawing.Point(12, 7232);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(29, 20);
+            this.label105.TabIndex = 553;
+            this.label105.Text = "109";
+            // 
+            // Last110
+            // 
+            this.Last110.AutoSize = true;
+            this.Last110.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last110.Location = new System.Drawing.Point(848, 7280);
+            this.Last110.Name = "Last110";
+            this.Last110.Size = new System.Drawing.Size(38, 18);
+            this.Last110.TabIndex = 552;
+            this.Last110.Text = "110";
+            // 
+            // Last109
+            // 
+            this.Last109.AutoSize = true;
+            this.Last109.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last109.Location = new System.Drawing.Point(848, 7214);
+            this.Last109.Name = "Last109";
+            this.Last109.Size = new System.Drawing.Size(38, 18);
+            this.Last109.TabIndex = 551;
+            this.Last109.Text = "109";
+            // 
+            // Text110
+            // 
+            this.Text110.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text110.Location = new System.Drawing.Point(443, 7280);
+            this.Text110.Multiline = true;
+            this.Text110.Name = "Text110";
+            this.Text110.Size = new System.Drawing.Size(399, 60);
+            this.Text110.TabIndex = 550;
+            this.Text110.TextChanged += new System.EventHandler(this.Text110_TextChanged);
+            // 
+            // Length110
+            // 
+            this.Length110.AutoSize = true;
+            this.Length110.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length110.Location = new System.Drawing.Point(4, 7280);
+            this.Length110.Name = "Length110";
+            this.Length110.Size = new System.Drawing.Size(38, 18);
+            this.Length110.TabIndex = 549;
+            this.Length110.Text = "110";
+            // 
+            // Length109
+            // 
+            this.Length109.AutoSize = true;
+            this.Length109.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length109.Location = new System.Drawing.Point(4, 7214);
+            this.Length109.Name = "Length109";
+            this.Length109.Size = new System.Drawing.Size(38, 18);
+            this.Length109.TabIndex = 548;
+            this.Length109.Text = "109";
+            // 
+            // Hex110
+            // 
+            this.Hex110.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex110.Location = new System.Drawing.Point(38, 7280);
+            this.Hex110.Multiline = true;
+            this.Hex110.Name = "Hex110";
+            this.Hex110.Size = new System.Drawing.Size(399, 60);
+            this.Hex110.TabIndex = 547;
+            this.Hex110.TextChanged += new System.EventHandler(this.Hex110_TextChanged);
+            // 
+            // Text109
+            // 
+            this.Text109.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text109.Location = new System.Drawing.Point(443, 7214);
+            this.Text109.Multiline = true;
+            this.Text109.Name = "Text109";
+            this.Text109.Size = new System.Drawing.Size(399, 60);
+            this.Text109.TabIndex = 546;
+            this.Text109.TextChanged += new System.EventHandler(this.Text109_TextChanged);
+            // 
+            // Hex109
+            // 
+            this.Hex109.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex109.Location = new System.Drawing.Point(38, 7214);
+            this.Hex109.Multiline = true;
+            this.Hex109.Name = "Hex109";
+            this.Hex109.Size = new System.Drawing.Size(399, 60);
+            this.Hex109.TabIndex = 545;
+            this.Hex109.TextChanged += new System.EventHandler(this.Hex109_TextChanged);
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label113.Location = new System.Drawing.Point(12, 7166);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(28, 20);
+            this.label113.TabIndex = 544;
+            this.label113.Text = "108";
+            // 
+            // Last108
+            // 
+            this.Last108.AutoSize = true;
+            this.Last108.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last108.Location = new System.Drawing.Point(848, 7148);
+            this.Last108.Name = "Last108";
+            this.Last108.Size = new System.Drawing.Size(38, 18);
+            this.Last108.TabIndex = 543;
+            this.Last108.Text = "108";
+            // 
+            // Text108
+            // 
+            this.Text108.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text108.Location = new System.Drawing.Point(443, 7148);
+            this.Text108.Multiline = true;
+            this.Text108.Name = "Text108";
+            this.Text108.Size = new System.Drawing.Size(399, 60);
+            this.Text108.TabIndex = 542;
+            this.Text108.TextChanged += new System.EventHandler(this.Text108_TextChanged);
+            // 
+            // Length108
+            // 
+            this.Length108.AutoSize = true;
+            this.Length108.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length108.Location = new System.Drawing.Point(4, 7148);
+            this.Length108.Name = "Length108";
+            this.Length108.Size = new System.Drawing.Size(38, 18);
+            this.Length108.TabIndex = 541;
+            this.Length108.Text = "108";
+            // 
+            // Hex108
+            // 
+            this.Hex108.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex108.Location = new System.Drawing.Point(38, 7148);
+            this.Hex108.Multiline = true;
+            this.Hex108.Name = "Hex108";
+            this.Hex108.Size = new System.Drawing.Size(399, 60);
+            this.Hex108.TabIndex = 540;
+            this.Hex108.TextChanged += new System.EventHandler(this.Hex108_TextChanged);
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label117.Location = new System.Drawing.Point(12, 7100);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(27, 20);
+            this.label117.TabIndex = 539;
+            this.label117.Text = "107";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label118.Location = new System.Drawing.Point(12, 7034);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(29, 20);
+            this.label118.TabIndex = 538;
+            this.label118.Text = "106";
+            // 
+            // Last107
+            // 
+            this.Last107.AutoSize = true;
+            this.Last107.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last107.Location = new System.Drawing.Point(848, 7082);
+            this.Last107.Name = "Last107";
+            this.Last107.Size = new System.Drawing.Size(38, 18);
+            this.Last107.TabIndex = 537;
+            this.Last107.Text = "107";
+            // 
+            // Last106
+            // 
+            this.Last106.AutoSize = true;
+            this.Last106.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last106.Location = new System.Drawing.Point(848, 7016);
+            this.Last106.Name = "Last106";
+            this.Last106.Size = new System.Drawing.Size(38, 18);
+            this.Last106.TabIndex = 536;
+            this.Last106.Text = "106";
+            // 
+            // Text107
+            // 
+            this.Text107.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text107.Location = new System.Drawing.Point(443, 7082);
+            this.Text107.Multiline = true;
+            this.Text107.Name = "Text107";
+            this.Text107.Size = new System.Drawing.Size(399, 60);
+            this.Text107.TabIndex = 535;
+            this.Text107.TextChanged += new System.EventHandler(this.Text107_TextChanged);
+            // 
+            // Length107
+            // 
+            this.Length107.AutoSize = true;
+            this.Length107.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length107.Location = new System.Drawing.Point(4, 7082);
+            this.Length107.Name = "Length107";
+            this.Length107.Size = new System.Drawing.Size(38, 18);
+            this.Length107.TabIndex = 534;
+            this.Length107.Text = "107";
+            // 
+            // Length106
+            // 
+            this.Length106.AutoSize = true;
+            this.Length106.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length106.Location = new System.Drawing.Point(4, 7016);
+            this.Length106.Name = "Length106";
+            this.Length106.Size = new System.Drawing.Size(38, 18);
+            this.Length106.TabIndex = 533;
+            this.Length106.Text = "106";
+            // 
+            // Hex107
+            // 
+            this.Hex107.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex107.Location = new System.Drawing.Point(38, 7082);
+            this.Hex107.Multiline = true;
+            this.Hex107.Name = "Hex107";
+            this.Hex107.Size = new System.Drawing.Size(399, 60);
+            this.Hex107.TabIndex = 532;
+            this.Hex107.TextChanged += new System.EventHandler(this.Hex107_TextChanged);
+            // 
+            // Text106
+            // 
+            this.Text106.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text106.Location = new System.Drawing.Point(443, 7016);
+            this.Text106.Multiline = true;
+            this.Text106.Name = "Text106";
+            this.Text106.Size = new System.Drawing.Size(399, 60);
+            this.Text106.TabIndex = 531;
+            this.Text106.TextChanged += new System.EventHandler(this.Text106_TextChanged);
+            // 
+            // Hex106
+            // 
+            this.Hex106.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex106.Location = new System.Drawing.Point(38, 7016);
+            this.Hex106.Multiline = true;
+            this.Hex106.Name = "Hex106";
+            this.Hex106.Size = new System.Drawing.Size(399, 60);
+            this.Hex106.TabIndex = 530;
+            this.Hex106.TextChanged += new System.EventHandler(this.Hex106_TextChanged);
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label123.Location = new System.Drawing.Point(12, 6968);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(28, 20);
+            this.label123.TabIndex = 529;
+            this.label123.Text = "105";
+            // 
+            // Last105
+            // 
+            this.Last105.AutoSize = true;
+            this.Last105.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last105.Location = new System.Drawing.Point(848, 6950);
+            this.Last105.Name = "Last105";
+            this.Last105.Size = new System.Drawing.Size(38, 18);
+            this.Last105.TabIndex = 528;
+            this.Last105.Text = "105";
+            // 
+            // Text105
+            // 
+            this.Text105.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text105.Location = new System.Drawing.Point(443, 6950);
+            this.Text105.Multiline = true;
+            this.Text105.Name = "Text105";
+            this.Text105.Size = new System.Drawing.Size(399, 60);
+            this.Text105.TabIndex = 527;
+            this.Text105.TextChanged += new System.EventHandler(this.Text105_TextChanged);
+            // 
+            // Length105
+            // 
+            this.Length105.AutoSize = true;
+            this.Length105.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length105.Location = new System.Drawing.Point(4, 6950);
+            this.Length105.Name = "Length105";
+            this.Length105.Size = new System.Drawing.Size(38, 18);
+            this.Length105.TabIndex = 526;
+            this.Length105.Text = "105";
+            // 
+            // Hex105
+            // 
+            this.Hex105.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex105.Location = new System.Drawing.Point(38, 6950);
+            this.Hex105.Multiline = true;
+            this.Hex105.Name = "Hex105";
+            this.Hex105.Size = new System.Drawing.Size(399, 60);
+            this.Hex105.TabIndex = 525;
+            this.Hex105.TextChanged += new System.EventHandler(this.Hex105_TextChanged);
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label126.Location = new System.Drawing.Point(12, 7760);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(23, 20);
+            this.label126.TabIndex = 589;
+            this.label126.Text = "117";
+            // 
+            // Last117
+            // 
+            this.Last117.AutoSize = true;
+            this.Last117.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last117.Location = new System.Drawing.Point(848, 7742);
+            this.Last117.Name = "Last117";
+            this.Last117.Size = new System.Drawing.Size(38, 18);
+            this.Last117.TabIndex = 588;
+            this.Last117.Text = "117";
+            // 
+            // Text117
+            // 
+            this.Text117.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text117.Location = new System.Drawing.Point(443, 7742);
+            this.Text117.Multiline = true;
+            this.Text117.Name = "Text117";
+            this.Text117.Size = new System.Drawing.Size(399, 60);
+            this.Text117.TabIndex = 587;
+            this.Text117.TextChanged += new System.EventHandler(this.Text117_TextChanged);
+            // 
+            // Length117
+            // 
+            this.Length117.AutoSize = true;
+            this.Length117.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length117.Location = new System.Drawing.Point(4, 7742);
+            this.Length117.Name = "Length117";
+            this.Length117.Size = new System.Drawing.Size(38, 18);
+            this.Length117.TabIndex = 586;
+            this.Length117.Text = "117";
+            // 
+            // Hex117
+            // 
+            this.Hex117.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex117.Location = new System.Drawing.Point(38, 7742);
+            this.Hex117.Multiline = true;
+            this.Hex117.Name = "Hex117";
+            this.Hex117.Size = new System.Drawing.Size(399, 60);
+            this.Hex117.TabIndex = 585;
+            this.Hex117.TextChanged += new System.EventHandler(this.Hex117_TextChanged);
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label129.Location = new System.Drawing.Point(12, 7694);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(25, 20);
+            this.label129.TabIndex = 584;
+            this.label129.Text = "116";
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label130.Location = new System.Drawing.Point(12, 7628);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(24, 20);
+            this.label130.TabIndex = 583;
+            this.label130.Text = "115";
+            // 
+            // Last116
+            // 
+            this.Last116.AutoSize = true;
+            this.Last116.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last116.Location = new System.Drawing.Point(848, 7676);
+            this.Last116.Name = "Last116";
+            this.Last116.Size = new System.Drawing.Size(38, 18);
+            this.Last116.TabIndex = 582;
+            this.Last116.Text = "116";
+            // 
+            // Last115
+            // 
+            this.Last115.AutoSize = true;
+            this.Last115.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last115.Location = new System.Drawing.Point(848, 7610);
+            this.Last115.Name = "Last115";
+            this.Last115.Size = new System.Drawing.Size(38, 18);
+            this.Last115.TabIndex = 581;
+            this.Last115.Text = "115";
+            // 
+            // Text116
+            // 
+            this.Text116.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text116.Location = new System.Drawing.Point(443, 7676);
+            this.Text116.Multiline = true;
+            this.Text116.Name = "Text116";
+            this.Text116.Size = new System.Drawing.Size(399, 60);
+            this.Text116.TabIndex = 580;
+            this.Text116.TextChanged += new System.EventHandler(this.Text116_TextChanged);
+            // 
+            // Length116
+            // 
+            this.Length116.AutoSize = true;
+            this.Length116.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length116.Location = new System.Drawing.Point(4, 7676);
+            this.Length116.Name = "Length116";
+            this.Length116.Size = new System.Drawing.Size(38, 18);
+            this.Length116.TabIndex = 579;
+            this.Length116.Text = "116";
+            // 
+            // Length115
+            // 
+            this.Length115.AutoSize = true;
+            this.Length115.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length115.Location = new System.Drawing.Point(4, 7610);
+            this.Length115.Name = "Length115";
+            this.Length115.Size = new System.Drawing.Size(38, 18);
+            this.Length115.TabIndex = 578;
+            this.Length115.Text = "115";
+            // 
+            // Hex116
+            // 
+            this.Hex116.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex116.Location = new System.Drawing.Point(38, 7676);
+            this.Hex116.Multiline = true;
+            this.Hex116.Name = "Hex116";
+            this.Hex116.Size = new System.Drawing.Size(399, 60);
+            this.Hex116.TabIndex = 577;
+            this.Hex116.TextChanged += new System.EventHandler(this.Hex116_TextChanged);
+            // 
+            // Text115
+            // 
+            this.Text115.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text115.Location = new System.Drawing.Point(443, 7610);
+            this.Text115.Multiline = true;
+            this.Text115.Name = "Text115";
+            this.Text115.Size = new System.Drawing.Size(399, 60);
+            this.Text115.TabIndex = 576;
+            this.Text115.TextChanged += new System.EventHandler(this.Text115_TextChanged);
+            // 
+            // Hex115
+            // 
+            this.Hex115.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex115.Location = new System.Drawing.Point(38, 7610);
+            this.Hex115.Multiline = true;
+            this.Hex115.Name = "Hex115";
+            this.Hex115.Size = new System.Drawing.Size(399, 60);
+            this.Hex115.TabIndex = 575;
+            this.Hex115.TextChanged += new System.EventHandler(this.Hex115_TextChanged);
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label135.Location = new System.Drawing.Point(12, 7562);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(25, 20);
+            this.label135.TabIndex = 574;
+            this.label135.Text = "114";
+            // 
+            // Last114
+            // 
+            this.Last114.AutoSize = true;
+            this.Last114.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last114.Location = new System.Drawing.Point(848, 7544);
+            this.Last114.Name = "Last114";
+            this.Last114.Size = new System.Drawing.Size(38, 18);
+            this.Last114.TabIndex = 573;
+            this.Last114.Text = "114";
+            // 
+            // Text114
+            // 
+            this.Text114.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text114.Location = new System.Drawing.Point(443, 7544);
+            this.Text114.Multiline = true;
+            this.Text114.Name = "Text114";
+            this.Text114.Size = new System.Drawing.Size(399, 60);
+            this.Text114.TabIndex = 572;
+            this.Text114.TextChanged += new System.EventHandler(this.Text114_TextChanged);
+            // 
+            // Length114
+            // 
+            this.Length114.AutoSize = true;
+            this.Length114.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length114.Location = new System.Drawing.Point(4, 7544);
+            this.Length114.Name = "Length114";
+            this.Length114.Size = new System.Drawing.Size(38, 18);
+            this.Length114.TabIndex = 571;
+            this.Length114.Text = "114";
+            // 
+            // Hex114
+            // 
+            this.Hex114.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex114.Location = new System.Drawing.Point(38, 7544);
+            this.Hex114.Multiline = true;
+            this.Hex114.Name = "Hex114";
+            this.Hex114.Size = new System.Drawing.Size(399, 60);
+            this.Hex114.TabIndex = 570;
+            this.Hex114.TextChanged += new System.EventHandler(this.Hex114_TextChanged);
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label138.Location = new System.Drawing.Point(12, 7496);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(24, 20);
+            this.label138.TabIndex = 569;
+            this.label138.Text = "113";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label139.Location = new System.Drawing.Point(12, 7430);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(24, 20);
+            this.label139.TabIndex = 568;
+            this.label139.Text = "112";
+            // 
+            // Last113
+            // 
+            this.Last113.AutoSize = true;
+            this.Last113.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last113.Location = new System.Drawing.Point(848, 7478);
+            this.Last113.Name = "Last113";
+            this.Last113.Size = new System.Drawing.Size(38, 18);
+            this.Last113.TabIndex = 567;
+            this.Last113.Text = "113";
+            // 
+            // Last112
+            // 
+            this.Last112.AutoSize = true;
+            this.Last112.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last112.Location = new System.Drawing.Point(848, 7412);
+            this.Last112.Name = "Last112";
+            this.Last112.Size = new System.Drawing.Size(38, 18);
+            this.Last112.TabIndex = 566;
+            this.Last112.Text = "112";
+            // 
+            // Text113
+            // 
+            this.Text113.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text113.Location = new System.Drawing.Point(443, 7478);
+            this.Text113.Multiline = true;
+            this.Text113.Name = "Text113";
+            this.Text113.Size = new System.Drawing.Size(399, 60);
+            this.Text113.TabIndex = 565;
+            this.Text113.TextChanged += new System.EventHandler(this.Text113_TextChanged);
+            // 
+            // Length113
+            // 
+            this.Length113.AutoSize = true;
+            this.Length113.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length113.Location = new System.Drawing.Point(4, 7478);
+            this.Length113.Name = "Length113";
+            this.Length113.Size = new System.Drawing.Size(38, 18);
+            this.Length113.TabIndex = 564;
+            this.Length113.Text = "113";
+            // 
+            // Length112
+            // 
+            this.Length112.AutoSize = true;
+            this.Length112.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length112.Location = new System.Drawing.Point(4, 7412);
+            this.Length112.Name = "Length112";
+            this.Length112.Size = new System.Drawing.Size(38, 18);
+            this.Length112.TabIndex = 563;
+            this.Length112.Text = "112";
+            // 
+            // Hex113
+            // 
+            this.Hex113.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex113.Location = new System.Drawing.Point(38, 7478);
+            this.Hex113.Multiline = true;
+            this.Hex113.Name = "Hex113";
+            this.Hex113.Size = new System.Drawing.Size(399, 60);
+            this.Hex113.TabIndex = 562;
+            this.Hex113.TextChanged += new System.EventHandler(this.Hex113_TextChanged);
+            // 
+            // Text112
+            // 
+            this.Text112.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text112.Location = new System.Drawing.Point(443, 7412);
+            this.Text112.Multiline = true;
+            this.Text112.Name = "Text112";
+            this.Text112.Size = new System.Drawing.Size(399, 60);
+            this.Text112.TabIndex = 561;
+            this.Text112.TextChanged += new System.EventHandler(this.Text112_TextChanged);
+            // 
+            // Hex112
+            // 
+            this.Hex112.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex112.Location = new System.Drawing.Point(38, 7412);
+            this.Hex112.Multiline = true;
+            this.Hex112.Name = "Hex112";
+            this.Hex112.Size = new System.Drawing.Size(399, 60);
+            this.Hex112.TabIndex = 560;
+            this.Hex112.TextChanged += new System.EventHandler(this.Hex112_TextChanged);
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label144.Location = new System.Drawing.Point(12, 7892);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(25, 20);
+            this.label144.TabIndex = 599;
+            this.label144.Text = "119";
+            // 
+            // Last119
+            // 
+            this.Last119.AutoSize = true;
+            this.Last119.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last119.Location = new System.Drawing.Point(848, 7874);
+            this.Last119.Name = "Last119";
+            this.Last119.Size = new System.Drawing.Size(38, 18);
+            this.Last119.TabIndex = 598;
+            this.Last119.Text = "119";
+            // 
+            // Text119
+            // 
+            this.Text119.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text119.Location = new System.Drawing.Point(443, 7874);
+            this.Text119.Multiline = true;
+            this.Text119.Name = "Text119";
+            this.Text119.Size = new System.Drawing.Size(399, 60);
+            this.Text119.TabIndex = 597;
+            this.Text119.TextChanged += new System.EventHandler(this.Text119_TextChanged);
+            // 
+            // Length119
+            // 
+            this.Length119.AutoSize = true;
+            this.Length119.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length119.Location = new System.Drawing.Point(4, 7874);
+            this.Length119.Name = "Length119";
+            this.Length119.Size = new System.Drawing.Size(38, 18);
+            this.Length119.TabIndex = 596;
+            this.Length119.Text = "119";
+            // 
+            // Hex119
+            // 
+            this.Hex119.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex119.Location = new System.Drawing.Point(38, 7874);
+            this.Hex119.Multiline = true;
+            this.Hex119.Name = "Hex119";
+            this.Hex119.Size = new System.Drawing.Size(399, 60);
+            this.Hex119.TabIndex = 595;
+            this.Hex119.TextChanged += new System.EventHandler(this.Hex119_TextChanged);
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label147.Location = new System.Drawing.Point(12, 7826);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(24, 20);
+            this.label147.TabIndex = 594;
+            this.label147.Text = "118";
+            // 
+            // Last118
+            // 
+            this.Last118.AutoSize = true;
+            this.Last118.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Last118.Location = new System.Drawing.Point(848, 7808);
+            this.Last118.Name = "Last118";
+            this.Last118.Size = new System.Drawing.Size(38, 18);
+            this.Last118.TabIndex = 593;
+            this.Last118.Text = "118";
+            // 
+            // Text118
+            // 
+            this.Text118.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Text118.Location = new System.Drawing.Point(443, 7808);
+            this.Text118.Multiline = true;
+            this.Text118.Name = "Text118";
+            this.Text118.Size = new System.Drawing.Size(399, 60);
+            this.Text118.TabIndex = 592;
+            this.Text118.TextChanged += new System.EventHandler(this.Text118_TextChanged);
+            // 
+            // Length118
+            // 
+            this.Length118.AutoSize = true;
+            this.Length118.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Length118.Location = new System.Drawing.Point(4, 7808);
+            this.Length118.Name = "Length118";
+            this.Length118.Size = new System.Drawing.Size(38, 18);
+            this.Length118.TabIndex = 591;
+            this.Length118.Text = "118";
+            // 
+            // Hex118
+            // 
+            this.Hex118.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Hex118.Location = new System.Drawing.Point(38, 7808);
+            this.Hex118.Multiline = true;
+            this.Hex118.Name = "Hex118";
+            this.Hex118.Size = new System.Drawing.Size(399, 60);
+            this.Hex118.TabIndex = 590;
+            this.Hex118.TextChanged += new System.EventHandler(this.Hex118_TextChanged);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5493,6 +6715,117 @@ namespace ujl_subedit
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(894, 703);
+            this.Controls.Add(this.label144);
+            this.Controls.Add(this.Last119);
+            this.Controls.Add(this.Text119);
+            this.Controls.Add(this.Length119);
+            this.Controls.Add(this.Hex119);
+            this.Controls.Add(this.label147);
+            this.Controls.Add(this.Last118);
+            this.Controls.Add(this.Text118);
+            this.Controls.Add(this.Length118);
+            this.Controls.Add(this.Hex118);
+            this.Controls.Add(this.label126);
+            this.Controls.Add(this.Last117);
+            this.Controls.Add(this.Text117);
+            this.Controls.Add(this.Length117);
+            this.Controls.Add(this.Hex117);
+            this.Controls.Add(this.label129);
+            this.Controls.Add(this.label130);
+            this.Controls.Add(this.Last116);
+            this.Controls.Add(this.Last115);
+            this.Controls.Add(this.Text116);
+            this.Controls.Add(this.Length116);
+            this.Controls.Add(this.Length115);
+            this.Controls.Add(this.Hex116);
+            this.Controls.Add(this.Text115);
+            this.Controls.Add(this.Hex115);
+            this.Controls.Add(this.label135);
+            this.Controls.Add(this.Last114);
+            this.Controls.Add(this.Text114);
+            this.Controls.Add(this.Length114);
+            this.Controls.Add(this.Hex114);
+            this.Controls.Add(this.label138);
+            this.Controls.Add(this.label139);
+            this.Controls.Add(this.Last113);
+            this.Controls.Add(this.Last112);
+            this.Controls.Add(this.Text113);
+            this.Controls.Add(this.Length113);
+            this.Controls.Add(this.Length112);
+            this.Controls.Add(this.Hex113);
+            this.Controls.Add(this.Text112);
+            this.Controls.Add(this.Hex112);
+            this.Controls.Add(this.label97);
+            this.Controls.Add(this.Last111);
+            this.Controls.Add(this.Text111);
+            this.Controls.Add(this.Length111);
+            this.Controls.Add(this.Hex111);
+            this.Controls.Add(this.label104);
+            this.Controls.Add(this.label105);
+            this.Controls.Add(this.Last110);
+            this.Controls.Add(this.Last109);
+            this.Controls.Add(this.Text110);
+            this.Controls.Add(this.Length110);
+            this.Controls.Add(this.Length109);
+            this.Controls.Add(this.Hex110);
+            this.Controls.Add(this.Text109);
+            this.Controls.Add(this.Hex109);
+            this.Controls.Add(this.label113);
+            this.Controls.Add(this.Last108);
+            this.Controls.Add(this.Text108);
+            this.Controls.Add(this.Length108);
+            this.Controls.Add(this.Hex108);
+            this.Controls.Add(this.label117);
+            this.Controls.Add(this.label118);
+            this.Controls.Add(this.Last107);
+            this.Controls.Add(this.Last106);
+            this.Controls.Add(this.Text107);
+            this.Controls.Add(this.Length107);
+            this.Controls.Add(this.Length106);
+            this.Controls.Add(this.Hex107);
+            this.Controls.Add(this.Text106);
+            this.Controls.Add(this.Hex106);
+            this.Controls.Add(this.label123);
+            this.Controls.Add(this.Last105);
+            this.Controls.Add(this.Text105);
+            this.Controls.Add(this.Length105);
+            this.Controls.Add(this.Hex105);
+            this.Controls.Add(this.To_rus);
+            this.Controls.Add(this.label94);
+            this.Controls.Add(this.Last104);
+            this.Controls.Add(this.Text104);
+            this.Controls.Add(this.Length104);
+            this.Controls.Add(this.Hex104);
+            this.Controls.Add(this.label101);
+            this.Controls.Add(this.label102);
+            this.Controls.Add(this.Last103);
+            this.Controls.Add(this.Last102);
+            this.Controls.Add(this.Text103);
+            this.Controls.Add(this.Length103);
+            this.Controls.Add(this.Length102);
+            this.Controls.Add(this.Hex103);
+            this.Controls.Add(this.Text102);
+            this.Controls.Add(this.Hex102);
+            this.Controls.Add(this.label107);
+            this.Controls.Add(this.Last101);
+            this.Controls.Add(this.Text101);
+            this.Controls.Add(this.Length101);
+            this.Controls.Add(this.Hex101);
+            this.Controls.Add(this.label110);
+            this.Controls.Add(this.label111);
+            this.Controls.Add(this.Last100);
+            this.Controls.Add(this.Last99);
+            this.Controls.Add(this.Text100);
+            this.Controls.Add(this.Length100);
+            this.Controls.Add(this.Length99);
+            this.Controls.Add(this.Hex100);
+            this.Controls.Add(this.Text99);
+            this.Controls.Add(this.Hex99);
+            this.Controls.Add(this.label116);
+            this.Controls.Add(this.Last98);
+            this.Controls.Add(this.Text98);
+            this.Controls.Add(this.Length98);
+            this.Controls.Add(this.Hex98);
             this.Controls.Add(this.label93);
             this.Controls.Add(this.Last97);
             this.Controls.Add(this.Text97);
@@ -6484,5 +7817,116 @@ namespace ujl_subedit
         private System.Windows.Forms.TextBox Hex96;
         private System.Windows.Forms.TextBox Text95;
         private System.Windows.Forms.TextBox Hex95;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label Last104;
+        private System.Windows.Forms.TextBox Text104;
+        private System.Windows.Forms.Label Length104;
+        private System.Windows.Forms.TextBox Hex104;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label Last103;
+        private System.Windows.Forms.Label Last102;
+        private System.Windows.Forms.TextBox Text103;
+        private System.Windows.Forms.Label Length103;
+        private System.Windows.Forms.Label Length102;
+        private System.Windows.Forms.TextBox Hex103;
+        private System.Windows.Forms.TextBox Text102;
+        private System.Windows.Forms.TextBox Hex102;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label Last101;
+        private System.Windows.Forms.TextBox Text101;
+        private System.Windows.Forms.Label Length101;
+        private System.Windows.Forms.TextBox Hex101;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label Last100;
+        private System.Windows.Forms.Label Last99;
+        private System.Windows.Forms.TextBox Text100;
+        private System.Windows.Forms.Label Length100;
+        private System.Windows.Forms.Label Length99;
+        private System.Windows.Forms.TextBox Hex100;
+        private System.Windows.Forms.TextBox Text99;
+        private System.Windows.Forms.TextBox Hex99;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Label Last98;
+        private System.Windows.Forms.TextBox Text98;
+        private System.Windows.Forms.Label Length98;
+        private System.Windows.Forms.TextBox Hex98;
+        public System.Windows.Forms.CheckBox To_rus;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label Last111;
+        private System.Windows.Forms.TextBox Text111;
+        private System.Windows.Forms.Label Length111;
+        private System.Windows.Forms.TextBox Hex111;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.Label Last110;
+        private System.Windows.Forms.Label Last109;
+        private System.Windows.Forms.TextBox Text110;
+        private System.Windows.Forms.Label Length110;
+        private System.Windows.Forms.Label Length109;
+        private System.Windows.Forms.TextBox Hex110;
+        private System.Windows.Forms.TextBox Text109;
+        private System.Windows.Forms.TextBox Hex109;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Label Last108;
+        private System.Windows.Forms.TextBox Text108;
+        private System.Windows.Forms.Label Length108;
+        private System.Windows.Forms.TextBox Hex108;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label Last107;
+        private System.Windows.Forms.Label Last106;
+        private System.Windows.Forms.TextBox Text107;
+        private System.Windows.Forms.Label Length107;
+        private System.Windows.Forms.Label Length106;
+        private System.Windows.Forms.TextBox Hex107;
+        private System.Windows.Forms.TextBox Text106;
+        private System.Windows.Forms.TextBox Hex106;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label Last105;
+        private System.Windows.Forms.TextBox Text105;
+        private System.Windows.Forms.Label Length105;
+        private System.Windows.Forms.TextBox Hex105;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label Last117;
+        private System.Windows.Forms.TextBox Text117;
+        private System.Windows.Forms.Label Length117;
+        private System.Windows.Forms.TextBox Hex117;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.Label Last116;
+        private System.Windows.Forms.Label Last115;
+        private System.Windows.Forms.TextBox Text116;
+        private System.Windows.Forms.Label Length116;
+        private System.Windows.Forms.Label Length115;
+        private System.Windows.Forms.TextBox Hex116;
+        private System.Windows.Forms.TextBox Text115;
+        private System.Windows.Forms.TextBox Hex115;
+        private System.Windows.Forms.Label label135;
+        private System.Windows.Forms.Label Last114;
+        private System.Windows.Forms.TextBox Text114;
+        private System.Windows.Forms.Label Length114;
+        private System.Windows.Forms.TextBox Hex114;
+        private System.Windows.Forms.Label label138;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.Label Last113;
+        private System.Windows.Forms.Label Last112;
+        private System.Windows.Forms.TextBox Text113;
+        private System.Windows.Forms.Label Length113;
+        private System.Windows.Forms.Label Length112;
+        private System.Windows.Forms.TextBox Hex113;
+        private System.Windows.Forms.TextBox Text112;
+        private System.Windows.Forms.TextBox Hex112;
+        private System.Windows.Forms.Label label144;
+        private System.Windows.Forms.Label Last119;
+        private System.Windows.Forms.TextBox Text119;
+        private System.Windows.Forms.Label Length119;
+        private System.Windows.Forms.TextBox Hex119;
+        private System.Windows.Forms.Label label147;
+        private System.Windows.Forms.Label Last118;
+        private System.Windows.Forms.TextBox Text118;
+        private System.Windows.Forms.Label Length118;
+        private System.Windows.Forms.TextBox Hex118;
     }
 }

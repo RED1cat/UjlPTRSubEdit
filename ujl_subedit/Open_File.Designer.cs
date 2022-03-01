@@ -34,6 +34,7 @@ namespace ujl_subedit
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.Decrypt_rus = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -74,11 +75,22 @@ namespace ujl_subedit
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(93, 70);
+            this.label2.Location = new System.Drawing.Point(100, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "© REDcat  2022";
+            // 
+            // Decrypt_rus
+            // 
+            this.Decrypt_rus.AutoSize = true;
+            this.Decrypt_rus.Font = new System.Drawing.Font("Dom Diagonal BoldC BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Decrypt_rus.Location = new System.Drawing.Point(12, 61);
+            this.Decrypt_rus.Name = "Decrypt_rus";
+            this.Decrypt_rus.Size = new System.Drawing.Size(91, 22);
+            this.Decrypt_rus.TabIndex = 6;
+            this.Decrypt_rus.Text = "decrypt rus";
+            this.Decrypt_rus.UseVisualStyleBackColor = true;
             // 
             // Open_File
             // 
@@ -86,6 +98,7 @@ namespace ujl_subedit
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(204, 95);
+            this.Controls.Add(this.Decrypt_rus);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -107,5 +120,6 @@ namespace ujl_subedit
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox Decrypt_rus;
     }
 }
