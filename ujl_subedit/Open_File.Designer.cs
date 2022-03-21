@@ -1,5 +1,4 @@
-﻿
-namespace ujl_subedit
+﻿namespace ujl_subedit
 {
     partial class Open_File
     {
@@ -35,13 +34,14 @@ namespace ujl_subedit
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Decrypt_rus = new System.Windows.Forms.CheckBox();
+            this.symbleConverter = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(28, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 20);
             this.label1.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace ujl_subedit
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(118, 32);
+            this.button2.Location = new System.Drawing.Point(153, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -75,7 +75,7 @@ namespace ujl_subedit
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DomCasualBTW05-Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 70);
+            this.label2.Location = new System.Drawing.Point(133, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
             this.label2.TabIndex = 5;
@@ -92,19 +92,33 @@ namespace ujl_subedit
             this.Decrypt_rus.Text = "decrypt rus";
             this.Decrypt_rus.UseVisualStyleBackColor = true;
             // 
+            // symbleConverter
+            // 
+            this.symbleConverter.AutoSize = true;
+            this.symbleConverter.Checked = true;
+            this.symbleConverter.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.symbleConverter.Font = new System.Drawing.Font("Dom Diagonal BoldC BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.symbleConverter.Location = new System.Drawing.Point(12, 89);
+            this.symbleConverter.Name = "symbleConverter";
+            this.symbleConverter.Size = new System.Drawing.Size(122, 22);
+            this.symbleConverter.TabIndex = 7;
+            this.symbleConverter.Text = "symble converter";
+            this.symbleConverter.UseVisualStyleBackColor = true;
+            // 
             // Open_File
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
-            this.ClientSize = new System.Drawing.Size(204, 95);
+            this.ClientSize = new System.Drawing.Size(240, 113);
+            this.Controls.Add(this.symbleConverter);
             this.Controls.Add(this.Decrypt_rus);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(220, 134);
-            this.MinimumSize = new System.Drawing.Size(220, 134);
+            this.MaximumSize = new System.Drawing.Size(256, 152);
+            this.MinimumSize = new System.Drawing.Size(256, 152);
             this.Name = "Open_File";
             this.Text = "Open_File";
             this.Load += new System.EventHandler(this.Open_File_Load);
@@ -121,5 +135,6 @@ namespace ujl_subedit
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox Decrypt_rus;
+        private System.Windows.Forms.CheckBox symbleConverter;
     }
 }

@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Security;
 using System.IO;
+using System.Drawing.Text;
+using System.Xml;
 
 namespace ujl_subedit
 {
@@ -17,14 +12,18 @@ namespace ujl_subedit
         public Open_File()
         {
             InitializeComponent();
+            fontinit();
         }
+
         public class OpenFile
         {
+            public static PrivateFontCollection DomFont = new PrivateFontCollection();
             public static string FilePath;
             public static string FileName;
             public static int Filelength;
             public static bool Torus;
             public static bool Decryptrus;
+            public static bool SymbleConverter;
             public static string Decrypt(string hex)
             {
                 if (hex.Length > 1)
@@ -36,13 +35,22 @@ namespace ujl_subedit
             }
             public static byte[] hex2byte(string hex)
             {
-                hex = hex.Replace("-", "");
-                byte[] raw = new byte[hex.Length / 2];
-                for (int i = 0; i < raw.Length; i++)
+                
+                try
                 {
-                    raw[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+                    hex = hex.Replace("-", "");
+                    byte[] raw = new byte[hex.Length / 2];
+                    for (int i = 0; i < raw.Length; i++)
+                    {
+                        raw[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+                    }
+                    return raw;
                 }
-                return raw;
+                catch
+                {
+                    MessageBox.Show("Error");
+                    return new byte[1];
+                }
             }
             public static byte[] hex2byte2save(string hex, int num)
             {
@@ -66,6 +74,23 @@ namespace ujl_subedit
             }
         }
 
+        void fontinit()
+        {
+            if (File.Exists("DomBold.ttf") == true && File.Exists("DomCasual.ttf") == true)
+            {
+                OpenFile.DomFont.AddFontFile("DomBold.ttf"); //dom.families[0]
+                OpenFile.DomFont.AddFontFile("DomCasual.ttf"); //dom.families[1]
+                label1.Font = new Font(OpenFile.DomFont.Families[1], 12);
+                label2.Font = new Font(OpenFile.DomFont.Families[1], 12);
+                symbleConverter.Font = new Font(OpenFile.DomFont.Families[0], 12);
+                Decrypt_rus.Font = new Font(OpenFile.DomFont.Families[0], 12);
+            }
+            else
+            {
+                MessageBox.Show("fonts not found");
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e) //Open file
         {
             if(Decrypt_rus.Checked == true)
@@ -75,6 +100,14 @@ namespace ujl_subedit
             else
             {
                 OpenFile.Decryptrus = false;
+            }
+            if (symbleConverter.Checked == true)
+            {
+                OpenFile.SymbleConverter = true;
+            }
+            else
+            {
+                OpenFile.SymbleConverter = false;
             }
             openFileDialog1.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 1;
@@ -86,7 +119,18 @@ namespace ujl_subedit
                     using (Stream str = openFileDialog1.OpenFile())
                     {
                         OpenFile.FileName = openFileDialog1.SafeFileName;
-                        if (OpenFile.FileName == "COMOD11.SNG" || OpenFile.FileName == "COMOD0.MEN" || OpenFile.FileName == "COMOD6.SNG" || OpenFile.FileName == "COMOD16.SNG" || OpenFile.FileName == "COMOD16.CMP" || OpenFile.FileName == "COMOD6.CMP" || OpenFile.FileName == "COMOD6.COP" || OpenFile.FileName == "COMOD16.COP" || OpenFile.FileName == "COMOD17.SNG")
+                        bool include = false;
+                        XmlDocument xDoc = new XmlDocument();
+                        xDoc.Load("subtitle.xml");
+                        int count = xDoc.SelectSingleNode("/subtitle").ChildNodes.Count;
+                        for (int i = 1; i <= count; i++)
+                        {
+                            if(xDoc.SelectSingleNode("/subtitle/file[" + i + "][@name='" + OpenFile.FileName + "']") != null)
+                            {
+                                include = true;
+                            }
+                        }
+                        if (include == true)
                         {
                             str.Close();
                             Editor editor = new Editor();
@@ -96,27 +140,35 @@ namespace ujl_subedit
                         }
                         else
                         {
-                            MessageBox.Show("Wrong file");
+                            MessageBox.Show("File not support");
                         }
-
                     }
                 }
-                catch (SecurityException ex)
+                catch(Exception ex)
                 {
-                    MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
-                    $"Details:\n\n{ex.StackTrace}");
+                    //MessageBox.Show("Error: unable to open this file");
+                    MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e) // help
+        {
+            if(Control.ModifierKeys == Keys.Shift)
+            {
+                addFile addFile = new addFile();
+                addFile.Owner = this;
+                addFile.ShowDialog();
+            }
+            else 
+            { 
+            MessageBox.Show("There is no help");
             }
         }
 
         private void Open_File_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           MessageBox.Show("There is no help");
         }
     }
 }
