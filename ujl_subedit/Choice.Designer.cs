@@ -29,6 +29,7 @@ namespace ujl_subedit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choice));
             this.Add = new System.Windows.Forms.Button();
             this.No = new System.Windows.Forms.Button();
             this.Stop = new System.Windows.Forms.Button();
@@ -73,6 +74,7 @@ namespace ujl_subedit
             this.Controls.Add(this.Stop);
             this.Controls.Add(this.No);
             this.Controls.Add(this.Add);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Choice";
             this.Text = "Choice";
             this.Load += new System.EventHandler(this.Choice_Load);

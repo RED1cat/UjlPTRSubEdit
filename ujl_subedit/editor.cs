@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System.IO;
-using System.Drawing.Text;
 using System.Xml;
 
 
@@ -15,13 +14,14 @@ namespace ujl_subedit
         public Editor()
         {
             InitializeComponent();
+            file.filePath = null;
             createMenuStripItem();
+            createContextMenuStripItem();
             createBoxAndLable();
             openFile();
             windowName();
             readFile();
             decryptRus();
-            
         }
 
 
@@ -30,7 +30,7 @@ namespace ujl_subedit
         {
             public static byte[] save;
             public static int subLength;
-            public static string filePath;
+            public static string filePath = null;
 
             public static bool toRus = false;
         }
@@ -41,17 +41,19 @@ namespace ujl_subedit
             length.Font = new Font(Open_File.OpenFile.DomFont.Families[1], 12);
             last.Font = new Font(Open_File.OpenFile.DomFont.Families[1], 12);
 
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("subtitle.xml");
-            int countSubTitle = xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle").ChildNodes.Count;
+            int countSubTitle = Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle").ChildNodes.Count;
 
             panel.Controls.Add(length);
             panel.Controls.Add(last);
-            panel.Controls.Add(pictureBox1);
-            pictureBox1.SendToBack();
+            panel.Controls.Add(ujlLogo);
+            ujlLogo.SendToBack();
+
+            downPanel.Controls.Add(saveProgress);
+            saveProgress.Visible = false;
 
             for (int i = 1; i <= countSubTitle; i++)
             {
+                //hex
                 TextBox Hex = new TextBox();
                 Hex.Name = "Hex" + i.ToString();
                 Hex.Size = new Size(399, 60);
@@ -64,16 +66,19 @@ namespace ujl_subedit
                 Hex.TextChanged += textBox_Changed;
                 Hex.CharacterCasing = CharacterCasing.Upper;
 
+                //text
                 TextBox Text = new TextBox();
                 Text.Name = "Text" + i.ToString();
                 Text.Size = new Size(399, 60);
                 Text.Location = new Point(443, 20 + (66 * i));
                 Text.Multiline = true;
+                Text.ContextMenuStrip = TextContextMenu;
                 Text.Font = new Font("Courier New", 12);
                 panel.Controls.Add(Text);
                 Text.BringToFront();
                 Text.TextChanged += textBox_Changed;
 
+                //label length
                 Label Length = new Label();
                 Length.Name = "Length" + i.ToString();
                 Length.AutoSize = true;
@@ -84,6 +89,7 @@ namespace ujl_subedit
                 panel.Controls.Add(Length);
                 Length.BringToFront();
 
+                //label last
                 Label Last = new Label();
                 Last.Name = "Last" + i.ToString();
                 Last.AutoSize = true;
@@ -94,6 +100,7 @@ namespace ujl_subedit
                 panel.Controls.Add(Last);
                 Last.BringToFront();
 
+                //label number line
                 Label n = new Label();
                 n.Name = "n" + i.ToString();
                 n.AutoSize = true;
@@ -105,15 +112,12 @@ namespace ujl_subedit
                 panel.Controls.Add(n);
                 n.BringToFront();
             }
-            
         }
         void windowName()
         {
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("subtitle.xml");
-            if(xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/fileInfo") != null)
+            if(Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/fileInfo") != null)
             {
-                this.Text = xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/fileInfo").InnerText;
+                this.Text = Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/fileInfo").InnerText;
             }
             else
             {
@@ -133,9 +137,9 @@ namespace ujl_subedit
                     fstream.Close();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Error: cannot read file");
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
         void decryptRus()
@@ -165,17 +169,15 @@ namespace ujl_subedit
         }
         void readFile()
         {
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("subtitle.xml");
-            XmlElement xRoot = xDoc.DocumentElement;
+            XmlElement xRoot = Open_File.OpenFile.xDoc.DocumentElement;
 
-            file.subLength = xDoc.SelectSingleNode("/subtitle/file[@name='"+Open_File.OpenFile.FileName+"']/subTitle").ChildNodes.Count;
+            file.subLength = Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='"+Open_File.OpenFile.FileName+"']/subTitle").ChildNodes.Count;
             int address;
             int length;
             for (int i = 1; i <= file.subLength; i++)
             {
-                address = Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + i + "]/address").InnerText);
-                length = Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + i + "]/length").InnerText);
+                address = Int32.Parse(Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + i + "]/address").InnerText);
+                length = Int32.Parse(Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + i + "]/length").InnerText);
                 foreach(Control hex in panel.Controls)
                 {
                     if (hex.Name.Replace("Hex", "") == i.ToString())
@@ -183,7 +185,7 @@ namespace ujl_subedit
                         TextBox Hex = (TextBox)panel.Controls[panel.Controls.IndexOf(hex)];
                         Hex.Visible = true;
                         Hex.MaxLength = length * 2 + (length - 1);
-                        if (Open_File.OpenFile.SymbleConverter == true)
+                        if (Open_File.OpenFile.SymbolConverter == true)
                         {
                             Hex.Text = BitConverter.ToString(file.save, address, length).Replace("00", "2F").Replace("0A", "23");
                         }
@@ -240,6 +242,7 @@ namespace ujl_subedit
             {
                 Open_File.OpenFile.Torus = false;
             }
+            
             if (parametеr == "Save As")
             {
                 Stream myStream;
@@ -258,9 +261,9 @@ namespace ujl_subedit
                             myStream.Close();
                         }
                     }
-                    catch
+                    catch(Exception ex)
                     {
-                        MessageBox.Show("Error: this file is busy");
+                        MessageBox.Show($"Error: this file is busy. {ex.Message}");
                     }
                 }
             }
@@ -273,27 +276,30 @@ namespace ujl_subedit
                 myStream.Close();
             }
             this.Text = this.Text.Replace(" *", "");
+            saveProgress.Visible = false;
         }
         void saveFunction()
         {
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load("subtitle.xml");
-            XmlElement xRoot = xDoc.DocumentElement;
+            saveProgress.Maximum = file.subLength;
+            saveProgress.Visible = true;
+            XmlElement xRoot = Open_File.OpenFile.xDoc.DocumentElement;
             int address;
             int length;
             string name;
             int id;
             for (int i = 0; i < file.subLength; i++)
             {
+                //saveProgress.Value = i+1;
+                saveProgress.PerformStep();
                 foreach (Control ctr in panel.Controls)
                 {
                     name = new string(ctr.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray());
                     if (name == "Hex" && ctr.Visible == true)
                     {
                         id = Int32.Parse(ctr.Name.Replace("Hex", ""));
-                        address = Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + id.ToString() + "]/address").InnerText);
-                        length = Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + id.ToString() + "]/length").InnerText);
-                        if (Open_File.OpenFile.SymbleConverter == true)
+                        address = Int32.Parse(Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + id.ToString() + "]/address").InnerText);
+                        length = Int32.Parse(Open_File.OpenFile.xDoc.SelectSingleNode("/subtitle/file[@name='" + Open_File.OpenFile.FileName + "']/subTitle/sub[" + id.ToString() + "]/length").InnerText);
+                        if (Open_File.OpenFile.SymbolConverter == true)
                         {
                             Array.Copy(Open_File.OpenFile.hex2byte2save(ctr.Text.Replace("23", "0A").Replace("2F", "00"), length), 0, file.save, address, length);
                         }
@@ -309,6 +315,7 @@ namespace ujl_subedit
         //menuStrip
         private void createMenuStripItem()
         {
+            
             //fileItem
             ToolStripMenuItem fileItem = new ToolStripMenuItem("File");
             ToolStripMenuItem saveItem = new ToolStripMenuItem("Save");
@@ -326,9 +333,21 @@ namespace ujl_subedit
 
             //optionItem
             ToolStripMenuItem optionItem = new ToolStripMenuItem("Option");
-            ToolStripMenuItem toRusItem = new ToolStripMenuItem("To rus") { Checked = false, CheckOnClick = true };
-            toRusItem.Click += toRusItem_Click;
-            optionItem.DropDownItems.Add(toRusItem);
+            if(Open_File.OpenFile.debug == true)
+            {
+                ToolStripMenuItem toRusItem = new ToolStripMenuItem("To rus") { Checked = false, CheckOnClick = true };
+                toRusItem.Click += toRusItem_Click;
+                optionItem.DropDownItems.Add(toRusItem);
+
+                ToolStripMenuItem sharping = new ToolStripMenuItem("sharping");
+                sharping.Click += sharping_Click;
+                optionItem.DropDownItems.Add(sharping);
+            }
+            else
+            {
+                ToolStripMenuItem noOption = new ToolStripMenuItem("There no option");
+                optionItem.DropDownItems.Add(noOption);
+            }
             menuStrip1.Items.Add(optionItem);
         }
         private void saveItem_Click(object sender, EventArgs e)
@@ -358,6 +377,34 @@ namespace ujl_subedit
         {
             this.Close();
         }
+        private void sharping_Click(object sender, EventArgs e)
+        {
+            foreach(Control hex in panel.Controls)
+            {
+                string nameHex = new string(hex.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray());
+                if (nameHex == "Hex")
+                {
+                    foreach(Control text in panel.Controls)
+                    {
+                        string nameText = new string(hex.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray());
+                        if(hex.Name.Replace("Hex", "") == text.Name.Replace("Text", ""))
+                        {
+                            TextBox textBox = (TextBox)text;
+                            TextBox hexbox = (TextBox)hex;
+                            int countText = textBox.MaxLength;
+                            textBox.Text = "";
+                            hex.Text = "";
+                            for (int i = 1; i <= countText; i++)
+                            {
+                                textBox.Paste("#");
+                                hexbox.Paste("23");
+                                hexbox.Paste("-");
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         //contextMenuStrip
         private int GetIndexFocusedControl()
@@ -371,10 +418,34 @@ namespace ujl_subedit
             }
             return -1;
         }
-        private void SharpToLineBreak_Click(object sender, EventArgs e)
+        private void createContextMenuStripItem()
+        {
+            //copy paste
+            ToolStripMenuItem hexTextCopy = new ToolStripMenuItem("Copy");
+            hexTextCopy.Click += textCopy_Click;
+            ToolStripMenuItem hexTextPaste = new ToolStripMenuItem("Paste");
+            hexTextPaste.Click += textPaste_Click;
+
+            ToolStripMenuItem textTextCopy = new ToolStripMenuItem("Copy");
+            textTextCopy.Click += textCopy_Click;
+            ToolStripMenuItem textTextPaste = new ToolStripMenuItem("Paste");
+            textTextPaste.Click += textPaste_Click;
+
+            //hex
+            ToolStripMenuItem sharpToLineBreak = new ToolStripMenuItem("23 to 0A");
+            sharpToLineBreak.Click += sharpToLineBreak_Click;
+            HexContextMenu.Items.Add(sharpToLineBreak);
+            HexContextMenu.Items.Add(hexTextCopy);
+            HexContextMenu.Items.Add(hexTextPaste);
+
+            //text
+            TextContextMenu.Items.Add(textTextCopy);
+            TextContextMenu.Items.Add(textTextPaste);
+        }
+        private void sharpToLineBreak_Click(object sender, EventArgs e)
         {
             int indexFocused = GetIndexFocusedControl();
-            if(indexFocused == -1)
+            if (indexFocused == -1)
             {
                 return;
             }
@@ -382,7 +453,7 @@ namespace ujl_subedit
             TextBox VotOn = (TextBox)panel.Controls[indexFocused];
             VotOn.Modified = true;
         }
-        private void TextCopy_Click(object sender, EventArgs e)
+        private void textCopy_Click(object sender, EventArgs e)
         {
             int indexFocused = GetIndexFocusedControl();
             if(indexFocused == -1)
@@ -390,10 +461,12 @@ namespace ujl_subedit
                 return;
             }
             TextBox VotOn = (TextBox)panel.Controls[indexFocused];
-            Clipboard.SetText(VotOn.SelectedText);
-            
+            if(VotOn.SelectedText != "")
+            {
+                Clipboard.SetText(VotOn.SelectedText);
+            }
         }
-        private void TextPaste_Click(object sender, EventArgs e)
+        private void textPaste_Click(object sender, EventArgs e)
         {
             int indexFocused = GetIndexFocusedControl();
             if(indexFocused == -1)
@@ -470,9 +543,5 @@ namespace ujl_subedit
             }
         }
 
-        private void Editor_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

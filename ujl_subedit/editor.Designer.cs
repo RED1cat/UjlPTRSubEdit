@@ -32,58 +32,33 @@ namespace ujl_subedit
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.HexContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.SharpToLineBreak = new System.Windows.Forms.ToolStripMenuItem();
-            this.TextCopy = new System.Windows.Forms.ToolStripMenuItem();
-            this.TextPaste = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ujlLogo = new System.Windows.Forms.PictureBox();
             this.length = new System.Windows.Forms.Label();
             this.last = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panel = new System.Windows.Forms.Panel();
-            this.HexContextMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TextContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveProgress = new System.Windows.Forms.ProgressBar();
+            this.downPanel = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.ujlLogo)).BeginInit();
+            this.downPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // HexContextMenu
             // 
-            this.HexContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SharpToLineBreak,
-            this.TextCopy,
-            this.TextPaste});
             this.HexContextMenu.Name = "HexContextMenu";
-            this.HexContextMenu.Size = new System.Drawing.Size(118, 70);
+            this.HexContextMenu.Size = new System.Drawing.Size(61, 4);
             // 
-            // SharpToLineBreak
+            // ujlLogo
             // 
-            this.SharpToLineBreak.Name = "SharpToLineBreak";
-            this.SharpToLineBreak.Size = new System.Drawing.Size(117, 22);
-            this.SharpToLineBreak.Text = "23 to 0A";
-            this.SharpToLineBreak.Click += new System.EventHandler(this.SharpToLineBreak_Click);
-            // 
-            // TextCopy
-            // 
-            this.TextCopy.Name = "TextCopy";
-            this.TextCopy.Size = new System.Drawing.Size(117, 22);
-            this.TextCopy.Text = "Copy";
-            this.TextCopy.Click += new System.EventHandler(this.TextCopy_Click);
-            // 
-            // TextPaste
-            // 
-            this.TextPaste.Name = "TextPaste";
-            this.TextPaste.Size = new System.Drawing.Size(117, 22);
-            this.TextPaste.Text = "Paste";
-            this.TextPaste.Click += new System.EventHandler(this.TextPaste_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(878, 190);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
+            this.ujlLogo.Image = ((System.Drawing.Image)(resources.GetObject("ujlLogo.Image")));
+            this.ujlLogo.Location = new System.Drawing.Point(-1, -20);
+            this.ujlLogo.Name = "ujlLogo";
+            this.ujlLogo.Size = new System.Drawing.Size(878, 190);
+            this.ujlLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ujlLogo.TabIndex = 57;
+            this.ujlLogo.TabStop = false;
             // 
             // length
             // 
@@ -109,6 +84,7 @@ namespace ujl_subedit
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(894, 24);
@@ -118,11 +94,33 @@ namespace ujl_subedit
             // panel
             // 
             this.panel.AutoScroll = true;
-            this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Location = new System.Drawing.Point(0, 25);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(894, 491);
+            this.panel.Size = new System.Drawing.Size(894, 441);
             this.panel.TabIndex = 526;
+            // 
+            // TextContextMenu
+            // 
+            this.TextContextMenu.Name = "TextContextMenu";
+            this.TextContextMenu.Size = new System.Drawing.Size(61, 4);
+            // 
+            // saveProgress
+            // 
+            this.saveProgress.Location = new System.Drawing.Point(770, 1);
+            this.saveProgress.Name = "saveProgress";
+            this.saveProgress.Size = new System.Drawing.Size(100, 23);
+            this.saveProgress.Step = 20;
+            this.saveProgress.TabIndex = 527;
+            // 
+            // downPanel
+            // 
+            this.downPanel.BackColor = System.Drawing.Color.White;
+            this.downPanel.Controls.Add(this.saveProgress);
+            this.downPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.downPanel.Location = new System.Drawing.Point(0, 466);
+            this.downPanel.Name = "downPanel";
+            this.downPanel.Size = new System.Drawing.Size(894, 25);
+            this.downPanel.TabIndex = 527;
             // 
             // Editor
             // 
@@ -132,19 +130,21 @@ namespace ujl_subedit
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(894, 491);
             this.ContextMenuStrip = this.HexContextMenu;
+            this.Controls.Add(this.downPanel);
             this.Controls.Add(this.length);
             this.Controls.Add(this.last);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ujlLogo);
             this.Controls.Add(this.panel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(910, 1000);
+            this.MaximumSize = new System.Drawing.Size(910, 530);
             this.MinimumSize = new System.Drawing.Size(910, 530);
             this.Name = "Editor";
             this.Text = "COMOD11_SNG";
-            this.Load += new System.EventHandler(this.Editor_Load);
-            this.HexContextMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            //this.Load += new System.EventHandler(this.Editor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ujlLogo)).EndInit();
+            this.downPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,14 +152,14 @@ namespace ujl_subedit
 
         #endregion
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ujlLogo;
         private System.Windows.Forms.Label length;
         private System.Windows.Forms.Label last;
         private System.Windows.Forms.ContextMenuStrip HexContextMenu;
-        private System.Windows.Forms.ToolStripMenuItem SharpToLineBreak;
-        private System.Windows.Forms.ToolStripMenuItem TextCopy;
-        private System.Windows.Forms.ToolStripMenuItem TextPaste;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.ContextMenuStrip TextContextMenu;
+        private System.Windows.Forms.ProgressBar saveProgress;
+        private System.Windows.Forms.Panel downPanel;
     }
 }

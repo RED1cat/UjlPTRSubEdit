@@ -12,18 +12,22 @@ namespace ujl_subedit
         public Open_File()
         {
             InitializeComponent();
+            xDocInit();
             fontinit();
+            dragAndDropInit();
         }
 
         public class OpenFile
         {
+            public static bool debug = false;
+            public static XmlDocument xDoc = new XmlDocument();
             public static PrivateFontCollection DomFont = new PrivateFontCollection();
             public static string FilePath;
             public static string FileName;
             public static int Filelength;
             public static bool Torus;
             public static bool Decryptrus;
-            public static bool SymbleConverter;
+            public static bool SymbolConverter;
             public static string Decrypt(string hex)
             {
                 if (hex.Length > 1)
@@ -74,101 +78,158 @@ namespace ujl_subedit
             }
         }
 
-        void fontinit()
+        private void fontinit()
         {
-            if (File.Exists("DomBold.ttf") == true && File.Exists("DomCasual.ttf") == true)
+            if (File.Exists("SysFile//DomBold.ttf") == true && File.Exists("SysFile//DomCasual.ttf") == true)
             {
-                OpenFile.DomFont.AddFontFile("DomBold.ttf"); //dom.families[0]
-                OpenFile.DomFont.AddFontFile("DomCasual.ttf"); //dom.families[1]
+                OpenFile.DomFont.AddFontFile("SysFile//DomBold.ttf"); //dom.families[0]
+                OpenFile.DomFont.AddFontFile("SysFile//DomCasual.ttf"); //dom.families[1]
                 label1.Font = new Font(OpenFile.DomFont.Families[1], 12);
                 label2.Font = new Font(OpenFile.DomFont.Families[1], 12);
                 symbleConverter.Font = new Font(OpenFile.DomFont.Families[0], 12);
-                Decrypt_rus.Font = new Font(OpenFile.DomFont.Families[0], 12);
             }
             else
             {
                 MessageBox.Show("fonts not found");
             }
         }
-
-        private void button1_Click(object sender, EventArgs e) //Open file
+        private void xDocInit()
         {
-            if(Decrypt_rus.Checked == true)
+            if(File.Exists("SysFile//subtitle.xml") == true)
             {
-                OpenFile.Decryptrus = true;
+                OpenFile.xDoc.Load("SysFile//subtitle.xml");
             }
             else
             {
-                OpenFile.Decryptrus = false;
+                MessageBox.Show("'subtitle.xml' not found");
+                this.Close();
             }
+        }
+
+        //openFile
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(OpenFile.debug == true)
+            {
+                if (Control.ModifierKeys == Keys.Shift)
+                {
+                    OpenFile.Decryptrus = true;
+                }
+                else
+                {
+                    OpenFile.Decryptrus = false;
+                }
+            }
+
             if (symbleConverter.Checked == true)
             {
-                OpenFile.SymbleConverter = true;
+                OpenFile.SymbolConverter = true;
             }
             else
             {
-                OpenFile.SymbleConverter = false;
+                OpenFile.SymbolConverter = false;
             }
-            openFileDialog1.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|All files (*.*)|*.*";
-            openFileDialog1.FilterIndex = 1;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+
+            openFileDialog();
+        }
+        private void openFileDialog(string arg = null)
+        {
+            if (arg == null)
             {
-                try
+                openFileDialog1.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|All files (*.*)|*.*";
+                openFileDialog1.FilterIndex = 1;
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    OpenFile.FilePath = openFileDialog1.FileName;
-                    using (Stream str = openFileDialog1.OpenFile())
+                    try
                     {
-                        OpenFile.FileName = openFileDialog1.SafeFileName;
-                        bool include = false;
-                        XmlDocument xDoc = new XmlDocument();
-                        xDoc.Load("subtitle.xml");
-                        int count = xDoc.SelectSingleNode("/subtitle").ChildNodes.Count;
-                        for (int i = 1; i <= count; i++)
+                        OpenFile.FilePath = openFileDialog1.FileName;
+                        using (Stream str = openFileDialog1.OpenFile())
                         {
-                            if(xDoc.SelectSingleNode("/subtitle/file[" + i + "][@name='" + OpenFile.FileName + "']") != null)
-                            {
-                                include = true;
-                            }
-                        }
-                        if (include == true)
-                        {
+                            OpenFile.FileName = openFileDialog1.SafeFileName;
                             str.Close();
-                            Editor editor = new Editor();
-                            editor.Owner = this;
-                            editor.ShowDialog();
-                            
-                        }
-                        else
-                        {
-                            MessageBox.Show("File not support");
+                            openEditorDialog();
                         }
                     }
-                }
-                catch(Exception ex)
-                {
-                    //MessageBox.Show("Error: unable to open this file");
-                    MessageBox.Show(ex.Message);
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                        return;
+                    }
                 }
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e) // help
-        {
-            if(Control.ModifierKeys == Keys.Shift)
+            else if (arg != null)
             {
-                addFile addFile = new addFile();
-                addFile.Owner = this;
-                addFile.ShowDialog();
-            }
-            else 
-            { 
-            MessageBox.Show("There is no help");
+                OpenFile.FilePath = arg;
+                OpenFile.FileName = System.IO.Path.GetFileName(arg);
+                openEditorDialog();
             }
         }
-
-        private void Open_File_Load(object sender, EventArgs e)
+        private void openEditorDialog()
         {
+            bool include = false;
+            int count = OpenFile.xDoc.SelectSingleNode("/subtitle").ChildNodes.Count;
 
+            for (int i = 1; i <= count; i++)
+            {
+                if (OpenFile.xDoc.SelectSingleNode("/subtitle/file[" + i + "][@name='" + OpenFile.FileName + "']") != null)
+                {
+                    include = true;
+                }
+            }
+            if (include == true)
+            {
+                Editor editor = new Editor();
+                editor.Owner = this;
+                editor.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("File not support");
+                return;
+            }
         }
+
+        //helpButton
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(OpenFile.debug == true)
+            {
+                if (Control.ModifierKeys == Keys.Shift)
+                {
+                    addFile addFile = new addFile();
+                    addFile.Owner = this;
+                    addFile.ShowDialog();
+                }
+            }
+            else
+            {
+                System.Diagnostics.Process.Start("https://github.com/RED1cat/UjlSubEdit/blob/master/README.md");
+            }
+        }
+
+        //drag and drop
+        private void dragAndDropInit()
+        {
+            this.DragEnter += eventDragEnter;
+            this.DragDrop += eventDragDrop;
+        }
+        private void eventDragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+            {
+                e.Effect = DragDropEffects.All;
+            }
+        }
+        private void eventDragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach(string file in files)
+            {
+                openFileDialog(file);
+                return;
+            }
+        }
+
     }
 }

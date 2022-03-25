@@ -29,6 +29,7 @@ namespace ujl_subedit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetFileInfo));
             this.fileInfoText = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -58,6 +59,7 @@ namespace ujl_subedit
             this.ClientSize = new System.Drawing.Size(439, 124);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.fileInfoText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(455, 163);
             this.MinimumSize = new System.Drawing.Size(455, 163);
             this.Name = "GetFileInfo";
