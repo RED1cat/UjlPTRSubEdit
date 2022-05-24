@@ -4,9 +4,9 @@ This application is designed to edit subtitles in the UJL game.
 **_Only the usa version of the game is supported._**
 
 ## How to use:
-1. First you need to unpack one of the game files that contains subtitles, for unpacking I recommend using [CDmage](https://www.emuparadise.me/links-and-downloads/General_CD_Utils/CDmage_1.02.1_Beta_5/20).
+1. First you need to unpack one of the game files that contains subtitles, for unpacking I recommend using [CDmage](https://www.romhacking.net/utilities/1435/).
 2. Next, open the file with subtitles in `ujl_subedit`.
-3. After saving the file, it can be imported back into the game image, also with [CDmage](https://www.emuparadise.me/links-and-downloads/General_CD_Utils/CDmage_1.02.1_Beta_5/20).
+3. After saving the file, it can be imported back into the game image, also with [CDmage](https://www.romhacking.net/utilities/1435/).
 
 ## Functions:
 1. **symbol converter** converts the symbols `00`(`null` symbol) to `2F`(`/` symbol), `0A`(`line` break symbol) to `23`(`#` symbol).
