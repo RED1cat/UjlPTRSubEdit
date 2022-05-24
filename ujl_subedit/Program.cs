@@ -17,7 +17,7 @@ namespace ujl_subedit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Open_File());
+            Application.Run(new Editor());
         }
     }
 }

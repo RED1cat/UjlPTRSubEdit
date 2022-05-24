@@ -13,8 +13,10 @@ namespace ujl_subedit
         }
         public class file
         {
+            public static int SubTitleId = 1;
             public static string FileName;
             public static string FileInfo;
+            public static string FileRegion = "europe";
             public static byte[] filebyte;
             public static string add;
             public static byte[] hex2byte(string hex)
@@ -87,27 +89,39 @@ namespace ujl_subedit
 
             XmlElement File = xDoc.CreateElement("file");
             XmlAttribute fileName = xDoc.CreateAttribute("name");
+            XmlAttribute fileRegion = xDoc.CreateAttribute("region");
             XmlElement fileInfo = xDoc.CreateElement("fileInfo");
             XmlElement subTitle = xDoc.CreateElement("subTitle");
 
+            //if(file.FileRegion == null)
+            //{
+            //    GetFileInfo.GetFile.region = true;
+            //    getFileInfo();
+            //    GetFileInfo.GetFile.region = false;
+            //}
+
             //string amogus = xDoc.SelectSingleNode("count(/subtitle/file[@name='" + file.FileName + "'])").Value;
-            if (xDoc.SelectSingleNode("/subtitle/file[@name='"+ file.FileName + "']") == null)
+
+            if (xDoc.SelectSingleNode("/subtitle/file[@name='"+ file.FileName + "'][@region='" + file.FileRegion + "']") == null)
             {
                 XmlText fileNameText = xDoc.CreateTextNode(file.FileName);
                 getFileInfo();
                 XmlText fileInfoText = xDoc.CreateTextNode(file.FileInfo);
+                XmlText fileRegionText = xDoc.CreateTextNode(file.FileRegion);
                 fileName.AppendChild(fileNameText);
                 fileInfo.AppendChild(fileInfoText);
+                fileRegion.AppendChild(fileRegionText);
                 File.Attributes.Append(fileName);
+                File.Attributes.Append(fileRegion);
                 File.AppendChild(fileInfo);
                 File.AppendChild(subTitle);
                 numberLines.Text = 0.ToString();
             }
             else
             {
-                numberLines.Text = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/subTitle").ChildNodes.Count.ToString();
-                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText.Replace(numberLines.Text, "");
-                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText.Replace(" -  lines", "");
+                numberLines.Text = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/subTitle[" + file.SubTitleId + "]").ChildNodes.Count.ToString();
+                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText.Replace(numberLines.Text, "");
+                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText.Replace(" -  lines", "");
             }
             try
             {
@@ -133,7 +147,7 @@ namespace ujl_subedit
                     }
                     countSymbol = countSymbol + nullSymbol;
                     LengthLine.Text = countSymbol.ToString();
-                    encodeText.Text = System.Text.Encoding.Default.GetString(file.hex2byte(BitConverter.ToString(file.filebyte, i - countSymbol + nullSymbol, countSymbol)));
+                    encodeText.Text = Editor.m_CodePage.GetString(file.hex2byte(BitConverter.ToString(file.filebyte, i - countSymbol + nullSymbol, countSymbol)));
                     FirstAddress.Text = (i - countSymbol + nullSymbol).ToString();
 
                     Choice choice = new Choice();
@@ -146,13 +160,13 @@ namespace ujl_subedit
 
                         
 
-                        if(xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']") != null)
+                        if(xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']") != null)
                         {
-                            int count = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/subTitle").ChildNodes.Count;
+                            int count = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/subTitle[" + file.SubTitleId + "]").ChildNodes.Count;
                             bool include = false;
                             for (int j = 1; j <= count; j++)
                             {
-                                if (Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/subTitle/sub[" + j + "]/address").InnerText) == Int32.Parse(addressText.InnerText))
+                                if (Int32.Parse(xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/subTitle[" + file.SubTitleId + "]/sub[" + j + "]/address").InnerText) == Int32.Parse(addressText.InnerText))
                                 {
                                     include = true;
                                 }
@@ -165,7 +179,7 @@ namespace ujl_subedit
                                 subTitle.AppendChild(sub);
                                 address.AppendChild(addressText);
                                 length.AppendChild(lengthText);
-                                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/subTitle").AppendChild(sub);
+                                xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/subTitle[" + file.SubTitleId + "]").AppendChild(sub);
                                 sub.AppendChild(address);
                                 sub.AppendChild(length);
                                 numberLines.Text = (Int32.Parse(numberLines.Text) + 1).ToString();
@@ -199,21 +213,52 @@ namespace ujl_subedit
                     else if (file.add == "stop")
                     {
                         i = file.filebyte.Length;
-                        if (xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo") != null)
+                        if (xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo") != null)
                         {
-                            xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']/fileInfo").InnerText + " - " + numberLines.Text + " lines";
+                            xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText = xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']/fileInfo").InnerText + " - " + numberLines.Text + " lines";
                         }
                     }
                     
                 }
 
             }
-            if (xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "']") == null)
+            if (xDoc.SelectSingleNode("/subtitle/file[@name='" + file.FileName + "'][@region='" + file.FileRegion + "']") == null)
             {
                 xRoot?.AppendChild(File);
             }
             xDoc.Save("subtitle.xml");
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox isEurope = (CheckBox)sender;
+            if (isEurope.CheckState == CheckState.Checked)
+            {
+                file.FileRegion = "europe";
+            }
+            else if(isEurope.CheckState == CheckState.Unchecked)
+            {
+                file.FileRegion = "usa";
+            }
+        }
+
+        private void SubId_TextChanged(object sender, EventArgs e)
+        {
+            TextBox subid = (TextBox)sender;
+            int id = 1;
+            try
+            {
+                id = int.Parse(subid.Text);
+            }
+            catch
+            {
+                subid.Text = "1";
+                id = 1;
+            }
+            if(id >= 1 || id <= 5)
+            {
+                file.SubTitleId = id;
+            }
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace ujl_subedit
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetFileInfo));
             this.fileInfoText = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fileInfoText
@@ -44,7 +45,7 @@ namespace ujl_subedit
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(353, 86);
+            this.okButton.Location = new System.Drawing.Point(271, 86);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 1;
@@ -52,11 +53,22 @@ namespace ujl_subedit
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(352, 86);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GetFileInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 124);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.fileInfoText);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -73,5 +85,6 @@ namespace ujl_subedit
 
         private System.Windows.Forms.TextBox fileInfoText;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Button button1;
     }
 }

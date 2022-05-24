@@ -37,6 +37,8 @@ namespace ujl_subedit
             this.Start = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.numberLines = new System.Windows.Forms.Label();
+            this.IsEurope = new System.Windows.Forms.CheckBox();
+            this.SubId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // encodeText
@@ -97,11 +99,33 @@ namespace ujl_subedit
             // 
             this.numberLines.AutoSize = true;
             this.numberLines.Font = new System.Drawing.Font("Courier New", 12F);
-            this.numberLines.Location = new System.Drawing.Point(424, 44);
+            this.numberLines.Location = new System.Drawing.Point(424, 68);
             this.numberLines.Name = "numberLines";
             this.numberLines.Size = new System.Drawing.Size(118, 18);
             this.numberLines.TabIndex = 7;
             this.numberLines.Text = "numberLines";
+            // 
+            // IsEurope
+            // 
+            this.IsEurope.AutoSize = true;
+            this.IsEurope.Checked = true;
+            this.IsEurope.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.IsEurope.Location = new System.Drawing.Point(421, 11);
+            this.IsEurope.Name = "IsEurope";
+            this.IsEurope.Size = new System.Drawing.Size(71, 17);
+            this.IsEurope.TabIndex = 8;
+            this.IsEurope.Text = "Is Europe";
+            this.IsEurope.UseVisualStyleBackColor = true;
+            this.IsEurope.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // SubId
+            // 
+            this.SubId.Location = new System.Drawing.Point(424, 34);
+            this.SubId.Name = "SubId";
+            this.SubId.Size = new System.Drawing.Size(74, 20);
+            this.SubId.TabIndex = 9;
+            this.SubId.Text = "1";
+            this.SubId.TextChanged += new System.EventHandler(this.SubId_TextChanged);
             // 
             // addFile
             // 
@@ -109,6 +133,8 @@ namespace ujl_subedit
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(510, 167);
+            this.Controls.Add(this.SubId);
+            this.Controls.Add(this.IsEurope);
             this.Controls.Add(this.numberLines);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.Open);
@@ -133,5 +159,7 @@ namespace ujl_subedit
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label numberLines;
+        private System.Windows.Forms.CheckBox IsEurope;
+        private System.Windows.Forms.TextBox SubId;
     }
 }
