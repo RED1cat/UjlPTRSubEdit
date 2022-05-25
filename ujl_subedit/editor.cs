@@ -19,9 +19,10 @@ namespace ujl_subedit
         public static bool m_SymbolConverter = false;
         public static bool m_ToRus = false;
         public static Encoding m_CodePage = Encoding.Default; //UTF-7 65000 1252 Encoding.GetEncoding(1252)
-        private static string m_XmlDocPath = "C:\\Users\\wwwsa\\source\\repos\\ujl_subedit\\ujl_subedit\\bin\\subtitle.xml"; //C:\\Users\\wwwsa\\source\\repos\\ujl_subedit\\ujl_subedit\\bin\\subtitle.xml
-        public static XmlDocument m_XDoc = new XmlDocument().OpenXmlDoc(m_XmlDocPath);
-        public static PrivateFontCollection m_DomFont = new PrivateFontCollection().LoadFontFromBase64(Base64File.domBold, "domBold.ttf").LoadFontFromBase64(Base64File.domCasual, "domCasual.ttf");
+        private static string m_XmlDocPath = "subtitle.xml"; //C:\\Users\\wwwsa\\source\\repos\\ujl_subedit\\ujl_subedit\\bin\\subtitle.xml
+        public static XmlDocument m_XDocUjlUsa = new XmlDocument().LoadXmlDoc(Encoding.UTF8.GetString(Convert.FromBase64String(Base64File.base64_XmlUjlUsa)));
+        public static XmlDocument m_XDocUjlEurope = new XmlDocument().OpenXmlDoc(m_XmlDocPath);
+        public static PrivateFontCollection m_DomFont = new PrivateFontCollection().LoadFontFromBase64(Base64File.base64_DomBold, "domBold.ttf").LoadFontFromBase64(Base64File.base64_DomCasual, "domCasual.ttf");
 
         public Editor()
         {
@@ -111,17 +112,7 @@ namespace ujl_subedit
                 CreatLogoAndLabel(Tab5, region);
                 eurTabControl.TabPages.Add(Tab5);
 
-                //int[] subTitleCountEur = new int[5];
-                //int subTitleCountEurAll = 0;
 
-                //for (int i = 0; i < 5; i++)
-                //{
-                //    subTitleCountEur[i] = File.xDoc.GetXmlNode(fileName, region, "GetsubTitleNodeById", id: i + 1).ChildNodes.Count;
-                //    subTitleCountEurAll += subTitleCountEur[i];
-                //}
-                //File.fileSubLength.Add(fileKey, subTitleCountEur);
-
-                
                 saveProgress.Visible = true;
                 saveProgress.Value = 0;
                 saveProgress.Maximum = m_FileInfo[fileKey].FileSubLengthEuropeAll;
@@ -141,9 +132,7 @@ namespace ujl_subedit
             {
                 CreatLogoAndLabel(Tab, region);
 
-                //int countSubTitle = m_XDoc.GetXmlNode(fileName, region, "GetsubTitleNode").ChildNodes.Count;
                 //progressbar
-
                 saveProgress.Visible = true;
                 saveProgress.Value = 0;
                 saveProgress.Maximum = m_FileInfo[fileKey].FileSubLengthUsa * 2;
@@ -245,7 +234,7 @@ namespace ujl_subedit
             PictureBox ujlLogo = new PictureBox();
             if(region == "usa" || region == "europe")
             {
-                ujlLogo.Image = Base64File.ujlUsaLogo.LoadImageFromBase64();
+                ujlLogo.Image = Base64File.base64_UjlUsaLogo.LoadImageFromBase64();
             }
             ujlLogo.Location = new Point(-1, -20);
             ujlLogo.Size = new Size(878, 190);
@@ -306,8 +295,8 @@ namespace ujl_subedit
                 {
                     for (int i = 1; i <= subId; i++)
                     {
-                        addressEur = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetaddressNodeEur", i, index).InnerText);
-                        lengthEur = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetlengthNodeEur", i, index).InnerText);
+                        addressEur = Int32.Parse(m_XDocUjlEurope.GetXmlNode(fileName, region, "GetaddressNodeEur", i, index).InnerText);
+                        lengthEur = Int32.Parse(m_XDocUjlEurope.GetXmlNode(fileName, region, "GetlengthNodeEur", i, index).InnerText);
 
                         TextBox hex = (TextBox)tabControl.TabPages[index - 1].GetTextBoxById(i, "Hex");
                         hex.MaxLength = lengthEur * 2 + (lengthEur - 1);
@@ -346,8 +335,8 @@ namespace ujl_subedit
 
                 for (int i = 1; i <= subLength; i++)
                 {
-                    address = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetaddressNodeUsa", i).InnerText);
-                    length = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetlengthNodeUsa", i).InnerText);
+                    address = Int32.Parse(m_XDocUjlUsa.GetXmlNode(fileName, region, "GetaddressNodeUsa", i).InnerText);
+                    length = Int32.Parse(m_XDocUjlUsa.GetXmlNode(fileName, region, "GetlengthNodeUsa", i).InnerText);
 
                     TextBox hex = (TextBox)tab.GetTextBoxById(i, "Hex");
                     hex.MaxLength = length * 2 + (length - 1);
@@ -377,7 +366,7 @@ namespace ujl_subedit
         }
         private bool checkingFileCompatibility(string fileName, string region)
         {
-            if (m_XDoc.GetXmlNode(fileName, region, "GetsubTitleNode") == null)
+            if ((m_XDocUjlUsa.GetXmlNode(fileName, region, "GetsubTitleNode") == null && region == "usa") || (m_XDocUjlEurope.GetXmlNode(fileName, region, "GetsubTitleNode") == null && region == "europe"))
             {
 
                 return false;
@@ -519,8 +508,8 @@ namespace ujl_subedit
                     TabPage tabEur = tabControlEur.TabPages[tabId - 1]; 
                     for (int subId = 1; subId <= m_FileInfo[fileKey].FileSubLengthEurope[tabId - 1]; subId++)
                     {
-                        addressEur = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetaddressNodeEur", subId, tabId).InnerText);
-                        lengthEur = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetlengthNodeEur", subId, tabId).InnerText);
+                        addressEur = Int32.Parse(m_XDocUjlEurope.GetXmlNode(fileName, region, "GetaddressNodeEur", subId, tabId).InnerText);
+                        lengthEur = Int32.Parse(m_XDocUjlEurope.GetXmlNode(fileName, region, "GetlengthNodeEur", subId, tabId).InnerText);
 
 
                         if (m_SymbolConverter == true)
@@ -561,8 +550,8 @@ namespace ujl_subedit
                         if (name == "Hex" && ctr.Visible == true)
                         {
                             id = Int32.Parse(ctr.Name.Replace("Hex", ""));
-                            address = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetaddressNodeUsa", id).InnerText);
-                            length = Int32.Parse(m_XDoc.GetXmlNode(fileName, region, "GetlengthNodeUsa", id).InnerText);
+                            address = Int32.Parse(m_XDocUjlUsa.GetXmlNode(fileName, region, "GetaddressNodeUsa", id).InnerText);
+                            length = Int32.Parse(m_XDocUjlUsa.GetXmlNode(fileName, region, "GetlengthNodeUsa", id).InnerText);
                             if (m_SymbolConverter == true)
                             {
                                 Array.Copy(ctr.Text.Replace("23", "0A").Replace("2F", "00").Hex2byte(m_ToRus, length), 0, m_FileInfo[fileKey].FileBytes, address, length);
@@ -772,9 +761,9 @@ namespace ujl_subedit
                 {
                     TabPage Tab = GetTabVocus();
 
-                    if (m_FileInfo[Tab.Name].FileHasEdited == true)
+                    if (m_FileInfo[Tab.Name].FileHasEdited == true && CloseResult(Tab.Name) == DialogResult.No)
                     {
-
+                        return;
                     }
 
                     Tab.Controls.Clear();
@@ -789,11 +778,15 @@ namespace ujl_subedit
                 for (int i = tabControl1.TabPages.Count - 1; i >= 0; i--)
                 {
                     TabPage Tab = tabControl1.TabPages[i];
-                    Tab.Controls.Clear();
 
-                    m_FileInfo.Remove(Tab.Name);
+                    if((m_FileInfo[Tab.Name].FileHasEdited == true && CloseResult(Tab.Name) == DialogResult.Yes) || m_FileInfo[Tab.Name].FileHasEdited == false)
+                    {
+                        Tab.Controls.Clear();
 
-                    tabControl1.TabPages.RemoveAt(i);
+                        m_FileInfo.Remove(Tab.Name);
+
+                        tabControl1.TabPages.RemoveAt(i);
+                    }
                 }
             }
         }

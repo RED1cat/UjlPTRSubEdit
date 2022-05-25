@@ -175,19 +175,20 @@ namespace ujl_subedit
                 throw new Exception("region not set");
             }
 
-            FileInformation = Editor.m_XDoc.GetXmlNode(name, region, "GetfileInfoNode").InnerText + " - " + region;
-
             if(FileRegionUsa == true)
             {
-                FileSubLengthUsa = Editor.m_XDoc.GetXmlNode(name, "usa", "GetsubTitleNode").ChildNodes.Count;
+                FileSubLengthUsa = Editor.m_XDocUjlUsa.GetXmlNode(name, "usa", "GetsubTitleNode").ChildNodes.Count;
+                FileInformation = Editor.m_XDocUjlUsa.GetXmlNode(name, region, "GetfileInfoNode").InnerText + " - " + region;
             }
             else if(fileRegionEurope == true)
             {
+                FileInformation = Editor.m_XDocUjlEurope.GetXmlNode(name, region, "GetfileInfoNode").InnerText + " - " + region;
+
                 int[] subTitleCountEur = new int[5];
                 int subTitleCountEurAll = 0;
                 for (int i = 0; i < 5; i++)
                 {
-                    subTitleCountEur[i] = Editor.m_XDoc.GetXmlNode(fileName, "europe", "GetsubTitleNodeById", id: i + 1).ChildNodes.Count;
+                    subTitleCountEur[i] = Editor.m_XDocUjlEurope.GetXmlNode(fileName, "europe", "GetsubTitleNodeById", id: i + 1).ChildNodes.Count;
                     subTitleCountEurAll += subTitleCountEur[i];
                 }
                 FileSubLengthEurope = subTitleCountEur;

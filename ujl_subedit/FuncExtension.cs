@@ -10,6 +10,11 @@ namespace ujl_subedit
 {
     public static class FuncExtension
     {
+        public static XmlDocument LoadXmlDoc(this XmlDocument xDoc, string xml)
+        {
+            xDoc.LoadXml(xml);
+            return xDoc;
+        }
         public static Image LoadImageFromBase64(this string base64)
         {
             byte[] bytes = Convert.FromBase64String(base64);
@@ -192,9 +197,13 @@ namespace ujl_subedit
             tab.AutoScroll = true;
             if (fileName != null && region != null)
             {
-                if (Editor.m_XDoc.GetXmlNode(fileName, region, "GetfileInfoNode") != null)
+                if (Editor.m_XDocUjlUsa.GetXmlNode(fileName, region, "GetfileInfoNode") != null)
                 {
-                    tab.Text = Editor.m_XDoc.GetXmlNode(fileName, region, "GetfileInfoNode").InnerText + " - " + region;
+                    tab.Text = Editor.m_XDocUjlUsa.GetXmlNode(fileName, region, "GetfileInfoNode").InnerText + " - " + region;
+                }
+                else if(Editor.m_XDocUjlEurope.GetXmlNode(fileName, region, "GetfileInfoNode") != null)
+                {
+                    tab.Text = Editor.m_XDocUjlEurope.GetXmlNode(fileName, region, "GetfileInfoNode").InnerText + " - " + region;
                 }
                 else
                 {
