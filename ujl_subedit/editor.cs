@@ -18,10 +18,11 @@ namespace ujl_subedit
         public static string m_TempFile = Path.GetTempPath() + "UJL_SubEdit";
         public static bool m_SymbolConverter = false;
         public static bool m_ToRus = false;
+        public static bool m_ToRus2 = false;
         public static Encoding m_CodePage = Encoding.Default; //UTF-7 65000 1252 Encoding.GetEncoding(1252)
         private static string m_XmlDocPath = "subtitle.xml"; //C:\\Users\\wwwsa\\source\\repos\\ujl_subedit\\ujl_subedit\\bin\\subtitle.xml
         public static XmlDocument m_XDocUjlUsa = new XmlDocument().LoadXmlDoc(Encoding.UTF8.GetString(Convert.FromBase64String(Base64File.base64_XmlUjlUsa)));
-        public static XmlDocument m_XDocUjlEurope = new XmlDocument().OpenXmlDoc(m_XmlDocPath);
+        public static XmlDocument m_XDocUjlEurope = new XmlDocument();//.OpenXmlDoc(m_XmlDocPath);
         public static PrivateFontCollection m_DomFont = new PrivateFontCollection().LoadFontFromBase64(Base64File.base64_DomBold, "domBold.ttf").LoadFontFromBase64(Base64File.base64_DomCasual, "domCasual.ttf");
 
         public Editor()
@@ -375,6 +376,7 @@ namespace ujl_subedit
         }
         private string choiceRegion()
         {
+#if DEBUG
             DialogResult result = MessageBox.Show(
                 "select the file region:\n'Yes' - is Usa region,\n'No' - is Europe region",
                 "Region",
@@ -388,6 +390,9 @@ namespace ujl_subedit
                 return null;
 
             return null;
+#else
+            return "usa";
+#endif
         }
 
         //saveFile
@@ -626,7 +631,7 @@ namespace ujl_subedit
             
             //optionItem
             ToolStripMenuItem optionItem = new ToolStripMenuItem("&Options");
-# if DEBUG
+#if DEBUG
             ToolStripMenuItem addFile = new ToolStripMenuItem("Add file");
             addFile.Click += addFile_Click;
             optionItem.DropDownItems.Add(addFile);
@@ -638,6 +643,10 @@ namespace ujl_subedit
             ToolStripMenuItem toRusItem = new ToolStripMenuItem("To rus") { Checked = false, CheckOnClick = true };
             toRusItem.Click += toRusItem_Click;
             optionItem.DropDownItems.Add(toRusItem);
+
+            ToolStripMenuItem toRusItem2 = new ToolStripMenuItem("To rus2") { Checked = false, CheckOnClick = true };
+            toRusItem2.Click += toRusItem2_Click;
+            optionItem.DropDownItems.Add(toRusItem2);
 
             ToolStripMenuItem sharping = new ToolStripMenuItem("Sharping");
             sharping.Click += sharping_Click;
@@ -752,6 +761,14 @@ namespace ujl_subedit
                 m_ToRus = true;
             else if (toRusItem.CheckState == CheckState.Unchecked)
                 m_ToRus = false;
+        }
+        private void toRusItem2_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem toRusItem2 = sender as ToolStripMenuItem;
+            if (toRusItem2.CheckState == CheckState.Checked)
+                m_ToRus2 = true;
+            else if (toRusItem2.CheckState == CheckState.Unchecked)
+                m_ToRus2 = false;
         }
         private void closeItem_Click(object sender, EventArgs e)
         {

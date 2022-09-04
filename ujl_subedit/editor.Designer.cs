@@ -31,21 +31,21 @@ namespace ujl_subedit
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
-            this.HexContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            HexContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.TextContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.saveProgress = new System.Windows.Forms.ProgressBar();
+            TextContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            saveProgress = new System.Windows.Forms.ProgressBar();
             this.downPanel = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            tabControl1 = new System.Windows.Forms.TabControl();
             this.downPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // HexContextMenu
             // 
-            this.HexContextMenu.Name = "HexContextMenu";
-            this.HexContextMenu.Size = new System.Drawing.Size(61, 4);
+            HexContextMenu.Name = "HexContextMenu";
+            HexContextMenu.Size = new System.Drawing.Size(61, 4);
             // 
             // menuStrip1
             // 
@@ -58,22 +58,22 @@ namespace ujl_subedit
             // 
             // TextContextMenu
             // 
-            this.TextContextMenu.Name = "TextContextMenu";
-            this.TextContextMenu.Size = new System.Drawing.Size(61, 4);
+            TextContextMenu.Name = "TextContextMenu";
+            TextContextMenu.Size = new System.Drawing.Size(61, 4);
             // 
             // saveProgress
             // 
-            this.saveProgress.Location = new System.Drawing.Point(770, 1);
-            this.saveProgress.MarqueeAnimationSpeed = 400;
-            this.saveProgress.Name = "saveProgress";
-            this.saveProgress.Size = new System.Drawing.Size(100, 23);
-            this.saveProgress.Step = 1;
-            this.saveProgress.TabIndex = 527;
+            saveProgress.Location = new System.Drawing.Point(770, 1);
+            saveProgress.MarqueeAnimationSpeed = 400;
+            saveProgress.Name = "saveProgress";
+            saveProgress.Size = new System.Drawing.Size(100, 23);
+            saveProgress.Step = 1;
+            saveProgress.TabIndex = 527;
             // 
             // downPanel
             // 
             this.downPanel.BackColor = System.Drawing.Color.White;
-            this.downPanel.Controls.Add(this.saveProgress);
+            this.downPanel.Controls.Add(saveProgress);
             this.downPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.downPanel.Location = new System.Drawing.Point(0, 466);
             this.downPanel.Name = "downPanel";
@@ -86,13 +86,13 @@ namespace ujl_subedit
             // 
             // tabControl1
             // 
-            this.tabControl1.AllowDrop = true;
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(911, 442);
-            this.tabControl1.TabIndex = 528;
+            tabControl1.AllowDrop = true;
+            tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tabControl1.Location = new System.Drawing.Point(0, 24);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new System.Drawing.Size(911, 442);
+            tabControl1.TabIndex = 528;
             // 
             // Editor
             // 
@@ -101,7 +101,7 @@ namespace ujl_subedit
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(219)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(911, 491);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(tabControl1);
             this.Controls.Add(this.downPanel);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -120,12 +120,12 @@ namespace ujl_subedit
 
         #endregion
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.ContextMenuStrip HexContextMenu;
+        private static System.Windows.Forms.ContextMenuStrip HexContextMenu;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ContextMenuStrip TextContextMenu;
-        private System.Windows.Forms.ProgressBar saveProgress;
+        private static System.Windows.Forms.ContextMenuStrip TextContextMenu;
+        private static System.Windows.Forms.ProgressBar saveProgress;
         private System.Windows.Forms.Panel downPanel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TabControl tabControl1;
+        private static System.Windows.Forms.TabControl tabControl1;
     }
 }
