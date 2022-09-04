@@ -1104,7 +1104,7 @@ namespace ujl_subedit
             tabControl1.DragEnter += eventDragEnter;
             tabControl1.DragDrop += eventDragDrop;
 
-            //About();
+            About();
         }
         private void About()
         {
