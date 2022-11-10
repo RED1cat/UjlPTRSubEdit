@@ -194,7 +194,6 @@ namespace ujl_subedit
                 FileSubLengthEurope = subTitleCountEur;
                 FileSubLengthEuropeAll = subTitleCountEurAll;
             }
-
         }
     }
 }

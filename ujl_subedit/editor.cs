@@ -8,7 +8,7 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Drawing.Text;
 using System.Text;
-
+using System.Diagnostics;
 
 namespace ujl_subedit
 {
@@ -24,6 +24,7 @@ namespace ujl_subedit
         public static XmlDocument m_XDocUjlUsa = new XmlDocument().LoadXmlDoc(Encoding.UTF8.GetString(Convert.FromBase64String(Base64File.base64_XmlUjlUsa)));
         public static XmlDocument m_XDocUjlEurope = new XmlDocument();//.OpenXmlDoc(m_XmlDocPath);
         public static PrivateFontCollection m_DomFont = new PrivateFontCollection().LoadFontFromBase64(Base64File.base64_DomBold, "domBold.ttf").LoadFontFromBase64(Base64File.base64_DomCasual, "domCasual.ttf");
+        public static string m_TextPreviewPath = @"C:\Users\wwwsa\source\repos\ujl_textpreview\ujl_textpreview\bin\Debug\net6.0\ujl_textpreview.exe";
 
         public Editor()
         {
@@ -519,11 +520,11 @@ namespace ujl_subedit
 
                         if (m_SymbolConverter == true)
                         {
-                            Array.Copy(tabEur.GetTextBoxById(subId, "Hex").Text.Replace("23", "0A").Replace("2F", "00").Hex2byte(m_ToRus, lengthEur), 0, m_FileInfo[fileKey].FileBytes, addressEur, lengthEur);
+                            Array.Copy(tabEur.GetTextBoxById(subId, "Hex").Text.Replace("23", "0A").Replace("2F", "00").Hex2byte(true, lengthEur), 0, m_FileInfo[fileKey].FileBytes, addressEur, lengthEur);
                         }
                         else
                         {
-                            Array.Copy(tabEur.GetTextBoxById(subId, "Hex").Text.Hex2byte(m_ToRus, lengthEur), 0, m_FileInfo[fileKey].FileBytes, addressEur, lengthEur);
+                            Array.Copy(tabEur.GetTextBoxById(subId, "Hex").Text.Hex2byte(true, lengthEur), 0, m_FileInfo[fileKey].FileBytes, addressEur, lengthEur);
                         }
                         saveProgress.PerformStep();
                     }
@@ -559,11 +560,11 @@ namespace ujl_subedit
                             length = Int32.Parse(m_XDocUjlUsa.GetXmlNode(fileName, region, "GetlengthNodeUsa", id).InnerText);
                             if (m_SymbolConverter == true)
                             {
-                                Array.Copy(ctr.Text.Replace("23", "0A").Replace("2F", "00").Hex2byte(m_ToRus, length), 0, m_FileInfo[fileKey].FileBytes, address, length);
+                                Array.Copy(ctr.Text.Replace("23", "0A").Replace("2F", "00").Hex2byte(true, length), 0, m_FileInfo[fileKey].FileBytes, address, length);
                             }
                             else
                             {
-                                Array.Copy(ctr.Text.Hex2byte(m_ToRus, length), 0, m_FileInfo[fileKey].FileBytes, address, length);
+                                Array.Copy(ctr.Text.Hex2byte(true, length), 0, m_FileInfo[fileKey].FileBytes, address, length);
                             }
                         }
                     }
@@ -640,6 +641,10 @@ namespace ujl_subedit
             decryptRus.Click += decryptRus_Click;
             optionItem.DropDownItems.Add(decryptRus);
 
+            ToolStripMenuItem decryptRus2 = new ToolStripMenuItem("Decrypt rus2");
+            decryptRus2.Click += decryptRus2_Click;
+            optionItem.DropDownItems.Add(decryptRus2);
+
             ToolStripMenuItem toRusItem = new ToolStripMenuItem("To rus") { Checked = false, CheckOnClick = true };
             toRusItem.Click += toRusItem_Click;
             optionItem.DropDownItems.Add(toRusItem);
@@ -655,6 +660,14 @@ namespace ujl_subedit
             ToolStripMenuItem symbolConverter = new ToolStripMenuItem("Symbol converter") { Checked = false, CheckOnClick = true };
             symbolConverter.Click += symbolConverter_Click;
             optionItem.DropDownItems.Add(symbolConverter);
+
+            ToolStripMenuItem allTextPreview = new ToolStripMenuItem("Preview all");
+            allTextPreview.Click += allTextPreview_Click;
+            optionItem.DropDownItems.Add(allTextPreview);
+
+            ToolStripMenuItem allTextPreviewRus = new ToolStripMenuItem("Preview all rus");
+            allTextPreviewRus.Click += allTextPreview_Click;
+            optionItem.DropDownItems.Add(allTextPreviewRus);
 
             ToolStripTextBox codePage = new ToolStripTextBox();
             menuStrip1.Items.Add(codePage);
@@ -738,6 +751,36 @@ namespace ujl_subedit
                         if (new string(da) == "Hex")
                         {
                             ctr.Text = ctr.Text.Decrypt();
+                            foreach (Control ctr2 in Tab.Controls)
+                            {
+                                var da2 = ctr2.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray();
+                                if (new string(da2) == "Text")
+                                {
+                                    if (ctr.Name.Replace("Hex", "") == ctr2.Name.Replace("Text", ""))
+                                    {
+                                        ctr2.Text = m_CodePage.GetString(ctr.Text.Hex2byte());
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        private void decryptRus2_Click(object sender, EventArgs e)
+        {
+            foreach (Control tab in tabControl1.Controls)
+            {
+                if (tab.CanFocus == true)
+                {
+                    TabPage Tab = (TabPage)tab;
+
+                    foreach (Control ctr in Tab.Controls)
+                    {
+                        var da = ctr.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray();
+                        if (new string(da) == "Hex")
+                        {
+                            ctr.Text = ctr.Text.Decrypt2();
                             foreach (Control ctr2 in Tab.Controls)
                             {
                                 var da2 = ctr2.Name.ToCharArray().Where(n => !char.IsDigit(n)).ToArray();
@@ -968,6 +1011,69 @@ namespace ujl_subedit
                 return;
             }
         }
+        private void allTextPreview_Click(object sender, EventArgs e)
+        {
+            switch (sender.ToString())
+            {
+                case "Preview all":
+                    if(GetTabVocus() != null)
+                    {
+                        TabPage tab = GetTabVocus();
+                        int count = m_FileInfo[tab.Name].FileSubLengthUsa;
+                        string allhex = "";
+                        for (int i = 1; i <= count; i++)
+                        {
+                            allhex += tab.GetTextBoxById(i, "Hex").Text;
+                            if(i != count)
+                            {
+                                allhex += '`';
+                            }
+                        }
+                        allhex = "all" + " " + allhex;
+
+                        Process preview = new Process();
+                        preview.StartInfo.UseShellExecute = false;
+                        preview.StartInfo.FileName = m_TextPreviewPath;
+                        preview.StartInfo.Arguments = allhex;
+                        preview.Start();
+                        preview.WaitForExit();
+                    }
+                    break;
+                case "Preview all rus":
+                    if (GetTabVocus() != null)
+                    {
+                        TabPage tab = GetTabVocus();
+                        int count = m_FileInfo[tab.Name].FileSubLengthUsa;
+                        string allhex = "";
+                        string hex;
+                        string raw = "";
+                        for (int i = 1; i <= count; i++)
+                        {
+                            hex = tab.GetTextBoxById(i, "Hex").Text;
+                            hex = hex.Replace("-", "");
+                            for (int j = 0; j < hex.Length / 2; j++)
+                            {
+                                raw += HexConverter.HexToRus(hex.Substring(j * 2, 2));
+                            }
+                            allhex += raw;
+                            if (i != count)
+                            {
+                                allhex += '`';
+                            }
+                            raw = "";
+                        }
+                        allhex = "all" + " "  + "rus"+ " "+ allhex;
+
+                        Process preview = new Process();
+                        preview.StartInfo.UseShellExecute = false;
+                        preview.StartInfo.FileName = m_TextPreviewPath;
+                        preview.StartInfo.Arguments = allhex;
+                        preview.Start();
+                        preview.WaitForExit();
+                    }
+                    break;
+            }
+        }
 
         //contextMenuStrip
         private void СreateContextMenuStripItem()
@@ -983,16 +1089,30 @@ namespace ujl_subedit
             ToolStripMenuItem textTextPaste = new ToolStripMenuItem("Paste");
             textTextPaste.Click += textPaste_Click;
 
+            ToolStripMenuItem textPreview = new ToolStripMenuItem("Preview");
+            textPreview.Click += textPreview_Click;
+            ToolStripMenuItem textPreviewRus = new ToolStripMenuItem("Preview rus");
+            textPreviewRus.Click += textPreview_Click;
+
             //hex
             ToolStripMenuItem sharpToLineBreak = new ToolStripMenuItem("23 to 0A");
             sharpToLineBreak.Click += sharpToLineBreak_Click;
             HexContextMenu.Items.Add(sharpToLineBreak);
             HexContextMenu.Items.Add(hexTextCopy);
             HexContextMenu.Items.Add(hexTextPaste);
+            HexContextMenu.Items.Add(textPreview);
+#if DEBUG
+            HexContextMenu.Items.Add(textPreviewRus);
+#endif
+
 
             //text
             TextContextMenu.Items.Add(textTextCopy);
             TextContextMenu.Items.Add(textTextPaste);
+            TextContextMenu.Items.Add(textPreview);
+#if DEBUG
+            TextContextMenu.Items.Add(textPreviewRus);
+#endif
         }
         private void sharpToLineBreak_Click(object sender, EventArgs e)
         {
@@ -1025,6 +1145,38 @@ namespace ujl_subedit
                 TextBox textbox = GetTextBoxVocus();
 
                 textbox.Paste(Clipboard.GetText());
+            }
+        }
+        private void textPreview_Click(object sender, EventArgs e)
+        {
+            if (GetTextBoxVocus() != null)
+            {
+                string hex = GetTabVocus().GetTextBoxById(int.Parse(GetTextBoxVocus().Name.Replace("Hex", "").Replace("Text", "")), "Hex").Text;
+
+                if (m_SymbolConverter == true)
+                {
+                    hex = hex.Replace("23", "0A");
+                }
+                if (m_ToRus2 == true)
+                {
+                    hex = hex.Replace("-", "");
+                    string raw = "";
+                    for (int i = 0; i < hex.Length / 2; i++)
+                    {
+                        raw += HexConverter.HexToRus(hex.Substring(i * 2, 2));
+                    }
+                    hex = raw;
+                }
+                if (sender.ToString() == "Preview rus")
+                {
+                    hex = "rus" + " " + hex;
+                }
+                Process preview = new Process();
+                preview.StartInfo.UseShellExecute = false;
+                preview.StartInfo.FileName = m_TextPreviewPath;
+                preview.StartInfo.Arguments = hex;
+                preview.Start();
+                preview.WaitForExit();
             }
         }
 
@@ -1104,7 +1256,7 @@ namespace ujl_subedit
             tabControl1.DragEnter += eventDragEnter;
             tabControl1.DragDrop += eventDragDrop;
 
-            About();
+            //About();
         }
         private void About()
         {

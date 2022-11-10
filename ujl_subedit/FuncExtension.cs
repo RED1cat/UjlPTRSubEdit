@@ -63,14 +63,25 @@ namespace ujl_subedit
             }
             return hex;
         }
-        public static byte[] Hex2byte(this string hex,  bool toRus = false, int num = 0)
+        public static string Decrypt2(this string hex)
         {
-            if (toRus == true & hex.Length > 1)
+            string finallyEditHex = "";
+
+            for (int i = 0; i < hex.Length / 3; i++)
+            {
+                finallyEditHex += hex.Substring(i * 3, 3).Replace(hex.Substring(i * 3, 2), HexConverter.RusToHex(hex.Substring(i * 3, 2)));
+            }
+            finallyEditHex += hex.Substring(hex.Length - 2, 2).Replace(hex.Substring(hex.Length - 2, 2), HexConverter.RusToHex(hex.Substring(hex.Length - 2, 2)));
+            return finallyEditHex;
+        }
+        public static byte[] Hex2byte(this string hex, bool save = false, int num = 0)
+        {
+            if (Editor.m_ToRus == true & hex.Length > 1 & Editor.m_ToRus2 == false & save == true)
             {
                 hex = hex.Replace("C0", "46").Replace("C1", "4F").Replace("C2", "44").Replace("C3", "55").Replace("C4", "4C").Replace("C5", "54").Replace("C6", "51").Replace("C7", "50").Replace("C8", "42").Replace("CA", "52").Replace("CB", "4B").Replace("CC", "56").Replace("CD", "59").Replace("CE", "4A").Replace("CF", "47").Replace("D0", "48").Replace("D1", "43").Replace("D2", "4E").Replace("D3", "45").Replace("D4", "41").Replace("D5", "2A").Replace("D6", "57").Replace("D7", "58").Replace("D8", "49").Replace("D9", "49").Replace("DB", "73").Replace("DD", "53").Replace("DE", "4D").Replace("DF", "5A").Replace("E0", "66").Replace("E1", "6F").Replace("E2", "64").Replace("E3", "75").Replace("E4", "6C").Replace("E5", "74").Replace("E6", "71").Replace("E7", "70").Replace("E8", "62").Replace("EA", "72").Replace("E9", "EA").Replace("EB", "6B").Replace("EC", "76").Replace("ED", "79").Replace("EE", "6A").Replace("EF", "67").Replace("F0", "68").Replace("F1", "63").Replace("F2", "6E").Replace("F3", "65").Replace("F4", "61").Replace("F5", "2A").Replace("F6", "77").Replace("F7", "78").Replace("F8", "49").Replace("F9", "49").Replace("FA", "E9").Replace("FB", "73").Replace("FC", "6D").Replace("FD", "53").Replace("FE", "4D").Replace("FF", "7A").Replace("A8", "CB").Replace("C9", "E8").Replace("DC", "E2").Replace("DA", "E9").Replace("B8", "EB");
 
             }
-            if(toRus == false & hex.Length > 1 & Editor.m_ToRus2 == true)
+            if(Editor.m_ToRus == false & hex.Length > 1 & Editor.m_ToRus2 == true & save == true)
             {
                 hex = hex.Replace("-", "");
                 string finallyEditHex = "";
