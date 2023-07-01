@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ujl_subedit
+namespace ujl_subedit.Preview
 {
-    public partial class test : Form
+    public partial class Preview : Form
     {
-        public test()
+        public Preview()
         {
             InitializeComponent();
         }

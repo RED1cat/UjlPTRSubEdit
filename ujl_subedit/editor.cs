@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Drawing.Text;
 using System.Text;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace ujl_subedit
 {
@@ -24,11 +25,16 @@ namespace ujl_subedit
         public static XmlDocument m_XDocUjlUsa = new XmlDocument().LoadXmlDoc(Encoding.UTF8.GetString(Convert.FromBase64String(Base64File.base64_XmlUjlUsa)));
         public static XmlDocument m_XDocUjlEurope = new XmlDocument();//.OpenXmlDoc(m_XmlDocPath);
         public static PrivateFontCollection m_DomFont = new PrivateFontCollection().LoadFontFromBase64(Base64File.base64_DomBold, "domBold.ttf").LoadFontFromBase64(Base64File.base64_DomCasual, "domCasual.ttf");
-        public static string m_TextPreviewPath = @"C:\Users\wwwsa\source\repos\ujl_textpreview\ujl_textpreview\bin\Debug\net6.0\ujl_textpreview.exe";
+        public static string m_TextPreviewPath = @"C:\Users\wwwsa\source\repos\ujl_textpreview\ujl_textpreview\bin\Release\Preview\ujl_textpreview.exe";
+        public static string m_StartFilePath = null;
 
         public Editor()
         {
             InitializeComponent();
+            if(m_StartFilePath != null)
+            {
+                OpenFile(m_StartFilePath, System.IO.Path.GetFileName(m_StartFilePath));
+            }
         }
 
 
@@ -382,7 +388,10 @@ namespace ujl_subedit
                 "select the file region:\n'Yes' - is Usa region,\n'No' - is Europe region",
                 "Region",
                 MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Question);
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.ServiceNotification);
+
             if (result == DialogResult.Yes)
                 return "usa";
             else if (result == DialogResult.No)
@@ -1263,6 +1272,19 @@ namespace ujl_subedit
             About about = new About();
             about.Owner = this;
             about.ShowDialog();
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+
+            if (m.Msg == Program.CapturedMutex.WM_COPYDATA)
+            {
+                var st = (Program.CapturedMutex.CopyDataStruct)Marshal.PtrToStructure(m.LParam, typeof(Program.CapturedMutex.CopyDataStruct));
+                string strData = Marshal.PtrToStringUni(st.lpData);
+
+                OpenFile(strData, System.IO.Path.GetFileName(strData));
+            }
         }
 
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
