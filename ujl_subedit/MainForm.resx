@@ -154,9 +154,15 @@
   <metadata name="m_OpenFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 17</value>
   </metadata>
+  <data name="m_OpenFileDialog.Filter" xml:space="preserve">
+    <value>Compatibility files(*.SNG;*.CMP;*.COP;*.MEN;*.BIN)|*.SNG;*.CMP;*.COP;*.MEN;*.BIN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|PTR File (*.BIN)|*.BIN|All files (*.*)|*.*</value>
+  </data>
   <metadata name="m_SaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>513, 17</value>
   </metadata>
+  <data name="m_SaveFileDialog.Filter" xml:space="preserve">
+    <value>Compatibility files(*.SNG;*.CMP;*.COP;*.MEN;*.BIN)|*.SNG;*.CMP;*.COP;*.MEN;*.BIN|Single Mode File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu File (*.MEN)|*.MEN|PTR File (*.BIN)|*.BIN|All files (*.*)|*.*</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAFhIAAAEAIACtBgAAZgAAABYSAAABAAgALQYAABMHAAAgIAAAAQAgAKgQAABADQAAICAAAAEA

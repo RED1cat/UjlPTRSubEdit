@@ -44,12 +44,23 @@
             this.m_SearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_ToolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.m_AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.m_OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.m_SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.m_WindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_CascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_TileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_TileVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m_OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.m_SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.m_EncodingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m_TextEncodingToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.m_ConverterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m_DeconvertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.m_ConversionPatternToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.m_EncodingToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.m_ConverterToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.m_OffsetToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.m_FileOffsetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m_FileOffsetToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.m_StatusStrip.SuspendLayout();
             this.m_MenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +68,10 @@
             // m_StatusStrip
             // 
             this.m_StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.m_ProgressBar});
+            this.m_ProgressBar,
+            this.m_EncodingToolStripStatusLabel,
+            this.m_OffsetToolStripStatusLabel,
+            this.m_ConverterToolStripStatusLabel});
             this.m_StatusStrip.Location = new System.Drawing.Point(0, 550);
             this.m_StatusStrip.Name = "m_StatusStrip";
             this.m_StatusStrip.Size = new System.Drawing.Size(1058, 22);
@@ -75,8 +89,8 @@
             this.m_MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m_FileToolStripMenuItem,
             this.m_ToolToolStripMenuItem,
-            this.m_HelpToolStripMenuItem,
-            this.m_WindowToolStripMenuItem});
+            this.m_WindowToolStripMenuItem,
+            this.m_HelpToolStripMenuItem});
             this.m_MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.m_MenuStrip.Name = "m_MenuStrip";
             this.m_MenuStrip.Size = new System.Drawing.Size(1058, 24);
@@ -125,6 +139,7 @@
             this.m_SaveAsToolStripMenuItem.Name = "m_SaveAsToolStripMenuItem";
             this.m_SaveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.m_SaveAsToolStripMenuItem.Text = "Save &As";
+            this.m_SaveAsToolStripMenuItem.Click += new System.EventHandler(this.m_SaveAsToolStripMenuItem_Click);
             // 
             // m_ToolStripSeparator2
             // 
@@ -136,9 +151,14 @@
             this.m_ExitToolStripMenuItem.Name = "m_ExitToolStripMenuItem";
             this.m_ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.m_ExitToolStripMenuItem.Text = "&Exit";
+            this.m_ExitToolStripMenuItem.Click += new System.EventHandler(this.m_ExitToolStripMenuItem_Click);
             // 
             // m_ToolToolStripMenuItem
             // 
+            this.m_ToolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_EncodingToolStripMenuItem,
+            this.m_FileOffsetToolStripMenuItem,
+            this.m_ConverterToolStripMenuItem});
             this.m_ToolToolStripMenuItem.Name = "m_ToolToolStripMenuItem";
             this.m_ToolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.m_ToolToolStripMenuItem.Text = "&Tool";
@@ -169,19 +189,7 @@
             this.m_AboutToolStripMenuItem.Name = "m_AboutToolStripMenuItem";
             this.m_AboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.m_AboutToolStripMenuItem.Text = "&About";
-            // 
-            // m_OpenFileDialog
-            // 
-            this.m_OpenFileDialog.FileName = "m_OpenFileDialog";
-            this.m_OpenFileDialog.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode " +
-    "File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu F" +
-    "ile (*.MEN)|*.MEN|All files (*.*)|*.*";
-            // 
-            // m_SaveFileDialog
-            // 
-            this.m_SaveFileDialog.Filter = "Compatibility files(*.SNG;*.CMP;*.COP;*.MEN)|*.SNG;*.CMP;*.COP;*.MEN|Single Mode " +
-    "File (*.SNG)|*.SNG|Co-op Mode File(*.COP)|*.COP|VS Mode File(*.CMP)|*.CMP|Menu F" +
-    "ile (*.MEN)|*.MEN|All files (*.*)|*.*";
+            this.m_AboutToolStripMenuItem.Click += new System.EventHandler(this.m_AboutToolStripMenuItem_Click);
             // 
             // m_WindowToolStripMenuItem
             // 
@@ -214,8 +222,108 @@
             this.m_TileVerticalToolStripMenuItem.Text = "Tile Vertical";
             this.m_TileVerticalToolStripMenuItem.Click += new System.EventHandler(this.m_TileVerticalToolStripMenuItem_Click);
             // 
+            // m_OpenFileDialog
+            // 
+            this.m_OpenFileDialog.FileName = "m_OpenFileDialog";
+            this.m_OpenFileDialog.Filter = resources.GetString("m_OpenFileDialog.Filter");
+            this.m_OpenFileDialog.Multiselect = true;
+            // 
+            // m_SaveFileDialog
+            // 
+            this.m_SaveFileDialog.Filter = resources.GetString("m_SaveFileDialog.Filter");
+            // 
+            // m_EncodingToolStripMenuItem
+            // 
+            this.m_EncodingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_TextEncodingToolStripComboBox});
+            this.m_EncodingToolStripMenuItem.Name = "m_EncodingToolStripMenuItem";
+            this.m_EncodingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m_EncodingToolStripMenuItem.Text = "&Encoding";
+            // 
+            // m_TextEncodingToolStripComboBox
+            // 
+            this.m_TextEncodingToolStripComboBox.Items.AddRange(new object[] {
+            "Default",
+            "ASCII",
+            "UTF-7",
+            "Windows-1252"});
+            this.m_TextEncodingToolStripComboBox.Name = "m_TextEncodingToolStripComboBox";
+            this.m_TextEncodingToolStripComboBox.Size = new System.Drawing.Size(121, 23);
+            this.m_TextEncodingToolStripComboBox.Text = "Default";
+            this.m_TextEncodingToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.m_TextEncodingToolStripComboBox_SelectedIndexChanged);
+            // 
+            // m_ConverterToolStripMenuItem
+            // 
+            this.m_ConverterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_DeconvertToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.m_ConversionPatternToolStripComboBox});
+            this.m_ConverterToolStripMenuItem.Name = "m_ConverterToolStripMenuItem";
+            this.m_ConverterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m_ConverterToolStripMenuItem.Text = "&Сonverter";
+            // 
+            // m_DeconvertToolStripMenuItem
+            // 
+            this.m_DeconvertToolStripMenuItem.Name = "m_DeconvertToolStripMenuItem";
+            this.m_DeconvertToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.m_DeconvertToolStripMenuItem.Text = "&Deconvert";
+            this.m_DeconvertToolStripMenuItem.Click += new System.EventHandler(this.m_DeconvertToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
+            // 
+            // m_ConversionPatternToolStripComboBox
+            // 
+            this.m_ConversionPatternToolStripComboBox.Name = "m_ConversionPatternToolStripComboBox";
+            this.m_ConversionPatternToolStripComboBox.Size = new System.Drawing.Size(121, 23);
+            this.m_ConversionPatternToolStripComboBox.Text = "None";
+            this.m_ConversionPatternToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.m_ConversionPatternToolStripComboBox_SelectedIndexChanged);
+            // 
+            // m_EncodingToolStripStatusLabel
+            // 
+            this.m_EncodingToolStripStatusLabel.Name = "m_EncodingToolStripStatusLabel";
+            this.m_EncodingToolStripStatusLabel.Size = new System.Drawing.Size(57, 17);
+            this.m_EncodingToolStripStatusLabel.Text = "Encoding";
+            // 
+            // m_ConverterToolStripStatusLabel
+            // 
+            this.m_ConverterToolStripStatusLabel.Name = "m_ConverterToolStripStatusLabel";
+            this.m_ConverterToolStripStatusLabel.Size = new System.Drawing.Size(59, 17);
+            this.m_ConverterToolStripStatusLabel.Text = "Сonverter";
+            // 
+            // m_OffsetToolStripStatusLabel
+            // 
+            this.m_OffsetToolStripStatusLabel.Name = "m_OffsetToolStripStatusLabel";
+            this.m_OffsetToolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.m_OffsetToolStripStatusLabel.Text = "Offset";
+            // 
+            // m_FileOffsetToolStripMenuItem
+            // 
+            this.m_FileOffsetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_FileOffsetToolStripComboBox});
+            this.m_FileOffsetToolStripMenuItem.Name = "m_FileOffsetToolStripMenuItem";
+            this.m_FileOffsetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m_FileOffsetToolStripMenuItem.Text = "&FileOffset";
+            // 
+            // m_FileOffsetToolStripComboBox
+            // 
+            this.m_FileOffsetToolStripComboBox.Items.AddRange(new object[] {
+            "UmJammerLammy Usa - 0x1c5750 ",
+            "UmJammerLammy Jp - 0x1c5110 ",
+            "UmJammerLammy eur - 0x1c4eb8",
+            "PaRappaTheRapper Usa - 0x1c3870",
+            "PaRappaTheRapper Jp - 0x1c8af8",
+            "PaRappaTheRapper eur - 0x1cc21c"});
+            this.m_FileOffsetToolStripComboBox.Name = "m_FileOffsetToolStripComboBox";
+            this.m_FileOffsetToolStripComboBox.Size = new System.Drawing.Size(209, 23);
+            this.m_FileOffsetToolStripComboBox.Text = "UmJammerLammy Usa - 0x1c5750 ";
+            this.m_FileOffsetToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.m_FileOffsetToolStripComboBox_SelectedIndexChanged);
+            // 
             // MainForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 572);
@@ -226,6 +334,9 @@
             this.MainMenuStrip = this.m_MenuStrip;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.MdiChildActivate += new System.EventHandler(this.MainForm_MdiChildActivate);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             this.m_StatusStrip.ResumeLayout(false);
             this.m_StatusStrip.PerformLayout();
             this.m_MenuStrip.ResumeLayout(false);
@@ -257,5 +368,16 @@
         private System.Windows.Forms.ToolStripMenuItem m_CascadeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem m_TileHorizontalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem m_TileVerticalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m_EncodingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox m_TextEncodingToolStripComboBox;
+        private System.Windows.Forms.ToolStripMenuItem m_ConverterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m_DeconvertToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripComboBox m_ConversionPatternToolStripComboBox;
+        private System.Windows.Forms.ToolStripStatusLabel m_EncodingToolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel m_ConverterToolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel m_OffsetToolStripStatusLabel;
+        private System.Windows.Forms.ToolStripMenuItem m_FileOffsetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox m_FileOffsetToolStripComboBox;
     }
 }
