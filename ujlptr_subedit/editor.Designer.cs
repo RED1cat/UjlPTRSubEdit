@@ -41,6 +41,10 @@
             this.m_SwitchingTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.m_Group = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.m_Panel = new System.Windows.Forms.Panel();
+            this.m_SwitchingTimeTextBox = new System.Windows.Forms.TextBox();
+            this.m_SwitchingTimeLabel = new System.Windows.Forms.Label();
+            this.m_TimeLabel = new System.Windows.Forms.Label();
+            this.m_TimeTextBox = new System.Windows.Forms.TextBox();
             this.m_ReduceMaxSymbolOnLineButton = new System.Windows.Forms.Button();
             this.m_NumberSymbolsToChangeTextBox = new System.Windows.Forms.TextBox();
             this.m_IncreaseMaxSymbolOnLineButton = new System.Windows.Forms.Button();
@@ -52,10 +56,6 @@
             this.m_LengthLabel = new System.Windows.Forms.Label();
             this.m_TextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_TimeTextBox = new System.Windows.Forms.TextBox();
-            this.m_TimeLabel = new System.Windows.Forms.Label();
-            this.m_SwitchingTimeLabel = new System.Windows.Forms.Label();
-            this.m_SwitchingTimeTextBox = new System.Windows.Forms.TextBox();
             this.m_Panel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -160,6 +160,46 @@
             this.m_Panel.Size = new System.Drawing.Size(1159, 68);
             this.m_Panel.TabIndex = 1;
             // 
+            // m_SwitchingTimeTextBox
+            // 
+            this.m_SwitchingTimeTextBox.Enabled = false;
+            this.m_SwitchingTimeTextBox.Location = new System.Drawing.Point(893, 30);
+            this.m_SwitchingTimeTextBox.Name = "m_SwitchingTimeTextBox";
+            this.m_SwitchingTimeTextBox.Size = new System.Drawing.Size(66, 20);
+            this.m_SwitchingTimeTextBox.TabIndex = 16;
+            this.m_SwitchingTimeTextBox.TabStop = false;
+            this.m_SwitchingTimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // m_SwitchingTimeLabel
+            // 
+            this.m_SwitchingTimeLabel.AutoSize = true;
+            this.m_SwitchingTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.m_SwitchingTimeLabel.Location = new System.Drawing.Point(799, 31);
+            this.m_SwitchingTimeLabel.Name = "m_SwitchingTimeLabel";
+            this.m_SwitchingTimeLabel.Size = new System.Drawing.Size(91, 15);
+            this.m_SwitchingTimeLabel.TabIndex = 15;
+            this.m_SwitchingTimeLabel.Text = "SwitchingTime:";
+            // 
+            // m_TimeLabel
+            // 
+            this.m_TimeLabel.AutoSize = true;
+            this.m_TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.m_TimeLabel.Location = new System.Drawing.Point(799, 7);
+            this.m_TimeLabel.Name = "m_TimeLabel";
+            this.m_TimeLabel.Size = new System.Drawing.Size(38, 15);
+            this.m_TimeLabel.TabIndex = 14;
+            this.m_TimeLabel.Text = "Time:";
+            // 
+            // m_TimeTextBox
+            // 
+            this.m_TimeTextBox.Enabled = false;
+            this.m_TimeTextBox.Location = new System.Drawing.Point(893, 7);
+            this.m_TimeTextBox.Name = "m_TimeTextBox";
+            this.m_TimeTextBox.Size = new System.Drawing.Size(66, 20);
+            this.m_TimeTextBox.TabIndex = 13;
+            this.m_TimeTextBox.TabStop = false;
+            this.m_TimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // m_ReduceMaxSymbolOnLineButton
             // 
             this.m_ReduceMaxSymbolOnLineButton.Enabled = false;
@@ -232,7 +272,7 @@
             this.m_EditButton.Name = "m_EditButton";
             this.m_EditButton.Size = new System.Drawing.Size(75, 23);
             this.m_EditButton.TabIndex = 3;
-            this.m_EditButton.Text = "Edit";
+            this.m_EditButton.Text = "Apply";
             this.m_EditButton.UseVisualStyleBackColor = true;
             this.m_EditButton.Click += new System.EventHandler(this.m_EditButton_Click);
             // 
@@ -276,46 +316,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1159, 478);
             this.panel1.TabIndex = 2;
-            // 
-            // m_TimeTextBox
-            // 
-            this.m_TimeTextBox.Enabled = false;
-            this.m_TimeTextBox.Location = new System.Drawing.Point(893, 7);
-            this.m_TimeTextBox.Name = "m_TimeTextBox";
-            this.m_TimeTextBox.Size = new System.Drawing.Size(66, 20);
-            this.m_TimeTextBox.TabIndex = 13;
-            this.m_TimeTextBox.TabStop = false;
-            this.m_TimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // m_TimeLabel
-            // 
-            this.m_TimeLabel.AutoSize = true;
-            this.m_TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.m_TimeLabel.Location = new System.Drawing.Point(799, 7);
-            this.m_TimeLabel.Name = "m_TimeLabel";
-            this.m_TimeLabel.Size = new System.Drawing.Size(38, 15);
-            this.m_TimeLabel.TabIndex = 14;
-            this.m_TimeLabel.Text = "Time:";
-            // 
-            // m_SwitchingTimeLabel
-            // 
-            this.m_SwitchingTimeLabel.AutoSize = true;
-            this.m_SwitchingTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.m_SwitchingTimeLabel.Location = new System.Drawing.Point(799, 31);
-            this.m_SwitchingTimeLabel.Name = "m_SwitchingTimeLabel";
-            this.m_SwitchingTimeLabel.Size = new System.Drawing.Size(91, 15);
-            this.m_SwitchingTimeLabel.TabIndex = 15;
-            this.m_SwitchingTimeLabel.Text = "SwitchingTime:";
-            // 
-            // m_SwitchingTimeTextBox
-            // 
-            this.m_SwitchingTimeTextBox.Enabled = false;
-            this.m_SwitchingTimeTextBox.Location = new System.Drawing.Point(893, 30);
-            this.m_SwitchingTimeTextBox.Name = "m_SwitchingTimeTextBox";
-            this.m_SwitchingTimeTextBox.Size = new System.Drawing.Size(66, 20);
-            this.m_SwitchingTimeTextBox.TabIndex = 16;
-            this.m_SwitchingTimeTextBox.TabStop = false;
-            this.m_SwitchingTimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Editor
             // 

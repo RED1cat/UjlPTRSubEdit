@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ujl_subedit", "ujl_subedit\ujl_subedit.csproj", "{2C4E6E75-44B1-419A-B995-89E83F4033BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ujlptr_subedit", "ujlptr_subedit\ujlptr_subedit.csproj", "{2C4E6E75-44B1-419A-B995-89E83F4033BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

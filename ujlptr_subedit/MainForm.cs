@@ -216,28 +216,28 @@ namespace ujl_subedit
                 switch (m_FileOffsetToolStripComboBox.SelectedIndex)
                 {
                     case 0:
-                        editor.m_AddressOffset = 0x1c5750;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1c5750";
+                        editor.m_AddressOffset = 0x1c5750; //ujl usa
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5750";
                         break;
                     case 1:
-                        editor.m_AddressOffset = 0x1c5110;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1c5110";
+                        editor.m_AddressOffset = 0x1c5110; //ujl jp
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5110";
                         break;
                     case 2:
-                        editor.m_AddressOffset = 0x1c4eb8;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1c4eb8";
+                        editor.m_AddressOffset = 0x1c4eb8; //ujl eur
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c4eb8";
                         break;
                     case 3:
-                        editor.m_AddressOffset = 0x1c3870;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1c3870";
+                        editor.m_AddressOffset = 0x1c3870; //ptr usa
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c3870";
                         break;
                     case 4:
-                        editor.m_AddressOffset = 0x1c8af8;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1c8af8";
+                        editor.m_AddressOffset = 0x1cc21c; //ptr jp
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1cc21c";
                         break;
                     case 5:
-                        editor.m_AddressOffset = 0x1cc21c;
-                        m_OffsetToolStripStatusLabel.Text = "Offset: 0x1cc21c";
+                        editor.m_AddressOffset = 0x1c8af8; //ptr eur
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c8af8";
                         break;
                 }
                 editor.m_DecodeFile();
@@ -256,7 +256,33 @@ namespace ujl_subedit
                 Editor editor = ((Editor)this.ActiveMdiChild);
                 m_EncodingToolStripStatusLabel.Text = $"Encoding: {editor.m_CodePage.HeaderName}";
                 m_ConverterToolStripStatusLabel.Text = $"Converter: {editor.m_ConverterName}";
-                m_OffsetToolStripStatusLabel.Text = $"Offset: {editor.m_AddressOffset}";
+                switch (editor.m_AddressOffset)
+                {
+                    case 1857360:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-usa-0x1c5750";
+                        m_FileOffsetToolStripComboBox.Text = "Ujl-usa-0x1c5750";
+                        break;
+                    case 1855760:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-jp-0x1c5110";
+                        m_FileOffsetToolStripComboBox.Text = "Ujl-jp-0x1c5110";
+                        break;
+                    case 1855160:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-eur-0x1c4eb8";
+                        m_FileOffsetToolStripComboBox.Text = "Ujl-eur-0x1c4eb8";
+                        break;
+                    case 1849456:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-usa-0x1c3870";
+                        m_FileOffsetToolStripComboBox.Text = "Ptr-usa-0x1c3870";
+                        break;
+                    case 1884700:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-jp-0x1cc21c";
+                        m_FileOffsetToolStripComboBox.Text = "Ptr-jp-0x1cc21c";
+                        break;
+                    case 1870584:
+                        m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-eur-0x1c8af8";
+                        m_FileOffsetToolStripComboBox.Text = "Ptr-eur-0x1c8af8";
+                        break;
+                }
 
                 m_TextEncodingToolStripComboBox.Text = editor.m_CodePage.HeaderName;
                 m_ConversionPatternToolStripComboBox.Text = editor.m_ConverterName;

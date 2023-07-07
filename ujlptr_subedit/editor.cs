@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Windows.Input;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ujl_subedit
 {
@@ -29,6 +28,7 @@ namespace ujl_subedit
             m_Panel.AutoScroll = true;
             m_Panel.HorizontalScroll.Enabled = false;
             m_Panel.HorizontalScroll.Visible = false;
+            
         }
 
         public void m_DecodeFile()
@@ -96,10 +96,6 @@ namespace ujl_subedit
                                     count--;
                                 }
                                 string text = m_CodePage.GetString(this.m_File, textaddressInFile, count);
-                                //if (hexConverter != null)
-                                //{
-                                //    text = m_ConvertTextFromPattern(text, hexConverter);
-                                //}
 
                                 if (this.m_File[i + 4] == 0x80 | this.m_File[i - 4] == 0x80) //4
                                 {
@@ -335,27 +331,6 @@ namespace ujl_subedit
                         if (hexConverter != null)
                         {
                             text = m_ConvertTextFromPattern(text, hexConverter);
-                            //string hex = BitConverter.ToString(m_CodePage.GetBytes(text)).Replace("-", "");
-                            //string outHex = "";
-
-                            //for (int i = 0; i < hex.Length / 2; i++)
-                            //{
-                            //    string cur = hex.Substring(i * 2, 2);
-                            //    if (hexConverter.ContainsKey(hex.Substring(i * 2, 2)))
-                            //    {
-                            //        outHex += hexConverter[hex.Substring(i * 2, 2)];
-                            //    }
-                            //    else
-                            //    {
-                            //        outHex += hex.Substring(i * 2, 2);
-                            //    }
-                            //}
-                            //byte[] raw = new byte[outHex.Length / 2];
-                            //for (int i = 0; i < raw.Length; i++)
-                            //{
-                            //    raw[i] = Convert.ToByte(outHex.Substring(i * 2, 2), 16);
-                            //}
-                            //text = m_CodePage.GetString(raw);
                         }
 
                         Array.Copy(m_CodePage.GetBytes(text), 0, m_File, textAddress, maxLengthText + 1); //text

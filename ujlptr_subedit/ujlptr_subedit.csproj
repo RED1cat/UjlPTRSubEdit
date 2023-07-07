@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2C4E6E75-44B1-419A-B995-89E83F4033BA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ujl_subedit</RootNamespace>
-    <AssemblyName>ujl_subedit</AssemblyName>
+    <RootNamespace>ujlptr_subedit</RootNamespace>
+    <AssemblyName>ujlptr_subedit</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>lammy.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\ujlptr.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -112,10 +112,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="lammy.ico" />
-    <None Include="Resources\Icon1.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
@@ -127,6 +123,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\ptr.ico" />
+    <Content Include="Resources\ujl.ico" />
+    <Content Include="Resources\ujlptr.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
