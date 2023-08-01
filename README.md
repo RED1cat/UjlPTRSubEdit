@@ -9,11 +9,7 @@ This application is designed to edit subtitles in the UJL game.
 3. After saving the file, it can be imported back into the game image, also with [CDmage](https://www.romhacking.net/utilities/1435/).
 
 ## Functions:
-1. **symbol converter** converts the symbols `00`(`null` symbol) to `2F`(`/` symbol), `0A`(`line` break symbol) to `23`(`#` symbol).
-When saving the file, the reverse conversion will occur.
-This function is designed to make it easier to edit the text of subtitles.
-
-2. **Drag-and-Drop** support.
+1. **Drag-and-Drop** support.
 Instead of opening the dialogs of the file selection window, you can simply drop the file on the application window.
 
 ## Files that the program supports:
