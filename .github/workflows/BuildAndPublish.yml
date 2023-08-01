@@ -1,0 +1,44 @@
+name: BuildAndPublish
+
+on: push
+
+jobs:
+    build:
+        name: Build for ${{ matrix.os }} ${{ matrix.arch }}
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                include:
+                    - os: windows-latest
+                      arch: x86
+                    - os: windows-latest
+                      arch: x64
+
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Build
+              run: dotnet build --configuration debug
+              
+            - name: Get file version
+              uses: mathiasvr/command-output@v2.0.0
+              id: version
+              with:
+                run: strings Output/Debug/ujlptr_subedit.exe | egrep '^[0-9]+\.[0-9]+\.[0-9]+$'
+              
+            - name: Сreating an archive for Windows ${{ matrix.arch }}
+              if: matrix.os == 'windows-latest'
+              run: cd Output/Debug ; New-Item -Path 'UJLPTRSubEditor' -ItemType Directory -Force ; Copy-Item -Path 'ujlptr_subedit.exe' -Destination UJLPTRSubEditor/ -Force ; Copy-Item -Path 'FilesOffsetsForDecode.cfg' -Destination UJLPTRSubEditor/ -Force ; Copy-Item 'Content' -Recurse UJLPTRSubEditor/ -Force ; Compress-Archive -Path UJLPTRSubEditor -Destination Windows_${{ matrix.arch }}.zip -Force
+              
+            - name: Publishing a release for Windows ${{ matrix.arch }}
+              if: matrix.os == 'windows-latest'
+              uses: svenstaro/upload-release-action@v2
+              with:
+                  repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  file: Windows_${{ matrix.arch }}.zip
+                  asset_name: ${{ matrix.asset_name }}
+                  overwrite: true
+                  release_name: Um Jammer Lammy & Parappa The Rapper Subtitle Editor ${{ steps.version.outputs.stdout }}
+                  body: ${{ github.event.head_commit.message }}
+                  tag: ${{ steps.version.outputs.stdout }}
