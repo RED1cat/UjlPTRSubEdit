@@ -18,6 +18,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            - name: Restore
+              run: dotnet Restore
+              
             - name: Build
               run: dotnet build --configuration debug
               
