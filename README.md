@@ -1,11 +1,9 @@
-# Um Jammer Lammy Subtitle Editor
-This application is designed to edit subtitles in the UJL game.
-
-**_Only the usa version of the game is supported._**
+# Um Jammer Lammy And Parappa The Rapper Subtitle Editor
+This application is designed to edit subtitles in the UJL and PTR game.
 
 ## How to use:
 1. First you need to unpack one of the game files that contains subtitles, for unpacking I recommend using [CDmage](https://www.romhacking.net/utilities/1435/).
-2. Next, open the file with subtitles in `ujl_subedit`.
+2. Next, open the file with subtitles in `ujlptr_subedit`.
 3. After saving the file, it can be imported back into the game image, also with [CDmage](https://www.romhacking.net/utilities/1435/).
 
 ## Functions:
@@ -13,6 +11,7 @@ This application is designed to edit subtitles in the UJL game.
 Instead of opening the dialogs of the file selection window, you can simply drop the file on the application window.
 
 ## Files that the program supports:
+* ### For Um Jammer Lammy
 The game has these types of files:
 ```
 COMOD*.FileExpansion
@@ -21,3 +20,9 @@ COMOD1*.FileExpansion
 `*` this symbol indicates the level number, from 0 to 8.
 
 `FileExpansion` the file extension can be - `.MEN` menu file, `.SNG` single mode file, `.COP` co-op mode file, `.CMP` versus mode file.
+* ### For Parappa The Rapper
+The game has these types of files:
+```
+COMOD*.BIN
+```
+`*` this symbol indicates the level number, from 0 to 9.
