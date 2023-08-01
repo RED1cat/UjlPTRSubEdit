@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ujlptr_subedit;
 
-namespace ujl_subedit
+namespace ujlptr_subedit
 {
     static class Program
     {

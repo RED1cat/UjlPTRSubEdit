@@ -1,4 +1,4 @@
-﻿namespace ujl_subedit
+﻿namespace ujlptr_subedit
 {
     partial class Editor
     {
@@ -76,7 +76,7 @@
             this.m_SwitchingTime,
             this.m_Group});
             this.m_ListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_ListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.m_ListView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_ListView.FullRowSelect = true;
             this.m_ListView.GridLines = true;
             this.m_ListView.HideSelection = false;
@@ -299,6 +299,7 @@
             // m_TextBox
             // 
             this.m_TextBox.Enabled = false;
+            this.m_TextBox.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.m_TextBox.Location = new System.Drawing.Point(319, 6);
             this.m_TextBox.Multiline = true;
             this.m_TextBox.Name = "m_TextBox";

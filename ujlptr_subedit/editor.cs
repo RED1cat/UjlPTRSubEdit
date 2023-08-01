@@ -4,10 +4,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
-using System.Windows.Input;
 
-namespace ujl_subedit
+namespace ujlptr_subedit
 {
     public partial class Editor : Form
     {
@@ -31,10 +31,18 @@ namespace ujl_subedit
             
         }
 
-        public void m_DecodeFile()
+        public void m_DecodeFile(int firstOffset = 0, int lastOffset = 0)
         {
             if (this.m_FilePath != null)
             {
+                int first = 0;
+                int last = this.m_File.Length;
+                if(firstOffset != 0 & lastOffset != 0)
+                {
+                    first = firstOffset;
+                    last = lastOffset;
+                }
+                
                 m_ListView.Items.Clear();
                 this.Text = m_FileName;
                 int id = 1;
@@ -42,7 +50,7 @@ namespace ujl_subedit
                 int maxid = 0;
                 m_ProgressBar.Visible = true;
 
-                for (int i = 0; i < this.m_File.Length; i++)
+                for (int i = first; i < last; i++)
                 {
                     if (this.m_File[i] == 0x80)
                     {
@@ -62,7 +70,7 @@ namespace ujl_subedit
                 m_ProgressBar.Maximum = maxid;
                 m_ProgressBar.Value = 0;
 
-                for (int i = 0; i < this.m_File.Length; i++)
+                for (int i = first; i < last; i++)
                 {
                     if (this.m_File[i] == 0x80)
                     {
@@ -126,19 +134,6 @@ namespace ujl_subedit
                 m_ProgressBar.Visible = false;
             }
         }
-        public void m_DecodeLines(Dictionary<string, string> hexConverter)
-        {
-            if (hexConverter != null)
-            {
-                foreach (ListViewItem item in m_ListView.Items)
-                {
-                    if(item.Font.Bold == true)
-                    {
-                        item.SubItems[4].Text = m_ConvertTextFromPattern(item.SubItems[4].Text, hexConverter);
-                    }
-                }
-            }
-        }
         public void m_AddLineToListView(int id, int group, string pointLocation, string textLocationInGame , string textLocationInFile,  int maxTextLength, string text, string time = "", string switchingTime = "")
         {
             ListViewItem tmpItem = m_ListView.Items.Add(id.ToString());
@@ -172,13 +167,13 @@ namespace ujl_subedit
                             m_ListView.SelectedItems[0].SubItems[4].Text = m_ListView.SelectedItems[0].SubItems[4].Text.Remove(maxLength);
                             m_ListView.SelectedItems[0].SubItems[3].Text = m_ListView.SelectedItems[0].SubItems[4].Text.Replace("\0", "").Length.ToString();
                         }
-                        m_ListView.SelectedItems[0].Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
+                        m_ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
 
                         m_ListView.Items[nextid].SubItems[2].Text = (int.Parse(m_ListView.Items[nextid].SubItems[2].Text) + count).ToString();
                         m_ListView.Items[nextid].SubItems[6].Text = Convert.ToString(Convert.ToInt32(m_ListView.Items[nextid].SubItems[6].Text, 16) - count, 16);
                         m_ListView.Items[nextid].SubItems[5].Text = Convert.ToString(Convert.ToInt32(m_ListView.Items[nextid].SubItems[5].Text, 16) - count, 16);
 
-                        m_ListView.Items[nextid].Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
+                        m_ListView.Items[nextid].Font = new Font("Segoe UI", 9, FontStyle.Bold);
 
                         m_ListView_ItemSelectionChanged(sender, new ListViewItemSelectionChangedEventArgs(m_ListView.SelectedItems[0], nextid - 1, true));
                         m_FileEdit = true;
@@ -203,10 +198,10 @@ namespace ujl_subedit
                         }
                         m_ListView.Items[nextid].SubItems[6].Text = Convert.ToString(Convert.ToInt32(m_ListView.Items[nextid].SubItems[6].Text, 16) + count, 16);
                         m_ListView.Items[nextid].SubItems[5].Text = Convert.ToString(Convert.ToInt32(m_ListView.Items[nextid].SubItems[5].Text, 16) + count, 16);
-                        m_ListView.Items[nextid].Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
+                        m_ListView.Items[nextid].Font = new Font("Segoe UI", 9, FontStyle.Bold);
 
                         m_ListView.SelectedItems[0].SubItems[2].Text = (int.Parse(m_ListView.SelectedItems[0].SubItems[2].Text) + count).ToString();
-                        m_ListView.SelectedItems[0].Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
+                        m_ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
 
                         m_ListView_ItemSelectionChanged(sender, new ListViewItemSelectionChangedEventArgs(m_ListView.SelectedItems[0], nextid - 1, true));
                         m_FileEdit = true;
@@ -265,6 +260,7 @@ namespace ujl_subedit
             if (length > maxLenght)
             {
                 m_TextBox.Text = m_TextBox.Text.Remove(maxLenght);
+                m_TextBox.SelectionStart = m_TextBox.Text.Length;
             }
 
             if (((TextBox)sender).Text.Contains('\r'))
@@ -281,7 +277,7 @@ namespace ujl_subedit
         {
             m_ListView.SelectedItems[0].SubItems[4].Text = m_TextBox.Text.Replace("\r", "");
             m_ListView.SelectedItems[0].SubItems[3].Text = m_TextBox.Text.Replace("\r", "").Length.ToString();
-            m_ListView.SelectedItems[0].Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
+            m_ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
             if(m_SwitchingTimeTextBox.Text.Length == 4)
             {
                 m_ListView.SelectedItems[0].SubItems[8].Text = m_SwitchingTimeTextBox.Text;
@@ -292,7 +288,7 @@ namespace ujl_subedit
             }
             m_FileEdit = true;
         }
-        public void m_SaveInFile(Dictionary<string, string> hexConverter = null, string filePath = "")
+        public void m_SaveInFile(string filePath = "")
         {
             if (m_ListView.Items.Count > 0 & m_FileEdit)
             {
@@ -328,11 +324,6 @@ namespace ujl_subedit
                         }
                         text = text.Insert(text.Length, "\0");
 
-                        if (hexConverter != null)
-                        {
-                            text = m_ConvertTextFromPattern(text, hexConverter);
-                        }
-
                         Array.Copy(m_CodePage.GetBytes(text), 0, m_File, textAddress, maxLengthText + 1); //text
 
                         m_File[pointAddress] = Convert.ToByte(Convert.ToInt32(item.SubItems[5].Text.Remove(0, 4), 16)); //textaddress
@@ -367,7 +358,7 @@ namespace ujl_subedit
                     {
                         if (item.Font.Bold)
                         {
-                            item.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
+                            item.Font = new Font("Segoe UI", 9, FontStyle.Regular);
                             m_ProgressBar.Value++;
                         }
                     }
@@ -382,17 +373,55 @@ namespace ujl_subedit
                 
             }
         }
+        public void m_ConvertSelectedLines(Dictionary<string, string> hexConverter)
+        {
+            if (hexConverter != null)
+            {
+                foreach (ListViewItem item in m_ListView.Items)
+                {
+                    if(item.Checked == true)
+                    {
+                        if (item.SubItems[4].Text.Replace("\0", "").Length > 0)
+                        {
+                            item.SubItems[4].Text = m_ConvertTextFromPattern(item.SubItems[4].Text, hexConverter);
+                            item.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                            this.m_FileEdit = true;
+                        }
+                    }
+                }
+            }
+        }
+        public void m_EnableCheckboxesOnListView()
+        {
+            m_ListView.CheckBoxes = true;
+        }
         private string m_ConvertTextFromPattern(string text, Dictionary<string, string> hexConverter)
         {
             if (hexConverter != null)
             {
-                string hex = BitConverter.ToString(m_CodePage.GetBytes(text)).Replace("-", "");
-                string outHex = "";
+                return m_ConvertHexToText(m_ConvertTextToHex(text, hexConverter));
+            }
+            return text;
+        }
+        private string m_ConvertHexToText(string text)
+        {
+            byte[] raw = new byte[text.Length / 2];
+            for (int i = 0; i < raw.Length; i++)
+            {
+                raw[i] = Convert.ToByte(text.Substring(i * 2, 2), 16);
+            }
+            return m_CodePage.GetString(raw);
+        }
+        private string m_ConvertTextToHex(string text, Dictionary<string, string> hexConverter = null) 
+        {
+            string hex = BitConverter.ToString(m_CodePage.GetBytes(text)).Replace("-", "");
+            string outHex = "";
 
-                for (int i = 0; i < hex.Length / 2; i++)
+            for (int i = 0; i < hex.Length / 2; i++)
+            {
+                if (hexConverter != null)
                 {
-                    string cur = hex.Substring(i * 2, 2);
-                    if (hexConverter.ContainsKey(hex.Substring(i * 2, 2)))
+                    if(hexConverter.ContainsKey(hex.Substring(i * 2, 2)))
                     {
                         outHex += hexConverter[hex.Substring(i * 2, 2)];
                     }
@@ -401,14 +430,26 @@ namespace ujl_subedit
                         outHex += hex.Substring(i * 2, 2);
                     }
                 }
-                byte[] raw = new byte[outHex.Length / 2];
-                for (int i = 0; i < raw.Length; i++)
+                else
                 {
-                    raw[i] = Convert.ToByte(outHex.Substring(i * 2, 2), 16);
+                    outHex += hex.Substring(i * 2, 2);
                 }
-                return m_CodePage.GetString(raw);
             }
-            return text;
+            return outHex;
+        }
+
+        public string[] m_GetAllHexText()
+        {
+            if(m_ListView.Items.Count > 0)
+            {
+                List<string> hexs = new List<string>();
+                foreach (ListViewItem item in m_ListView.Items)
+                {
+                    hexs.Add(m_ConvertTextToHex(item.SubItems[4].Text.Replace("\0", "")));
+                }
+                return hexs.ToArray();
+            }
+            return new string[1] { "54-65-73-74" };
         }
 
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
@@ -422,6 +463,11 @@ namespace ujl_subedit
                 if (result == DialogResult.No)
                 {
                     e.Cancel = true;
+                }
+                else
+                {
+                    GC.Collect();
+                    this.Dispose();
                 }
             }
         }
