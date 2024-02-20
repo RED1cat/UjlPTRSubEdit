@@ -11,35 +11,35 @@ namespace ujlptr_subedit
 {
     public partial class MainForm : Form
     {
-        Dictionary<string, HexConverter> m_HexsConverter = new Dictionary<string, HexConverter>();
-        Dictionary<string, FileDecodeOffset> m_FilesDecodeOffsets = new Dictionary<string, FileDecodeOffset>();
+        Dictionary<string, HexConverter> HexsConverter = new Dictionary<string, HexConverter>();
+        Dictionary<string, FileDecodeOffset> FilesDecodeOffsets = new Dictionary<string, FileDecodeOffset>();
         public MainForm()
         {
             InitializeComponent();
-            m_GetFilesForHexConverter();
-            m_GetFilesForDecodeOffset();
+            GetFilesForHexConverter();
+            GetFilesForDecodeOffset();
         }
         public class FileDecodeOffset
         {
-            public string m_Name { get; set; }
-            public string m_Redion { get; set; }
-            public int m_FirstOffset { get; set; }
-            public int m_LastOffset { get; set; }
+            public string Name { get; set; }
+            public string Redion { get; set; }
+            public int FirstOffset { get; set; }
+            public int LastOffset { get; set; }
 
             public FileDecodeOffset(string Name,string region, int FirstOffset, int LastOffset)
             {
-                m_Name = Name;
-                m_Redion = region;
-                m_FirstOffset = FirstOffset;
-                m_LastOffset = LastOffset;
+                this.Name = Name;
+                this.Redion = region;
+                this.FirstOffset = FirstOffset;
+                this.LastOffset = LastOffset;
             }
         }
         private class HexConverter
         {
-            public Dictionary<string, string> m_Convert = new Dictionary<string, string>();
-            public Dictionary<string, string> m_Deconvert = new Dictionary<string, string>();
+            public Dictionary<string, string> Convert = new Dictionary<string, string>();
+            public Dictionary<string, string> Deconvert = new Dictionary<string, string>();
         }
-        public static Encoding m_GetEncodingByName(string name)
+        public static Encoding GetEncodingByName(string name)
         {
             switch (name)
             {
@@ -56,7 +56,7 @@ namespace ujlptr_subedit
             }
         }
 
-        private void m_GetFilesForDecodeOffset()
+        private void GetFilesForDecodeOffset()
         {
             string[] lines = null;
             foreach (string item in Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory))
@@ -80,7 +80,7 @@ namespace ujlptr_subedit
                     {
                         if (lines[lines.Length - 1] == "###" & lines[0] == "###FileName" & lines[1] == "###Region" & lines[2] == "###FirstOffset" & lines[3] == "###LastOffset")
                         {
-                            m_FileDecodeOffsetToolStripComboBox.Items.Add("None");
+                            FileDecodeOffsetToolStripComboBox.Items.Add("None");
                             string name;
                             string region;
                             int first;
@@ -106,10 +106,10 @@ namespace ujlptr_subedit
                                 {
                                     return;
                                 }
-                                if (!m_FilesDecodeOffsets.ContainsKey(name))
+                                if (!FilesDecodeOffsets.ContainsKey(name))
                                 {
-                                    m_FilesDecodeOffsets.Add(name, new FileDecodeOffset(name, region, first, last));
-                                    m_FileDecodeOffsetToolStripComboBox.Items.Add($"{name} - {region}");
+                                    FilesDecodeOffsets.Add(name, new FileDecodeOffset(name, region, first, last));
+                                    FileDecodeOffsetToolStripComboBox.Items.Add($"{name} - {region}");
                                 }
                             }
                         }
@@ -117,7 +117,7 @@ namespace ujlptr_subedit
                 }
             }
         }
-        private void m_GetFilesForHexConverter()
+        private void GetFilesForHexConverter()
         {
             string[] lines = null;
             string name = "";
@@ -146,46 +146,46 @@ namespace ujlptr_subedit
                             {
                                 HexConverter hex = new HexConverter();
                                 name = Path.GetFileNameWithoutExtension(item);
-                                m_ConversionPatternToolStripComboBox.Items.Add(name);
+                                ConversionPatternToolStripComboBox.Items.Add(name);
                                 foreach (string line in lines)
                                 {
                                     if (line.Length == 5)
                                     {
                                         string a = line.Remove(2);
                                         string b = line.Remove(0, 3);
-                                        if (!hex.m_Convert.ContainsKey(a))
+                                        if (!hex.Convert.ContainsKey(a))
                                         {
-                                            hex.m_Convert.Add(a, b);
+                                            hex.Convert.Add(a, b);
                                         }
-                                        if (!hex.m_Deconvert.ContainsKey(b))
+                                        if (!hex.Deconvert.ContainsKey(b))
                                         {
-                                            hex.m_Deconvert.Add(b, a);
+                                            hex.Deconvert.Add(b, a);
                                         }
                                     }
                                 }
-                                m_HexsConverter.Add(name, hex);
+                                HexsConverter.Add(name, hex);
                             }
                         }
                     }
                 }
             }
         }
-        private void m_OpenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(m_OpenFileDialog.ShowDialog() == DialogResult.OK)
+            if(OpenFileDialog.ShowDialog() == DialogResult.OK)
             {
-                foreach (string file in m_OpenFileDialog.FileNames)
+                foreach (string file in OpenFileDialog.FileNames)
                 {
-                    m_OpenFile(file);
+                    OpenFile(file);
                 }
             }
         }
-        private void m_OpenFile(string file)
+        private void OpenFile(string file)
         {
-            Editor editor = new Editor(m_ProgressBar);
+            Editor editor = new Editor(ProgressBar);
             try
             {
-                editor.m_File = File.ReadAllBytes(file);
+                editor.File = File.ReadAllBytes(file);
             }
             catch(Exception e)
             {
@@ -196,49 +196,50 @@ namespace ujlptr_subedit
                 return;
             }
             editor.MdiParent = this;
-            editor.m_FileName = Path.GetFileName(file);
-            editor.m_FilePath = file;
+            editor.FileName = Path.GetFileName(file);
+            editor.Text = editor.FileName;
+            editor.FilePath = file;
             editor.WindowState = FormWindowState.Maximized;
-            editor.m_CodePage = m_GetEncodingByName(m_TextEncodingToolStripComboBox.Text);
+            editor.CodePage = GetEncodingByName(TextEncodingToolStripComboBox.Text);
             editor.Show();
-            editor.m_DecodeFile();
-
+            editor.DecodeFile();
+            
         }
 
-        private void m_SaveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    if (editor.m_FileEdit)
+                    if (editor.FileEdit)
                     {
-                        editor.m_SaveInFile();
+                        editor.SaveInFile();
                     }
                 }
             }
         }
-        private void m_SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    if (editor.m_FileEdit)
+                    if (editor.FileEdit)
                     {
-                        m_SaveFileDialog.FileName = editor.m_FileName;
-                        if (m_SaveFileDialog.ShowDialog() == DialogResult.OK)
+                        SaveFileDialog.FileName = editor.FileName;
+                        if (SaveFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            editor.m_SaveInFile(m_SaveFileDialog.FileName);
+                            editor.SaveInFile(SaveFileDialog.FileName);
                         }
                     }
                 }
             }
         }
 
-        private void m_CascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(this.MdiChildren.Length > 0)
             {
@@ -246,7 +247,7 @@ namespace ujlptr_subedit
             }
         }
 
-        private void m_TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0)
             {
@@ -254,7 +255,7 @@ namespace ujlptr_subedit
             }
         }
 
-        private void m_TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0)
             {
@@ -262,75 +263,75 @@ namespace ujlptr_subedit
             }
         }
 
-        private void m_TextEncodingToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void TextEncodingToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    editor.m_CodePage = m_GetEncodingByName(m_TextEncodingToolStripComboBox.SelectedItem.ToString());
-                    m_EncodingToolStripStatusLabel.Text = $"Encoding: {editor.m_CodePage.HeaderName}";
-                    editor.m_DecodeFile();
+                    editor.CodePage = GetEncodingByName(TextEncodingToolStripComboBox.SelectedItem.ToString());
+                    EncodingToolStripStatusLabel.Text = $"Encoding: {editor.CodePage.HeaderName}";
+                    editor.DecodeFile();
                 }
             }
         }
-        private void m_ConversionPatternToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void ConversionPatternToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    editor.m_ConverterName = m_ConversionPatternToolStripComboBox.SelectedItem.ToString();
-                    m_ConverterToolStripStatusLabel.Text = $"Converter: {editor.m_ConverterName}";
+                    editor.ConverterName = ConversionPatternToolStripComboBox.SelectedItem.ToString();
+                    ConverterToolStripStatusLabel.Text = $"Converter: {editor.ConverterName}";
 
-                    editor.m_EnableCheckboxesOnListView();
-                    this.m_DeconvertToolStripMenuItem.Enabled = true;
-                    this.m_ConvertToolStripMenuItem.Enabled = true;
+                    editor.EnableCheckboxesOnListView();
+                    this.DeconvertToolStripMenuItem.Enabled = true;
+                    this.ConvertToolStripMenuItem.Enabled = true;
                 }
             }
         }
-        private void m_FileOffsetToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void FileOffsetToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    switch (m_FileOffsetToolStripComboBox.SelectedIndex)
+                    switch (FileOffsetToolStripComboBox.SelectedIndex)
                     {
                         case 0:
-                            editor.m_AddressOffset = 0x1c5750; //ujl usa
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5750";
+                            editor.AddressOffset = 0x1c5750; //ujl usa
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5750";
                             break;
                         case 1:
-                            editor.m_AddressOffset = 0x1c5110; //ujl jp
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5110";
+                            editor.AddressOffset = 0x1c5110; //ujl jp
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c5110";
                             break;
                         case 2:
-                            editor.m_AddressOffset = 0x1c4eb8; //ujl eur
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c4eb8";
+                            editor.AddressOffset = 0x1c4eb8; //ujl eur
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-0x1c4eb8";
                             break;
                         case 3:
-                            editor.m_AddressOffset = 0x1c3870; //ptr usa
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c3870";
+                            editor.AddressOffset = 0x1c3870; //ptr usa
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c3870";
                             break;
                         case 4:
-                            editor.m_AddressOffset = 0x1cc21c; //ptr jp
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1cc21c";
+                            editor.AddressOffset = 0x1cc21c; //ptr jp
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1cc21c";
                             break;
                         case 5:
-                            editor.m_AddressOffset = 0x1c8af8; //ptr eur
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c8af8";
+                            editor.AddressOffset = 0x1c8af8; //ptr eur
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-0x1c8af8";
                             break;
                     }
-                    editor.m_DecodeFile();
+                    editor.DecodeFile();
                 }
             }
         }
 
-        private void m_ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
@@ -341,50 +342,88 @@ namespace ujlptr_subedit
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
+                    SaveToolStripMenuItem.Enabled = true;
+                    SaveAsToolStripMenuItem.Enabled = true;
+                    EncodingToolStripMenuItem.Enabled = true;
+                    FileOffsetToolStripMenuItem.Enabled = true;
+                    ConverterToolStripMenuItem.Enabled = true;
+                    TextPreviewToolStripMenuItem.Enabled = true;
+                    CascadeToolStripMenuItem.Enabled = true;
+                    TileHorizontalToolStripMenuItem.Enabled = true;
+                    TileVerticalToolStripMenuItem.Enabled = true;
+                    SearchToolStripMenuItem.Enabled = true;
+                    AdvancedModeToolStripMenuItem.Enabled = true;
+
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    m_EncodingToolStripStatusLabel.Text = $"Encoding: {editor.m_CodePage.HeaderName}";
-                    m_ConverterToolStripStatusLabel.Text = $"Converter: {editor.m_ConverterName}";
-                    switch (editor.m_AddressOffset)
+                    EncodingToolStripStatusLabel.Text = $"Encoding: {editor.CodePage.HeaderName}";
+                    ConverterToolStripStatusLabel.Text = $"Converter: {editor.ConverterName}";
+                    switch (editor.AddressOffset)
                     {
                         case 1857360:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-usa-0x1c5750";
-                            m_FileOffsetToolStripComboBox.Text = "Ujl-usa-0x1c5750";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-usa-0x1c5750";
+                            FileOffsetToolStripComboBox.Text = "Ujl-usa-0x1c5750";
                             break;
                         case 1855760:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-jp-0x1c5110";
-                            m_FileOffsetToolStripComboBox.Text = "Ujl-jp-0x1c5110";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-jp-0x1c5110";
+                            FileOffsetToolStripComboBox.Text = "Ujl-jp-0x1c5110";
                             break;
                         case 1855160:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ujl-eur-0x1c4eb8";
-                            m_FileOffsetToolStripComboBox.Text = "Ujl-eur-0x1c4eb8";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ujl-eur-0x1c4eb8";
+                            FileOffsetToolStripComboBox.Text = "Ujl-eur-0x1c4eb8";
                             break;
                         case 1849456:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-usa-0x1c3870";
-                            m_FileOffsetToolStripComboBox.Text = "Ptr-usa-0x1c3870";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-usa-0x1c3870";
+                            FileOffsetToolStripComboBox.Text = "Ptr-usa-0x1c3870";
                             break;
                         case 1884700:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-jp-0x1cc21c";
-                            m_FileOffsetToolStripComboBox.Text = "Ptr-jp-0x1cc21c";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-jp-0x1cc21c";
+                            FileOffsetToolStripComboBox.Text = "Ptr-jp-0x1cc21c";
                             break;
                         case 1870584:
-                            m_OffsetToolStripStatusLabel.Text = "Offset: Ptr-eur-0x1c8af8";
-                            m_FileOffsetToolStripComboBox.Text = "Ptr-eur-0x1c8af8";
+                            OffsetToolStripStatusLabel.Text = "Offset: Ptr-eur-0x1c8af8";
+                            FileOffsetToolStripComboBox.Text = "Ptr-eur-0x1c8af8";
                             break;
                     }
 
-                    m_TextEncodingToolStripComboBox.Text = editor.m_CodePage.HeaderName;
-                    m_ConversionPatternToolStripComboBox.Text = editor.m_ConverterName;
-                    if(editor.m_ConverterName == "None")
+                    TextEncodingToolStripComboBox.Text = editor.CodePage.HeaderName;
+                    ConversionPatternToolStripComboBox.Text = editor.ConverterName;
+                    if(editor.ConverterName == "None")
                     {
-                        m_ConvertToolStripMenuItem.Enabled = false;
-                        m_DeconvertToolStripMenuItem.Enabled = false;
+                        ConvertToolStripMenuItem.Enabled = false;
+                        DeconvertToolStripMenuItem.Enabled = false;
                     }
                     else
                     {
-                        m_ConvertToolStripMenuItem.Enabled = true;
-                        m_DeconvertToolStripMenuItem.Enabled = true;
+                        ConvertToolStripMenuItem.Enabled = true;
+                        DeconvertToolStripMenuItem.Enabled = true;
+                    }
+                    if (editor.AdvancedMode)
+                    {
+                        AdvancedModeToolStripMenuItem.CheckState = CheckState.Checked;
+                    }
+                    else
+                    {
+                        AdvancedModeToolStripMenuItem.CheckState = CheckState.Unchecked;
                     }
                 }
+            }
+            else
+            {
+                EncodingToolStripStatusLabel.Text = "Encoding";
+                OffsetToolStripStatusLabel.Text = "Offset";
+                ConverterToolStripStatusLabel.Text = "Converter";
+                SaveToolStripMenuItem.Enabled = false;
+                SaveAsToolStripMenuItem.Enabled = false;
+                EncodingToolStripMenuItem.Enabled = false;
+                FileOffsetToolStripMenuItem.Enabled = false;
+                ConverterToolStripMenuItem.Enabled = false;
+                TextPreviewToolStripMenuItem.Enabled = false;
+                CascadeToolStripMenuItem.Enabled = false;
+                TileHorizontalToolStripMenuItem.Enabled = false;
+                TileVerticalToolStripMenuItem.Enabled = false;
+                SearchToolStripMenuItem.Enabled = false;
+                AdvancedModeToolStripMenuItem.Enabled = false;
+                AdvancedModeToolStripMenuItem.CheckState = CheckState.Unchecked;
             }
         }
 
@@ -398,72 +437,74 @@ namespace ujlptr_subedit
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             foreach (string file in files)
             {
-                m_OpenFile(file);
+                OpenFile(file);
             }
         }
 
-        private void m_AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            About about = new About();
+            about.MdiParent = this;
+            about.Show();
         }
 
-        private void m_DeconvertToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeconvertToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    if (editor.m_ConverterName != "None")
+                    if (editor.ConverterName != "None")
                     {
-                        editor.m_ConvertSelectedLines(m_HexsConverter[editor.m_ConverterName].m_Deconvert);
+                        editor.ConvertSelectedLines(HexsConverter[editor.ConverterName].Deconvert);
                     }
                 }
             }
         }
 
-        private void m_ConvertToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ConvertToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    if (editor.m_ConverterName != "None")
+                    if (editor.ConverterName != "None")
                     {
-                        editor.m_ConvertSelectedLines(m_HexsConverter[editor.m_ConverterName].m_Convert);
+                        editor.ConvertSelectedLines(HexsConverter[editor.ConverterName].Convert);
                     }
                 }
             }
         }
 
-        private void m_TextPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TextPreviewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    string[] text = new string[1] { "54-65-73-74" };
-                    text = editor.m_GetAllHexText();
+                    editor.TextPreview = new UjlTextPreview();
+                    editor.TextPreview.Text = editor.FileName;
+                    editor.TextPreview.MdiParent = this;
+                    editor.TextPreview.Show();
+                    editor.TextPreview.WindowState = FormWindowState.Normal;
 
-                    UjlTextPreview textPreview = new UjlTextPreview(text);
-                    textPreview.MdiParent = this;
-                    textPreview.Show();
-                    textPreview.WindowState = FormWindowState.Normal;
+
+                    //Editor editor = ((Editor)this.ActiveMdiChild);
+                    //string[] text = new string[1] { "54-65-73-74" };
+                    //text = editor.GetAllHexText();
+
+                    //UjlTextPreview textPreview = new UjlTextPreview(text);
+                    //textPreview.MdiParent = this;
+                    //textPreview.Show();
+                    //textPreview.WindowState = FormWindowState.Normal;
                 }
-            }
-            else
-            {
-                string[] text = new string[1] { "54-65-73-74" };
-                UjlTextPreview textPreview = new UjlTextPreview(text);
-                textPreview.MdiParent = this;
-                textPreview.Show();
-                textPreview.WindowState = FormWindowState.Normal;
             }
         }
 
-        private void m_FileDecodeOffsetToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void FileDecodeOffsetToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
             {
@@ -471,16 +512,35 @@ namespace ujlptr_subedit
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
                     FileDecodeOffset file = null;
-                    if (m_FilesDecodeOffsets.TryGetValue(m_FileDecodeOffsetToolStripComboBox.SelectedItem.ToString().Split('-')[0].Replace(" ", ""), out file))
+                    if (FilesDecodeOffsets.TryGetValue(FileDecodeOffsetToolStripComboBox.SelectedItem.ToString().Split('-')[0].Replace(" ", ""), out file))
                     {
-                        editor.m_DecodeFile(file.m_FirstOffset, file.m_LastOffset);
+                        editor.DecodeFile(file.FirstOffset, file.LastOffset);
                     }
-                    else if(m_FileDecodeOffsetToolStripComboBox.SelectedItem.ToString() == "None")
+                    else if(FileDecodeOffsetToolStripComboBox.SelectedItem.ToString() == "None")
                     {
-                        editor.m_DecodeFile();
+                        editor.DecodeFile();
                     }
                 }
             }
+        }
+
+        private void AdvancedModeToolStripMenuItem_CheckStateChanged(object sender, EventArgs e)
+        {
+            if(sender != null)
+            {
+                if(sender.GetType().Name == "ToolStripMenuItem")
+                {
+                    if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
+                    {
+                        if (this.ActiveMdiChild.Name == "Editor")
+                        {
+                            Editor editor = ((Editor)this.ActiveMdiChild);
+                            editor.ChangeMode();
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
