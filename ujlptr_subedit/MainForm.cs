@@ -1,11 +1,8 @@
-﻿using SharpDX.Direct3D9;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using System.Windows.Input;
-using ujlptr_subedit;
 
 namespace ujlptr_subedit
 {
@@ -22,14 +19,14 @@ namespace ujlptr_subedit
         public class FileDecodeOffset
         {
             public string Name { get; set; }
-            public string Redion { get; set; }
+            public string Region { get; set; }
             public int FirstOffset { get; set; }
             public int LastOffset { get; set; }
 
             public FileDecodeOffset(string Name,string region, int FirstOffset, int LastOffset)
             {
                 this.Name = Name;
-                this.Redion = region;
+                this.Region = region;
                 this.FirstOffset = FirstOffset;
                 this.LastOffset = LastOffset;
             }
@@ -190,9 +187,9 @@ namespace ujlptr_subedit
             catch(Exception e)
             {
                 MessageBox.Show(e.Message,
-    "Error",
-    MessageBoxButtons.OK,
-    MessageBoxIcon.Error);
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
                 return;
             }
             editor.MdiParent = this;
@@ -491,15 +488,6 @@ namespace ujlptr_subedit
                     editor.TextPreview.Show();
                     editor.TextPreview.WindowState = FormWindowState.Normal;
 
-
-                    //Editor editor = ((Editor)this.ActiveMdiChild);
-                    //string[] text = new string[1] { "54-65-73-74" };
-                    //text = editor.GetAllHexText();
-
-                    //UjlTextPreview textPreview = new UjlTextPreview(text);
-                    //textPreview.MdiParent = this;
-                    //textPreview.Show();
-                    //textPreview.WindowState = FormWindowState.Normal;
                 }
             }
         }
@@ -541,6 +529,24 @@ namespace ujlptr_subedit
                 }
             }
 
+        }
+
+        private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0 & this.ActiveMdiChild != null)
+            {
+                if (this.ActiveMdiChild.Name == "Editor")
+                {
+                    Editor editor = ((Editor)this.ActiveMdiChild);
+
+                    TextSearch textSearch = new TextSearch(editor);
+                    textSearch.Text = editor.FileName;
+                    textSearch.MdiParent = this;
+                    textSearch.Show();
+                    textSearch.WindowState = FormWindowState.Normal;
+
+                }
+            }
         }
     }
 }

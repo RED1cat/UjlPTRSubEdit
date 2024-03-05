@@ -254,7 +254,7 @@ namespace ujlptr_subedit
             Letters.Add("4A", new Letter(0, new Rectangle(70, 15, 10, 15), 1, new Rectangle(22, 15, 7, 15))); //J
             Letters.Add("6A", new Letter(1, new Rectangle(70, 30, 8, 15), 1, new Rectangle(227, 15, 5, 15))); //j
             Letters.Add("4B", new Letter(0, new Rectangle(80, 15, 10, 15), 1, new Rectangle(29, 15, 7, 15))); //K
-            Letters.Add("6B", new Letter(1, new Rectangle(78, 30, 9, 15), 0, new Rectangle(223, 15, 6, 15))); //k
+            Letters.Add("6B", new Letter(1, new Rectangle(78, 30, 9, 15), 0, new Rectangle(233, 15, 6, 15))); //k
             Letters.Add("4C", new Letter(0, new Rectangle(90, 15, 8, 15), 1, new Rectangle(37, 15, 7, 15))); //L
             Letters.Add("6C", new Letter(1, new Rectangle(87, 30, 7, 15), 1, new Rectangle(239, 15, 3, 15))); //l
             Letters.Add("4D", new Letter(0, new Rectangle(98, 15, 13, 15), 0, new Rectangle(44, 15, 11, 15))); //M

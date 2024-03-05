@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
+using System.Linq;
 using System.Media;
 using System.Text;
 using System.Windows.Forms;
@@ -26,6 +26,8 @@ namespace ujlptr_subedit
         private int FirstSelectedElement = 0;
         private bool SelectionStarted = false;
 
+        public List<Group> Groups = new List<Group>();
+
         public Editor(ToolStripProgressBar progressBar)
         {
             ProgressBar = progressBar;
@@ -33,9 +35,14 @@ namespace ujlptr_subedit
             Panel.AutoScroll = true;
             Panel.HorizontalScroll.Enabled = false;
             Panel.HorizontalScroll.Visible = false;
-            
-        }
 
+        }
+        // 12 - 6C 8E 1D 80 87 00 00 00 DA 00 00 00
+        // 4  - 6C 8E 1D 80
+        // 6C 8E 1D - address
+        // 80 - pointer
+        // 87 - time
+        // DA 00 - switching time
         public void DecodeFile(int firstOffset = 0, int lastOffset = 0)
         {
             if (this.FilePath != null)
@@ -49,11 +56,12 @@ namespace ujlptr_subedit
                 }
                 
                 ListView.Items.Clear();
-                //this.Text = FileName;
-                int id = 1;
-                int group = 1;
+                Groups.Clear();
+
                 int maxid = 0;
                 ProgressBar.Visible = true;
+
+                List<int> allPointsLocations = new List<int>();
 
                 for (int i = first; i < last; i++)
                 {
@@ -64,10 +72,12 @@ namespace ujlptr_subedit
                             if (this.File[i + 12] == 0x80 | this.File[i - 12] == 0x80)
                             {
                                 maxid++;
+                                allPointsLocations.Add(i - 3);
                             }
                             else if (this.File[i + 4] == 0x80 | this.File[i - 4] == 0x80)
                             {
                                 maxid++;
+                                allPointsLocations.Add(i - 3);
                             }
                         }
                     }
@@ -75,174 +85,130 @@ namespace ujlptr_subedit
                 ProgressBar.Maximum = maxid;
                 ProgressBar.Value = 0;
 
-                for (int i = first; i < last; i++)
+                List<int> pointersLocation = new List<int>();
+                List<byte[]> pointers = new List<byte[]>();
+                List<string> texts = new List<string>();
+
+                foreach (int point in allPointsLocations)
                 {
-                    if (this.File[i] == 0x80)
+                    byte[] address = new byte[3] { this.File[point + 2], this.File[point + 1], this.File[point] };
+                    int textAddressInFile = Convert.ToInt32(BitConverter.ToString(address, 0, 3).Replace("-", ""), 16) - AddressOffset;
+                    if(textAddressInFile < 0 || textAddressInFile > this.File.Length)
                     {
-                        if (this.File[i + 2] == 0 & this.File[i + 3] == 0 & this.File[i + 4] == 0 & this.File[i + 7] == 0 & this.File[i + 8] == 0 || this.File[i - 1] != 0 & this.File[i - 2] != 0 & this.File[i - 3] != 0)
+                        continue;
+                    }
+                    string text = textAddressInFile.GetTextFromAddress(File, CodePage);
+
+                    if (this.File[(point + 3) + 4] == 0x80 | this.File[(point + 3) - 4] == 0x80) //4
+                    {
+                        pointersLocation.Add(point);
+                        pointers.Add(new byte[3] { this.File[point + 2], this.File[point + 1], this.File[point] });
+                        texts.Add(text);
+
+                        if (this.File[(point + 3) + 4] != 0x80 & this.File[(point + 3) - 4] == 0x80) //end
                         {
-                            byte[] address = new byte[3] { this.File[i - 1], this.File[i - 2], this.File[i - 3]};
-                            int textaddressInFile = Convert.ToInt32(BitConverter.ToString(address, 0, 3).Replace("-", ""), 16) - AddressOffset;
-                            int textaddressInGame = Convert.ToInt32(BitConverter.ToString(address, 0, 3).Replace("-", ""), 16);
-                            if (textaddressInFile > 0 & textaddressInFile < this.File.Length)
+                            int firstAdd = Convert.ToInt32(BitConverter.ToString(pointers.First(), 0, 3).Replace("-", ""), 16) - AddressOffset;
+                            int lastAdd = (Convert.ToInt32(BitConverter.ToString(pointers.Last(), 0, 3).Replace("-", ""), 16) - AddressOffset);
+                            lastAdd = lastAdd + lastAdd.GetTextFromAddress(File, CodePage).Length;
+
+                            if ((lastAdd - firstAdd) - texts.Count < 0)
                             {
-                                int count = 0;
-                                bool StopFlag = false;
-                                while (true)
-                                {
-                                    if(textaddressInFile + count == this.File.Length)
-                                    {
-                                        break;
-                                    }
-                                    if (this.File[textaddressInFile + count] == 0x00)
-                                    {
-                                        StopFlag = true;
-                                    }
-                                    else if (StopFlag)
-                                    {
-                                        break;
-                                    }
-                                    count++;
-                                }
-                                if (count > 0)
-                                {
-                                    count--;
-                                }
-                                string text = CodePage.GetString(this.File, textaddressInFile, count);
+                                lastAdd = Convert.ToInt32(BitConverter.ToString(pointers.First(), 0, 3).Replace("-", ""), 16) - AddressOffset;
+                                lastAdd = lastAdd + lastAdd.GetTextFromAddress(File, CodePage).Length;
 
-                                if (this.File[i + 4] == 0x80 | this.File[i - 4] == 0x80) //4
-                                {
-                                    AddLineToListView(id, group, Convert.ToString(i - 3, 16), Convert.ToString(textaddressInGame, 16), Convert.ToString(textaddressInFile, 16), count, text);
-                                    id++;
-                                    ProgressBar.Value++;
-
-                                    if (this.File[i + 4] != 0x80 & this.File[i - 4] == 0x80)
-                                    {
-                                        group++;
-                                    }
-                                }
-                                else if (this.File[i + 12] == 0x80 | this.File[i - 12] == 0x80) //12
-                                {
-                                    AddLineToListView(id, group, Convert.ToString(i - 3, 16), Convert.ToString(textaddressInGame, 16), Convert.ToString(textaddressInFile, 16), count, text, BitConverter.ToString(this.File, i + 1, 1), BitConverter.ToString(this.File, i + 5, 2).Replace("-", ""));
-                                    id++;
-                                    ProgressBar.Value++;
-
-                                    if (this.File[i + 12] != 0x80 & this.File[i - 12] == 0x80)
-                                    {
-                                        group++;
-                                    }
-                                }
+                                firstAdd = Convert.ToInt32(BitConverter.ToString(pointers.Last(), 0, 3).Replace("-", ""), 16) - AddressOffset;
                             }
+
+                            if ((lastAdd - firstAdd) - texts.Count > 0)
+                            {
+                                Groups.Add(new Group(pointersLocation, pointers, texts, firstAdd, (lastAdd - firstAdd) - texts.Count));
+                            }
+
+                            pointersLocation.Clear();
+                            pointers.Clear();
+                            texts.Clear();
                         }
                     }
+                    else if (this.File[(point + 3) + 12] == 0x80 | this.File[(point + 3) - 12] == 0x80) //12
+                    {
+                        pointersLocation.Add(point);
+                        pointers.Add(new byte[6] { this.File[point + 2], this.File[point + 1], this.File[point], this.File[point + 4], this.File[point + 8], this.File[point + 9] });
+                        texts.Add(text);
+
+                        if (this.File[(point + 3) + 12] != 0x80 & this.File[(point + 3) - 12] == 0x80) //end
+                        {
+                            int firstAdd = Convert.ToInt32(BitConverter.ToString(pointers.First(), 0, 3).Replace("-", ""), 16) - AddressOffset;
+                            int lastAdd = (Convert.ToInt32(BitConverter.ToString(pointers.Last(), 0, 3).Replace("-", ""), 16) - AddressOffset);
+                            lastAdd = lastAdd + lastAdd.GetTextFromAddress(File, CodePage).Length;
+
+
+                            if ((lastAdd - firstAdd) - texts.Count < 0)
+                            {
+                                lastAdd = Convert.ToInt32(BitConverter.ToString(pointers.First(), 0, 3).Replace("-", ""), 16) - AddressOffset;
+                                lastAdd = lastAdd + lastAdd.GetTextFromAddress(File, CodePage).Length;
+
+                                firstAdd = Convert.ToInt32(BitConverter.ToString(pointers.Last(), 0, 3).Replace("-", ""), 16) - AddressOffset;
+                            }
+
+                            if((lastAdd - firstAdd) - texts.Count > 0)
+                            {
+                                Groups.Add(new Group(pointersLocation, pointers, texts, firstAdd, (lastAdd - firstAdd) - texts.Count));
+                            }
+
+                            pointersLocation.Clear();
+                            pointers.Clear();
+                            texts.Clear();
+                        }
+                    }
+
+                    ProgressBar.Value++;
                 }
                 ProgressBar.Visible = false;
+                FillListView();
                 ListView.Items[0].Selected = true;
             }
         }
-        public void AddLineToListView(int id, int group, string pointLocation, string textLocationInGame , string textLocationInFile,  int maxTextLength, string text, string time = "", string switchingTime = "")
+        private void FillListView()
         {
-            ListViewItem tmpItem = ListView.Items.Add(id.ToString());
-            tmpItem.SubItems.Add(pointLocation.ToString()); //pointlocation
-            tmpItem.SubItems.Add(maxTextLength.ToString()); //maxlength
-            tmpItem.SubItems.Add(text.Replace("\0", "").Length.ToString()); //curlength
-            tmpItem.SubItems.Add(text); //text
-            tmpItem.SubItems.Add(textLocationInGame); //textlocationingame
-            tmpItem.SubItems.Add(textLocationInFile); //textlocationinfile
-            tmpItem.SubItems.Add(time); //time
-            tmpItem.SubItems.Add(switchingTime); //switchingtime
-            tmpItem.SubItems.Add(group.ToString());
-        }
-        private void ChangeMaxSymbolOnLineButton_Click(object sender, EventArgs e)
-        {
-            int count = 1;
-            int.TryParse(NumberSymbolsToChangeTextBox.Text, out count);
-            if(((Button)sender).Name == "ReduceMaxSymbolOnLineButton")
+            for (int group = 0; group < Groups.Count; group++)
             {
-                int group = int.Parse(ListView.SelectedItems[0].SubItems[9].Text);
-                int nextid = int.Parse(ListView.SelectedItems[0].SubItems[0].Text);
-                if (group == int.Parse(ListView.Items[nextid].SubItems[9].Text))
+                for (int line = 0; line < Groups[group].Lines.Count; line++)
                 {
-                    int maxLength = int.Parse(ListView.SelectedItems[0].SubItems[2].Text) - count;
-                    if(maxLength > 0)
-                    {
-                        ListView.SelectedItems[0].SubItems[2].Text = maxLength.ToString();
-
-                        if (ListView.SelectedItems[0].SubItems[4].Text.Length > maxLength)
-                        {
-                            ListView.SelectedItems[0].SubItems[4].Text = ListView.SelectedItems[0].SubItems[4].Text.Remove(maxLength);
-                            ListView.SelectedItems[0].SubItems[3].Text = ListView.SelectedItems[0].SubItems[4].Text.Replace("\0", "").Length.ToString();
-                        }
-                        ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-                        ListView.Items[nextid].SubItems[2].Text = (int.Parse(ListView.Items[nextid].SubItems[2].Text) + count).ToString();
-                        ListView.Items[nextid].SubItems[6].Text = Convert.ToString(Convert.ToInt32(ListView.Items[nextid].SubItems[6].Text, 16) - count, 16);
-                        ListView.Items[nextid].SubItems[5].Text = Convert.ToString(Convert.ToInt32(ListView.Items[nextid].SubItems[5].Text, 16) - count, 16);
-
-                        ListView.Items[nextid].Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-                        ListView_ItemSelectionChanged(sender, new ListViewItemSelectionChangedEventArgs(ListView.SelectedItems[0], nextid - 1, true));
-                        FileEdit = true;
-                    }
+                    ListViewItem tmpItem = ListView.Items.Add((group + 1).ToString()); //Group
+                    tmpItem.SubItems.Add((line + 1).ToString()); //id
+                    tmpItem.SubItems.Add(Convert.ToString(Groups[group].Lines[line].PointerLocation, 16)); //pointerLocation
+                    tmpItem.SubItems.Add(Groups[group].MaxChars.ToString()); //maxlength
+                    tmpItem.SubItems.Add(Groups[group].Lines[line].Text.Replace("\0", "").Length.ToString()); //curlength
+                    tmpItem.SubItems.Add(Groups[group].Lines[line].Text); //text
+                    tmpItem.SubItems.Add(Groups[group].Lines[line].Time); //time
+                    tmpItem.SubItems.Add(Groups[group].Lines[line].SwitchingTime); //switchingtime
                 }
             }
-            else if((((Button)sender).Name == "IncreaseMaxSymbolOnLineButton"))
-            {
-                int group = int.Parse(ListView.SelectedItems[0].SubItems[9].Text);
-                int nextid = int.Parse(ListView.SelectedItems[0].SubItems[0].Text);
-                if (group == int.Parse(ListView.Items[nextid].SubItems[9].Text))
-                {
-                    int maxLength = int.Parse(ListView.Items[nextid].SubItems[2].Text) - count; //next
-                    if (int.Parse(ListView.Items[nextid].SubItems[2].Text) - count > 0)
-                    {
-                        ListView.Items[nextid].SubItems[2].Text = maxLength.ToString(); 
-
-                        if (ListView.Items[nextid].SubItems[4].Text.Length > maxLength)
-                        {
-                            ListView.Items[nextid].SubItems[4].Text = ListView.Items[nextid].SubItems[4].Text.Remove(maxLength);
-                            ListView.Items[nextid].SubItems[3].Text = ListView.Items[nextid].SubItems[4].Text.Replace("\0", "").Length.ToString();
-                        }
-                        ListView.Items[nextid].SubItems[6].Text = Convert.ToString(Convert.ToInt32(ListView.Items[nextid].SubItems[6].Text, 16) + count, 16);
-                        ListView.Items[nextid].SubItems[5].Text = Convert.ToString(Convert.ToInt32(ListView.Items[nextid].SubItems[5].Text, 16) + count, 16);
-                        ListView.Items[nextid].Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-                        ListView.SelectedItems[0].SubItems[2].Text = (int.Parse(ListView.SelectedItems[0].SubItems[2].Text) + count).ToString();
-                        ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-                        ListView_ItemSelectionChanged(sender, new ListViewItemSelectionChangedEventArgs(ListView.SelectedItems[0], nextid - 1, true));
-                        FileEdit = true;
-                    }
-                }
-
-            }
-
         }
+
         private void ListView_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
-            if(SelectedItem != e.ItemIndex | sender.GetType().ToString() == "System.Windows.Forms.Button")
+            if(SelectedItem != e.ItemIndex)
             {
                 EditButton.Enabled = true;
                 TextBox.Enabled = true;
-                IncreaseMaxSymbolOnLineButton.Enabled = true;
-                ReduceMaxSymbolOnLineButton.Enabled = true;
-                NumberSymbolsToChangeTextBox.Enabled = true;
 
-                TextBox.Text = e.Item.SubItems[4].Text.Replace("\n", "\r\n");
+                TextBox.Text = e.Item.SubItems[5].Text.Replace("\n", "\r\n");
 
-                if(e.Item.SubItems[7].Text != "")
+                if(e.Item.SubItems[6].Text != "")
                 {
                     TimeTextBox.Enabled = true;
-                    TimeTextBox.Text = e.Item.SubItems[7].Text;
+                    TimeTextBox.Text = e.Item.SubItems[6].Text;
                 }
                 else
                 {
                     TimeTextBox.Text = "";
                     TimeTextBox.Enabled = false;
                 }
-                if(e.Item.SubItems[8].Text != "")
+                if(e.Item.SubItems[7].Text != "")
                 {
                     SwitchingTimeTextBox.Enabled = true;
-                    SwitchingTimeTextBox.Text = e.Item.SubItems[8].Text;
+                    SwitchingTimeTextBox.Text = e.Item.SubItems[7].Text;
                 }
                 else
                 {
@@ -250,16 +216,16 @@ namespace ujlptr_subedit
                     SwitchingTimeTextBox.Enabled = false;
                 }
 
-                MaxLengthLabel.Text = $"Max:{e.Item.SubItems[2].Text}";
-                IdLabel.Text = $"Id:{e.Item.SubItems[0].Text}";
-                PointerLocationLabel.Text = $"Pointer:{e.Item.SubItems[1].Text}";
-                GroupIdLabel.Text = $"Group:{e.Item.SubItems[9].Text}";
+                MaxLengthLabel.Text = $"Max:{e.Item.SubItems[3].Text}";
+                IdLabel.Text = $"Id:{e.Item.SubItems[1].Text}";
+                AllLengthLabel.Text = $"CurAll:{Groups[int.Parse(e.Item.SubItems[0].Text) - 1].UpdateCurChars()}";
+                GroupIdLabel.Text = $"Group:{e.Item.SubItems[0].Text}";
 
                 SelectedItem = e.ItemIndex;
 
                 if (TextPreview != null)
                 {
-                    TextPreview.UjlTextRender.CurrentTextIndex = int.Parse(e.Item.SubItems[0].Text);
+                    TextPreview.UjlTextRender.CurrentTextIndex = ListView.SelectedItems[0].Index;
                     TextPreview.UjlTextRender.MaxTextIndex = ListView.Items.Count;
                 }
             }
@@ -267,17 +233,26 @@ namespace ujlptr_subedit
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            int length = TextBox.Text.Replace("\r", "").Length;
-            int maxLenght = int.Parse(ListView.SelectedItems[0].SubItems[2].Text);
+            int groupId = int.Parse(ListView.SelectedItems[0].SubItems[0].Text) - 1;
+            int lineId = int.Parse(ListView.SelectedItems[0].SubItems[1].Text) - 1;
 
-            LengthLabel.Text = $"Cur:{length}";
+            Groups[groupId].Lines[lineId].Text = TextBox.Text.Replace("\r", "");
 
-            if (length > maxLenght)
+            int cur = Groups[groupId].Lines[lineId].Text.Length;
+            int curAll = Groups[groupId].UpdateCurChars();
+
+            LengthLabel.Text = $"Cur:{cur}";
+            AllLengthLabel.Text = $"CurAll:{curAll}";
+
+            if (curAll > Groups[groupId].MaxChars)
             {
-                TextBox.Text = TextBox.Text.Remove(maxLenght);
+                int needToDell = curAll - Groups[groupId].MaxChars;
+                TextBox.Text = TextBox.Text.Remove(TextBox.Text.Length - needToDell);
                 TextBox.SelectionStart = TextBox.Text.Length;
                 SystemSounds.Exclamation.Play();
             }
+
+
 
             if (DoCopy && TextBox.Text.Length > 0)
             {
@@ -288,26 +263,45 @@ namespace ujlptr_subedit
                     DoCopy = false;
                 }
             }
+
             if(TextPreview != null)
             {
-                TextPreview.UjlTextRender.Hex = ConvertTextToHex(TextBox.Text);
+                TextPreview.UjlTextRender.Hex = TextBox.Text.ConvertTextToHex(codePage: CodePage);
             }
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            ListView.SelectedItems[0].SubItems[4].Text = TextBox.Text.Replace("\r", "");
-            ListView.SelectedItems[0].SubItems[3].Text = TextBox.Text.Replace("\r", "").Length.ToString();
-            ListView.SelectedItems[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
-            if(SwitchingTimeTextBox.Text.Length == 4)
+            int groupId = int.Parse(ListView.SelectedItems[0].SubItems[0].Text) - 1;
+            int lineId = int.Parse(ListView.SelectedItems[0].SubItems[1].Text) - 1;
+
+            Groups[groupId].UpdateCurChars();
+
+            Groups[groupId].Lines[lineId].Text = TextBox.Text.Replace("\r", "");
+            ListView.SelectedItems[0].SubItems[5].Text = TextBox.Text.Replace("\r", "");
+            ListView.SelectedItems[0].SubItems[4].Text = TextBox.Text.Replace("\r", "").Length.ToString();
+
+            if (SwitchingTimeTextBox.Text.Length == 4)
             {
-                ListView.SelectedItems[0].SubItems[8].Text = SwitchingTimeTextBox.Text;
+                Groups[groupId].Lines[lineId].SwitchingTime = SwitchingTimeTextBox.Text;
+                ListView.SelectedItems[0].SubItems[7].Text = SwitchingTimeTextBox.Text;
             }
-            if(TimeTextBox.Text.Length == 2)
+            if (TimeTextBox.Text.Length == 2)
             {
-                ListView.SelectedItems[0].SubItems[7].Text = TimeTextBox.Text;
+                Groups[groupId].Lines[lineId].Time = TimeTextBox.Text;
+                ListView.SelectedItems[0].SubItems[6].Text = TimeTextBox.Text;
             }
+
+            Groups[groupId].Edit = true;
             FileEdit = true;
+
+            foreach(ListViewItem line in ListView.Items)
+            {
+                if (line.SubItems[0].Text == (groupId + 1).ToString())
+                {
+                    line.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                }
+            }
         }
         public void SaveInFile(string filePath = "")
         {
@@ -318,48 +312,55 @@ namespace ujlptr_subedit
                     filePath = FilePath;
                 }
                 int count = 0;
-                foreach (ListViewItem item in ListView.Items)
+
+                foreach(Group group in Groups) 
                 {
-                    if (item.Font.Bold)
+                    if (group.Edit)
                     {
-                        count++;
+                        count += group.Lines.Count;
                     }
                 }
-                ProgressBar.Maximum = count + count + 1;
+                ProgressBar.Maximum = (count * 2) + 1;
                 ProgressBar.Visible = true;
                 ProgressBar.Value = 0;
-                foreach (ListViewItem item in ListView.Items)
+
+                foreach(Group group in Groups)
                 {
-                    if (item.Font.Bold)
+                    if (group.Edit)
                     {
-                        int maxLengthText = int.Parse(item.SubItems[2].Text);
-                        string text = item.SubItems[4].Text;
-                        int textAddress = Convert.ToInt32(item.SubItems[6].Text, 16);
-                        int pointAddress = Convert.ToInt32(item.SubItems[1].Text, 16);
-                        if (text.Length < maxLengthText)
+                        int textLocation = group.TextLocation;
+                        int maxChar = group.MaxChars + group.Lines.Count;
+                        
+                        for(int i = textLocation; i < textLocation + maxChar; i++)
                         {
-                            while (text.Length != maxLengthText)
+                            File[i] = 0x00;
+                        }
+
+                        foreach(Line line in group.Lines)
+                        {
+                            Array.Copy(CodePage.GetBytes(line.Text), 0, File, textLocation, line.Text.Length); //text
+
+                            byte[] addressInGame = BitConverter.GetBytes(textLocation + AddressOffset); //textaddress
+                            File[line.PointerLocation] = addressInGame[0]; 
+                            File[line.PointerLocation + 1] = addressInGame[1];
+                            File[line.PointerLocation + 2] = addressInGame[2];
+
+                            textLocation += line.Text.Length + 1;
+
+                            if(line.Time != "" && line.Time != null)
                             {
-                                text = text.Insert(text.Length, "\0");
+                                File[line.PointerLocation + 4] = Convert.ToByte(Convert.ToInt32(line.Time, 16)); //time
                             }
+                            if(line.SwitchingTime != ""  && line.SwitchingTime != null)
+                            {
+                                File[line.PointerLocation + 8] = Convert.ToByte(Convert.ToInt32(line.SwitchingTime.Remove(2), 16)); //switchtime
+                                File[line.PointerLocation + 9] = Convert.ToByte(Convert.ToInt32(line.SwitchingTime.Remove(0, 2), 16));
+                            }
+                            ProgressBar.Value++;
                         }
-                        text = text.Insert(text.Length, "\0");
-
-                        Array.Copy(CodePage.GetBytes(text), 0, File, textAddress, maxLengthText + 1); //text
-
-                        File[pointAddress] = Convert.ToByte(Convert.ToInt32(item.SubItems[5].Text.Remove(0, 4), 16)); //textaddress
-                        File[pointAddress + 1] = Convert.ToByte(Convert.ToInt32(item.SubItems[5].Text.Remove(0, 2).Remove(2), 16));
-                        File[pointAddress + 2] = Convert.ToByte(Convert.ToInt32(item.SubItems[5].Text.Remove(2), 16));
-                        if (item.SubItems[7].Text != "" & item.SubItems[8].Text != "")
-                        {
-                            File[pointAddress + 4] = Convert.ToByte(Convert.ToInt32(item.SubItems[7].Text, 16)); //time
-
-                            File[pointAddress + 8] = Convert.ToByte(Convert.ToInt32(item.SubItems[8].Text.Remove(2), 16)); //switchtime
-                            File[pointAddress + 9] = Convert.ToByte(Convert.ToInt32(item.SubItems[8].Text.Remove(0, 2), 16));
-                        }
-                        ProgressBar.Value++;
                     }
                 }
+
                 try
                 {
                     System.IO.File.WriteAllBytes(filePath, File);
@@ -391,9 +392,26 @@ namespace ujlptr_subedit
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
-                
             }
         }
+        public void FindText(string text)
+        {
+            foreach(ListViewItem line in ListView.Items)
+            {
+                if (line.SubItems[5].Text.Contains(text))
+                {
+                    line.Selected = true;
+                    line.EnsureVisible();
+                    SystemSounds.Exclamation.Play();
+                    return;
+                }
+            }
+            MessageBox.Show("The specified text could not be found",
+                text,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+
         public void ConvertSelectedLines(Dictionary<string, string> hexConverter)
         {
             if (hexConverter != null)
@@ -402,9 +420,9 @@ namespace ujlptr_subedit
                 {
                     if(item.Checked == true)
                     {
-                        if (item.SubItems[4].Text.Replace("\0", "").Length > 0)
+                        if (item.SubItems[5].Text.Replace("\0", "").Length > 0)
                         {
-                            item.SubItems[4].Text = ConvertTextFromPattern(item.SubItems[4].Text, hexConverter);
+                            item.SubItems[5].Text = item.SubItems[5].Text.ConvertTextFromPattern(CodePage, hexConverter);
                             item.Font = new Font("Segoe UI", 9, FontStyle.Bold);
                             this.FileEdit = true;
                         }
@@ -415,62 +433,6 @@ namespace ujlptr_subedit
         public void EnableCheckboxesOnListView()
         {
             ListView.CheckBoxes = true;
-        }
-        private string ConvertTextFromPattern(string text, Dictionary<string, string> hexConverter)
-        {
-            if (hexConverter != null)
-            {
-                return ConvertHexToText(ConvertTextToHex(text, hexConverter));
-            }
-            return text;
-        }
-        private string ConvertHexToText(string text)
-        {
-            byte[] raw = new byte[text.Length / 2];
-            for (int i = 0; i < raw.Length; i++)
-            {
-                raw[i] = Convert.ToByte(text.Substring(i * 2, 2), 16);
-            }
-            return CodePage.GetString(raw);
-        }
-        private string ConvertTextToHex(string text, Dictionary<string, string> hexConverter = null) 
-        {
-            string hex = BitConverter.ToString(CodePage.GetBytes(text)).Replace("-", "");
-            string outHex = "";
-
-            for (int i = 0; i < hex.Length / 2; i++)
-            {
-                if (hexConverter != null)
-                {
-                    if(hexConverter.ContainsKey(hex.Substring(i * 2, 2)))
-                    {
-                        outHex += hexConverter[hex.Substring(i * 2, 2)];
-                    }
-                    else
-                    {
-                        outHex += hex.Substring(i * 2, 2);
-                    }
-                }
-                else
-                {
-                    outHex += hex.Substring(i * 2, 2);
-                }
-            }
-            return outHex;
-        }
-
-        public string[] GetAllHexText()
-        {
-            if(ListView.Items.Count > 0)
-            {
-                List<string> hexs = new List<string>();
-                foreach (ListViewItem item in ListView.Items)
-                {
-                    hexs.Add(ConvertTextToHex(item.SubItems[4].Text.Replace("\0", "")));
-                }
-                return hexs.ToArray();
-            }
-            return new string[1] { "54-65-73-74" };
         }
 
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
@@ -488,6 +450,8 @@ namespace ujlptr_subedit
                 }
                 else
                 {
+                    Groups.Clear();
+                    Array.Clear(File, 0, File.Length);
                     GC.Collect();
                     this.Dispose();
                 }
@@ -502,10 +466,6 @@ namespace ujlptr_subedit
             }
         }
 
-        private void Editor_SizeChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void ListView_ItemChecked(object sender, ItemCheckedEventArgs e)
         {
@@ -549,17 +509,13 @@ namespace ujlptr_subedit
             {
                 IdLabel.Visible = true;
                 GroupIdLabel.Visible = true;
-                PointerLocationLabel.Visible = true;
+                AllLengthLabel.Visible = true;
                 MaxLengthLabel.Visible = true;
                 LengthLabel.Visible = true;
-                IncreaseMaxSymbolOnLineButton.Visible = true;
-                ReduceMaxSymbolOnLineButton.Visible = true;
-                NumberSymbolsToChangeTextBox.Visible = true;
                 TimeLabel.Visible = true;
                 SwitchingTimeLabel.Visible = true;
                 SwitchingTimeTextBox.Visible = true;
                 TimeTextBox.Visible = true;
-                EditButton.Location = new Point(965, 23);
                 
                 AdvancedMode = true;
             }
@@ -567,17 +523,13 @@ namespace ujlptr_subedit
             {
                 IdLabel.Visible = false;
                 GroupIdLabel.Visible = false;
-                PointerLocationLabel.Visible = false;
+                AllLengthLabel.Visible = false;
                 MaxLengthLabel.Visible = false;
                 LengthLabel.Visible = false;
-                IncreaseMaxSymbolOnLineButton.Visible = false;
-                ReduceMaxSymbolOnLineButton.Visible = false;
-                NumberSymbolsToChangeTextBox.Visible = false;
                 TimeLabel.Visible = false;
                 SwitchingTimeLabel.Visible = false;
                 SwitchingTimeTextBox.Visible = false;
                 TimeTextBox.Visible = false;
-                EditButton.Location = new Point(799, 23);
 
                 AdvancedMode = false;
             }
