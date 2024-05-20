@@ -32,7 +32,7 @@ jobs:
               
             - name: Сreating an archive for Windows ${{ matrix.arch }}
               if: matrix.os == 'windows-latest'
-              run: cd Output/Debug ; New-Item -Path 'UJLPTRSubEditor' -ItemType Directory -Force ; Copy-Item -Path 'ujlptr_subedit.exe' -Destination UJLPTRSubEditor/ -Force ; Copy-Item -Path 'FilesOffsetsForDecode.cfg' -Destination UJLPTRSubEditor/ -Force ; Copy-Item 'Content' -Recurse UJLPTRSubEditor/ -Force ; Compress-Archive -Path UJLPTRSubEditor -Destination Windows_${{ matrix.arch }}.zip -Force
+              run: cd Output/Debug ; New-Item -Path 'UJLPTRSubEditor' -ItemType Directory -Force ; Copy-Item -Path 'ujlptr_subedit.exe' -Destination UJLPTRSubEditor/ -Force ; Copy-Item 'Content' -Recurse UJLPTRSubEditor/ -Force ; Compress-Archive -Path UJLPTRSubEditor -Destination Windows_${{ matrix.arch }}.zip -Force
               
             - name: Publishing a release for Windows ${{ matrix.arch }}
               if: matrix.os == 'windows-latest'

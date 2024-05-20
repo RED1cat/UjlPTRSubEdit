@@ -66,6 +66,7 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.FontConstructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -197,7 +198,8 @@
             this.ConverterToolStripMenuItem,
             this.AdvancedModeToolStripMenuItem,
             this.ToolStripSeparator5,
-            this.TextPreviewToolStripMenuItem});
+            this.TextPreviewToolStripMenuItem,
+            this.FontConstructorToolStripMenuItem});
             this.ToolToolStripMenuItem.Name = "ToolToolStripMenuItem";
             this.ToolToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.ToolToolStripMenuItem.Text = "&Tool";
@@ -208,7 +210,7 @@
             this.TextEncodingToolStripComboBox});
             this.EncodingToolStripMenuItem.Enabled = false;
             this.EncodingToolStripMenuItem.Name = "EncodingToolStripMenuItem";
-            this.EncodingToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.EncodingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.EncodingToolStripMenuItem.Text = "&Encoding";
             this.EncodingToolStripMenuItem.ToolTipText = "Setting the text encoding";
             // 
@@ -232,7 +234,7 @@
             this.FileDecodeOffsetToolStripComboBox});
             this.FileOffsetToolStripMenuItem.Enabled = false;
             this.FileOffsetToolStripMenuItem.Name = "FileOffsetToolStripMenuItem";
-            this.FileOffsetToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.FileOffsetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.FileOffsetToolStripMenuItem.Text = "&FileOffset";
             this.FileOffsetToolStripMenuItem.ToolTipText = "Setting the offsets for the file";
             // 
@@ -268,7 +270,7 @@
             this.ConversionPatternToolStripComboBox});
             this.ConverterToolStripMenuItem.Enabled = false;
             this.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem";
-            this.ConverterToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.ConverterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ConverterToolStripMenuItem.Text = "&Сonverter";
             this.ConverterToolStripMenuItem.ToolTipText = "Configuring the converter with a symbol";
             // 
@@ -308,20 +310,20 @@
             this.AdvancedModeToolStripMenuItem.CheckOnClick = true;
             this.AdvancedModeToolStripMenuItem.Enabled = false;
             this.AdvancedModeToolStripMenuItem.Name = "AdvancedModeToolStripMenuItem";
-            this.AdvancedModeToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.AdvancedModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.AdvancedModeToolStripMenuItem.Text = "&Advanced Mode";
             this.AdvancedModeToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.AdvancedModeToolStripMenuItem_CheckStateChanged);
             // 
             // ToolStripSeparator5
             // 
             this.ToolStripSeparator5.Name = "ToolStripSeparator5";
-            this.ToolStripSeparator5.Size = new System.Drawing.Size(167, 6);
+            this.ToolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // TextPreviewToolStripMenuItem
             // 
             this.TextPreviewToolStripMenuItem.Enabled = false;
             this.TextPreviewToolStripMenuItem.Name = "TextPreviewToolStripMenuItem";
-            this.TextPreviewToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.TextPreviewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TextPreviewToolStripMenuItem.Text = "TextPreview (beta)";
             this.TextPreviewToolStripMenuItem.ToolTipText = "Display a preview of the text of the active window";
             this.TextPreviewToolStripMenuItem.Click += new System.EventHandler(this.TextPreviewToolStripMenuItem_Click);
@@ -374,19 +376,19 @@
             // 
             this.SearchToolStripMenuItem.Enabled = false;
             this.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem";
-            this.SearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SearchToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.SearchToolStripMenuItem.Text = "&Search";
             this.SearchToolStripMenuItem.Click += new System.EventHandler(this.SearchToolStripMenuItem_Click);
             // 
             // ToolStripSeparator3
             // 
             this.ToolStripSeparator3.Name = "ToolStripSeparator3";
-            this.ToolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.ToolStripSeparator3.Size = new System.Drawing.Size(106, 6);
             // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.AboutToolStripMenuItem.Text = "&About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -399,6 +401,13 @@
             // SaveFileDialog
             // 
             this.SaveFileDialog.Filter = resources.GetString("SaveFileDialog.Filter");
+            // 
+            // FontConstructorToolStripMenuItem
+            // 
+            this.FontConstructorToolStripMenuItem.Name = "FontConstructorToolStripMenuItem";
+            this.FontConstructorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.FontConstructorToolStripMenuItem.Text = "FontConstructor";
+            this.FontConstructorToolStripMenuItem.Click += new System.EventHandler(this.FontConstructorToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -463,5 +472,6 @@
         private System.Windows.Forms.ToolStripComboBox FileDecodeOffsetToolStripComboBox;
         private System.Windows.Forms.ToolStripMenuItem ConvertToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AdvancedModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FontConstructorToolStripMenuItem;
     }
 }

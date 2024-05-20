@@ -11,7 +11,7 @@ namespace ujlptr_subedit
 {
     public partial class Editor : Form
     {
-        public UjlTextPreview TextPreview;
+        public TextPreview.TextPreview TextPreview;
         public bool AdvancedMode = false;
         public string FileName;
         public string FilePath;
@@ -225,8 +225,8 @@ namespace ujlptr_subedit
 
                 if (TextPreview != null)
                 {
-                    TextPreview.UjlTextRender.CurrentTextIndex = ListView.SelectedItems[0].Index;
-                    TextPreview.UjlTextRender.MaxTextIndex = ListView.Items.Count;
+                    TextPreview.TextRender.CurrentTextIndex = ListView.SelectedItems[0].Index;
+                    TextPreview.TextRender.MaxTextIndex = ListView.Items.Count;
                 }
             }
         }
@@ -244,10 +244,17 @@ namespace ujlptr_subedit
             LengthLabel.Text = $"Cur:{cur}";
             AllLengthLabel.Text = $"CurAll:{curAll}";
 
-            if (curAll > Groups[groupId].MaxChars)
+            if (curAll > Groups[groupId].MaxChars && TextBox.Text.Length > 0)
             {
-                int needToDell = curAll - Groups[groupId].MaxChars;
-                TextBox.Text = TextBox.Text.Remove(TextBox.Text.Length - needToDell);
+                int needToDell = TextBox.Text.Length - (curAll - Groups[groupId].MaxChars);
+                if(needToDell < 0)
+                {
+                    TextBox.Text = TextBox.Text.Remove(0);
+                }
+                else
+                {
+                    TextBox.Text = TextBox.Text.Remove(needToDell);
+                }
                 TextBox.SelectionStart = TextBox.Text.Length;
                 SystemSounds.Exclamation.Play();
             }
@@ -266,7 +273,7 @@ namespace ujlptr_subedit
 
             if(TextPreview != null)
             {
-                TextPreview.UjlTextRender.Hex = TextBox.Text.ConvertTextToHex(codePage: CodePage);
+                TextPreview.TextRender.Hex = TextBox.Text.ConvertTextToHex(codePage: CodePage);
             }
         }
 

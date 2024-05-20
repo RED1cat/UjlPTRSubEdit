@@ -56,58 +56,56 @@ namespace ujlptr_subedit
         private void GetFilesForDecodeOffset()
         {
             string[] lines = null;
-            foreach (string item in Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory))
+            string cfg = $"{AppDomain.CurrentDomain.BaseDirectory}/Content/FilesOffsetsForDecode.cfg";
+            if (File.Exists(cfg))
             {
-                if(Path.GetFileName(item) == "FilesOffsetsForDecode.cfg")
+                try
                 {
-                    try
-                    {
-                        lines = File.ReadAllLines(item);
-                    }
-                    catch(Exception e)
-                    {
-                        MessageBox.Show(e.Message,
-                           "Error",
-                           MessageBoxButtons.OK,
-                           MessageBoxIcon.Error);
-                        return;
-                    }
+                    lines = File.ReadAllLines(cfg);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message,
+                       "Error",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Error);
+                    return;
+                }
 
-                    if (lines != null)
+                if (lines != null)
+                {
+                    if (lines[lines.Length - 1] == "###" & lines[0] == "###FileName" & lines[1] == "###Region" & lines[2] == "###FirstOffset" & lines[3] == "###LastOffset")
                     {
-                        if (lines[lines.Length - 1] == "###" & lines[0] == "###FileName" & lines[1] == "###Region" & lines[2] == "###FirstOffset" & lines[3] == "###LastOffset")
+                        FileDecodeOffsetToolStripComboBox.Items.Add("None");
+                        string name;
+                        string region;
+                        int first;
+                        int last;
+                        for (int i = 4; i < lines.Length - 1; i += 4)
                         {
-                            FileDecodeOffsetToolStripComboBox.Items.Add("None");
-                            string name;
-                            string region;
-                            int first;
-                            int last;
-                            for (int i = 4; i < lines.Length - 1; i += 4)
+                            name = lines[i];
+                            region = lines[i + 1];
+                            try
                             {
-                                name = lines[i];
-                                region = lines[i + 1];
-                                try
-                                {
-                                    first = Convert.ToInt32(lines[i + 2], 16);
-                                }
-                                catch
-                                {
-                                    return;
-                                }
+                                first = Convert.ToInt32(lines[i + 2], 16);
+                            }
+                            catch
+                            {
+                                return;
+                            }
 
-                                try
-                                {
-                                    last = Convert.ToInt32(lines[i + 3], 16);
-                                }
-                                catch
-                                {
-                                    return;
-                                }
-                                if (!FilesDecodeOffsets.ContainsKey(name))
-                                {
-                                    FilesDecodeOffsets.Add(name, new FileDecodeOffset(name, region, first, last));
-                                    FileDecodeOffsetToolStripComboBox.Items.Add($"{name} - {region}");
-                                }
+                            try
+                            {
+                                last = Convert.ToInt32(lines[i + 3], 16);
+                            }
+                            catch
+                            {
+                                return;
+                            }
+                            if (!FilesDecodeOffsets.ContainsKey(name))
+                            {
+                                FilesDecodeOffsets.Add(name, new FileDecodeOffset(name, region, first, last));
+                                FileDecodeOffsetToolStripComboBox.Items.Add($"{name} - {region}");
                             }
                         }
                     }
@@ -118,7 +116,7 @@ namespace ujlptr_subedit
         {
             string[] lines = null;
             string name = "";
-            foreach (string item in Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory))
+            foreach (string item in Directory.GetFiles($"{AppDomain.CurrentDomain.BaseDirectory}/Content"))
             {
                 if (Path.GetExtension(item) == ".cfg")
                 {
@@ -482,7 +480,7 @@ namespace ujlptr_subedit
                 if (this.ActiveMdiChild.Name == "Editor")
                 {
                     Editor editor = ((Editor)this.ActiveMdiChild);
-                    editor.TextPreview = new UjlTextPreview();
+                    editor.TextPreview = new TextPreview.TextPreview();
                     editor.TextPreview.Text = editor.FileName;
                     editor.TextPreview.MdiParent = this;
                     editor.TextPreview.Show();
@@ -547,6 +545,14 @@ namespace ujlptr_subedit
 
                 }
             }
+        }
+
+        private void FontConstructorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextPreview.FontConstructor fontConstructor = new TextPreview.FontConstructor();
+            fontConstructor.MdiParent = this;
+            fontConstructor.Show();
+            fontConstructor.WindowState = FormWindowState.Normal;
         }
     }
 }

@@ -8,6 +8,6 @@ namespace ujlptr_subedit
         public const string Description = "Um Jammer Lammy & Parappa The Rapper Subtitle Editor";
         public const string Author = "REDcat";
         public const string Company = "https://github.com/RED1cat/UjlSubEdit";
-        public const string Version = "3.1.0";
+        public const string Version = "3.2.0";
     }
 }
