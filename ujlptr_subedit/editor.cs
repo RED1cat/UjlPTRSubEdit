@@ -430,7 +430,10 @@ namespace ujlptr_subedit
                         if (item.SubItems[5].Text.Replace("\0", "").Length > 0)
                         {
                             item.SubItems[5].Text = item.SubItems[5].Text.ConvertTextFromPattern(CodePage, hexConverter);
+                            Groups[int.Parse(item.SubItems[0].Text) - 1].Lines[int.Parse(item.SubItems[1].Text) - 1].Text = item.SubItems[5].Text;
+
                             item.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                            Groups[int.Parse(item.SubItems[0].Text) - 1].Edit = true;
                             this.FileEdit = true;
                         }
                     }
